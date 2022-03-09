@@ -1,0 +1,12 @@
+../RTD/src/Clock_Ip_Monitor.c:183:13:Clock_Ip_ClockMonitorEmpty	0	static
+../RTD/src/Clock_Ip_Monitor.c:189:13:Clock_Ip_ClockMonitorEmpty_Disable	0	static
+../RTD/src/Clock_Ip_Monitor.c:201:31:Clock_Ip_ClockMonitorEmpty_GetStatus	0	static
+../RTD/src/Clock_Ip_Monitor.c:420:13:Clock_Ip_ClearStatusCmuFcFceRefCntLfrefHfref	0	static
+../RTD/src/Clock_Ip_Monitor.c:434:31:Clock_Ip_GetStatusCmuFcFceRefCntLfrefHfref	0	static
+../RTD/src/Clock_Ip_Monitor.c:473:13:Clock_Ip_EnableCmuFcFceRefCntLfrefHfref	0	static
+../RTD/src/Clock_Ip_Monitor.c:210:13:Clock_Ip_DisableCmuFcFceRefCntLfrefHfref	32	static
+../RTD/src/Clock_Ip_Monitor.c:280:13:Clock_Ip_ResetCmuFcFceRefCntLfrefHfref	0	static
+../RTD/src/Clock_Ip_Monitor.c:285:13:Clock_Ip_SetCmuFcFceRefCntLfrefHfref	24	static
+../RTD/src/Clock_Ip_Monitor.c:195:13:Clock_Ip_ClockMonitorEmpty_ClearStatus	0	static
+../RTD/src/Clock_Ip_Monitor.c:497:8:Clock_Ip_CMU_GetInterruptStatus	0	static
+../RTD/src/Clock_Ip_Monitor.c:515:6:Clock_Ip_CMU_ClockFailInt	24	static

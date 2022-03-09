@@ -1,0 +1,12 @@
+../RTD/src/Clock_Ip_ExtOsc.c:169:13:Clock_Ip_ExternalOscillatorEmpty	0	static
+../RTD/src/Clock_Ip_ExtOsc.c:174:13:Clock_Ip_DisableClockIpExternalOscillatorEmpty	0	static
+../RTD/src/Clock_Ip_ExtOsc.c:182:13:Clock_Ip_ResetFxoscOsconBypEocvGmSel	0	static
+../RTD/src/Clock_Ip_ExtOsc.c:191:13:Clock_Ip_SetFxoscOsconBypEocvGmSel	0	static
+../RTD/src/Clock_Ip_ExtOsc.c:255:13:Clock_Ip_DisableFxoscOsconBypEocvGmSel	0	static
+../RTD/src/Clock_Ip_ExtOsc.c:262:13:Clock_Ip_EnableFxoscOsconBypEocvGmSel	0	static
+../RTD/src/Clock_Ip_ExtOsc.c:275:13:Clock_Ip_ResetSxoscOsconEocv	0	static
+../RTD/src/Clock_Ip_ExtOsc.c:284:13:Clock_Ip_SetSxoscOsconEocv	0	static
+../RTD/src/Clock_Ip_ExtOsc.c:212:13:Clock_Ip_CompleteFxoscOsconBypEocvGmSel	32	static
+../RTD/src/Clock_Ip_ExtOsc.c:301:13:Clock_Ip_CompleteSxoscOsconEocv	0	static
+../RTD/src/Clock_Ip_ExtOsc.c:352:13:Clock_Ip_EnableSxoscOsconEocv	0	static
+../RTD/src/Clock_Ip_ExtOsc.c:346:13:Clock_Ip_DisableSxoscOsconEocv	0	static

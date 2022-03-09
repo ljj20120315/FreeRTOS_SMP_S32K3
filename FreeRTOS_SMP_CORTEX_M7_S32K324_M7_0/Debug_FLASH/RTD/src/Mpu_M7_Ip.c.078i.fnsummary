@@ -1,0 +1,1520 @@
+
+Analyzing function: Mpu_M7_Ip_EnableRegion_Privileged.part.0/19
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 4 2 3
+;; 4 succs { 2 }
+;; 2 succs { 3 }
+;; 3 succs { 1 }
+
+Analyzing function body size: Mpu_M7_Ip_EnableRegion_Privileged.part.0/19
+
+IPA function summary for Mpu_M7_Ip_EnableRegion_Privileged.part.0/19 inlinable
+  global time:     9.000000
+  self size:       10
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:7.000000, time:7.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+
+Analyzing function: Mpu_M7_Ip_GetErrorDetails/18
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16
+;;
+;; Loop 1
+;;  header 4, latch 3
+;;  depth 1, outer 0
+;;  nodes: 4 3
+;; 2 succs { 4 }
+;; 3 succs { 4 }
+;; 4 succs { 3 5 }
+;; 5 succs { 6 7 }
+;; 6 succs { 14 }
+;; 7 succs { 13 8 9 10 11 12 }
+;; 8 succs { 14 }
+;; 9 succs { 14 }
+;; 10 succs { 14 }
+;; 11 succs { 14 }
+;; 12 succs { 14 }
+;; 13 succs { 14 }
+;; 14 succs { 15 16 }
+;; 15 succs { 16 }
+;; 16 succs { 1 }
+
+Analyzing function body size: Mpu_M7_Ip_GetErrorDetails/18
+
+IPA function summary for Mpu_M7_Ip_GetErrorDetails/18 inlinable
+  global time:     83.686364
+  self size:       40
+  global size:     0
+  min size:       0
+  self stack:      8
+  global stack:    8
+    size:30.000000, time:68.686364
+    size:7.000000, time:3.000000,  executed if:(not inlined)
+  calls:
+    Mpu_M7_Ip_GetErrorRegisters/7 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+       op1 is compile time invariant
+
+
+Analyzing function: Mpu_M7_Ip_SetAccessRight/17
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Mpu_M7_Ip_SetAccessRight/17
+
+IPA function summary for Mpu_M7_Ip_SetAccessRight/17 inlinable
+  global time:     14.000000
+  self size:       6
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Mpu_M7_Ip_SetAccessRight_Privileged/12 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 3 time: 12
+
+
+Analyzing function: Mpu_M7_Ip_EnableRegion/16
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Mpu_M7_Ip_EnableRegion/16
+
+IPA function summary for Mpu_M7_Ip_EnableRegion/16 inlinable
+  global time:     14.000000
+  self size:       6
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Mpu_M7_Ip_EnableRegion_Privileged/11 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 3 time: 12
+
+
+Analyzing function: Mpu_M7_Ip_Deinit/15
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Mpu_M7_Ip_Deinit/15
+
+IPA function summary for Mpu_M7_Ip_Deinit/15 inlinable
+  global time:     12.000000
+  self size:       4
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Mpu_M7_Ip_Deinit_Privileged/10 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 1 time: 10
+
+
+Analyzing function: Mpu_M7_Ip_SetRegionConfig/14
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Mpu_M7_Ip_SetRegionConfig/14
+
+IPA function summary for Mpu_M7_Ip_SetRegionConfig/14 inlinable
+  global time:     14.000000
+  self size:       6
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Mpu_M7_Ip_SetRegionConfig_Privileged/9 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 3 time: 12
+
+
+Analyzing function: Mpu_M7_Ip_Init/13
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Mpu_M7_Ip_Init/13
+
+IPA function summary for Mpu_M7_Ip_Init/13 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Mpu_M7_Ip_Init_Privileged/8 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11
+
+
+Analyzing function: Mpu_M7_Ip_SetAccessRight_Privileged/12
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Mpu_M7_Ip_SetAccessRight_Privileged/12
+
+IPA function summary for Mpu_M7_Ip_SetAccessRight_Privileged/12 inlinable
+  global time:     23.000000
+  self size:       15
+  global size:     0
+  min size:       0
+  self stack:      4
+  global stack:    4
+    size:9.000000, time:9.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Mpu_M7_Ip_ComputeAccessRights/6 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+
+
+Analyzing function: Mpu_M7_Ip_EnableRegion_Privileged/11
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5
+;; 2 succs { 3 4 }
+;; 3 succs { 5 }
+;; 4 succs { 5 }
+;; 5 succs { 1 }
+
+Analyzing function body size: Mpu_M7_Ip_EnableRegion_Privileged/11
+
+IPA function summary for Mpu_M7_Ip_EnableRegion_Privileged/11 inlinable
+  global time:     13.500000
+  self size:       14
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:1.000000, time:1.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:2.000000, time:2.000000,  nonconst if:(op1 changed)
+    size:7.000000, time:3.500000,  executed if:(op1 == 0)
+  calls:
+    Mpu_M7_Ip_EnableRegion_Privileged.part.0/19 function not considered for inlining
+      freq:0.50 loop depth: 0 size: 1 time: 10 callee size: 5 stack: 0 predicate: (op1 != 0)
+
+
+Analyzing function: Mpu_M7_Ip_Deinit_Privileged/10
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5
+;;
+;; Loop 1
+;;  header 4, latch 3
+;;  depth 1, outer 0
+;;  nodes: 4 3
+;; 2 succs { 4 }
+;; 3 succs { 4 }
+;; 4 succs { 3 5 }
+;; 5 succs { 1 }
+
+Analyzing function body size: Mpu_M7_Ip_Deinit_Privileged/10
+
+IPA function summary for Mpu_M7_Ip_Deinit_Privileged/10 inlinable
+  global time:     77.727273
+  self size:       18
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:15.000000, time:75.727273
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+
+Analyzing function: Mpu_M7_Ip_SetRegionConfig_Privileged/9
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10
+;; 2 succs { 3 4 }
+;; 3 succs { 4 }
+;; 4 succs { 5 6 }
+;; 5 succs { 7 }
+;; 6 succs { 7 }
+;; 7 succs { 8 9 }
+;; 8 succs { 10 }
+;; 9 succs { 10 }
+;; 10 succs { 1 }
+
+Analyzing function body size: Mpu_M7_Ip_SetRegionConfig_Privileged/9
+
+IPA function summary for Mpu_M7_Ip_SetRegionConfig_Privileged/9 inlinable
+  global time:     72.020000
+  self size:       56
+  global size:     0
+  min size:       0
+  self stack:      4
+  global stack:    4
+    size:13.500000, time:13.000000
+    size:3.500000, time:2.500000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op1[ref offset: 32] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op1[ref offset: 32] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op1[ref offset: 64] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op1[ref offset: 64] changed)
+    size:6.000000, time:6.000000,  nonconst if:(op1[ref offset: 32] changed || op1[ref offset: 64] changed)
+    size:0.500000, time:0.250000,  executed if:(not inlined),  nonconst if:(op1[ref offset: 224] changed) && (not inlined)
+    size:1.500000, time:0.750000,  nonconst if:(op1[ref offset: 224] changed)
+    size:1.000000, time:0.500000,  nonconst if:(op1[ref offset: 32] changed || op1[ref offset: 64] changed || op1[ref offset: 224] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op1[ref offset: 232] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op1[ref offset: 232] changed)
+    size:3.000000, time:1.500000,  executed if:(op1[ref offset: 232] == 0)
+    size:3.000000, time:1.500000,  executed if:(op1[ref offset: 232] != 0)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op1[ref offset: 96] changed) && (not inlined)
+    size:2.500000, time:2.500000,  nonconst if:(op1[ref offset: 96] changed)
+    size:0.500000, time:0.170000,  executed if:(op1[ref offset: 96] == 7) && (not inlined),  nonconst if:(op1[ref offset: 192] changed) && (op1[ref offset: 96] == 7) && (not inlined)
+    size:0.500000, time:0.170000,  executed if:(op1[ref offset: 96] == 7),  nonconst if:(op1[ref offset: 192] changed) && (op1[ref offset: 96] == 7)
+    size:0.500000, time:0.170000,  executed if:(op1[ref offset: 96] == 7) && (not inlined),  nonconst if:(op1[ref offset: 160] changed) && (op1[ref offset: 96] == 7) && (not inlined)
+    size:0.500000, time:0.170000,  executed if:(op1[ref offset: 96] == 7),  nonconst if:(op1[ref offset: 160] changed) && (op1[ref offset: 96] == 7)
+  calls:
+    Mpu_M7_Ip_ComputeAccessRights/6 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+    Mpu_M7_Ip_SetCachePolicies/5 function not considered for inlining
+      freq:0.34 loop depth: 0 size: 4 time: 13 predicate: (op1[ref offset: 96] == 7)
+       op0 is compile time invariant
+    Mpu_M7_Ip_SetMemoryType/4 function not considered for inlining
+      freq:0.66 loop depth: 0 size: 3 time: 12 predicate: (op1[ref offset: 96] != 7)
+       op0 is compile time invariant
+    Mpu_M7_Ip_CalculateRegionSize/3 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 4 time: 13
+
+
+Analyzing function: Mpu_M7_Ip_Init_Privileged/8
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 13 10 12 15 14
+;;
+;; Loop 1
+;;  header 15, latch 12
+;;  depth 1, outer 0
+;;  nodes: 15 12
+;; 2 succs { 3 4 }
+;; 3 succs { 5 }
+;; 4 succs { 5 }
+;; 5 succs { 6 7 }
+;; 6 succs { 8 }
+;; 7 succs { 8 }
+;; 8 succs { 9 10 }
+;; 9 succs { 13 }
+;; 13 succs { 15 }
+;; 10 succs { 13 }
+;; 12 succs { 15 }
+;; 15 succs { 12 14 }
+;; 14 succs { 1 }
+
+Analyzing function body size: Mpu_M7_Ip_Init_Privileged/8
+
+IPA function summary for Mpu_M7_Ip_Init_Privileged/8 inlinable
+  global time:     201.818183
+  self size:       49
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:39.500000, time:82.636364
+    size:5.500000, time:12.090909,  executed if:(not inlined)
+  calls:
+    Mpu_M7_Ip_SetRegionConfig_Privileged/9 function not considered for inlining
+      freq:8.09 loop depth: 1 size: 3 time: 12 callee size:28 stack: 4
+    Mpu_M7_Ip_Deinit_Privileged/10 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 1 time: 10 callee size: 9 stack: 0
+
+
+Analyzing function: Mpu_M7_Ip_GetErrorRegisters/7
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5
+;; 2 succs { 3 4 }
+;; 3 succs { 5 }
+;; 4 succs { 5 }
+;; 5 succs { 1 }
+
+Analyzing function body size: Mpu_M7_Ip_GetErrorRegisters/7
+
+IPA function summary for Mpu_M7_Ip_GetErrorRegisters/7 inlinable
+  global time:     11.500000
+  self size:       14
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:9.500000, time:8.500000
+    size:4.500000, time:3.000000,  executed if:(not inlined)
+  calls:
+
+
+Analyzing function: Mpu_M7_Ip_ComputeAccessRights/6
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5
+;; 2 succs { 3 4 }
+;; 3 succs { 5 }
+;; 4 succs { 5 }
+;; 5 succs { 1 }
+
+Analyzing function body size: Mpu_M7_Ip_ComputeAccessRights/6
+
+IPA function summary for Mpu_M7_Ip_ComputeAccessRights/6 inlinable
+  global time:     13.000000
+  self size:       16
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:1.500000, time:1.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:6.000000, time:6.000000,  nonconst if:(op1 changed)
+    size:1.000000, time:1.000000,  nonconst if:(op0[ref offset: 0] changed || op1 changed)
+    size:1.000000, time:0.500000,  executed if:(op1,(# & 255),((int) #),(# & 16) != 0),  nonconst if:(op0[ref offset: 0] changed || op1 changed) && (op1,(# & 255),((int) #),(# & 16) != 0)
+    size:0.500000, time:0.250000,  executed if:(op1,(# & 255),((int) #),(# & 16) != 0) && (not inlined)
+    size:0.500000, time:0.250000,  executed if:(op1,(# & 255),((int) #),(# & 16) != 0)
+    size:1.000000, time:0.500000,  executed if:(op1,(# & 255),((int) #),(# & 16) == 0),  nonconst if:(op0[ref offset: 0] changed || op1 changed) && (op1,(# & 255),((int) #),(# & 16) == 0)
+    size:0.500000, time:0.250000,  executed if:(op1,(# & 255),((int) #),(# & 16) == 0) && (not inlined)
+    size:0.500000, time:0.250000,  executed if:(op1,(# & 255),((int) #),(# & 16) == 0)
+  calls:
+
+
+Analyzing function: Mpu_M7_Ip_SetCachePolicies/5
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Mpu_M7_Ip_SetCachePolicies/5
+
+IPA function summary for Mpu_M7_Ip_SetCachePolicies/5 inlinable
+  global time:     15.000000
+  self size:       16
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.500000, time:0.500000
+    size:3.500000, time:2.500000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:6.000000, time:6.000000,  nonconst if:(op1 changed)
+    size:1.000000, time:1.000000,  nonconst if:(op0[ref offset: 0] changed || op1 changed)
+    size:2.000000, time:2.000000,  nonconst if:(op2 changed)
+    size:2.000000, time:2.000000,  nonconst if:(op0[ref offset: 0] changed || op1 changed || op2 changed)
+  calls:
+
+
+Analyzing function: Mpu_M7_Ip_SetMemoryType/4
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Mpu_M7_Ip_SetMemoryType/4
+		Accounting address calculation.
+
+IPA function summary for Mpu_M7_Ip_SetMemoryType/4 inlinable
+  global time:     8.000000
+  self size:       9
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:3.500000, time:3.500000
+    size:3.500000, time:2.500000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:1.000000, time:1.000000,  nonconst if:(op1 changed)
+  calls:
+
+
+Analyzing function: Mpu_M7_Ip_CalculateRegionSize/3
+;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5
+;;
+;; Loop 1
+;;  header 4, latch 3
+;;  depth 1, outer 0
+;;  nodes: 4 3
+;; 2 succs { 4 }
+;; 3 succs { 4 }
+;; 4 succs { 3 5 }
+;; 5 succs { 1 }
+
+Analyzing function body size: Mpu_M7_Ip_CalculateRegionSize/3
+
+IPA function summary for Mpu_M7_Ip_CalculateRegionSize/3 inlinable
+  global time:     37.363637
+  self size:       8
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:4.000000, time:34.363637
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op1 changed || op0 changed)
+  calls:
+
+Symbol table:
+
+Mpu_M7_Ip_EnableRegion_Privileged.part.0/19 (Mpu_M7_Ip_EnableRegion_Privileged.part.0) @06cf80e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local split_part optimize_size
+  Called by: Mpu_M7_Ip_EnableRegion_Privileged/11 (536870912 (estimated locally),0.50 per call) 
+  Calls: 
+Mpu_M7_Ip_GetErrorDetails/18 (Mpu_M7_Ip_GetErrorDetails) @06cf8a80
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:118111600 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Mpu_M7_Ip_GetErrorRegisters/7 (118111600 (estimated locally),1.00 per call) 
+Mpu_M7_Ip_SetAccessRight/17 (Mpu_M7_Ip_SetAccessRight) @06cf87e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Mpu_M7_Ip_SetAccessRight_Privileged/12 (1073741824 (estimated locally),1.00 per call) 
+Mpu_M7_Ip_EnableRegion/16 (Mpu_M7_Ip_EnableRegion) @06cf8540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Mpu_M7_Ip_EnableRegion_Privileged/11 (1073741824 (estimated locally),1.00 per call) 
+Mpu_M7_Ip_Deinit/15 (Mpu_M7_Ip_Deinit) @06cf82a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Mpu_M7_Ip_Deinit_Privileged/10 (1073741824 (estimated locally),1.00 per call) 
+Mpu_M7_Ip_SetRegionConfig/14 (Mpu_M7_Ip_SetRegionConfig) @06cf8000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Mpu_M7_Ip_SetRegionConfig_Privileged/9 (1073741824 (estimated locally),1.00 per call) 
+Mpu_M7_Ip_Init/13 (Mpu_M7_Ip_Init) @06cb59a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Mpu_M7_Ip_Init_Privileged/8 (1073741824 (estimated locally),1.00 per call) 
+Mpu_M7_Ip_SetAccessRight_Privileged/12 (Mpu_M7_Ip_SetAccessRight_Privileged) @06cb51c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: Mpu_M7_Ip_SetAccessRight/17 (1073741824 (estimated locally),1.00 per call) 
+  Calls: Mpu_M7_Ip_ComputeAccessRights/6 (1073741824 (estimated locally),1.00 per call) 
+Mpu_M7_Ip_EnableRegion_Privileged/11 (Mpu_M7_Ip_EnableRegion_Privileged) @06cb5d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: Mpu_M7_Ip_EnableRegion/16 (1073741824 (estimated locally),1.00 per call) 
+  Calls: Mpu_M7_Ip_EnableRegion_Privileged.part.0/19 (536870912 (estimated locally),0.50 per call) 
+Mpu_M7_Ip_Deinit_Privileged/10 (Mpu_M7_Ip_Deinit_Privileged) @06cb58c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:118111600 (estimated locally) body optimize_size
+  Called by: Mpu_M7_Ip_Init_Privileged/8 (118111600 (estimated locally),1.00 per call) Mpu_M7_Ip_Deinit/15 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Mpu_M7_Ip_SetRegionConfig_Privileged/9 (Mpu_M7_Ip_SetRegionConfig_Privileged) @06cb5620
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: Mpu_M7_Ip_Init_Privileged/8 (955630225 (estimated locally),8.09 per call) Mpu_M7_Ip_SetRegionConfig/14 (1073741824 (estimated locally),1.00 per call) 
+  Calls: Mpu_M7_Ip_ComputeAccessRights/6 (1073741824 (estimated locally),1.00 per call) Mpu_M7_Ip_SetCachePolicies/5 (365072224 (estimated locally),0.34 per call) Mpu_M7_Ip_SetMemoryType/4 (708669601 (estimated locally),0.66 per call) Mpu_M7_Ip_CalculateRegionSize/3 (1073741824 (estimated locally),1.00 per call) 
+Mpu_M7_Ip_Init_Privileged/8 (Mpu_M7_Ip_Init_Privileged) @06cb50e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:118111600 (estimated locally) body optimize_size
+  Called by: Mpu_M7_Ip_Init/13 (1073741824 (estimated locally),1.00 per call) 
+  Calls: Mpu_M7_Ip_SetRegionConfig_Privileged/9 (955630225 (estimated locally),8.09 per call) Mpu_M7_Ip_Deinit_Privileged/10 (118111600 (estimated locally),1.00 per call) 
+Mpu_M7_Ip_GetErrorRegisters/7 (Mpu_M7_Ip_GetErrorRegisters) @06cae620
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: Mpu_M7_Ip_GetErrorDetails/18 (118111600 (estimated locally),1.00 per call) 
+  Calls: 
+Mpu_M7_Ip_ComputeAccessRights/6 (Mpu_M7_Ip_ComputeAccessRights) @06cae0e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: Mpu_M7_Ip_SetAccessRight_Privileged/12 (1073741824 (estimated locally),1.00 per call) Mpu_M7_Ip_SetRegionConfig_Privileged/9 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Mpu_M7_Ip_SetCachePolicies/5 (Mpu_M7_Ip_SetCachePolicies) @06caea80
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: Mpu_M7_Ip_SetRegionConfig_Privileged/9 (365072224 (estimated locally),0.34 per call) 
+  Calls: 
+Mpu_M7_Ip_SetMemoryType/4 (Mpu_M7_Ip_SetMemoryType) @06cae540
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: u8Mpu_M7_MemoryTypeValues/1 (read) 
+  Referring: 
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: Mpu_M7_Ip_SetRegionConfig_Privileged/9 (708669601 (estimated locally),0.66 per call) 
+  Calls: 
+Mpu_M7_Ip_CalculateRegionSize/3 (Mpu_M7_Ip_CalculateRegionSize) @06cae2a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:118111600 (estimated locally) body local optimize_size
+  Called by: Mpu_M7_Ip_SetRegionConfig_Privileged/9 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+u8Mpu_M7_MemoryTypeValues/1 (u8Mpu_M7_MemoryTypeValues) @06c653f0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Mpu_M7_Ip_SetMemoryType/4 (read) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Mpu_M7_Ip_EnableRegion_Privileged.part.0 ()
+{
+  struct S32_MPU_Type * base;
+  uint8 u8RegionNum;
+  boolean bEnable;
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG D#4 s=> u8RegionNum
+  # DEBUG u8RegionNum => D#4
+  # DEBUG D#3 s=> bEnable
+  # DEBUG bEnable => D#3
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct S32_MPU_Type *)3758153728B].RASR;
+  _2 = _1 | 1;
+  MEM[(struct S32_MPU_Type *)3758153728B].RASR ={v} _2;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+
+  <bb 3> [local count: 1073741824]:
+  return;
+
+}
+
+
+Mpu_M7_Ip_GetErrorDetails (struct Mpu_M7_Ip_ErrorDetailsType * pErrorDetails)
+{
+  uint8 errorCount;
+  uint32 errorAddress;
+  uint32 mmfsrCopy;
+  uint32 mmfsr;
+  boolean result;
+  unsigned char _1;
+  unsigned char _2;
+  long unsigned int _3;
+  long unsigned int mmfsr.11_4;
+  long unsigned int errorAddress.13_6;
+
+  <bb 2> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  # DEBUG result => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG errorCount => 0
+  # DEBUG BEGIN_STMT
+  Mpu_M7_Ip_GetErrorRegisters (&mmfsr, &errorAddress);
+  # DEBUG BEGIN_STMT
+  mmfsrCopy_13 = mmfsr;
+  # DEBUG mmfsrCopy => mmfsrCopy_13
+  # DEBUG BEGIN_STMT
+  goto <bb 4>; [100.00%]
+
+  <bb 3> [local count: 955630225]:
+  # DEBUG BEGIN_STMT
+  _1 = (unsigned char) mmfsr.11_4;
+  _2 = _1 & 1;
+  errorCount_26 = _2 + errorCount_8;
+  # DEBUG errorCount => errorCount_26
+  # DEBUG BEGIN_STMT
+  _3 = mmfsr.11_4 >> 1;
+  mmfsr = _3;
+
+  <bb 4> [local count: 1073741824]:
+  # errorCount_8 = PHI <0(2), errorCount_26(3)>
+  # DEBUG errorCount => errorCount_8
+  # DEBUG BEGIN_STMT
+  mmfsr.11_4 = mmfsr;
+  if (mmfsr.11_4 != 0)
+    goto <bb 3>; [89.00%]
+  else
+    goto <bb 5>; [11.00%]
+
+  <bb 5> [local count: 118111600]:
+  # errorCount_5 = PHI <errorCount_8(4)>
+  # DEBUG BEGIN_STMT
+  if (errorCount_5 > 1)
+    goto <bb 6>; [59.00%]
+  else
+    goto <bb 7>; [41.00%]
+
+  <bb 6> [local count: 69685844]:
+  # DEBUG BEGIN_STMT
+  pErrorDetails_15(D)->eType = 5;
+  goto <bb 14>; [100.00%]
+
+  <bb 7> [local count: 48425756]:
+  # DEBUG BEGIN_STMT
+  mmfsr = mmfsrCopy_13;
+  # DEBUG BEGIN_STMT
+  switch (mmfsrCopy_13) <default: <L10> [16.67%], case 1: <L5> [16.67%], case 2: <L6> [16.67%], case 8: <L7> [16.67%], case 16: <L8> [16.67%], case 32: <L9> [16.67%]>
+
+  <bb 8> [local count: 8070959]:
+<L5>:
+  # DEBUG BEGIN_STMT
+  pErrorDetails_15(D)->eType = 0;
+  # DEBUG BEGIN_STMT
+  goto <bb 14>; [100.00%]
+
+  <bb 9> [local count: 8070959]:
+<L6>:
+  # DEBUG BEGIN_STMT
+  pErrorDetails_15(D)->eType = 1;
+  # DEBUG BEGIN_STMT
+  goto <bb 14>; [100.00%]
+
+  <bb 10> [local count: 8070959]:
+<L7>:
+  # DEBUG BEGIN_STMT
+  pErrorDetails_15(D)->eType = 3;
+  # DEBUG BEGIN_STMT
+  goto <bb 14>; [100.00%]
+
+  <bb 11> [local count: 8070959]:
+<L8>:
+  # DEBUG BEGIN_STMT
+  pErrorDetails_15(D)->eType = 2;
+  # DEBUG BEGIN_STMT
+  goto <bb 14>; [100.00%]
+
+  <bb 12> [local count: 8070959]:
+<L9>:
+  # DEBUG BEGIN_STMT
+  pErrorDetails_15(D)->eType = 4;
+  # DEBUG BEGIN_STMT
+  goto <bb 14>; [100.00%]
+
+  <bb 13> [local count: 8070959]:
+<L10>:
+  # DEBUG BEGIN_STMT
+  pErrorDetails_15(D)->eType = 6;
+  # DEBUG BEGIN_STMT
+
+  <bb 14> [local count: 118111599]:
+  # DEBUG BEGIN_STMT
+  errorAddress.13_6 = errorAddress;
+  pErrorDetails_15(D)->u32Address = errorAddress.13_6;
+  # DEBUG BEGIN_STMT
+  if (errorCount_5 != 0)
+    goto <bb 15>; [50.00%]
+  else
+    goto <bb 16>; [50.00%]
+
+  <bb 15> [local count: 59055800]:
+  # DEBUG BEGIN_STMT
+  # DEBUG result => 1
+
+  <bb 16> [local count: 118111599]:
+  # result_7 = PHI <0(14), 1(15)>
+  # DEBUG result => result_7
+  # DEBUG BEGIN_STMT
+  mmfsr ={v} {CLOBBER};
+  errorAddress ={v} {CLOBBER};
+  return result_7;
+
+}
+
+
+Mpu_M7_Ip_SetAccessRight (uint8 u8RegionNum, Mpu_M7_Ip_AccessRightsType eRights)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Mpu_M7_Ip_SetAccessRight_Privileged (u8RegionNum_2(D), eRights_3(D));
+  return;
+
+}
+
+
+Mpu_M7_Ip_EnableRegion (uint8 u8RegionNum, boolean bEnable)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Mpu_M7_Ip_EnableRegion_Privileged (u8RegionNum_2(D), bEnable_3(D));
+  return;
+
+}
+
+
+Mpu_M7_Ip_Deinit ()
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Mpu_M7_Ip_Deinit_Privileged ();
+  return;
+
+}
+
+
+Mpu_M7_Ip_SetRegionConfig (uint8 u8RegionNum, const struct Mpu_M7_Ip_RegionConfigType * const pUserConfigPtr)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Mpu_M7_Ip_SetRegionConfig_Privileged (u8RegionNum_2(D), pUserConfigPtr_3(D));
+  return;
+
+}
+
+
+Mpu_M7_Ip_Init (const struct Mpu_M7_Ip_ConfigType * pConfig)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Mpu_M7_Ip_Init_Privileged (pConfig_2(D));
+  return;
+
+}
+
+
+Mpu_M7_Ip_SetAccessRight_Privileged (uint8 u8RegionNum, Mpu_M7_Ip_AccessRightsType eRights)
+{
+  uint32 regionAttributes;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int regionAttributes.8_3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG base => 3758153728B
+  # DEBUG BEGIN_STMT
+  _1 = (long unsigned int) u8RegionNum_4(D);
+  MEM[(struct S32_MPU_Type *)3758153728B].RNR ={v} _1;
+  # DEBUG BEGIN_STMT
+  _2 ={v} MEM[(struct S32_MPU_Type *)3758153728B].RASR;
+  regionAttributes = _2;
+  # DEBUG BEGIN_STMT
+  Mpu_M7_Ip_ComputeAccessRights (&regionAttributes, eRights_8(D));
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  regionAttributes.8_3 = regionAttributes;
+  MEM[(struct S32_MPU_Type *)3758153728B].RASR ={v} regionAttributes.8_3;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  regionAttributes ={v} {CLOBBER};
+  return;
+
+}
+
+
+Mpu_M7_Ip_EnableRegion_Privileged (uint8 u8RegionNum, boolean bEnable)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG base => 3758153728B
+  # DEBUG BEGIN_STMT
+  _1 = (long unsigned int) u8RegionNum_5(D);
+  MEM[(struct S32_MPU_Type *)3758153728B].RNR ={v} _1;
+  # DEBUG BEGIN_STMT
+  if (bEnable_8(D) != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870912]:
+  # DEBUG D#1 => u8RegionNum_5(D)
+  # DEBUG D#2 => bEnable_8(D)
+  Mpu_M7_Ip_EnableRegion_Privileged.part.0 ();
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  _2 ={v} MEM[(struct S32_MPU_Type *)3758153728B].RASR;
+  _3 = _2 & 4294967294;
+  MEM[(struct S32_MPU_Type *)3758153728B].RASR ={v} _3;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+Mpu_M7_Ip_Deinit_Privileged ()
+{
+  uint8 region;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _16;
+  long unsigned int _17;
+  unsigned char _18;
+
+  <bb 2> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG base => 3758153728B
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct S32_MPU_Type *)3758153728B].CTRL;
+  _2 = _1 & 4294967288;
+  MEM[(struct S32_MPU_Type *)3758153728B].CTRL ={v} _2;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  # DEBUG region => 0
+  goto <bb 4>; [100.00%]
+
+  <bb 3> [local count: 955630225]:
+  # DEBUG BEGIN_STMT
+  _3 = (long unsigned int) region_4;
+  MEM[(struct S32_MPU_Type *)3758153728B].RNR ={v} _3;
+  # DEBUG BEGIN_STMT
+  MEM[(struct S32_MPU_Type *)3758153728B].RASR ={v} 0;
+  # DEBUG BEGIN_STMT
+  MEM[(struct S32_MPU_Type *)3758153728B].RBAR ={v} 0;
+  # DEBUG BEGIN_STMT
+  region_15 = region_4 + 1;
+  # DEBUG region => region_15
+
+  <bb 4> [local count: 1073741824]:
+  # region_4 = PHI <0(2), region_15(3)>
+  # DEBUG region => region_4
+  # DEBUG BEGIN_STMT
+  # DEBUG base => 3758153728B
+  # DEBUG INLINE_ENTRY Mpu_M7_Ip_GetDRegion
+  # DEBUG BEGIN_STMT
+  _16 ={v} MEM[(const struct S32_MPU_Type *)3758153728B].TYPE;
+  _17 = _16 >> 8;
+  _18 = (unsigned char) _17;
+  # DEBUG base => NULL
+  if (region_4 < _18)
+    goto <bb 3>; [89.00%]
+  else
+    goto <bb 5>; [11.00%]
+
+  <bb 5> [local count: 118111600]:
+  return;
+
+}
+
+
+Mpu_M7_Ip_SetRegionConfig_Privileged (uint8 u8RegionNum, const struct Mpu_M7_Ip_RegionConfigType * const pUserConfigPtr)
+{
+  uint32 regionAttributes;
+  uint32 regionSize;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  unsigned char _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  _Bool _12;
+  long unsigned int regionAttributes.3_13;
+  long unsigned int _14;
+  long unsigned int regionAttributes.4_15;
+  long unsigned int _16;
+  <unnamed type> _17;
+  <unnamed type> _18;
+  <unnamed type> _19;
+  <unnamed type> _20;
+  long unsigned int regionAttributes.5_21;
+  long unsigned int _22;
+  long unsigned int regionAttributes.6_23;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG base => 3758153728B
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = pUserConfigPtr_28(D)->u32StartAddr;
+  _2 = pUserConfigPtr_28(D)->u32EndAddr;
+  regionSize_29 = Mpu_M7_Ip_CalculateRegionSize (_1, _2);
+  # DEBUG regionSize => regionSize_29
+  # DEBUG BEGIN_STMT
+  _3 = (long unsigned int) u8RegionNum_30(D);
+  MEM[(struct S32_MPU_Type *)3758153728B].RNR ={v} _3;
+  # DEBUG BEGIN_STMT
+  MEM[(struct S32_MPU_Type *)3758153728B].RBAR ={v} _1;
+  # DEBUG BEGIN_STMT
+  _4 = regionSize_29 + 4294967295;
+  _5 = _4 << 1;
+  _6 = _5 & 62;
+  regionAttributes = _6;
+  # DEBUG BEGIN_STMT
+  _7 = _2 - _1;
+  if (_7 > 31)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  _8 = pUserConfigPtr_28(D)->u8SubRegMask;
+  _9 = (long unsigned int) _8;
+  _10 = _9 << 8;
+  _11 = _6 | _10;
+  regionAttributes = _11;
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _12 = pUserConfigPtr_28(D)->bShareable;
+  if (_12 != 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 6>; [50.00%]
+
+  <bb 5> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  regionAttributes.3_13 = regionAttributes;
+  _14 = regionAttributes.3_13 | 262144;
+  regionAttributes = _14;
+  goto <bb 7>; [100.00%]
+
+  <bb 6> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  regionAttributes.4_15 = regionAttributes;
+  _16 = regionAttributes.4_15 & 4294705151;
+  regionAttributes = _16;
+
+  <bb 7> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _17 = pUserConfigPtr_28(D)->eMemType;
+  if (_17 != 7)
+    goto <bb 8>; [66.00%]
+  else
+    goto <bb 9>; [34.00%]
+
+  <bb 8> [local count: 708669601]:
+  # DEBUG BEGIN_STMT
+  Mpu_M7_Ip_SetMemoryType (&regionAttributes, _17);
+  goto <bb 10>; [100.00%]
+
+  <bb 9> [local count: 365072224]:
+  # DEBUG BEGIN_STMT
+  _18 = pUserConfigPtr_28(D)->eInnerCachePolicy;
+  _19 = pUserConfigPtr_28(D)->eOuterCachePolicy;
+  Mpu_M7_Ip_SetCachePolicies (&regionAttributes, _18, _19);
+
+  <bb 10> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _20 = pUserConfigPtr_28(D)->eAccessRight;
+  Mpu_M7_Ip_ComputeAccessRights (&regionAttributes, _20);
+  # DEBUG BEGIN_STMT
+  regionAttributes.5_21 = regionAttributes;
+  _22 = regionAttributes.5_21 | 1;
+  regionAttributes = _22;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  regionAttributes.6_23 = regionAttributes;
+  MEM[(struct S32_MPU_Type *)3758153728B].RASR ={v} regionAttributes.6_23;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  regionAttributes ={v} {CLOBBER};
+  return;
+
+}
+
+
+Mpu_M7_Ip_Init_Privileged (const struct Mpu_M7_Ip_ConfigType * pConfig)
+{
+  const struct Mpu_M7_Ip_RegionConfigType * regionCfg;
+  uint8 region;
+  _Bool _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  _Bool _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  _Bool _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  long unsigned int _15;
+  const struct Mpu_M7_Ip_RegionConfigType * _16;
+  unsigned int _17;
+  unsigned int _18;
+  unsigned char _20;
+  unsigned char _21;
+  long unsigned int _22;
+  long unsigned int _23;
+
+  <bb 2> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG base => 3758153728B
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY Mpu_M7_Ip_Deinit
+  # DEBUG BEGIN_STMT
+  Mpu_M7_Ip_Deinit_Privileged ();
+  # DEBUG BEGIN_STMT
+  _1 = pConfig_30(D)->bDefaultMapEn;
+  if (_1 != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 59055800]:
+  # DEBUG BEGIN_STMT
+  _2 ={v} MEM[(struct S32_MPU_Type *)3758153728B].CTRL;
+  _3 = _2 | 4;
+  MEM[(struct S32_MPU_Type *)3758153728B].CTRL ={v} _3;
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 59055800]:
+  # DEBUG BEGIN_STMT
+  _4 ={v} MEM[(struct S32_MPU_Type *)3758153728B].CTRL;
+  _5 = _4 & 4294967291;
+  MEM[(struct S32_MPU_Type *)3758153728B].CTRL ={v} _5;
+
+  <bb 5> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  _6 = pConfig_30(D)->bEnableRunHFNMI;
+  if (_6 != 0)
+    goto <bb 6>; [50.00%]
+  else
+    goto <bb 7>; [50.00%]
+
+  <bb 6> [local count: 59055800]:
+  # DEBUG BEGIN_STMT
+  _7 ={v} MEM[(struct S32_MPU_Type *)3758153728B].CTRL;
+  _8 = _7 | 2;
+  MEM[(struct S32_MPU_Type *)3758153728B].CTRL ={v} _8;
+  goto <bb 8>; [100.00%]
+
+  <bb 7> [local count: 59055800]:
+  # DEBUG BEGIN_STMT
+  _9 ={v} MEM[(struct S32_MPU_Type *)3758153728B].CTRL;
+  _10 = _9 & 4294967293;
+  MEM[(struct S32_MPU_Type *)3758153728B].CTRL ={v} _10;
+
+  <bb 8> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  _11 = pConfig_30(D)->bEnMemManageInterrupt;
+  if (_11 != 0)
+    goto <bb 9>; [50.00%]
+  else
+    goto <bb 10>; [50.00%]
+
+  <bb 9> [local count: 59055800]:
+  # DEBUG BEGIN_STMT
+  _12 ={v} MEM[(struct S32_SCB_Type *)3758153728B].SHCSR;
+  _13 = _12 | 65536;
+  MEM[(struct S32_SCB_Type *)3758153728B].SHCSR ={v} _13;
+
+  <bb 13> [local count: 118111600]:
+  # region_27 = PHI <0(10), 0(9)>
+  goto <bb 15>; [100.00%]
+
+  <bb 10> [local count: 59055800]:
+  # DEBUG BEGIN_STMT
+  _14 ={v} MEM[(struct S32_SCB_Type *)3758153728B].SHCSR;
+  _15 = _14 & 4294901759;
+  MEM[(struct S32_SCB_Type *)3758153728B].SHCSR ={v} _15;
+  goto <bb 13>; [100.00%]
+
+  <bb 12> [local count: 955630225]:
+  # DEBUG BEGIN_STMT
+  _16 = pConfig_30(D)->pRegionConfigArr;
+  _17 = (unsigned int) region_24;
+  _18 = _17 * 32;
+  regionCfg_42 = _16 + _18;
+  # DEBUG regionCfg => regionCfg_42
+  # DEBUG BEGIN_STMT
+  _20 = regionCfg_42->u8RegionNum;
+  Mpu_M7_Ip_SetRegionConfig_Privileged (_20, regionCfg_42);
+  # DEBUG BEGIN_STMT
+  region_44 = region_24 + 1;
+  # DEBUG region => region_44
+
+  <bb 15> [local count: 1073741824]:
+  # region_24 = PHI <region_27(13), region_44(12)>
+  # DEBUG region => region_24
+  # DEBUG BEGIN_STMT
+  _21 = pConfig_30(D)->u8RegionCnt;
+  if (_21 > region_24)
+    goto <bb 12>; [89.00%]
+  else
+    goto <bb 14>; [11.00%]
+
+  <bb 14> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  _22 ={v} MEM[(struct S32_MPU_Type *)3758153728B].CTRL;
+  _23 = _22 | 1;
+  MEM[(struct S32_MPU_Type *)3758153728B].CTRL ={v} _23;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  return;
+
+}
+
+
+Mpu_M7_Ip_GetErrorRegisters (uint32 * pMmfsr, uint32 * pAddress)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct S32_SCB_Type *)3758153728B].CFSR;
+  _2 = _1 & 59;
+  *pMmfsr_9(D) = _2;
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct S32_SCB_Type *)3758153728B].CFSR;
+  _4 = _3 >> 7;
+  _5 = _4 & 1;
+  if (_5 != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  _6 ={v} MEM[(struct S32_SCB_Type *)3758153728B].MMFAR;
+  *pAddress_11(D) = _6;
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  *pAddress_11(D) = 4294967295;
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+Mpu_M7_Ip_ComputeAccessRights (uint32 * pRegionAttr, Mpu_M7_Ip_AccessRightsType eAccessRights)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  int _6;
+  int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  <unnamed type> _16;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = *pRegionAttr_12(D);
+  _2 = _1 & 3909091327;
+  # DEBUG BEGIN_STMT
+  _3 = eAccessRights_13(D) << 24;
+  _4 = _3 & 117440512;
+  _5 = _2 | _4;
+  # DEBUG BEGIN_STMT
+  _16 = eAccessRights_13(D) & 255;
+  _6 = (int) _16;
+  _7 = _6 & 16;
+  if (_7 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  _8 = _5 | 268435456;
+  *pRegionAttr_12(D) = _8;
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  _9 = _5 & 4026531839;
+  *pRegionAttr_12(D) = _9;
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+Mpu_M7_Ip_SetCachePolicies (uint32 * pRegionAttr, Mpu_M7_Ip_CachePolicyType eInnerPolicy, Mpu_M7_Ip_CachePolicyType eOuterPolicy)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = *pRegionAttr_14(D);
+  _2 = eInnerPolicy_15(D) >> 1;
+  _3 = _2 << 17;
+  _4 = _3 & 131072;
+  _5 = eInnerPolicy_15(D) << 16;
+  _6 = _5 & 65536;
+  _7 = _4 | _6;
+  _8 = _1 | _7;
+  # DEBUG BEGIN_STMT
+  _9 = eOuterPolicy_16(D) << 19;
+  _10 = _9 & 1572864;
+  _11 = _8 | _10;
+  _12 = _11 | 2097152;
+  *pRegionAttr_14(D) = _12;
+  return;
+
+}
+
+
+Mpu_M7_Ip_SetMemoryType (uint32 * pRegionAttr, Mpu_M7_Ip_MemoryType eType)
+{
+  long unsigned int _1;
+  unsigned char _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = *pRegionAttr_7(D);
+  _2 = u8Mpu_M7_MemoryTypeValues[eType_8(D)];
+  _3 = (long unsigned int) _2;
+  _4 = _3 << 16;
+  _5 = _1 | _4;
+  *pRegionAttr_7(D) = _5;
+  return;
+
+}
+
+
+Mpu_M7_Ip_CalculateRegionSize (uint32 u32StartAddr, uint32 u32EndAddr)
+{
+  uint32 u32Size;
+  uint32 finalSize;
+
+  <bb 2> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  # DEBUG finalSize => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG u32Size => 0
+  # DEBUG BEGIN_STMT
+  u32Size_5 = u32EndAddr_3(D) - u32StartAddr_4(D);
+  # DEBUG u32Size => u32Size_5
+  # DEBUG BEGIN_STMT
+  goto <bb 4>; [100.00%]
+
+  <bb 3> [local count: 955630225]:
+  # DEBUG BEGIN_STMT
+  finalSize_8 = finalSize_1 + 1;
+  # DEBUG finalSize => finalSize_8
+  # DEBUG BEGIN_STMT
+  u32Size_9 = u32Size_2 >> 1;
+  # DEBUG u32Size => u32Size_9
+
+  <bb 4> [local count: 1073741824]:
+  # finalSize_1 = PHI <0(2), finalSize_8(3)>
+  # u32Size_2 = PHI <u32Size_5(2), u32Size_9(3)>
+  # DEBUG u32Size => u32Size_2
+  # DEBUG finalSize => finalSize_1
+  # DEBUG BEGIN_STMT
+  if (u32Size_2 != 0)
+    goto <bb 3>; [89.00%]
+  else
+    goto <bb 5>; [11.00%]
+
+  <bb 5> [local count: 118111600]:
+  # finalSize_6 = PHI <finalSize_1(4)>
+  # DEBUG BEGIN_STMT
+  return finalSize_6;
+
+}
+
+

@@ -1,0 +1,48 @@
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Xrdc_Memory_Config_Descriptor;3;../RTD/src/Xrdc_Ip.c;201;13;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Xrdc_Memory_Config_Descriptor;3;../RTD/src/Xrdc_Ip.c;201;13;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Xrdc_Peripheral_Access_Config;4;../RTD/src/Xrdc_Ip.c;255;13;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Xrdc_Peripheral_Access_Config;4;../RTD/src/Xrdc_Ip.c;255;13;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Xrdc_Domain_Init;5;../RTD/src/Xrdc_Ip.c;296;13;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Xrdc_Domain_Init;5;../RTD/src/Xrdc_Ip.c;296;13;inlining to
+Callgraph clone;Xrdc_Ip_GetErrAttribute;6;../RTD/src/Xrdc_Ip.c;360;35;Xrdc_Ip_GetDetailError;13;../RTD/src/Xrdc_Ip.c;645;13;inlining to
+Callgraph removal;Xrdc_Ip_GetErrAttribute;6;../RTD/src/Xrdc_Ip.c;360;35
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Xrdc_Ip_Init_Privileged;10;../RTD/src/Xrdc_Ip.c;506;6;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Xrdc_Ip_Init_Privileged;10;../RTD/src/Xrdc_Ip.c;506;6;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Xrdc_Ip_Init_Privileged;10;../RTD/src/Xrdc_Ip.c;506;6;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Xrdc_Ip_Init_Privileged;10;../RTD/src/Xrdc_Ip.c;506;6;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Xrdc_Ip_Init_Privileged;10;../RTD/src/Xrdc_Ip.c;506;6;inlining to
+Callgraph removal;DevAssert;28;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20
+Callgraph clone;Xrdc_Ip_Init_Privileged;10;../RTD/src/Xrdc_Ip.c;506;6;Xrdc_Ip_Init_Privileged.part.0;33;../RTD/src/Xrdc_Ip.c;506;6;part
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Xrdc_Ip_SetProcessID_Privileged;11;../RTD/src/Xrdc_Ip.c;571;6;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Xrdc_Ip_SetProcessID_Privileged;11;../RTD/src/Xrdc_Ip.c;571;6;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Xrdc_Ip_SetProcessID_Privileged;11;../RTD/src/Xrdc_Ip.c;571;6;inlining to
+Callgraph clone;Xrdc_Ip_SetProcessID_Privileged;11;../RTD/src/Xrdc_Ip.c;571;6;Xrdc_Ip_SetProcessID_Privileged.part.0;37;../RTD/src/Xrdc_Ip.c;571;6;part
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Xrdc_Ip_LockProcessID_Privileged;12;../RTD/src/Xrdc_Ip.c;616;6;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Xrdc_Ip_LockProcessID_Privileged;12;../RTD/src/Xrdc_Ip.c;616;6;inlining to
+Callgraph clone;Xrdc_Ip_LockProcessID_Privileged;12;../RTD/src/Xrdc_Ip.c;616;6;Xrdc_Ip_LockProcessID_Privileged.part.0;40;../RTD/src/Xrdc_Ip.c;616;6;part
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Xrdc_Ip_GetDomainIDErrorStatus_Privileged;14;../RTD/src/Xrdc_Ip.c;729;6;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Xrdc_Ip_GetDomainIDErrorStatus_Privileged;14;../RTD/src/Xrdc_Ip.c;729;6;inlining to
+Callgraph removal;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20
+Callgraph clone;Xrdc_Ip_GetDomainIDErrorStatus_Privileged;14;../RTD/src/Xrdc_Ip.c;729;6;Xrdc_Ip_GetDomainIDErrorStatus_Privileged.part.0;42;../RTD/src/Xrdc_Ip.c;729;6;part
+Callgraph clone;Xrdc_Ip_GetDetailError;13;../RTD/src/Xrdc_Ip.c;645;13;Xrdc_Ip_GetDetailError.constprop.0;43;../RTD/src/Xrdc_Ip.c;645;13;constprop
+Callgraph clone;Xrdc_Ip_GetDomainIDErrorStatus_Privileged.part.0;42;../RTD/src/Xrdc_Ip.c;729;6;Xrdc_Ip_GetDomainIDErrorStatus_Privileged.part.0.isra.0;44;../RTD/src/Xrdc_Ip.c;729;6;isra
+Callgraph clone;Xrdc_Ip_LockProcessID_Privileged.part.0;40;../RTD/src/Xrdc_Ip.c;616;6;Xrdc_Ip_LockProcessID_Privileged;12;../RTD/src/Xrdc_Ip.c;616;6;inlining to
+Callgraph clone;Xrdc_Get_Secure_Attribute;8;../RTD/src/Xrdc_Ip.c;444;15;Xrdc_Domain_Init;5;../RTD/src/Xrdc_Ip.c;296;13;inlining to
+Callgraph clone;Xrdc_Get_Priviledge_Attribute;7;../RTD/src/Xrdc_Ip.c;412;15;Xrdc_Domain_Init;5;../RTD/src/Xrdc_Ip.c;296;13;inlining to
+Callgraph clone;Xrdc_Domain_Init;5;../RTD/src/Xrdc_Ip.c;296;13;Xrdc_Ip_Init_Privileged.part.0;33;../RTD/src/Xrdc_Ip.c;506;6;inlining to
+Callgraph clone;Xrdc_Ip_GetDomainIDErrorStatus_Privileged.part.0.isra.0;44;../RTD/src/Xrdc_Ip.c;729;6;Xrdc_Ip_GetDomainIDErrorStatus_Privileged;14;../RTD/src/Xrdc_Ip.c;729;6;inlining to
+Callgraph clone;Xrdc_Ip_SetProcessID_Privileged.part.0;37;../RTD/src/Xrdc_Ip.c;571;6;Xrdc_Ip_SetProcessID_Privileged;11;../RTD/src/Xrdc_Ip.c;571;6;inlining to
+Callgraph clone;Xrdc_Ip_Init_Privileged.part.0;33;../RTD/src/Xrdc_Ip.c;506;6;Xrdc_Ip_Init_Privileged;10;../RTD/src/Xrdc_Ip.c;506;6;inlining to
+Callgraph clone;Xrdc_Peripheral_Access_Config;4;../RTD/src/Xrdc_Ip.c;255;13;Xrdc_Ip_Init_Privileged;10;../RTD/src/Xrdc_Ip.c;506;6;inlining to
+Callgraph clone;Xrdc_Memory_Config_Descriptor;3;../RTD/src/Xrdc_Ip.c;201;13;Xrdc_Ip_Init_Privileged;10;../RTD/src/Xrdc_Ip.c;506;6;inlining to
+Callgraph removal;Xrdc_Ip_GetDomainIDErrorStatus_Privileged.part.0;42;../RTD/src/Xrdc_Ip.c;729;6
+Callgraph removal;Xrdc_Ip_GetDetailError;13;../RTD/src/Xrdc_Ip.c;645;13
+Callgraph removal;Xrdc_Ip_Init_Privileged.part.0;33;../RTD/src/Xrdc_Ip.c;506;6
+Callgraph removal;Xrdc_Memory_Config_Descriptor;3;../RTD/src/Xrdc_Ip.c;201;13
+Callgraph removal;Xrdc_Peripheral_Access_Config;4;../RTD/src/Xrdc_Ip.c;255;13
+Callgraph removal;Xrdc_Domain_Init;5;../RTD/src/Xrdc_Ip.c;296;13
+Callgraph removal;Xrdc_Get_Priviledge_Attribute;7;../RTD/src/Xrdc_Ip.c;412;15
+Callgraph removal;Xrdc_Get_Secure_Attribute;8;../RTD/src/Xrdc_Ip.c;444;15
+Callgraph removal;Xrdc_Ip_SetProcessID_Privileged.part.0;37;../RTD/src/Xrdc_Ip.c;571;6
+Callgraph removal;Xrdc_Ip_LockProcessID_Privileged.part.0;40;../RTD/src/Xrdc_Ip.c;616;6
+Callgraph removal;Xrdc_Ip_GetDomainIDErrorStatus_Privileged.part.0.isra.0;44;../RTD/src/Xrdc_Ip.c;729;6

@@ -1,0 +1,77 @@
+IPA function summary for Mcu_Cmu_ClockFail_IRQHandler/0 inlinable
+  global time:     12.000000
+  self size:       4
+  global size:     4
+  min size:       1
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_CMU_ClockFailInt/1 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+
+
+Flattening functions:
+Overall time estimate: 12.000000 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+Enqueueing calls in Mcu_Cmu_ClockFail_IRQHandler/0.
+node context cache: 0 hits, 0 misses, 0 initializations
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 12.000000 weighted by profile: 0.000000
+
+Why inlining failed?
+function body not available                       :        1 calls, 1.000000 freq, 0 count
+IPA function summary for Mcu_Cmu_ClockFail_IRQHandler/0 inlinable
+  global time:     12.000000
+  self size:       4
+  global size:     4
+  min size:       1
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_CMU_ClockFailInt/1 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+
+Symbol table:
+
+Clock_Ip_CMU_ClockFailInt/1 (Clock_Ip_CMU_ClockFailInt) @06d4dc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Mcu_Cmu_ClockFail_IRQHandler/0 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Mcu_Cmu_ClockFail_IRQHandler/0 (Mcu_Cmu_ClockFail_IRQHandler) @06d4d7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_CMU_ClockFailInt/1 (1073741824 (estimated locally),1.00 per call) 
+
+;; Function Mcu_Cmu_ClockFail_IRQHandler (Mcu_Cmu_ClockFail_IRQHandler, funcdef_no=0, decl_uid=6547, cgraph_uid=1, symbol_order=0)
+
+Mcu_Cmu_ClockFail_IRQHandler ()
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_CMU_ClockFailInt ();
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

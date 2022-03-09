@@ -1,0 +1,1530 @@
+IPA function summary for Clock_Ip_SetRtcRtccClksel_TrustedCall/8 inlinable
+  global time:     11.000000
+  self size:       12
+  global size:     12
+  min size:       7
+  self stack:      0
+  global stack:    0
+    size:7.000000, time:7.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 32] changed) && (not inlined)
+    size:1.500000, time:1.500000,  nonconst if:(op0[ref offset: 32] changed)
+  calls:
+
+IPA function summary for Clock_Ip_SetRtcRtccClksel/7 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     5
+  min size:       2
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_SetRtcRtccClksel_TrustedCall/8 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size: 6 stack: 0
+
+IPA function summary for Clock_Ip_SetCgmXCscCssCsGrip/6 inlinable
+  global time:     186.801639
+  self size:       83
+  global size:     83
+  min size:       73
+  self stack:      12
+  global stack:    12
+    size:47.000000, time:68.518558
+    size:4.000000, time:2.162526,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:3.500000, time:3.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 32] changed) && (not inlined)
+    size:1.500000, time:1.500000,  nonconst if:(op0[ref offset: 32] changed)
+  calls:
+    Clock_Ip_ReportClockErrors/17 function body not available
+      freq:0.24 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+    Clock_Ip_ReportClockErrors/17 function body not available
+      freq:0.08 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+    Clock_Ip_TimeoutExpired/16 function body not available
+      freq:2.28 loop depth: 1 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Clock_Ip_StartTimeout/15 function body not available
+      freq:0.24 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+    Clock_Ip_TimeoutExpired/16 function body not available
+      freq:4.57 loop depth: 1 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Clock_Ip_StartTimeout/15 function body not available
+      freq:0.49 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+
+IPA function summary for Clock_Ip_ResetCgmXCscCssCsGrip/5 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     5
+  min size:       2
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_CallbackSelectorEmpty/0 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size: 1 stack: 0
+
+IPA function summary for Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 inlinable
+  global time:     212.658759
+  self size:       110
+  global size:     110
+  min size:       99
+  self stack:      12
+  global stack:    12
+    size:57.000000, time:75.148681
+    size:5.000000, time:2.223473,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:3.500000, time:3.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 32] changed) && (not inlined)
+    size:1.500000, time:1.500000,  nonconst if:(op0[ref offset: 32] changed)
+  calls:
+    Clock_Ip_ReportClockErrors/17 function body not available
+      freq:0.24 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+    Clock_Ip_ReportClockErrors/17 function body not available
+      freq:0.12 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+    Clock_Ip_ReportClockErrors/17 function body not available
+      freq:0.04 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+    Clock_Ip_ReportClockErrors/17 function body not available
+      freq:0.04 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+    Clock_Ip_TimeoutExpired/16 function body not available
+      freq:1.14 loop depth: 1 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Clock_Ip_StartTimeout/15 function body not available
+      freq:0.12 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+    Clock_Ip_TimeoutExpired/16 function body not available
+      freq:2.28 loop depth: 1 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Clock_Ip_StartTimeout/15 function body not available
+      freq:0.24 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+    Clock_Ip_TimeoutExpired/16 function body not available
+      freq:4.57 loop depth: 1 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Clock_Ip_StartTimeout/15 function body not available
+      freq:0.49 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+
+IPA function summary for Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     5
+  min size:       2
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_ResetCgmXCscCssClkswSwip/1 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size:11 stack: 0
+
+IPA function summary for Clock_Ip_SetCgmXCscCssClkswSwip/2 inlinable
+  global time:     212.658759
+  self size:       110
+  global size:     110
+  min size:       99
+  self stack:      12
+  global stack:    12
+    size:57.000000, time:75.148681
+    size:5.000000, time:2.223473,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:3.500000, time:3.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 32] changed) && (not inlined)
+    size:1.500000, time:1.500000,  nonconst if:(op0[ref offset: 32] changed)
+  calls:
+    Clock_Ip_ReportClockErrors/17 function body not available
+      freq:0.24 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+    Clock_Ip_ReportClockErrors/17 function body not available
+      freq:0.12 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+    Clock_Ip_ReportClockErrors/17 function body not available
+      freq:0.04 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+    Clock_Ip_ReportClockErrors/17 function body not available
+      freq:0.04 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+    Clock_Ip_TimeoutExpired/16 function body not available
+      freq:1.14 loop depth: 1 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Clock_Ip_StartTimeout/15 function body not available
+      freq:0.12 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+    Clock_Ip_TimeoutExpired/16 function body not available
+      freq:2.28 loop depth: 1 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Clock_Ip_StartTimeout/15 function body not available
+      freq:0.24 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+    Clock_Ip_TimeoutExpired/16 function body not available
+      freq:4.57 loop depth: 1 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Clock_Ip_StartTimeout/15 function body not available
+      freq:0.49 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+
+IPA function summary for Clock_Ip_ResetCgmXCscCssClkswSwip/1 inlinable
+  global time:     21.000000
+  self size:       22
+  global size:     22
+  min size:       15
+  self stack:      0
+  global stack:    0
+    size:15.000000, time:15.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:3.500000, time:3.500000,  nonconst if:(op0[ref offset: 0] changed)
+  calls:
+
+IPA function summary for Clock_Ip_CallbackSelectorEmpty/0 inlinable
+  global time:     2.000000
+  self size:       3
+  global size:     3
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+
+Flattening functions:
+Overall time estimate: 685.119158 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+Enqueueing calls in Clock_Ip_SetRtcRtccClksel_TrustedCall/8.
+Enqueueing calls in Clock_Ip_SetRtcRtccClksel/7.
+Enqueueing calls in Clock_Ip_SetCgmXCscCssCsGrip/6.
+Enqueueing calls in Clock_Ip_ResetCgmXCscCssCsGrip/5.
+Enqueueing calls in Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4.
+Enqueueing calls in Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3.
+Enqueueing calls in Clock_Ip_SetCgmXCscCssClkswSwip/2.
+Enqueueing calls in Clock_Ip_ResetCgmXCscCssClkswSwip/1.
+Enqueueing calls in Clock_Ip_CallbackSelectorEmpty/0.
+
+Considering Clock_Ip_CallbackSelectorEmpty/0 with 3 size
+ to be inlined into Clock_Ip_ResetCgmXCscCssCsGrip/5 in unknown:0
+ Estimated badness is -inf, frequency 1.00.
+node context cache: 2 hits, 0 misses, 3 initializations
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+Overall time estimate: 674.119158 weighted by profile: 0.000000
+
+Why inlining failed?
+function body not available                       :       26 calls, 26.509404 freq, 0 count
+call is unlikely and code size would grow         :        2 calls, 2.000000 freq, 0 count
+IPA function summary for Clock_Ip_SetRtcRtccClksel_TrustedCall/8 inlinable
+  global time:     11.000000
+  self size:       12
+  global size:     12
+  min size:       7
+  self stack:      0
+  global stack:    0
+  estimated growth:7
+    size:7.000000, time:7.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 32] changed) && (not inlined)
+    size:1.500000, time:1.500000,  nonconst if:(op0[ref offset: 32] changed)
+  calls:
+
+IPA function summary for Clock_Ip_SetRtcRtccClksel/7 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     5
+  min size:       2
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_SetRtcRtccClksel_TrustedCall/8 call is unlikely and code size would grow
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size: 6 stack: 0
+
+IPA function summary for Clock_Ip_SetCgmXCscCssCsGrip/6 inlinable
+  global time:     186.801639
+  self size:       83
+  global size:     83
+  min size:       73
+  self stack:      12
+  global stack:    12
+    size:47.000000, time:68.518558
+    size:4.000000, time:2.162526,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:3.500000, time:3.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 32] changed) && (not inlined)
+    size:1.500000, time:1.500000,  nonconst if:(op0[ref offset: 32] changed)
+  calls:
+    Clock_Ip_ReportClockErrors/17 function body not available
+      freq:0.24 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+    Clock_Ip_ReportClockErrors/17 function body not available
+      freq:0.08 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+    Clock_Ip_TimeoutExpired/16 function body not available
+      freq:2.28 loop depth: 1 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Clock_Ip_StartTimeout/15 function body not available
+      freq:0.24 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+    Clock_Ip_TimeoutExpired/16 function body not available
+      freq:4.57 loop depth: 1 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Clock_Ip_StartTimeout/15 function body not available
+      freq:0.49 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+
+IPA function summary for Clock_Ip_ResetCgmXCscCssCsGrip/5 inlinable
+  global time:     2.000000
+  self size:       5
+  global size:     3
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_CallbackSelectorEmpty/18 inlined
+      freq:1.00
+      Stack frame offset 0, callee self size 0
+
+IPA function summary for Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 inlinable
+  global time:     212.658759
+  self size:       110
+  global size:     110
+  min size:       99
+  self stack:      12
+  global stack:    12
+    size:57.000000, time:75.148681
+    size:5.000000, time:2.223473,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:3.500000, time:3.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 32] changed) && (not inlined)
+    size:1.500000, time:1.500000,  nonconst if:(op0[ref offset: 32] changed)
+  calls:
+    Clock_Ip_ReportClockErrors/17 function body not available
+      freq:0.24 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+    Clock_Ip_ReportClockErrors/17 function body not available
+      freq:0.12 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+    Clock_Ip_ReportClockErrors/17 function body not available
+      freq:0.04 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+    Clock_Ip_ReportClockErrors/17 function body not available
+      freq:0.04 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+    Clock_Ip_TimeoutExpired/16 function body not available
+      freq:1.14 loop depth: 1 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Clock_Ip_StartTimeout/15 function body not available
+      freq:0.12 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+    Clock_Ip_TimeoutExpired/16 function body not available
+      freq:2.28 loop depth: 1 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Clock_Ip_StartTimeout/15 function body not available
+      freq:0.24 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+    Clock_Ip_TimeoutExpired/16 function body not available
+      freq:4.57 loop depth: 1 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Clock_Ip_StartTimeout/15 function body not available
+      freq:0.49 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+
+IPA function summary for Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     5
+  min size:       2
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_ResetCgmXCscCssClkswSwip/1 call is unlikely and code size would grow
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size:11 stack: 0
+
+IPA function summary for Clock_Ip_SetCgmXCscCssClkswSwip/2 inlinable
+  global time:     212.658759
+  self size:       110
+  global size:     110
+  min size:       99
+  self stack:      12
+  global stack:    12
+    size:57.000000, time:75.148681
+    size:5.000000, time:2.223473,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:3.500000, time:3.500000,  nonconst if:(op0[ref offset: 0] changed)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 32] changed) && (not inlined)
+    size:1.500000, time:1.500000,  nonconst if:(op0[ref offset: 32] changed)
+  calls:
+    Clock_Ip_ReportClockErrors/17 function body not available
+      freq:0.24 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+    Clock_Ip_ReportClockErrors/17 function body not available
+      freq:0.12 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+    Clock_Ip_ReportClockErrors/17 function body not available
+      freq:0.04 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+    Clock_Ip_ReportClockErrors/17 function body not available
+      freq:0.04 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+    Clock_Ip_TimeoutExpired/16 function body not available
+      freq:1.14 loop depth: 1 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Clock_Ip_StartTimeout/15 function body not available
+      freq:0.12 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+    Clock_Ip_TimeoutExpired/16 function body not available
+      freq:2.28 loop depth: 1 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Clock_Ip_StartTimeout/15 function body not available
+      freq:0.24 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+    Clock_Ip_TimeoutExpired/16 function body not available
+      freq:4.57 loop depth: 1 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+    Clock_Ip_StartTimeout/15 function body not available
+      freq:0.49 loop depth: 0 size: 5 time: 14
+       op0 is compile time invariant
+       op1 is compile time invariant
+       op2 is compile time invariant
+       op3 is compile time invariant
+
+IPA function summary for Clock_Ip_ResetCgmXCscCssClkswSwip/1 inlinable
+  global time:     21.000000
+  self size:       22
+  global size:     22
+  min size:       15
+  self stack:      0
+  global stack:    0
+  estimated growth:17
+    size:15.000000, time:15.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 0] changed) && (not inlined)
+    size:3.500000, time:3.500000,  nonconst if:(op0[ref offset: 0] changed)
+  calls:
+
+IPA function summary for Clock_Ip_CallbackSelectorEmpty/0 inlinable
+  global time:     2.000000
+  self size:       3
+  global size:     3
+  min size:       0
+  self stack:      0
+  global stack:    0
+  estimated growth:-2
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+Symbol table:
+
+Clock_Ip_CallbackSelectorEmpty/18 (Clock_Ip_CallbackSelectorEmpty) @063557e0
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 0
+  References: 
+  Referring: 
+  Function Clock_Ip_CallbackSelectorEmpty/18 is inline copy in Clock_Ip_ResetCgmXCscCssCsGrip/5
+  Clone of Clock_Ip_CallbackSelectorEmpty/0
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local icf_merged optimize_size
+  Called by: Clock_Ip_ResetCgmXCscCssCsGrip/5 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_ReportClockErrors/17 (Clock_Ip_ReportClockErrors) @061f77e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssClkswSwip/2 (57431766 (estimated locally),0.24 per call) Clock_Ip_SetCgmXCscCssClkswSwip/2 (28715883 (estimated locally),0.12 per call) Clock_Ip_SetCgmXCscCssClkswSwip/2 (9476241 (estimated locally),0.04 per call) Clock_Ip_SetCgmXCscCssClkswSwip/2 (9404337 (estimated locally),0.04 per call) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (57431766 (estimated locally),0.24 per call) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (28715883 (estimated locally),0.12 per call) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (9476241 (estimated locally),0.04 per call) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (9404337 (estimated locally),0.04 per call) Clock_Ip_SetCgmXCscCssCsGrip/6 (57431766 (estimated locally),0.24 per call) Clock_Ip_SetCgmXCscCssCsGrip/6 (18952483 (estimated locally),0.08 per call) 
+  Calls: 
+Clock_Ip_TimeoutExpired/16 (Clock_Ip_TimeoutExpired) @061f7700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssClkswSwip/2 (268435461 (estimated locally),1.14 per call) Clock_Ip_SetCgmXCscCssClkswSwip/2 (536870917 (estimated locally),2.28 per call) Clock_Ip_SetCgmXCscCssClkswSwip/2 (1073741824 (estimated locally),4.57 per call) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (268435461 (estimated locally),1.14 per call) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (536870917 (estimated locally),2.28 per call) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (1073741824 (estimated locally),4.57 per call) Clock_Ip_SetCgmXCscCssCsGrip/6 (536870917 (estimated locally),2.28 per call) Clock_Ip_SetCgmXCscCssCsGrip/6 (1073741824 (estimated locally),4.57 per call) 
+  Calls: 
+Clock_Ip_StartTimeout/15 (Clock_Ip_StartTimeout) @061f7620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssClkswSwip/2 (28715883 (estimated locally),0.12 per call) Clock_Ip_SetCgmXCscCssClkswSwip/2 (57431766 (estimated locally),0.24 per call) Clock_Ip_SetCgmXCscCssClkswSwip/2 (114863530 (estimated locally),0.49 per call) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (28715883 (estimated locally),0.12 per call) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (57431766 (estimated locally),0.24 per call) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (114863530 (estimated locally),0.49 per call) Clock_Ip_SetCgmXCscCssCsGrip/6 (57431766 (estimated locally),0.24 per call) Clock_Ip_SetCgmXCscCssCsGrip/6 (114863530 (estimated locally),0.49 per call) 
+  Calls: 
+Clock_Ip_apxCgm/14 (Clock_Ip_apxCgm) @061f96c0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axFeatureExtensions/13 (Clock_Ip_axFeatureExtensions) @061f9678
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au16SelectorEntryHardwareValue/12 (Clock_Ip_au16SelectorEntryHardwareValue) @061f9630
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/11 (Clock_Ip_au8ClockFeatures) @061f95e8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+HardwareValue.0/10 (HardwareValue) @061f2f30
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_SetRtcRtccClksel_TrustedCall/8 (read) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_axSelectorCallbacks/9 (Clock_Ip_axSelectorCallbacks) @061f2c60
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (addr) Clock_Ip_SetCgmXCscCssClkswSwip/2 (addr) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (addr) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (addr) Clock_Ip_ResetCgmXCscCssCsGrip/5 (addr) Clock_Ip_SetCgmXCscCssCsGrip/6 (addr) Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_SetRtcRtccClksel/7 (addr) 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_SetRtcRtccClksel_TrustedCall/8 (Clock_Ip_SetRtcRtccClksel_TrustedCall) @061d38c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: HardwareValue.0/10 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: Clock_Ip_SetRtcRtccClksel/7 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_SetRtcRtccClksel/7 (Clock_Ip_SetRtcRtccClksel) @061d30e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetRtcRtccClksel_TrustedCall/8 (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_SetCgmXCscCssCsGrip/6 (Clock_Ip_SetCgmXCscCssCsGrip) @061d3d20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au16SelectorEntryHardwareValue/12 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:234990857 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 (57431766 (estimated locally),0.24 per call) Clock_Ip_ReportClockErrors/17 (18952483 (estimated locally),0.08 per call) Clock_Ip_TimeoutExpired/16 (536870917 (estimated locally),2.28 per call) Clock_Ip_StartTimeout/15 (57431766 (estimated locally),0.24 per call) Clock_Ip_TimeoutExpired/16 (1073741824 (estimated locally),4.57 per call) Clock_Ip_StartTimeout/15 (114863530 (estimated locally),0.49 per call) 
+Clock_Ip_ResetCgmXCscCssCsGrip/5 (Clock_Ip_ResetCgmXCscCssCsGrip) @061d3a80
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: Clock_Ip_CallbackSelectorEmpty/18 (inlined) (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip) @061d37e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au16SelectorEntryHardwareValue/12 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:234990857 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 (57431766 (estimated locally),0.24 per call) Clock_Ip_ReportClockErrors/17 (28715883 (estimated locally),0.12 per call) Clock_Ip_ReportClockErrors/17 (9476241 (estimated locally),0.04 per call) Clock_Ip_ReportClockErrors/17 (9404337 (estimated locally),0.04 per call) Clock_Ip_TimeoutExpired/16 (268435461 (estimated locally),1.14 per call) Clock_Ip_StartTimeout/15 (28715883 (estimated locally),0.12 per call) Clock_Ip_TimeoutExpired/16 (536870917 (estimated locally),2.28 per call) Clock_Ip_StartTimeout/15 (57431766 (estimated locally),0.24 per call) Clock_Ip_TimeoutExpired/16 (1073741824 (estimated locally),4.57 per call) Clock_Ip_StartTimeout/15 (114863530 (estimated locally),0.49 per call) 
+Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip) @061d3540
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: Clock_Ip_ResetCgmXCscCssClkswSwip/1 (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_SetCgmXCscCssClkswSwip/2 (Clock_Ip_SetCgmXCscCssClkswSwip) @061d32a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au16SelectorEntryHardwareValue/12 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:234990857 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 (57431766 (estimated locally),0.24 per call) Clock_Ip_ReportClockErrors/17 (28715883 (estimated locally),0.12 per call) Clock_Ip_ReportClockErrors/17 (9476241 (estimated locally),0.04 per call) Clock_Ip_ReportClockErrors/17 (9404337 (estimated locally),0.04 per call) Clock_Ip_TimeoutExpired/16 (268435461 (estimated locally),1.14 per call) Clock_Ip_StartTimeout/15 (28715883 (estimated locally),0.12 per call) Clock_Ip_TimeoutExpired/16 (536870917 (estimated locally),2.28 per call) Clock_Ip_StartTimeout/15 (57431766 (estimated locally),0.24 per call) Clock_Ip_TimeoutExpired/16 (1073741824 (estimated locally),4.57 per call) Clock_Ip_StartTimeout/15 (114863530 (estimated locally),0.49 per call) 
+Clock_Ip_ResetCgmXCscCssClkswSwip/1 (Clock_Ip_ResetCgmXCscCssClkswSwip) @061d3000
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_CallbackSelectorEmpty/0 (Clock_Ip_CallbackSelectorEmpty) @061cbee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  previous sharing asm name: 18
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) Clock_Ip_axSelectorCallbacks/9 (addr) Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: 
+
+;; Function Clock_Ip_CallbackSelectorEmpty (Clock_Ip_CallbackSelectorEmpty, funcdef_no=0, decl_uid=6549, cgraph_uid=1, symbol_order=0)
+
+
+Saving body of Clock_Ip_CallbackSelectorEmpty/0 for later reuse
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1
+
+Symbols to be put in SSA form
+{ D.6713 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 4
+Number of blocks to update: 3 ( 75%)
+
+
+Clock_Ip_CallbackSelectorEmpty (const struct Clock_Ip_SelectorConfigType * Config)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_ResetCgmXCscCssClkswSwip (Clock_Ip_ResetCgmXCscCssClkswSwip, funcdef_no=1, decl_uid=6551, cgraph_uid=2, symbol_order=1)
+
+Clock_Ip_ResetCgmXCscCssClkswSwip (const struct Clock_Ip_SelectorConfigType * Config)
+{
+  uint32 SelectorMask;
+  uint32 SelectorIndex;
+  uint32 Instance;
+  <unnamed type> _1;
+  unsigned char _2;
+  unsigned char _3;
+  unsigned char _4;
+  int _5;
+  volatile struct Clock_Ip_CgmMuxType * _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_13(D)->Name;
+  _2 = Clock_Ip_au8ClockFeatures[_1][0];
+  Instance_14 = (uint32) _2;
+  # DEBUG Instance => Instance_14
+  # DEBUG BEGIN_STMT
+  _3 = Clock_Ip_au8ClockFeatures[_1][4];
+  SelectorIndex_15 = (uint32) _3;
+  # DEBUG SelectorIndex => SelectorIndex_15
+  # DEBUG BEGIN_STMT
+  _4 = Clock_Ip_au8ClockFeatures[_1][2];
+  _5 = (int) _4;
+  SelectorMask_16 = Clock_Ip_axFeatureExtensions[_5].SelectorValueMask;
+  # DEBUG SelectorMask => SelectorMask_16
+  # DEBUG BEGIN_STMT
+  _6 = Clock_Ip_apxCgm[Instance_14][SelectorIndex_15];
+  _7 ={v} _6->CSC;
+  _8 = _7 | 8;
+  _6->CSC ={v} _8;
+  # DEBUG BEGIN_STMT
+  _9 ={v} _6->CSC;
+  _10 = ~SelectorMask_16;
+  _11 = _9 & _10;
+  _6->CSC ={v} _11;
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip (Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip, funcdef_no=12, decl_uid=6555, cgraph_uid=4, symbol_order=3)
+
+Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip (const struct Clock_Ip_SelectorConfigType * Config)
+{
+  <bb 2> [local count: 1073741824]:
+  Clock_Ip_ResetCgmXCscCssClkswSwip (Config_2(D)); [tail call]
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_SetCgmXCscCssCsGrip (Clock_Ip_SetCgmXCscCssCsGrip, funcdef_no=6, decl_uid=6559, cgraph_uid=7, symbol_order=6)
+
+Clock_Ip_SetCgmXCscCssCsGrip (const struct Clock_Ip_SelectorConfigType * Config)
+{
+  uint32 TimeoutTicks;
+  uint32 ElapsedTime;
+  uint32 StartTime;
+  boolean TimeoutOccurred;
+  uint32 RegValue;
+  uint32 SelectorShift;
+  uint32 SelectorMask;
+  uint32 SelectorValue;
+  uint32 SelectorIndex;
+  uint32 Instance;
+  <unnamed type> _1;
+  unsigned char _2;
+  unsigned char _4;
+  <unnamed type> _5;
+  short unsigned int _6;
+  unsigned char _8;
+  int _9;
+  volatile struct Clock_Ip_CgmMuxType * _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  long unsigned int _15;
+  long unsigned int TimeoutTicks.0_16;
+  long unsigned int _17;
+  long unsigned int _18;
+  long unsigned int _19;
+  long unsigned int _20;
+  long unsigned int _21;
+  long unsigned int TimeoutTicks.1_22;
+  long unsigned int _23;
+  long unsigned int _24;
+  <unnamed type> _25;
+  <unnamed type> _26;
+  long unsigned int _37;
+  long unsigned int _54;
+
+  <bb 2> [local count: 234990857]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_31(D)->Name;
+  _2 = Clock_Ip_au8ClockFeatures[_1][0];
+  Instance_32 = (uint32) _2;
+  # DEBUG Instance => Instance_32
+  # DEBUG BEGIN_STMT
+  _4 = Clock_Ip_au8ClockFeatures[_1][4];
+  SelectorIndex_33 = (uint32) _4;
+  # DEBUG SelectorIndex => SelectorIndex_33
+  # DEBUG BEGIN_STMT
+  _5 = Config_31(D)->Value;
+  _6 = Clock_Ip_au16SelectorEntryHardwareValue[_5];
+  SelectorValue_34 = (uint32) _6;
+  # DEBUG SelectorValue => SelectorValue_34
+  # DEBUG BEGIN_STMT
+  _8 = Clock_Ip_au8ClockFeatures[_1][2];
+  _9 = (int) _8;
+  SelectorMask_35 = Clock_Ip_axFeatureExtensions[_9].SelectorValueMask;
+  # DEBUG SelectorMask => SelectorMask_35
+  # DEBUG BEGIN_STMT
+  SelectorShift_36 = Clock_Ip_axFeatureExtensions[_9].SelectorValueShift;
+  # DEBUG SelectorShift => SelectorShift_36
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG TimeoutOccurred => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _10 = Clock_Ip_apxCgm[Instance_32][SelectorIndex_33];
+  _11 ={v} _10->CSS;
+  _12 = _11 & SelectorMask_35;
+  _13 = _12 >> SelectorShift_36;
+  if (_13 != SelectorValue_34)
+    goto <bb 3>; [48.88%]
+  else
+    goto <bb 13>; [51.12%]
+
+  <bb 3> [local count: 114863530]:
+  # DEBUG BEGIN_STMT
+  _14 ={v} _10->CSC;
+  _15 = _14 | 12;
+  _10->CSC ={v} _15;
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.0_16 = TimeoutTicks;
+  TimeoutOccurred_41 = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.0_16);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_41
+  # DEBUG BEGIN_STMT
+  _17 ={v} _10->CSS;
+  _18 = _17 & 131072;
+  if (_18 != 0)
+    goto <bb 5>; [94.50%]
+  else
+    goto <bb 6>; [5.50%]
+
+  <bb 5> [local count: 1014686024]:
+  if (TimeoutOccurred_41 != 0)
+    goto <bb 6>; [5.50%]
+  else
+    goto <bb 15>; [94.50%]
+
+  <bb 15> [local count: 958878293]:
+  goto <bb 4>; [100.00%]
+
+  <bb 6> [local count: 114863531]:
+  # TimeoutOccurred_3 = PHI <TimeoutOccurred_41(4), TimeoutOccurred_41(5)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_3 != 0)
+    goto <bb 12>; [50.00%]
+  else
+    goto <bb 7>; [50.00%]
+
+  <bb 7> [local count: 57431766]:
+  # DEBUG BEGIN_STMT
+  RegValue_43 ={v} _10->CSC;
+  # DEBUG RegValue => RegValue_43
+  # DEBUG BEGIN_STMT
+  # DEBUG D#1 => ~SelectorMask_35
+  # DEBUG RegValue => D#1 & RegValue_43
+  # DEBUG BEGIN_STMT
+  _19 = SelectorValue_34 << SelectorShift_36;
+  _37 = _19 ^ RegValue_43;
+  _54 = SelectorMask_35 & _37;
+  RegValue_44 = RegValue_43 ^ _54;
+  # DEBUG RegValue => RegValue_44
+  # DEBUG BEGIN_STMT
+  _10->CSC ={v} RegValue_44;
+  # DEBUG BEGIN_STMT
+  _20 ={v} _10->CSC;
+  _21 = _20 & 4294967283;
+  _10->CSC ={v} _21;
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 8> [local count: 536870917]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.1_22 = TimeoutTicks;
+  TimeoutOccurred_49 = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.1_22);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_49
+  # DEBUG BEGIN_STMT
+  _23 ={v} _10->CSS;
+  _24 = _23 & 131072;
+  if (_24 == 0)
+    goto <bb 9>; [94.50%]
+  else
+    goto <bb 10>; [5.50%]
+
+  <bb 9> [local count: 507343016]:
+  if (TimeoutOccurred_49 != 0)
+    goto <bb 10>; [5.50%]
+  else
+    goto <bb 14>; [94.50%]
+
+  <bb 14> [local count: 479439151]:
+  goto <bb 8>; [100.00%]
+
+  <bb 10> [local count: 57431766]:
+  # TimeoutOccurred_7 = PHI <TimeoutOccurred_49(8), TimeoutOccurred_49(9)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_7 != 0)
+    goto <bb 11>; [33.00%]
+  else
+    goto <bb 13>; [67.00%]
+
+  <bb 11> [local count: 18952483]:
+  # DEBUG BEGIN_STMT
+  _25 = Config_31(D)->Name;
+  Clock_Ip_ReportClockErrors (3, _25);
+  goto <bb 13>; [100.00%]
+
+  <bb 12> [local count: 57431766]:
+  # DEBUG BEGIN_STMT
+  _26 = Config_31(D)->Name;
+  Clock_Ip_ReportClockErrors (1, _26);
+
+  <bb 13> [local count: 234990858]:
+  StartTime ={v} {CLOBBER};
+  ElapsedTime ={v} {CLOBBER};
+  TimeoutTicks ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip (Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip, funcdef_no=4, decl_uid=6557, cgraph_uid=5, symbol_order=4)
+
+Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip (const struct Clock_Ip_SelectorConfigType * Config)
+{
+  uint32 TimeoutTicks;
+  uint32 ElapsedTime;
+  uint32 StartTime;
+  boolean TimeoutOccurred;
+  uint32 RegValue;
+  uint32 SelectorShift;
+  uint32 SelectorMask;
+  uint32 SelectorValue;
+  uint32 SelectorIndex;
+  uint32 Instance;
+  <unnamed type> _1;
+  unsigned char _2;
+  unsigned char _4;
+  <unnamed type> _5;
+  short unsigned int _6;
+  unsigned char _8;
+  int _9;
+  volatile struct Clock_Ip_CgmMuxType * _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  long unsigned int TimeoutTicks.2_15;
+  long unsigned int _16;
+  long unsigned int _17;
+  long unsigned int _18;
+  long unsigned int TimeoutTicks.3_19;
+  long unsigned int _20;
+  long unsigned int _21;
+  long unsigned int TimeoutTicks.4_22;
+  long unsigned int _23;
+  long unsigned int _24;
+  long unsigned int _25;
+  long unsigned int _26;
+  long unsigned int _27;
+  <unnamed type> _28;
+  <unnamed type> _29;
+  <unnamed type> _30;
+  <unnamed type> _31;
+  long unsigned int _43;
+  long unsigned int _64;
+
+  <bb 2> [local count: 234990857]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_37(D)->Name;
+  _2 = Clock_Ip_au8ClockFeatures[_1][0];
+  Instance_38 = (uint32) _2;
+  # DEBUG Instance => Instance_38
+  # DEBUG BEGIN_STMT
+  _4 = Clock_Ip_au8ClockFeatures[_1][4];
+  SelectorIndex_39 = (uint32) _4;
+  # DEBUG SelectorIndex => SelectorIndex_39
+  # DEBUG BEGIN_STMT
+  _5 = Config_37(D)->Value;
+  _6 = Clock_Ip_au16SelectorEntryHardwareValue[_5];
+  SelectorValue_40 = (uint32) _6;
+  # DEBUG SelectorValue => SelectorValue_40
+  # DEBUG BEGIN_STMT
+  _8 = Clock_Ip_au8ClockFeatures[_1][2];
+  _9 = (int) _8;
+  SelectorMask_41 = Clock_Ip_axFeatureExtensions[_9].SelectorValueMask;
+  # DEBUG SelectorMask => SelectorMask_41
+  # DEBUG BEGIN_STMT
+  SelectorShift_42 = Clock_Ip_axFeatureExtensions[_9].SelectorValueShift;
+  # DEBUG SelectorShift => SelectorShift_42
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG TimeoutOccurred => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _11 = Clock_Ip_apxCgm[Instance_38][SelectorIndex_39];
+  _12 ={v} _11->CSS;
+  _13 = _12 & SelectorMask_41;
+  _14 = _13 >> SelectorShift_42;
+  if (_14 != SelectorValue_40)
+    goto <bb 3>; [48.88%]
+  else
+    goto <bb 20>; [51.12%]
+
+  <bb 3> [local count: 114863530]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.2_15 = TimeoutTicks;
+  TimeoutOccurred_46 = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.2_15);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_46
+  # DEBUG BEGIN_STMT
+  _16 ={v} _11->CSS;
+  _17 = _16 & 65536;
+  if (_17 != 0)
+    goto <bb 5>; [94.50%]
+  else
+    goto <bb 6>; [5.50%]
+
+  <bb 5> [local count: 1014686024]:
+  if (TimeoutOccurred_46 != 0)
+    goto <bb 6>; [5.50%]
+  else
+    goto <bb 23>; [94.50%]
+
+  <bb 23> [local count: 958878293]:
+  goto <bb 4>; [100.00%]
+
+  <bb 6> [local count: 114863531]:
+  # TimeoutOccurred_3 = PHI <TimeoutOccurred_46(4), TimeoutOccurred_46(5)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_3 != 0)
+    goto <bb 19>; [50.00%]
+  else
+    goto <bb 7>; [50.00%]
+
+  <bb 7> [local count: 57431766]:
+  # DEBUG BEGIN_STMT
+  RegValue_48 ={v} _11->CSC;
+  # DEBUG RegValue => RegValue_48
+  # DEBUG BEGIN_STMT
+  # DEBUG D#2 => ~SelectorMask_41
+  # DEBUG RegValue => D#2 & RegValue_48
+  # DEBUG BEGIN_STMT
+  _18 = SelectorValue_40 << SelectorShift_42;
+  _43 = _18 ^ RegValue_48;
+  _64 = SelectorMask_41 & _43;
+  RegValue_49 = RegValue_48 ^ _64;
+  # DEBUG RegValue => RegValue_49
+  # DEBUG BEGIN_STMT
+  RegValue_50 = RegValue_49 | 7;
+  # DEBUG RegValue => RegValue_50
+  # DEBUG BEGIN_STMT
+  _11->CSC ={v} RegValue_50;
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 8> [local count: 536870917]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.3_19 = TimeoutTicks;
+  TimeoutOccurred_54 = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.3_19);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_54
+  # DEBUG BEGIN_STMT
+  _20 ={v} _11->CSS;
+  _21 = _20 & 4;
+  if (_21 == 0)
+    goto <bb 9>; [94.50%]
+  else
+    goto <bb 10>; [5.50%]
+
+  <bb 9> [local count: 507343016]:
+  if (TimeoutOccurred_54 != 0)
+    goto <bb 10>; [5.50%]
+  else
+    goto <bb 22>; [94.50%]
+
+  <bb 22> [local count: 479439151]:
+  goto <bb 8>; [100.00%]
+
+  <bb 10> [local count: 57431766]:
+  # TimeoutOccurred_7 = PHI <TimeoutOccurred_54(8), TimeoutOccurred_54(9)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_7 != 0)
+    goto <bb 18>; [50.00%]
+  else
+    goto <bb 11>; [50.00%]
+
+  <bb 11> [local count: 28715883]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 12> [local count: 268435461]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.4_22 = TimeoutTicks;
+  TimeoutOccurred_58 = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.4_22);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_58
+  # DEBUG BEGIN_STMT
+  _23 ={v} _11->CSS;
+  _24 = _23 & 65536;
+  if (_24 != 0)
+    goto <bb 13>; [94.50%]
+  else
+    goto <bb 14>; [5.50%]
+
+  <bb 13> [local count: 253671511]:
+  if (TimeoutOccurred_58 != 0)
+    goto <bb 14>; [5.50%]
+  else
+    goto <bb 21>; [94.50%]
+
+  <bb 21> [local count: 239719578]:
+  goto <bb 12>; [100.00%]
+
+  <bb 14> [local count: 28715883]:
+  # TimeoutOccurred_10 = PHI <TimeoutOccurred_58(12), TimeoutOccurred_58(13)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_10 != 0)
+    goto <bb 17>; [33.00%]
+  else
+    goto <bb 15>; [67.00%]
+
+  <bb 15> [local count: 19239642]:
+  # DEBUG BEGIN_STMT
+  _25 ={v} _11->CSS;
+  _26 = _25 >> 17;
+  _27 = _26 & 7;
+  if (_27 != 1)
+    goto <bb 16>; [48.88%]
+  else
+    goto <bb 20>; [51.12%]
+
+  <bb 16> [local count: 9404337]:
+  # DEBUG BEGIN_STMT
+  _28 = Config_37(D)->Name;
+  Clock_Ip_ReportClockErrors (3, _28);
+  goto <bb 20>; [100.00%]
+
+  <bb 17> [local count: 9476241]:
+  # DEBUG BEGIN_STMT
+  _29 = Config_37(D)->Name;
+  Clock_Ip_ReportClockErrors (1, _29);
+  goto <bb 20>; [100.00%]
+
+  <bb 18> [local count: 28715883]:
+  # DEBUG BEGIN_STMT
+  _30 = Config_37(D)->Name;
+  Clock_Ip_ReportClockErrors (1, _30);
+  goto <bb 20>; [100.00%]
+
+  <bb 19> [local count: 57431766]:
+  # DEBUG BEGIN_STMT
+  _31 = Config_37(D)->Name;
+  Clock_Ip_ReportClockErrors (1, _31);
+
+  <bb 20> [local count: 234990859]:
+  StartTime ={v} {CLOBBER};
+  ElapsedTime ={v} {CLOBBER};
+  TimeoutTicks ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_SetCgmXCscCssClkswSwip (Clock_Ip_SetCgmXCscCssClkswSwip, funcdef_no=2, decl_uid=6553, cgraph_uid=3, symbol_order=2)
+
+Clock_Ip_SetCgmXCscCssClkswSwip (const struct Clock_Ip_SelectorConfigType * Config)
+{
+  uint32 TimeoutTicks;
+  uint32 ElapsedTime;
+  uint32 StartTime;
+  boolean TimeoutOccurred;
+  uint32 RegValue;
+  uint32 SelectorShift;
+  uint32 SelectorMask;
+  uint32 SelectorValue;
+  uint32 SelectorIndex;
+  uint32 Instance;
+  <unnamed type> _1;
+  unsigned char _2;
+  unsigned char _4;
+  <unnamed type> _5;
+  short unsigned int _6;
+  unsigned char _8;
+  int _9;
+  volatile struct Clock_Ip_CgmMuxType * _11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  long unsigned int TimeoutTicks.5_15;
+  long unsigned int _16;
+  long unsigned int _17;
+  long unsigned int _18;
+  long unsigned int TimeoutTicks.6_19;
+  long unsigned int _20;
+  long unsigned int _21;
+  long unsigned int TimeoutTicks.7_22;
+  long unsigned int _23;
+  long unsigned int _24;
+  long unsigned int _25;
+  long unsigned int _26;
+  long unsigned int _27;
+  <unnamed type> _28;
+  <unnamed type> _29;
+  <unnamed type> _30;
+  <unnamed type> _31;
+  long unsigned int _43;
+  long unsigned int _64;
+
+  <bb 2> [local count: 234990857]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_37(D)->Name;
+  _2 = Clock_Ip_au8ClockFeatures[_1][0];
+  Instance_38 = (uint32) _2;
+  # DEBUG Instance => Instance_38
+  # DEBUG BEGIN_STMT
+  _4 = Clock_Ip_au8ClockFeatures[_1][4];
+  SelectorIndex_39 = (uint32) _4;
+  # DEBUG SelectorIndex => SelectorIndex_39
+  # DEBUG BEGIN_STMT
+  _5 = Config_37(D)->Value;
+  _6 = Clock_Ip_au16SelectorEntryHardwareValue[_5];
+  SelectorValue_40 = (uint32) _6;
+  # DEBUG SelectorValue => SelectorValue_40
+  # DEBUG BEGIN_STMT
+  _8 = Clock_Ip_au8ClockFeatures[_1][2];
+  _9 = (int) _8;
+  SelectorMask_41 = Clock_Ip_axFeatureExtensions[_9].SelectorValueMask;
+  # DEBUG SelectorMask => SelectorMask_41
+  # DEBUG BEGIN_STMT
+  SelectorShift_42 = Clock_Ip_axFeatureExtensions[_9].SelectorValueShift;
+  # DEBUG SelectorShift => SelectorShift_42
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG TimeoutOccurred => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _11 = Clock_Ip_apxCgm[Instance_38][SelectorIndex_39];
+  _12 ={v} _11->CSS;
+  _13 = _12 & SelectorMask_41;
+  _14 = _13 >> SelectorShift_42;
+  if (_14 != SelectorValue_40)
+    goto <bb 3>; [48.88%]
+  else
+    goto <bb 20>; [51.12%]
+
+  <bb 3> [local count: 114863530]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.5_15 = TimeoutTicks;
+  TimeoutOccurred_46 = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.5_15);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_46
+  # DEBUG BEGIN_STMT
+  _16 ={v} _11->CSS;
+  _17 = _16 & 65536;
+  if (_17 != 0)
+    goto <bb 5>; [94.50%]
+  else
+    goto <bb 6>; [5.50%]
+
+  <bb 5> [local count: 1014686024]:
+  if (TimeoutOccurred_46 != 0)
+    goto <bb 6>; [5.50%]
+  else
+    goto <bb 23>; [94.50%]
+
+  <bb 23> [local count: 958878293]:
+  goto <bb 4>; [100.00%]
+
+  <bb 6> [local count: 114863531]:
+  # TimeoutOccurred_3 = PHI <TimeoutOccurred_46(4), TimeoutOccurred_46(5)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_3 != 0)
+    goto <bb 19>; [50.00%]
+  else
+    goto <bb 7>; [50.00%]
+
+  <bb 7> [local count: 57431766]:
+  # DEBUG BEGIN_STMT
+  RegValue_48 ={v} _11->CSC;
+  # DEBUG RegValue => RegValue_48
+  # DEBUG BEGIN_STMT
+  # DEBUG D#3 => ~SelectorMask_41
+  # DEBUG RegValue => D#3 & RegValue_48
+  # DEBUG BEGIN_STMT
+  _18 = SelectorValue_40 << SelectorShift_42;
+  _43 = _18 ^ RegValue_48;
+  _64 = SelectorMask_41 & _43;
+  RegValue_49 = RegValue_48 ^ _64;
+  # DEBUG RegValue => RegValue_49
+  # DEBUG BEGIN_STMT
+  RegValue_50 = RegValue_49 | 4;
+  # DEBUG RegValue => RegValue_50
+  # DEBUG BEGIN_STMT
+  _11->CSC ={v} RegValue_50;
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 8> [local count: 536870917]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.6_19 = TimeoutTicks;
+  TimeoutOccurred_54 = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.6_19);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_54
+  # DEBUG BEGIN_STMT
+  _20 ={v} _11->CSS;
+  _21 = _20 & 4;
+  if (_21 == 0)
+    goto <bb 9>; [94.50%]
+  else
+    goto <bb 10>; [5.50%]
+
+  <bb 9> [local count: 507343016]:
+  if (TimeoutOccurred_54 != 0)
+    goto <bb 10>; [5.50%]
+  else
+    goto <bb 22>; [94.50%]
+
+  <bb 22> [local count: 479439151]:
+  goto <bb 8>; [100.00%]
+
+  <bb 10> [local count: 57431766]:
+  # TimeoutOccurred_7 = PHI <TimeoutOccurred_54(8), TimeoutOccurred_54(9)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_7 != 0)
+    goto <bb 18>; [50.00%]
+  else
+    goto <bb 11>; [50.00%]
+
+  <bb 11> [local count: 28715883]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 12> [local count: 268435461]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.7_22 = TimeoutTicks;
+  TimeoutOccurred_58 = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.7_22);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_58
+  # DEBUG BEGIN_STMT
+  _23 ={v} _11->CSS;
+  _24 = _23 & 65536;
+  if (_24 != 0)
+    goto <bb 13>; [94.50%]
+  else
+    goto <bb 14>; [5.50%]
+
+  <bb 13> [local count: 253671511]:
+  if (TimeoutOccurred_58 != 0)
+    goto <bb 14>; [5.50%]
+  else
+    goto <bb 21>; [94.50%]
+
+  <bb 21> [local count: 239719578]:
+  goto <bb 12>; [100.00%]
+
+  <bb 14> [local count: 28715883]:
+  # TimeoutOccurred_10 = PHI <TimeoutOccurred_58(12), TimeoutOccurred_58(13)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_10 != 0)
+    goto <bb 17>; [33.00%]
+  else
+    goto <bb 15>; [67.00%]
+
+  <bb 15> [local count: 19239642]:
+  # DEBUG BEGIN_STMT
+  _25 ={v} _11->CSS;
+  _26 = _25 >> 17;
+  _27 = _26 & 7;
+  if (_27 != 1)
+    goto <bb 16>; [48.88%]
+  else
+    goto <bb 20>; [51.12%]
+
+  <bb 16> [local count: 9404337]:
+  # DEBUG BEGIN_STMT
+  _28 = Config_37(D)->Name;
+  Clock_Ip_ReportClockErrors (3, _28);
+  goto <bb 20>; [100.00%]
+
+  <bb 17> [local count: 9476241]:
+  # DEBUG BEGIN_STMT
+  _29 = Config_37(D)->Name;
+  Clock_Ip_ReportClockErrors (1, _29);
+  goto <bb 20>; [100.00%]
+
+  <bb 18> [local count: 28715883]:
+  # DEBUG BEGIN_STMT
+  _30 = Config_37(D)->Name;
+  Clock_Ip_ReportClockErrors (1, _30);
+  goto <bb 20>; [100.00%]
+
+  <bb 19> [local count: 57431766]:
+  # DEBUG BEGIN_STMT
+  _31 = Config_37(D)->Name;
+  Clock_Ip_ReportClockErrors (1, _31);
+
+  <bb 20> [local count: 234990859]:
+  StartTime ={v} {CLOBBER};
+  ElapsedTime ={v} {CLOBBER};
+  TimeoutTicks ={v} {CLOBBER};
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_ResetCgmXCscCssCsGrip (Clock_Ip_ResetCgmXCscCssCsGrip, funcdef_no=10, decl_uid=6561, cgraph_uid=6, symbol_order=5)
+
+Merging blocks 2 and 4
+Removing basic block 5
+Merging blocks 2 and 3
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+Clock_Ip_ResetCgmXCscCssCsGrip (const struct Clock_Ip_SelectorConfigType * Config)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG Config => Config_1(D)
+  # DEBUG BEGIN_STMT
+  # DEBUG Config => NULL
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_SetRtcRtccClksel_TrustedCall (Clock_Ip_SetRtcRtccClksel_TrustedCall, funcdef_no=8, decl_uid=6547, cgraph_uid=9, symbol_order=8)
+
+Clock_Ip_SetRtcRtccClksel_TrustedCall (const struct Clock_Ip_SelectorConfigType * Config)
+{
+  uint32 SelectorValue;
+  static const uint16 HardwareValue[6] = {2, 0, 1, 0, 3, 0};
+  uint32 RegValue;
+  <unnamed type> _1;
+  short unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Config_6(D)->Value;
+  _2 = HardwareValue[_1];
+  SelectorValue_7 = (uint32) _2;
+  # DEBUG SelectorValue => SelectorValue_7
+  # DEBUG BEGIN_STMT
+  RegValue_8 ={v} MEM[(struct RTC_Type *)1076396032B].RTCC;
+  # DEBUG RegValue => RegValue_8
+  # DEBUG BEGIN_STMT
+  RegValue_9 = RegValue_8 & 4294955007;
+  # DEBUG RegValue => RegValue_9
+  # DEBUG BEGIN_STMT
+  _3 = SelectorValue_7 << 12;
+  _4 = _3 & 12288;
+  RegValue_10 = _4 | RegValue_9;
+  # DEBUG RegValue => RegValue_10
+  # DEBUG BEGIN_STMT
+  MEM[(struct RTC_Type *)1076396032B].RTCC ={v} RegValue_10;
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_SetRtcRtccClksel (Clock_Ip_SetRtcRtccClksel, funcdef_no=7, decl_uid=6563, cgraph_uid=8, symbol_order=7)
+
+Clock_Ip_SetRtcRtccClksel (const struct Clock_Ip_SelectorConfigType * Config)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_SetRtcRtccClksel_TrustedCall (Config_2(D));
+  return;
+
+}
+
+

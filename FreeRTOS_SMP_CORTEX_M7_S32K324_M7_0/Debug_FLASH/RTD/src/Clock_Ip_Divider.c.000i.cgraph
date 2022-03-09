@@ -1,0 +1,634 @@
+Trivially needed symbols: Clock_Ip_axDividerCallbacks/4
+
+
+Initial Symbol table:
+
+Clock_Ip_ReportClockErrors/11 (Clock_Ip_ReportClockErrors) @06e61b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 
+  Calls: 
+Clock_Ip_TimeoutExpired/10 (Clock_Ip_TimeoutExpired) @06e61a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 
+  Calls: 
+Clock_Ip_StartTimeout/9 (Clock_Ip_StartTimeout) @06e619a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 
+  Calls: 
+Clock_Ip_apxCgm/8 (Clock_Ip_apxCgm) @06fb35a0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axFeatureExtensions/7 (Clock_Ip_axFeatureExtensions) @06fb3558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_pxPll/6 (Clock_Ip_pxPll) @06e62ee8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetPllPlldvOdiv2Output/3 (read) Clock_Ip_SetPllPlldvOdiv2Output/3 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/5 (Clock_Ip_au8ClockFeatures) @06e62ea0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetPllPlldvOdiv2Output/3 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axDividerCallbacks/4 (Clock_Ip_axDividerCallbacks) @06e62ab0
+  Type: variable definition analyzed
+  Visibility: public
+  Aux: @01981040
+  References: Clock_Ip_Callback_DividerEmpty/0 (addr) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (addr) Clock_Ip_SetPllPll0divDeDivOutput/2 (addr) Clock_Ip_SetPllPlldvOdiv2Output/3 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_SetPllPlldvOdiv2Output/3 (Clock_Ip_SetPllPlldvOdiv2Output) @06e610e0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06e55b60
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_pxPll/6 (read) Clock_Ip_pxPll/6 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetPllPll0divDeDivOutput/2 (Clock_Ip_SetPllPll0divDeDivOutput) @06e55b60
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06e55d20
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_pxPll/6 (read) Clock_Ip_pxPll/6 (read) Clock_Ip_pxPll/6 (read) Clock_Ip_pxPll/6 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (Clock_Ip_SetCgmXDeDivStatWithoutPhase) @06e55d20
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06e55a80
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_axFeatureExtensions/7 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_axFeatureExtensions/7 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/11 Clock_Ip_TimeoutExpired/10 Clock_Ip_StartTimeout/9 
+Clock_Ip_Callback_DividerEmpty/0 (Clock_Ip_Callback_DividerEmpty) @06e55a80
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @01981040
+  References: 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Clock_Ip_ReportClockErrors/11 (Clock_Ip_ReportClockErrors) @06e61b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 
+  Calls: 
+Clock_Ip_TimeoutExpired/10 (Clock_Ip_TimeoutExpired) @06e61a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 
+  Calls: 
+Clock_Ip_StartTimeout/9 (Clock_Ip_StartTimeout) @06e619a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 
+  Calls: 
+Clock_Ip_apxCgm/8 (Clock_Ip_apxCgm) @06fb35a0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axFeatureExtensions/7 (Clock_Ip_axFeatureExtensions) @06fb3558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_pxPll/6 (Clock_Ip_pxPll) @06e62ee8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetPllPlldvOdiv2Output/3 (read) Clock_Ip_SetPllPlldvOdiv2Output/3 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/5 (Clock_Ip_au8ClockFeatures) @06e62ea0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetPllPlldvOdiv2Output/3 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axDividerCallbacks/4 (Clock_Ip_axDividerCallbacks) @06e62ab0
+  Type: variable definition analyzed
+  Visibility: public
+  References: Clock_Ip_Callback_DividerEmpty/0 (addr) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (addr) Clock_Ip_SetPllPll0divDeDivOutput/2 (addr) Clock_Ip_SetPllPlldvOdiv2Output/3 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_SetPllPlldvOdiv2Output/3 (Clock_Ip_SetPllPlldvOdiv2Output) @06e610e0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_pxPll/6 (read) Clock_Ip_pxPll/6 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetPllPll0divDeDivOutput/2 (Clock_Ip_SetPllPll0divDeDivOutput) @06e55b60
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_pxPll/6 (read) Clock_Ip_pxPll/6 (read) Clock_Ip_pxPll/6 (read) Clock_Ip_pxPll/6 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (Clock_Ip_SetCgmXDeDivStatWithoutPhase) @06e55d20
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_axFeatureExtensions/7 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_axFeatureExtensions/7 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/11 Clock_Ip_TimeoutExpired/10 Clock_Ip_StartTimeout/9 
+Clock_Ip_Callback_DividerEmpty/0 (Clock_Ip_Callback_DividerEmpty) @06e55a80
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+
+Initial Symbol table:
+
+Clock_Ip_ReportClockErrors/11 (Clock_Ip_ReportClockErrors) @06e61b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 
+  Calls: 
+Clock_Ip_TimeoutExpired/10 (Clock_Ip_TimeoutExpired) @06e61a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 
+  Calls: 
+Clock_Ip_StartTimeout/9 (Clock_Ip_StartTimeout) @06e619a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 
+  Calls: 
+Clock_Ip_apxCgm/8 (Clock_Ip_apxCgm) @06fb35a0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axFeatureExtensions/7 (Clock_Ip_axFeatureExtensions) @06fb3558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_pxPll/6 (Clock_Ip_pxPll) @06e62ee8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetPllPlldvOdiv2Output/3 (read) Clock_Ip_SetPllPlldvOdiv2Output/3 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/5 (Clock_Ip_au8ClockFeatures) @06e62ea0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetPllPlldvOdiv2Output/3 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axDividerCallbacks/4 (Clock_Ip_axDividerCallbacks) @06e62ab0
+  Type: variable definition analyzed
+  Visibility: public
+  References: Clock_Ip_Callback_DividerEmpty/0 (addr) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (addr) Clock_Ip_SetPllPll0divDeDivOutput/2 (addr) Clock_Ip_SetPllPlldvOdiv2Output/3 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_SetPllPlldvOdiv2Output/3 (Clock_Ip_SetPllPlldvOdiv2Output) @06e610e0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_pxPll/6 (read) Clock_Ip_pxPll/6 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetPllPll0divDeDivOutput/2 (Clock_Ip_SetPllPll0divDeDivOutput) @06e55b60
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_pxPll/6 (read) Clock_Ip_pxPll/6 (read) Clock_Ip_pxPll/6 (read) Clock_Ip_pxPll/6 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (Clock_Ip_SetCgmXDeDivStatWithoutPhase) @06e55d20
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_axFeatureExtensions/7 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_axFeatureExtensions/7 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/11 Clock_Ip_TimeoutExpired/10 Clock_Ip_StartTimeout/9 
+Clock_Ip_Callback_DividerEmpty/0 (Clock_Ip_Callback_DividerEmpty) @06e55a80
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Clock_Ip_ReportClockErrors/11 (Clock_Ip_ReportClockErrors) @06e61b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 
+  Calls: 
+Clock_Ip_TimeoutExpired/10 (Clock_Ip_TimeoutExpired) @06e61a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 
+  Calls: 
+Clock_Ip_StartTimeout/9 (Clock_Ip_StartTimeout) @06e619a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 
+  Calls: 
+Clock_Ip_apxCgm/8 (Clock_Ip_apxCgm) @06fb35a0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axFeatureExtensions/7 (Clock_Ip_axFeatureExtensions) @06fb3558
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_pxPll/6 (Clock_Ip_pxPll) @06e62ee8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetPllPlldvOdiv2Output/3 (read) Clock_Ip_SetPllPlldvOdiv2Output/3 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/5 (Clock_Ip_au8ClockFeatures) @06e62ea0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetPllPlldvOdiv2Output/3 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axDividerCallbacks/4 (Clock_Ip_axDividerCallbacks) @06e62ab0
+  Type: variable definition analyzed
+  Visibility: public
+  References: Clock_Ip_Callback_DividerEmpty/0 (addr) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (addr) Clock_Ip_SetPllPll0divDeDivOutput/2 (addr) Clock_Ip_SetPllPlldvOdiv2Output/3 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_SetPllPlldvOdiv2Output/3 (Clock_Ip_SetPllPlldvOdiv2Output) @06e610e0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_pxPll/6 (read) Clock_Ip_pxPll/6 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetPllPll0divDeDivOutput/2 (Clock_Ip_SetPllPll0divDeDivOutput) @06e55b60
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_pxPll/6 (read) Clock_Ip_pxPll/6 (read) Clock_Ip_pxPll/6 (read) Clock_Ip_pxPll/6 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (Clock_Ip_SetCgmXDeDivStatWithoutPhase) @06e55d20
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_axFeatureExtensions/7 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_axFeatureExtensions/7 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/11 Clock_Ip_TimeoutExpired/10 Clock_Ip_StartTimeout/9 
+Clock_Ip_Callback_DividerEmpty/0 (Clock_Ip_Callback_DividerEmpty) @06e55a80
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Clock_Ip_ReportClockErrors/11 (Clock_Ip_ReportClockErrors) @06e61b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (37904965 (estimated locally),0.33 per call) 
+  Calls: 
+Clock_Ip_TimeoutExpired/10 (Clock_Ip_TimeoutExpired) @06e61a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (1073741824 (estimated locally),9.35 per call) 
+  Calls: 
+Clock_Ip_StartTimeout/9 (Clock_Ip_StartTimeout) @06e619a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (114863530 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_apxCgm/8 (Clock_Ip_apxCgm) @06fb35a0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axFeatureExtensions/7 (Clock_Ip_axFeatureExtensions) @06fb3558
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_pxPll/6 (Clock_Ip_pxPll) @06e62ee8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetPllPlldvOdiv2Output/3 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/5 (Clock_Ip_au8ClockFeatures) @06e62ea0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetPllPlldvOdiv2Output/3 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetPllPll0divDeDivOutput/2 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axDividerCallbacks/4 (Clock_Ip_axDividerCallbacks) @06e62ab0
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_Callback_DividerEmpty/0 (addr) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (addr) Clock_Ip_SetPllPll0divDeDivOutput/2 (addr) Clock_Ip_SetPllPlldvOdiv2Output/3 (addr) 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_SetPllPlldvOdiv2Output/3 (Clock_Ip_SetPllPlldvOdiv2Output) @06e610e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_pxPll/6 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetPllPll0divDeDivOutput/2 (Clock_Ip_SetPllPll0divDeDivOutput) @06e55b60
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_pxPll/6 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (Clock_Ip_SetCgmXDeDivStatWithoutPhase) @06e55d20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_au8ClockFeatures/5 (read) Clock_Ip_axFeatureExtensions/7 (read) Clock_Ip_axFeatureExtensions/7 (read) Clock_Ip_apxCgm/8 (read) Clock_Ip_apxCgm/8 (read) 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:114863530 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/11 (37904965 (estimated locally),0.33 per call) Clock_Ip_TimeoutExpired/10 (1073741824 (estimated locally),9.35 per call) Clock_Ip_StartTimeout/9 (114863530 (estimated locally),1.00 per call) 
+Clock_Ip_Callback_DividerEmpty/0 (Clock_Ip_Callback_DividerEmpty) @06e55a80
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Clock_Ip_axDividerCallbacks/4
+Removing variables:
+
+Final Symbol table:
+
+Clock_Ip_ReportClockErrors/11 (Clock_Ip_ReportClockErrors) @06e61b60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_TimeoutExpired/10 (Clock_Ip_TimeoutExpired) @06e61a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_StartTimeout/9 (Clock_Ip_StartTimeout) @06e619a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_apxCgm/8 (Clock_Ip_apxCgm) @06fb35a0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axFeatureExtensions/7 (Clock_Ip_axFeatureExtensions) @06fb3558
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_pxPll/6 (Clock_Ip_pxPll) @06e62ee8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/5 (Clock_Ip_au8ClockFeatures) @06e62ea0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axDividerCallbacks/4 (Clock_Ip_axDividerCallbacks) @06e62ab0
+  Type: variable definition analyzed
+  Visibility: externally_visible asm_written public
+  Aux: @00000001
+  References: Clock_Ip_Callback_DividerEmpty/0 (addr) Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (addr) Clock_Ip_SetPllPll0divDeDivOutput/2 (addr) Clock_Ip_SetPllPlldvOdiv2Output/3 (addr) 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_SetPllPlldvOdiv2Output/3 (Clock_Ip_SetPllPlldvOdiv2Output) @06e610e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetPllPll0divDeDivOutput/2 (Clock_Ip_SetPllPll0divDeDivOutput) @06e55b60
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetCgmXDeDivStatWithoutPhase/1 (Clock_Ip_SetCgmXDeDivStatWithoutPhase) @06e55d20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:114863530 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_Callback_DividerEmpty/0 (Clock_Ip_Callback_DividerEmpty) @06e55a80
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axDividerCallbacks/4 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 

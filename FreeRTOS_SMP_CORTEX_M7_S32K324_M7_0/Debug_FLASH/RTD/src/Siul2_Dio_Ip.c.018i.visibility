@@ -1,0 +1,430 @@
+
+Marking local functions: Siul2_Dio_Ip_Rev_Bit_16/2 DevAssert/0
+
+
+Marking externally visible functions: Siul2_Dio_Ip_MaskedWritePins/11 Siul2_Dio_Ip_ReadPin/10 Siul2_Dio_Ip_ReadPins/9 Siul2_Dio_Ip_TogglePins/8 Siul2_Dio_Ip_ClearPins/7 Siul2_Dio_Ip_SetPins/6 Siul2_Dio_Ip_GetPinsOutput/5 Siul2_Dio_Ip_WritePins/4 Siul2_Dio_Ip_WritePin/3
+
+
+Marking externally visible variables: Siul2_Dio_Ip_au32BaseAdresses/1
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+SchM_Exit_Dio_DIO_EXCLUSIVE_AREA_01/13 (SchM_Exit_Dio_DIO_EXCLUSIVE_AREA_01) @06211d20
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Siul2_Dio_Ip_WritePin/3 
+  Calls: 
+SchM_Enter_Dio_DIO_EXCLUSIVE_AREA_01/12 (SchM_Enter_Dio_DIO_EXCLUSIVE_AREA_01) @06211c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Siul2_Dio_Ip_WritePin/3 
+  Calls: 
+Siul2_Dio_Ip_MaskedWritePins/11 (Siul2_Dio_Ip_MaskedWritePins) @062117e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Siul2_Dio_Ip_au32BaseAdresses/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Siul2_Dio_Ip_Rev_Bit_16/2 Siul2_Dio_Ip_Rev_Bit_16/2 
+Siul2_Dio_Ip_ReadPin/10 (Siul2_Dio_Ip_ReadPin) @06211540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Siul2_Dio_Ip_Rev_Bit_16/2 DevAssert/0 DevAssert/0 
+Siul2_Dio_Ip_ReadPins/9 (Siul2_Dio_Ip_ReadPins) @062112a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Siul2_Dio_Ip_Rev_Bit_16/2 DevAssert/0 
+Siul2_Dio_Ip_TogglePins/8 (Siul2_Dio_Ip_TogglePins) @06211000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Siul2_Dio_Ip_Rev_Bit_16/2 DevAssert/0 
+Siul2_Dio_Ip_ClearPins/7 (Siul2_Dio_Ip_ClearPins) @05f0ec40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Siul2_Dio_Ip_Rev_Bit_16/2 DevAssert/0 
+Siul2_Dio_Ip_SetPins/6 (Siul2_Dio_Ip_SetPins) @05f0e700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Siul2_Dio_Ip_Rev_Bit_16/2 DevAssert/0 
+Siul2_Dio_Ip_GetPinsOutput/5 (Siul2_Dio_Ip_GetPinsOutput) @05f0ee00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Siul2_Dio_Ip_Rev_Bit_16/2 DevAssert/0 
+Siul2_Dio_Ip_WritePins/4 (Siul2_Dio_Ip_WritePins) @05f0eb60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Siul2_Dio_Ip_Rev_Bit_16/2 DevAssert/0 
+Siul2_Dio_Ip_WritePin/3 (Siul2_Dio_Ip_WritePin) @05f0e8c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: SchM_Exit_Dio_DIO_EXCLUSIVE_AREA_01/13 SchM_Enter_Dio_DIO_EXCLUSIVE_AREA_01/12 DevAssert/0 DevAssert/0 DevAssert/0 
+Siul2_Dio_Ip_Rev_Bit_16/2 (Siul2_Dio_Ip_Rev_Bit_16) @05f0e620
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Siul2_Dio_Ip_MaskedWritePins/11 Siul2_Dio_Ip_MaskedWritePins/11 Siul2_Dio_Ip_ReadPin/10 Siul2_Dio_Ip_ReadPins/9 Siul2_Dio_Ip_TogglePins/8 Siul2_Dio_Ip_ClearPins/7 Siul2_Dio_Ip_SetPins/6 Siul2_Dio_Ip_GetPinsOutput/5 Siul2_Dio_Ip_WritePins/4 
+  Calls: 
+Siul2_Dio_Ip_au32BaseAdresses/1 (Siul2_Dio_Ip_au32BaseAdresses) @05f0dd38
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: Siul2_Dio_Ip_MaskedWritePins/11 (read) 
+  Availability: available
+  Varpool flags: initialized
+DevAssert/0 (DevAssert) @05f0e1c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Siul2_Dio_Ip_ReadPin/10 Siul2_Dio_Ip_ReadPin/10 Siul2_Dio_Ip_ReadPins/9 Siul2_Dio_Ip_TogglePins/8 Siul2_Dio_Ip_ClearPins/7 Siul2_Dio_Ip_SetPins/6 Siul2_Dio_Ip_GetPinsOutput/5 Siul2_Dio_Ip_WritePins/4 Siul2_Dio_Ip_WritePin/3 Siul2_Dio_Ip_WritePin/3 Siul2_Dio_Ip_WritePin/3 
+  Calls: 
+Siul2_Dio_Ip_MaskedWritePins (uint8 u8Siul2Instance, uint8 u8PortId, Siul2_Dio_Ip_PinsChannelType pins, Siul2_Dio_Ip_PinsChannelType mask)
+{
+  uint32 pinsRev;
+  uint32 maskRev;
+  struct SIUL2_Type * base;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = (int) u8Siul2Instance;
+  _2 = Siul2_Dio_Ip_au32BaseAdresses[_1];
+  base = (struct SIUL2_Type *) _2;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _3 = Siul2_Dio_Ip_Rev_Bit_16 (mask);
+  maskRev = (uint32) _3;
+  # DEBUG BEGIN_STMT
+  _4 = Siul2_Dio_Ip_Rev_Bit_16 (pins);
+  pinsRev = (uint32) _4;
+  # DEBUG BEGIN_STMT
+  _5 = maskRev << 16;
+  _6 = (int) u8PortId;
+  _7 = pinsRev | _5;
+  base->MPGPDO[_6] = _7;
+  return;
+
+}
+
+
+Siul2_Dio_Ip_ReadPin (const struct Siul2_Dio_Ip_GpioType * const base, Siul2_Dio_Ip_PinsChannelType pin)
+{
+  Siul2_Dio_Ip_PinsLevelType returnValue;
+  Siul2_Dio_Ip_PinsLevelType D.6310;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = base != 0B;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  _2 = pin <= 15;
+  DevAssert (_2);
+  # DEBUG BEGIN_STMT
+  returnValue = 0;
+  # DEBUG BEGIN_STMT
+  _3 = base->PGPDI;
+  _4 = Siul2_Dio_Ip_Rev_Bit_16 (_3);
+  _5 = (int) _4;
+  _6 = (int) pin;
+  _7 = 1 << _6;
+  _8 = _5 & _7;
+  _9 = (int) pin;
+  _10 = _8 >> _9;
+  returnValue = (Siul2_Dio_Ip_PinsLevelType) _10;
+  # DEBUG BEGIN_STMT
+  D.6310 = returnValue;
+  return D.6310;
+
+}
+
+
+Siul2_Dio_Ip_ReadPins (const struct Siul2_Dio_Ip_GpioType * const base)
+{
+  Siul2_Dio_Ip_PinsChannelType returnValue;
+  Siul2_Dio_Ip_PinsChannelType D.6308;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = base != 0B;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  returnValue = 0;
+  # DEBUG BEGIN_STMT
+  _2 = base->PGPDI;
+  returnValue = Siul2_Dio_Ip_Rev_Bit_16 (_2);
+  # DEBUG BEGIN_STMT
+  D.6308 = returnValue;
+  return D.6308;
+
+}
+
+
+Siul2_Dio_Ip_TogglePins (struct Siul2_Dio_Ip_GpioType * const base, Siul2_Dio_Ip_PinsChannelType pins)
+{
+  short unsigned int D.6307;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = base != 0B;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  D.6307 = Siul2_Dio_Ip_Rev_Bit_16 (pins);
+  _2 = base->PGPDO;
+  _3 = D.6307 ^ _2;
+  base->PGPDO = _3;
+  return;
+
+}
+
+
+Siul2_Dio_Ip_ClearPins (struct Siul2_Dio_Ip_GpioType * const base, Siul2_Dio_Ip_PinsChannelType pins)
+{
+  short unsigned int D.6306;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = base != 0B;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  _2 = Siul2_Dio_Ip_Rev_Bit_16 (pins);
+  D.6306 = ~_2;
+  _3 = base->PGPDO;
+  _4 = D.6306 & _3;
+  base->PGPDO = _4;
+  return;
+
+}
+
+
+Siul2_Dio_Ip_SetPins (struct Siul2_Dio_Ip_GpioType * const base, Siul2_Dio_Ip_PinsChannelType pins)
+{
+  short unsigned int D.6305;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = base != 0B;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  D.6305 = Siul2_Dio_Ip_Rev_Bit_16 (pins);
+  _2 = base->PGPDO;
+  _3 = D.6305 | _2;
+  base->PGPDO = _3;
+  return;
+
+}
+
+
+Siul2_Dio_Ip_GetPinsOutput (const struct Siul2_Dio_Ip_GpioType * const base)
+{
+  Siul2_Dio_Ip_PinsChannelType returnValue;
+  Siul2_Dio_Ip_PinsChannelType D.6303;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = base != 0B;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  returnValue = 0;
+  # DEBUG BEGIN_STMT
+  _2 = base->PGPDO;
+  returnValue = Siul2_Dio_Ip_Rev_Bit_16 (_2);
+  # DEBUG BEGIN_STMT
+  D.6303 = returnValue;
+  return D.6303;
+
+}
+
+
+Siul2_Dio_Ip_WritePins (struct Siul2_Dio_Ip_GpioType * const base, Siul2_Dio_Ip_PinsChannelType pins)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = base != 0B;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  _2 = Siul2_Dio_Ip_Rev_Bit_16 (pins);
+  base->PGPDO = _2;
+  return;
+
+}
+
+
+Siul2_Dio_Ip_WritePin (struct Siul2_Dio_Ip_GpioType * const base, Siul2_Dio_Ip_PinsChannelType pin, Siul2_Dio_Ip_PinsLevelType value)
+{
+  Siul2_Dio_Ip_PinsChannelType pinsValues;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = base != 0B;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  _2 = pin <= 15;
+  DevAssert (_2);
+  # DEBUG BEGIN_STMT
+  _3 = value <= 1;
+  DevAssert (_3);
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Dio_DIO_EXCLUSIVE_AREA_01 ();
+  # DEBUG BEGIN_STMT
+  pinsValues = base->PGPDO;
+  # DEBUG BEGIN_STMT
+  _4 = (unsigned int) pin;
+  _5 = 15 - _4;
+  _6 = 1 << _5;
+  _7 = (short unsigned int) _6;
+  _8 = ~_7;
+  pinsValues = pinsValues & _8;
+  # DEBUG BEGIN_STMT
+  _9 = (unsigned int) value;
+  _10 = _9 & 1;
+  _11 = (unsigned int) pin;
+  _12 = 15 - _11;
+  _13 = _10 << _12;
+  _14 = (short unsigned int) _13;
+  pinsValues = pinsValues | _14;
+  # DEBUG BEGIN_STMT
+  base->PGPDO = pinsValues;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Dio_DIO_EXCLUSIVE_AREA_01 ();
+  return;
+
+}
+
+
+Siul2_Dio_Ip_Rev_Bit_16 (uint16 value)
+{
+  uint16 ret;
+  uint8 i;
+  uint16 D.6301;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  ret = 0;
+  # DEBUG BEGIN_STMT
+  i = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _1 = (int) value;
+  _2 = (int) i;
+  _3 = _1 >> _2;
+  _4 = (unsigned int) _3;
+  _5 = _4 & 1;
+  _6 = (unsigned int) i;
+  _7 = 15 - _6;
+  _8 = _5 << _7;
+  _9 = (short unsigned int) _8;
+  _10 = (int) value;
+  _11 = (int) i;
+  _12 = _10 << _11;
+  _13 = (unsigned int) _12;
+  _14 = _13 & 32768;
+  _15 = (unsigned int) i;
+  _16 = 15 - _15;
+  _17 = _14 >> _16;
+  _18 = (short unsigned int) _17;
+  _19 = _9 | _18;
+  ret = ret | _19;
+  # DEBUG BEGIN_STMT
+  i.1_20 = i;
+  i = i.1_20 + 1;
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  if (i <= 7)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  D.6301 = ret;
+  return D.6301;
+
+}
+
+
+DevAssert (volatile boolean x)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  x.0_1 = x;
+  if (x.0_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  goto <bb 3>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

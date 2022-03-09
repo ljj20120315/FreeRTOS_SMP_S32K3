@@ -1,0 +1,195 @@
+Dump after hash based groups
+Congruence classes: 1 with total: 10 items (in a non-singular class: 10)
+Class size histogram [number of members]: number of classes
+    10:      1
+Dump after WPA based types groups
+Congruence classes: 1 with total: 10 items (in a non-singular class: 9)
+Class size histogram [number of members]: number of classes
+     1:      1
+     9:      1
+Worklist has been filled with: 0
+Address reference subdivision created: 0 new classes.
+Dump after callgraph-based congruence reduction
+Congruence classes: 1 with total: 10 items (in a non-singular class: 9)
+Class size histogram [number of members]: number of classes
+     1:      1
+     9:      1
+Init called for 9 items (90.00%).
+Dump after full equality comparison of groups
+Congruence classes: 1 with total: 10 items (in a non-singular class: 9)
+Class size histogram [number of members]: number of classes
+     1:      1
+     9:      1
+Worklist has been filled with: 0
+Address reference subdivision created: 0 new classes.
+Congruence classes: 1 with total: 10 items (in a non-singular class: 9)
+Class size histogram [number of members]: number of classes
+     1:      1
+     9:      1
+
+Item count: 10
+Congruent classes before: 2, after: 2
+Average class size before: 5.00, after: 5.00
+Average non-singular class size: 9.00, count: 1
+Equal symbols: 8
+Totally needed symbols: 9, fraction of loaded symbols: 100.00%
+
+undefined_handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+SysTick_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+PendSV_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+DebugMon_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+SVC_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+UsageFault_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+BusFault_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+MemManage_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+HardFault_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+NMI_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+

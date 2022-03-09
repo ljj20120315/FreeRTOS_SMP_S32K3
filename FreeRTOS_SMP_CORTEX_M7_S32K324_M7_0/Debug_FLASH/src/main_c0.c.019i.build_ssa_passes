@@ -1,0 +1,81 @@
+main_c0 ()
+{
+  int D.7335;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  MultiCore_Enable (1);
+  # DEBUG BEGIN_STMT
+  Xrdc_Ip_Init (&Xrdc_Config_BOARD_INITPERIPHERALS);
+  # DEBUG BEGIN_STMT
+  OsIf_Init (0B);
+  # DEBUG BEGIN_STMT
+  Clock_Ip_Init (&Mcu_aClockConfigPB[0]);
+  # DEBUG BEGIN_STMT
+  Siul2_Port_Ip_Init (6, &g_pin_mux_InitConfigArr0);
+  # DEBUG BEGIN_STMT
+  Sema42_Ip_Init (0);
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  exit_code0.0_1 = exit_code0;
+  if (exit_code0.0_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  D.7335 = exit_code0;
+  return D.7335;
+
+}
+
+
+MultiCore_Enable (uint8_t core)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = (int) core;
+  if (_1 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  _2 = 1076740096B;
+  _2->PRTN0_CORE1_ADDR = 4198400;
+  # DEBUG BEGIN_STMT
+  _3 = 1076740096B;
+  _3->PRTN0_CORE1_PCONF = 1;
+  # DEBUG BEGIN_STMT
+  _4 = 1076740096B;
+  _4->PRTN0_CORE1_PUPD = 1;
+  # DEBUG BEGIN_STMT
+  _5 = 1076740096B;
+  _5->CTL_KEY = 23280;
+  # DEBUG BEGIN_STMT
+  _6 = 1076740096B;
+  _6->CTL_KEY = 42255;
+  # DEBUG BEGIN_STMT
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _7 = 1076740096B;
+  _8 = _7->PRTN0_CORE1_STAT;
+  _9 = _8 & 1;
+  if (_9 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  return;
+
+}
+
+

@@ -1,0 +1,389 @@
+
+Marking local functions: DevAssert/0
+
+
+Marking externally visible functions: OsIf_Timer_System_MicrosToTicks/8 OsIf_Timer_System_SetTimerFrequency/7 OsIf_Timer_System_GetElapsed/6 OsIf_Timer_System_GetCounter/5 OsIf_Timer_System_Init/4
+
+
+Marking externally visible variables:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+OsIf_Timer_System_Internal_GetElapsed/12 (OsIf_Timer_System_Internal_GetElapsed) @0609b620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_GetElapsed/6 
+  Calls: 
+OsIf_Timer_System_Internal_GetCounter/11 (OsIf_Timer_System_Internal_GetCounter) @0609b460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_GetCounter/5 
+  Calls: 
+OsIf_Timer_System_Internal_Init/10 (OsIf_Timer_System_Internal_Init) @0609b1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_Init/4 
+  Calls: 
+OsIf_apxPredefinedConfig/9 (OsIf_apxPredefinedConfig) @0608ff78
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (read) OsIf_Timer_System_Init/4 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+OsIf_Timer_System_MicrosToTicks/8 (OsIf_Timer_System_MicrosToTicks) @06096460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) OsIf_au32InternalFrequencies/3 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: DevAssert/0 DevAssert/0 DevAssert/0 
+OsIf_Timer_System_SetTimerFrequency/7 (OsIf_Timer_System_SetTimerFrequency) @06096e00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) OsIf_au32InternalFrequencies/3 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: DevAssert/0 DevAssert/0 
+OsIf_Timer_System_GetElapsed/6 (OsIf_Timer_System_GetElapsed) @06096b60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_GetElapsed/12 DevAssert/0 DevAssert/0 
+OsIf_Timer_System_GetCounter/5 (OsIf_Timer_System_GetCounter) @060968c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_GetCounter/11 DevAssert/0 DevAssert/0 
+OsIf_Timer_System_Init/4 (OsIf_Timer_System_Init) @06096620
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: OsIf_apxPredefinedConfig/9 (read) OsIf_abMdlInit/1 (write) OsIf_apxPredefinedConfig/9 (read) OsIf_apxInternalCfg/2 (write) OsIf_apxInternalCfg/2 (read) OsIf_au32InternalFrequencies/3 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_Init/10 DevAssert/0 
+OsIf_au32InternalFrequencies/3 (OsIf_au32InternalFrequencies) @0608f6c0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (write) OsIf_Timer_System_SetTimerFrequency/7 (write) OsIf_Timer_System_MicrosToTicks/8 (read) 
+  Availability: available
+  Varpool flags:
+OsIf_apxInternalCfg/2 (OsIf_apxInternalCfg) @0608f630
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (write) OsIf_Timer_System_Init/4 (read) OsIf_Timer_System_GetCounter/5 (read) OsIf_Timer_System_GetElapsed/6 (read) OsIf_Timer_System_SetTimerFrequency/7 (read) OsIf_Timer_System_MicrosToTicks/8 (read) 
+  Availability: available
+  Varpool flags:
+OsIf_abMdlInit/1 (OsIf_abMdlInit) @0608f5a0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (write) OsIf_Timer_System_GetCounter/5 (read) OsIf_Timer_System_GetElapsed/6 (read) OsIf_Timer_System_SetTimerFrequency/7 (read) OsIf_Timer_System_MicrosToTicks/8 (read) 
+  Availability: available
+  Varpool flags:
+DevAssert/0 (DevAssert) @06034ee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: OsIf_Timer_System_MicrosToTicks/8 OsIf_Timer_System_MicrosToTicks/8 OsIf_Timer_System_MicrosToTicks/8 OsIf_Timer_System_SetTimerFrequency/7 OsIf_Timer_System_SetTimerFrequency/7 OsIf_Timer_System_GetElapsed/6 OsIf_Timer_System_GetElapsed/6 OsIf_Timer_System_GetCounter/5 OsIf_Timer_System_GetCounter/5 OsIf_Timer_System_Init/4 
+  Calls: 
+OsIf_Timer_System_MicrosToTicks (uint32 Micros)
+{
+  uint32 CoreId;
+  uint32 ticks;
+  uint64 interim;
+  uint32 D.5806;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  ticks = 0;
+  # DEBUG BEGIN_STMT
+  CoreId = 0;
+  # DEBUG BEGIN_STMT
+  _1 = OsIf_abMdlInit[CoreId];
+  _2 = ~_1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  DevAssert (0);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _3 = OsIf_apxInternalCfg[CoreId];
+  if (_3 == 0B)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  DevAssert (0);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _4 = (long long unsigned int) Micros;
+  _5 = OsIf_au32InternalFrequencies[CoreId];
+  _6 = (long long unsigned int) _5;
+  interim = _4 * _6;
+  # DEBUG BEGIN_STMT
+  interim = interim / 1000000;
+  # DEBUG BEGIN_STMT
+  _7 = interim <= 4294967295;
+  DevAssert (_7);
+  # DEBUG BEGIN_STMT
+  ticks = (uint32) interim;
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  D.5806 = ticks;
+  return D.5806;
+
+}
+
+
+OsIf_Timer_System_SetTimerFrequency (uint32 Freq)
+{
+  uint32 CoreId;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  CoreId = 0;
+  # DEBUG BEGIN_STMT
+  _1 = OsIf_abMdlInit[CoreId];
+  _2 = ~_1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  DevAssert (0);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _3 = OsIf_apxInternalCfg[CoreId];
+  if (_3 == 0B)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  DevAssert (0);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  OsIf_au32InternalFrequencies[CoreId] = Freq;
+
+  <bb 7> :
+  return;
+
+}
+
+
+OsIf_Timer_System_GetElapsed (uint32 * const CurrentRef)
+{
+  uint32 CoreId;
+  uint32 Elapsed;
+  uint32 D.5792;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Elapsed = 0;
+  # DEBUG BEGIN_STMT
+  CoreId = 0;
+  # DEBUG BEGIN_STMT
+  _1 = OsIf_abMdlInit[CoreId];
+  _2 = ~_1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  DevAssert (0);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _3 = OsIf_apxInternalCfg[CoreId];
+  if (_3 == 0B)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  DevAssert (0);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Elapsed = OsIf_Timer_System_Internal_GetElapsed (CurrentRef);
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  D.5792 = Elapsed;
+  return D.5792;
+
+}
+
+
+OsIf_Timer_System_GetCounter ()
+{
+  uint32 CoreId;
+  uint32 Counter;
+  uint32 D.5784;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Counter = 0;
+  # DEBUG BEGIN_STMT
+  CoreId = 0;
+  # DEBUG BEGIN_STMT
+  _1 = OsIf_abMdlInit[CoreId];
+  _2 = ~_1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  DevAssert (0);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _3 = OsIf_apxInternalCfg[CoreId];
+  if (_3 == 0B)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  DevAssert (0);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Counter = OsIf_Timer_System_Internal_GetCounter ();
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  D.5784 = Counter;
+  return D.5784;
+
+}
+
+
+OsIf_Timer_System_Init ()
+{
+  uint32 CoreId;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  CoreId = 0;
+  # DEBUG BEGIN_STMT
+  _1 = OsIf_apxPredefinedConfig[CoreId];
+  if (_1 == 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  DevAssert (0);
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  OsIf_abMdlInit[CoreId] = 1;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _2 = OsIf_apxPredefinedConfig[CoreId];
+  OsIf_apxInternalCfg[CoreId] = _2;
+  # DEBUG BEGIN_STMT
+  _3 = OsIf_apxInternalCfg[CoreId];
+  _4 = _3->counterFrequency;
+  OsIf_au32InternalFrequencies[CoreId] = _4;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  OsIf_Timer_System_Internal_Init ();
+  return;
+
+}
+
+
+DevAssert (volatile boolean x)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  x.0_1 = x;
+  if (x.0_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  goto <bb 3>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

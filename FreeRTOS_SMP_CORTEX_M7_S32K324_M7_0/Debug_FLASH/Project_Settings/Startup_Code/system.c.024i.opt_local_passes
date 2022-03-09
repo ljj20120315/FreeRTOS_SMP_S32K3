@@ -1,0 +1,630 @@
+sys_m7_cache_clean ()
+{
+  uint32 ways;
+  uint32 sets;
+  uint32 ccsidr;
+  struct S32_SCB_Type * _1;
+  struct S32_SCB_Type * _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  struct S32_SCB_Type * _8;
+  long unsigned int _9;
+  long unsigned int ways.12_10;
+  long unsigned int sets.13_11;
+  struct S32_SCB_Type * _12;
+  long unsigned int _13;
+  struct S32_SCB_Type * _14;
+  long unsigned int _15;
+  struct S32_SCB_Type * _16;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  ccsidr_21 = 0;
+  # DEBUG ccsidr => ccsidr_21
+  # DEBUG BEGIN_STMT
+  sets_22 = 0;
+  # DEBUG sets => sets_22
+  # DEBUG BEGIN_STMT
+  ways_23 = 0;
+  # DEBUG ways => ways_23
+  # DEBUG BEGIN_STMT
+  _1 = 3758153728B;
+  _1->CSSELR ={v} 0;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  _2 = 3758153728B;
+  ccsidr_27 ={v} _2->CCSIDR;
+  # DEBUG ccsidr => ccsidr_27
+  # DEBUG BEGIN_STMT
+  _3 = ccsidr_27 >> 13;
+  sets_28 = _3 & 32767;
+  # DEBUG sets => sets_28
+
+  <bb 3> :
+  # sets_17 = PHI <sets_28(2), sets_33(5)>
+  # DEBUG sets => sets_17
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _4 = ccsidr_27 >> 3;
+  ways_29 = _4 & 1023;
+  # DEBUG ways => ways_29
+
+  <bb 4> :
+  # ways_18 = PHI <ways_29(3), ways_32(4)>
+  # DEBUG ways => ways_18
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _5 = sets_17 << 5;
+  _6 = _5 & 16352;
+  _7 = ways_18 << 30;
+  _8 = 3758153728B;
+  _9 = _6 | _7;
+  _8->DCCISW ={v} _9;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  ways.12_10 = ways_18;
+  ways_32 = ways.12_10 + 4294967295;
+  # DEBUG ways => ways_32
+  if (ways.12_10 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  sets.13_11 = sets_17;
+  sets_33 = sets.13_11 + 4294967295;
+  # DEBUG sets => sets_33
+  if (sets.13_11 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _12 = 3758153728B;
+  _13 ={v} _12->CSSELR;
+  _14 = 3758153728B;
+  _15 = _13 | 1;
+  _14->CSSELR ={v} _15;
+  # DEBUG BEGIN_STMT
+  _16 = 3758153728B;
+  _16->ICIALLU ={v} 0;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  return;
+
+}
+
+
+sys_m7_cache_disable ()
+{
+  struct S32_SCB_Type * _1;
+  long unsigned int _2;
+  struct S32_SCB_Type * _3;
+  long unsigned int _4;
+  struct S32_SCB_Type * _5;
+  long unsigned int _6;
+  struct S32_SCB_Type * _7;
+  long unsigned int _8;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  sys_m7_cache_clean ();
+  # DEBUG BEGIN_STMT
+  _1 = 3758153728B;
+  _2 ={v} _1->CCR;
+  _3 = 3758153728B;
+  _4 = _2 & 4294836223;
+  _3->CCR ={v} _4;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("isb");
+  # DEBUG BEGIN_STMT
+  _5 = 3758153728B;
+  _6 ={v} _5->CCR;
+  _7 = 3758153728B;
+  _8 = _6 & 4294901759;
+  _7->CCR ={v} _8;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("isb");
+  return;
+
+}
+
+
+sys_m7_cache_init ()
+{
+  uint32 ways;
+  uint32 sets;
+  uint32 ccsidr;
+  struct S32_SCB_Type * _1;
+  struct S32_SCB_Type * _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  struct S32_SCB_Type * _8;
+  long unsigned int _9;
+  long unsigned int ways.14_10;
+  long unsigned int sets.15_11;
+  struct S32_SCB_Type * _12;
+  long unsigned int _13;
+  struct S32_SCB_Type * _14;
+  long unsigned int _15;
+  struct S32_SCB_Type * _16;
+  struct S32_SCB_Type * _17;
+  long unsigned int _18;
+  struct S32_SCB_Type * _19;
+  long unsigned int _20;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  ccsidr_25 = 0;
+  # DEBUG ccsidr => ccsidr_25
+  # DEBUG BEGIN_STMT
+  sets_26 = 0;
+  # DEBUG sets => sets_26
+  # DEBUG BEGIN_STMT
+  ways_27 = 0;
+  # DEBUG ways => ways_27
+  # DEBUG BEGIN_STMT
+  _1 = 3758153728B;
+  _1->CSSELR ={v} 0;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  _2 = 3758153728B;
+  ccsidr_31 ={v} _2->CCSIDR;
+  # DEBUG ccsidr => ccsidr_31
+  # DEBUG BEGIN_STMT
+  _3 = ccsidr_31 >> 13;
+  sets_32 = _3 & 32767;
+  # DEBUG sets => sets_32
+
+  <bb 3> :
+  # sets_21 = PHI <sets_32(2), sets_37(5)>
+  # DEBUG sets => sets_21
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _4 = ccsidr_31 >> 3;
+  ways_33 = _4 & 1023;
+  # DEBUG ways => ways_33
+
+  <bb 4> :
+  # ways_22 = PHI <ways_33(3), ways_36(4)>
+  # DEBUG ways => ways_22
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _5 = sets_21 << 5;
+  _6 = _5 & 16352;
+  _7 = ways_22 << 30;
+  _8 = 3758153728B;
+  _9 = _6 | _7;
+  _8->DCISW ={v} _9;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  ways.14_10 = ways_22;
+  ways_36 = ways.14_10 + 4294967295;
+  # DEBUG ways => ways_36
+  if (ways.14_10 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  sets.15_11 = sets_21;
+  sets_37 = sets.15_11 + 4294967295;
+  # DEBUG sets => sets_37
+  if (sets.15_11 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  _12 = 3758153728B;
+  _13 ={v} _12->CCR;
+  _14 = 3758153728B;
+  _15 = _13 | 65536;
+  _14->CCR ={v} _15;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("isb");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("isb");
+  # DEBUG BEGIN_STMT
+  _16 = 3758153728B;
+  _16->ICIALLU ={v} 0;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("isb");
+  # DEBUG BEGIN_STMT
+  _17 = 3758153728B;
+  _18 ={v} _17->CCR;
+  _19 = 3758153728B;
+  _20 = _18 | 131072;
+  _19->CCR ={v} _20;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("isb");
+  # DEBUG BEGIN_STMT
+  sys_m7_cache_clean ();
+  return;
+
+}
+
+
+SystemInit ()
+{
+  uint8 coreId;
+  uint8 index;
+  uint8 regionNum;
+  uint32 coreMask;
+  uint32 i;
+  int _1;
+  struct MSCM_Type * _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  struct MSCM_Type * _5;
+  short unsigned int _6;
+  struct S32_SCB_Type * _7;
+  long unsigned int _8;
+  struct S32_SCB_Type * _9;
+  long unsigned int _10;
+  long unsigned int __INT_ITCM_START.0_11;
+  long unsigned int __ROM_CODE_START.1_12;
+  long unsigned int __ROM_DATA_START.2_13;
+  long unsigned int __INT_DTCM_START.3_14;
+  long unsigned int __INT_SRAM_START.4_15;
+  long unsigned int __RAM_CACHEABLE_SIZE.5_16;
+  long unsigned int _17;
+  long unsigned int _18;
+  long unsigned int _19;
+  long unsigned int __RAM_NO_CACHEABLE_START.6_20;
+  long unsigned int __RAM_NO_CACHEABLE_SIZE.7_21;
+  long unsigned int _22;
+  long unsigned int _23;
+  long unsigned int _24;
+  long unsigned int __RAM_SHAREABLE_START.8_25;
+  long unsigned int __RAM_SHAREABLE_SIZE.9_26;
+  long unsigned int _27;
+  long unsigned int _28;
+  long unsigned int _29;
+  struct S32_SCB_Type * _30;
+  long unsigned int _31;
+  long unsigned int _32;
+  struct S32_SCB_Type * _33;
+  long unsigned int _34;
+  long unsigned int _35;
+  int _36;
+  long unsigned int _37;
+  long unsigned int _38;
+  struct S32_MPU_Type * _39;
+  long unsigned int _40;
+  int _41;
+  struct S32_MPU_Type * _42;
+  long unsigned int _43;
+  int _44;
+  struct S32_MPU_Type * _45;
+  long unsigned int _46;
+  unsigned char regionNum.10_47;
+  unsigned char index.11_48;
+  struct S32_MPU_Type * _49;
+  long unsigned int _50;
+  struct S32_MPU_Type * _51;
+  long unsigned int _52;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  coreMask_62 = 0;
+  # DEBUG coreMask => coreMask_62
+  # DEBUG BEGIN_STMT
+  regionNum_63 = 0;
+  # DEBUG regionNum => regionNum_63
+  # DEBUG BEGIN_STMT
+  index_64 = 0;
+  # DEBUG index => index_64
+  # DEBUG BEGIN_STMT
+  coreId_67 = Sys_GetCoreID ();
+  # DEBUG coreId => coreId_67
+  # DEBUG BEGIN_STMT
+  _1 = (int) coreId_67;
+  switch (_1) <default: <L2> [INV], case 0: <L0> [INV], case 1: <L1> [INV]>
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  coreMask_69 = 1;
+  # DEBUG coreMask => coreMask_69
+  # DEBUG BEGIN_STMT
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+<L1>:
+  # DEBUG BEGIN_STMT
+  coreMask_68 = 2;
+  # DEBUG coreMask => coreMask_68
+  # DEBUG BEGIN_STMT
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+<L2>:
+  # DEBUG BEGIN_STMT
+  coreMask_70 = 0;
+  # DEBUG coreMask => coreMask_70
+  # DEBUG BEGIN_STMT
+
+  <bb 6> :
+  # coreMask_54 = PHI <coreMask_69(3), coreMask_68(4), coreMask_70(5)>
+  # DEBUG coreMask => coreMask_54
+  # DEBUG BEGIN_STMT
+  i_71 = 0;
+  # DEBUG i => i_71
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  _2 = 1076232192B;
+  _3 ={v} _2->IRSPRC[i_53];
+  _4 = (short unsigned int) coreMask_54;
+  _5 = 1076232192B;
+  _6 = _3 | _4;
+  _5->IRSPRC[i_53] ={v} _6;
+  # DEBUG BEGIN_STMT
+  i_118 = i_53 + 1;
+  # DEBUG i => i_118
+
+  <bb 8> :
+  # i_53 = PHI <i_71(6), i_118(7)>
+  # DEBUG i => i_53
+  # DEBUG BEGIN_STMT
+  if (i_53 <= 239)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  _7 = 3758153728B;
+  _8 ={v} _7->CPACR;
+  _9 = 3758153728B;
+  _10 = _8 | 15728640;
+  _9->CPACR ={v} _10;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("isb");
+  # DEBUG BEGIN_STMT
+  rbar[0] ={v} 0;
+  # DEBUG BEGIN_STMT
+  rasr[0] ={v} 268697663;
+  # DEBUG BEGIN_STMT
+  __INT_ITCM_START.0_11 = (long unsigned int) &__INT_ITCM_START;
+  rbar[1] ={v} __INT_ITCM_START.0_11;
+  # DEBUG BEGIN_STMT
+  rasr[1] ={v} 17039391;
+  # DEBUG BEGIN_STMT
+  __ROM_CODE_START.1_12 = (long unsigned int) &__ROM_CODE_START;
+  rbar[2] ={v} __ROM_CODE_START.1_12;
+  # DEBUG BEGIN_STMT
+  rasr[2] ={v} 101384235;
+  # DEBUG BEGIN_STMT
+  __ROM_DATA_START.2_13 = (long unsigned int) &__ROM_DATA_START;
+  rbar[3] ={v} __ROM_DATA_START.2_13;
+  # DEBUG BEGIN_STMT
+  rasr[3] ={v} 369426467;
+  # DEBUG BEGIN_STMT
+  __INT_DTCM_START.3_14 = (long unsigned int) &__INT_DTCM_START;
+  rbar[4] ={v} __INT_DTCM_START.3_14;
+  # DEBUG BEGIN_STMT
+  rasr[4] ={v} 17039393;
+  # DEBUG BEGIN_STMT
+  __INT_SRAM_START.4_15 = (long unsigned int) &__INT_SRAM_START;
+  rbar[5] ={v} __INT_SRAM_START.4_15;
+  # DEBUG BEGIN_STMT
+  __RAM_CACHEABLE_SIZE.5_16 = (long unsigned int) &__RAM_CACHEABLE_SIZE;
+  _17 = __RAM_CACHEABLE_SIZE.5_16 + 4294967295;
+  _18 = _17 << 1;
+  _19 = _18 | 51052545;
+  rasr[5] ={v} _19;
+  # DEBUG BEGIN_STMT
+  __RAM_NO_CACHEABLE_START.6_20 = (long unsigned int) &__RAM_NO_CACHEABLE_START;
+  rbar[6] ={v} __RAM_NO_CACHEABLE_START.6_20;
+  # DEBUG BEGIN_STMT
+  __RAM_NO_CACHEABLE_SIZE.7_21 = (long unsigned int) &__RAM_NO_CACHEABLE_SIZE;
+  _22 = __RAM_NO_CACHEABLE_SIZE.7_21 + 4294967295;
+  _23 = _22 << 1;
+  _24 = _23 | 319553537;
+  rasr[6] ={v} _24;
+  # DEBUG BEGIN_STMT
+  __RAM_SHAREABLE_START.8_25 = (long unsigned int) &__RAM_SHAREABLE_START;
+  rbar[7] ={v} __RAM_SHAREABLE_START.8_25;
+  # DEBUG BEGIN_STMT
+  __RAM_SHAREABLE_SIZE.9_26 = (long unsigned int) &__RAM_SHAREABLE_SIZE;
+  _27 = __RAM_SHAREABLE_SIZE.9_26 + 4294967295;
+  _28 = _27 << 1;
+  _29 = _28 | 319553537;
+  rasr[7] ={v} _29;
+  # DEBUG BEGIN_STMT
+  rbar[8] ={v} 1073741824;
+  # DEBUG BEGIN_STMT
+  rasr[8] ={v} 319094825;
+  # DEBUG BEGIN_STMT
+  rbar[9] ={v} 1075838976;
+  # DEBUG BEGIN_STMT
+  rasr[9] ={v} 319094825;
+  # DEBUG BEGIN_STMT
+  rbar[10] ={v} 1077936128;
+  # DEBUG BEGIN_STMT
+  rasr[10] ={v} 319094825;
+  # DEBUG BEGIN_STMT
+  rbar[11] ={v} 1728053248;
+  # DEBUG BEGIN_STMT
+  rasr[11] ={v} 319094803;
+  # DEBUG BEGIN_STMT
+  rbar[12] ={v} 1744830464;
+  # DEBUG BEGIN_STMT
+  rasr[12] ={v} 51052597;
+  # DEBUG BEGIN_STMT
+  rbar[13] ={v} 3758096384;
+  # DEBUG BEGIN_STMT
+  rasr[13] ={v} 319029287;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("isb");
+  # DEBUG BEGIN_STMT
+  _30 = 3758153728B;
+  _31 ={v} _30->CCR;
+  _32 = _31 & 131072;
+  if (_32 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  _33 = 3758153728B;
+  _34 ={v} _33->CCR;
+  _35 = _34 & 65536;
+  if (_35 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  sys_m7_cache_clean ();
+  # DEBUG BEGIN_STMT
+  sys_m7_cache_disable ();
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  index_107 = 0;
+  # DEBUG index => index_107
+  goto <bb 16>; [INV]
+
+  <bb 13> :
+  # DEBUG BEGIN_STMT
+  _36 = (int) index_57;
+  _37 ={v} rasr[_36];
+  _38 = _37 & 1;
+  if (_38 == 1)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  # DEBUG BEGIN_STMT
+  _39 = 3758153728B;
+  _40 = (long unsigned int) regionNum_56;
+  _39->RNR ={v} _40;
+  # DEBUG BEGIN_STMT
+  _41 = (int) index_57;
+  _42 = 3758153728B;
+  _43 ={v} rbar[_41];
+  _42->RBAR ={v} _43;
+  # DEBUG BEGIN_STMT
+  _44 = (int) index_57;
+  _45 = 3758153728B;
+  _46 ={v} rasr[_44];
+  _45->RASR ={v} _46;
+  # DEBUG BEGIN_STMT
+  regionNum.10_47 = regionNum_56;
+  regionNum_115 = regionNum.10_47 + 1;
+  # DEBUG regionNum => regionNum_115
+
+  <bb 15> :
+  # regionNum_55 = PHI <regionNum_56(13), regionNum_115(14)>
+  # DEBUG regionNum => regionNum_55
+  # DEBUG BEGIN_STMT
+  index.11_48 = index_57;
+  index_116 = index.11_48 + 1;
+  # DEBUG index => index_116
+
+  <bb 16> :
+  # regionNum_56 = PHI <regionNum_63(12), regionNum_55(15)>
+  # index_57 = PHI <index_107(12), index_116(15)>
+  # DEBUG index => index_57
+  # DEBUG regionNum => regionNum_56
+  # DEBUG BEGIN_STMT
+  if (index_57 <= 14)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 17> :
+  # DEBUG BEGIN_STMT
+  _49 = 3758153728B;
+  _50 ={v} _49->CTRL;
+  _51 = 3758153728B;
+  _52 = _50 | 1;
+  _51->CTRL ={v} _52;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("isb");
+  # DEBUG BEGIN_STMT
+  sys_m7_cache_init ();
+  return;
+
+}
+
+
+Sys_GetCoreID ()
+{
+  struct MSCM_Type * _1;
+  long unsigned int _2;
+  unsigned char _3;
+  uint8 _5;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076232192B;
+  _2 ={v} _1->CPXNUM;
+  _3 = (unsigned char) _2;
+  _5 = _3 & 3;
+  return _5;
+
+}
+
+
+default_interrupt_routine ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  goto <bb 2>; [INV]
+
+}
+
+
+startup_go_to_user_mode ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

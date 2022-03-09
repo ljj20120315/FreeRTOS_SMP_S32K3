@@ -1,0 +1,650 @@
+Trivially needed symbols: OsIf_Timer_System_MicrosToTicks/8 OsIf_Timer_System_SetTimerFrequency/7 OsIf_Timer_System_GetElapsed/6 OsIf_Timer_System_GetCounter/5 OsIf_Timer_System_Init/4
+
+
+Initial Symbol table:
+
+OsIf_Timer_System_Internal_GetElapsed/12 (OsIf_Timer_System_Internal_GetElapsed) @0609b620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_GetElapsed/6 
+  Calls: 
+OsIf_Timer_System_Internal_GetCounter/11 (OsIf_Timer_System_Internal_GetCounter) @0609b460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_GetCounter/5 
+  Calls: 
+OsIf_Timer_System_Internal_Init/10 (OsIf_Timer_System_Internal_Init) @0609b1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_Init/4 
+  Calls: 
+OsIf_apxPredefinedConfig/9 (OsIf_apxPredefinedConfig) @0608ff78
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (read) OsIf_Timer_System_Init/4 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+OsIf_Timer_System_MicrosToTicks/8 (OsIf_Timer_System_MicrosToTicks) @06096460
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @01981040
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) OsIf_au32InternalFrequencies/3 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: DevAssert/0 DevAssert/0 DevAssert/0 
+OsIf_Timer_System_SetTimerFrequency/7 (OsIf_Timer_System_SetTimerFrequency) @06096e00
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06096460
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) OsIf_au32InternalFrequencies/3 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: DevAssert/0 DevAssert/0 
+OsIf_Timer_System_GetElapsed/6 (OsIf_Timer_System_GetElapsed) @06096b60
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06096e00
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_GetElapsed/12 DevAssert/0 DevAssert/0 
+OsIf_Timer_System_GetCounter/5 (OsIf_Timer_System_GetCounter) @060968c0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06096b60
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_GetCounter/11 DevAssert/0 DevAssert/0 
+OsIf_Timer_System_Init/4 (OsIf_Timer_System_Init) @06096620
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @060968c0
+  References: OsIf_apxPredefinedConfig/9 (read) OsIf_abMdlInit/1 (write) OsIf_apxPredefinedConfig/9 (read) OsIf_apxInternalCfg/2 (write) OsIf_apxInternalCfg/2 (read) OsIf_au32InternalFrequencies/3 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_Init/10 DevAssert/0 
+OsIf_au32InternalFrequencies/3 (OsIf_au32InternalFrequencies) @0608f6c0
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @0608f630
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (write) OsIf_Timer_System_SetTimerFrequency/7 (write) OsIf_Timer_System_MicrosToTicks/8 (read) 
+  Availability: not-ready
+  Varpool flags:
+OsIf_apxInternalCfg/2 (OsIf_apxInternalCfg) @0608f630
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @0608f5a0
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (write) OsIf_Timer_System_Init/4 (read) OsIf_Timer_System_GetCounter/5 (read) OsIf_Timer_System_GetElapsed/6 (read) OsIf_Timer_System_SetTimerFrequency/7 (read) OsIf_Timer_System_MicrosToTicks/8 (read) 
+  Availability: not-ready
+  Varpool flags:
+OsIf_abMdlInit/1 (OsIf_abMdlInit) @0608f5a0
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @06034ee0
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (write) OsIf_Timer_System_GetCounter/5 (read) OsIf_Timer_System_GetElapsed/6 (read) OsIf_Timer_System_SetTimerFrequency/7 (read) OsIf_Timer_System_MicrosToTicks/8 (read) 
+  Availability: not-ready
+  Varpool flags:
+DevAssert/0 (DevAssert) @06034ee0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @060968c0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: OsIf_Timer_System_MicrosToTicks/8 OsIf_Timer_System_MicrosToTicks/8 OsIf_Timer_System_MicrosToTicks/8 OsIf_Timer_System_SetTimerFrequency/7 OsIf_Timer_System_SetTimerFrequency/7 OsIf_Timer_System_GetElapsed/6 OsIf_Timer_System_GetElapsed/6 OsIf_Timer_System_GetCounter/5 OsIf_Timer_System_GetCounter/5 OsIf_Timer_System_Init/4 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+OsIf_Timer_System_Internal_GetElapsed/12 (OsIf_Timer_System_Internal_GetElapsed) @0609b620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_GetElapsed/6 
+  Calls: 
+OsIf_Timer_System_Internal_GetCounter/11 (OsIf_Timer_System_Internal_GetCounter) @0609b460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_GetCounter/5 
+  Calls: 
+OsIf_Timer_System_Internal_Init/10 (OsIf_Timer_System_Internal_Init) @0609b1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_Init/4 
+  Calls: 
+OsIf_apxPredefinedConfig/9 (OsIf_apxPredefinedConfig) @0608ff78
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (read) OsIf_Timer_System_Init/4 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+OsIf_Timer_System_MicrosToTicks/8 (OsIf_Timer_System_MicrosToTicks) @06096460
+  Type: function definition analyzed
+  Visibility: public
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) OsIf_au32InternalFrequencies/3 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: DevAssert/0 DevAssert/0 DevAssert/0 
+OsIf_Timer_System_SetTimerFrequency/7 (OsIf_Timer_System_SetTimerFrequency) @06096e00
+  Type: function definition analyzed
+  Visibility: public
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) OsIf_au32InternalFrequencies/3 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: DevAssert/0 DevAssert/0 
+OsIf_Timer_System_GetElapsed/6 (OsIf_Timer_System_GetElapsed) @06096b60
+  Type: function definition analyzed
+  Visibility: public
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_GetElapsed/12 DevAssert/0 DevAssert/0 
+OsIf_Timer_System_GetCounter/5 (OsIf_Timer_System_GetCounter) @060968c0
+  Type: function definition analyzed
+  Visibility: public
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_GetCounter/11 DevAssert/0 DevAssert/0 
+OsIf_Timer_System_Init/4 (OsIf_Timer_System_Init) @06096620
+  Type: function definition analyzed
+  Visibility: public
+  References: OsIf_apxPredefinedConfig/9 (read) OsIf_abMdlInit/1 (write) OsIf_apxPredefinedConfig/9 (read) OsIf_apxInternalCfg/2 (write) OsIf_apxInternalCfg/2 (read) OsIf_au32InternalFrequencies/3 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_Init/10 DevAssert/0 
+OsIf_au32InternalFrequencies/3 (OsIf_au32InternalFrequencies) @0608f6c0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (write) OsIf_Timer_System_SetTimerFrequency/7 (write) OsIf_Timer_System_MicrosToTicks/8 (read) 
+  Availability: not-ready
+  Varpool flags:
+OsIf_apxInternalCfg/2 (OsIf_apxInternalCfg) @0608f630
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (write) OsIf_Timer_System_Init/4 (read) OsIf_Timer_System_GetCounter/5 (read) OsIf_Timer_System_GetElapsed/6 (read) OsIf_Timer_System_SetTimerFrequency/7 (read) OsIf_Timer_System_MicrosToTicks/8 (read) 
+  Availability: not-ready
+  Varpool flags:
+OsIf_abMdlInit/1 (OsIf_abMdlInit) @0608f5a0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (write) OsIf_Timer_System_GetCounter/5 (read) OsIf_Timer_System_GetElapsed/6 (read) OsIf_Timer_System_SetTimerFrequency/7 (read) OsIf_Timer_System_MicrosToTicks/8 (read) 
+  Availability: not-ready
+  Varpool flags:
+DevAssert/0 (DevAssert) @06034ee0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: OsIf_Timer_System_MicrosToTicks/8 OsIf_Timer_System_MicrosToTicks/8 OsIf_Timer_System_MicrosToTicks/8 OsIf_Timer_System_SetTimerFrequency/7 OsIf_Timer_System_SetTimerFrequency/7 OsIf_Timer_System_GetElapsed/6 OsIf_Timer_System_GetElapsed/6 OsIf_Timer_System_GetCounter/5 OsIf_Timer_System_GetCounter/5 OsIf_Timer_System_Init/4 
+  Calls: 
+
+
+Initial Symbol table:
+
+OsIf_Timer_System_Internal_GetElapsed/12 (OsIf_Timer_System_Internal_GetElapsed) @0609b620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_GetElapsed/6 
+  Calls: 
+OsIf_Timer_System_Internal_GetCounter/11 (OsIf_Timer_System_Internal_GetCounter) @0609b460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_GetCounter/5 
+  Calls: 
+OsIf_Timer_System_Internal_Init/10 (OsIf_Timer_System_Internal_Init) @0609b1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_Init/4 
+  Calls: 
+OsIf_apxPredefinedConfig/9 (OsIf_apxPredefinedConfig) @0608ff78
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (read) OsIf_Timer_System_Init/4 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+OsIf_Timer_System_MicrosToTicks/8 (OsIf_Timer_System_MicrosToTicks) @06096460
+  Type: function definition analyzed
+  Visibility: public
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) OsIf_au32InternalFrequencies/3 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: DevAssert/0 DevAssert/0 DevAssert/0 
+OsIf_Timer_System_SetTimerFrequency/7 (OsIf_Timer_System_SetTimerFrequency) @06096e00
+  Type: function definition analyzed
+  Visibility: public
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) OsIf_au32InternalFrequencies/3 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: DevAssert/0 DevAssert/0 
+OsIf_Timer_System_GetElapsed/6 (OsIf_Timer_System_GetElapsed) @06096b60
+  Type: function definition analyzed
+  Visibility: public
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_GetElapsed/12 DevAssert/0 DevAssert/0 
+OsIf_Timer_System_GetCounter/5 (OsIf_Timer_System_GetCounter) @060968c0
+  Type: function definition analyzed
+  Visibility: public
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_GetCounter/11 DevAssert/0 DevAssert/0 
+OsIf_Timer_System_Init/4 (OsIf_Timer_System_Init) @06096620
+  Type: function definition analyzed
+  Visibility: public
+  References: OsIf_apxPredefinedConfig/9 (read) OsIf_abMdlInit/1 (write) OsIf_apxPredefinedConfig/9 (read) OsIf_apxInternalCfg/2 (write) OsIf_apxInternalCfg/2 (read) OsIf_au32InternalFrequencies/3 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_Init/10 DevAssert/0 
+OsIf_au32InternalFrequencies/3 (OsIf_au32InternalFrequencies) @0608f6c0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (write) OsIf_Timer_System_SetTimerFrequency/7 (write) OsIf_Timer_System_MicrosToTicks/8 (read) 
+  Availability: not-ready
+  Varpool flags:
+OsIf_apxInternalCfg/2 (OsIf_apxInternalCfg) @0608f630
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (write) OsIf_Timer_System_Init/4 (read) OsIf_Timer_System_GetCounter/5 (read) OsIf_Timer_System_GetElapsed/6 (read) OsIf_Timer_System_SetTimerFrequency/7 (read) OsIf_Timer_System_MicrosToTicks/8 (read) 
+  Availability: not-ready
+  Varpool flags:
+OsIf_abMdlInit/1 (OsIf_abMdlInit) @0608f5a0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (write) OsIf_Timer_System_GetCounter/5 (read) OsIf_Timer_System_GetElapsed/6 (read) OsIf_Timer_System_SetTimerFrequency/7 (read) OsIf_Timer_System_MicrosToTicks/8 (read) 
+  Availability: not-ready
+  Varpool flags:
+DevAssert/0 (DevAssert) @06034ee0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: OsIf_Timer_System_MicrosToTicks/8 OsIf_Timer_System_MicrosToTicks/8 OsIf_Timer_System_MicrosToTicks/8 OsIf_Timer_System_SetTimerFrequency/7 OsIf_Timer_System_SetTimerFrequency/7 OsIf_Timer_System_GetElapsed/6 OsIf_Timer_System_GetElapsed/6 OsIf_Timer_System_GetCounter/5 OsIf_Timer_System_GetCounter/5 OsIf_Timer_System_Init/4 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+OsIf_Timer_System_Internal_GetElapsed/12 (OsIf_Timer_System_Internal_GetElapsed) @0609b620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_GetElapsed/6 
+  Calls: 
+OsIf_Timer_System_Internal_GetCounter/11 (OsIf_Timer_System_Internal_GetCounter) @0609b460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_GetCounter/5 
+  Calls: 
+OsIf_Timer_System_Internal_Init/10 (OsIf_Timer_System_Internal_Init) @0609b1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_Init/4 
+  Calls: 
+OsIf_apxPredefinedConfig/9 (OsIf_apxPredefinedConfig) @0608ff78
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (read) OsIf_Timer_System_Init/4 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+OsIf_Timer_System_MicrosToTicks/8 (OsIf_Timer_System_MicrosToTicks) @06096460
+  Type: function definition analyzed
+  Visibility: public
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) OsIf_au32InternalFrequencies/3 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: DevAssert/0 DevAssert/0 DevAssert/0 
+OsIf_Timer_System_SetTimerFrequency/7 (OsIf_Timer_System_SetTimerFrequency) @06096e00
+  Type: function definition analyzed
+  Visibility: public
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) OsIf_au32InternalFrequencies/3 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: DevAssert/0 DevAssert/0 
+OsIf_Timer_System_GetElapsed/6 (OsIf_Timer_System_GetElapsed) @06096b60
+  Type: function definition analyzed
+  Visibility: public
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_GetElapsed/12 DevAssert/0 DevAssert/0 
+OsIf_Timer_System_GetCounter/5 (OsIf_Timer_System_GetCounter) @060968c0
+  Type: function definition analyzed
+  Visibility: public
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_GetCounter/11 DevAssert/0 DevAssert/0 
+OsIf_Timer_System_Init/4 (OsIf_Timer_System_Init) @06096620
+  Type: function definition analyzed
+  Visibility: public
+  References: OsIf_apxPredefinedConfig/9 (read) OsIf_abMdlInit/1 (write) OsIf_apxPredefinedConfig/9 (read) OsIf_apxInternalCfg/2 (write) OsIf_apxInternalCfg/2 (read) OsIf_au32InternalFrequencies/3 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_Init/10 DevAssert/0 
+OsIf_au32InternalFrequencies/3 (OsIf_au32InternalFrequencies) @0608f6c0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (write) OsIf_Timer_System_SetTimerFrequency/7 (write) OsIf_Timer_System_MicrosToTicks/8 (read) 
+  Availability: not-ready
+  Varpool flags:
+OsIf_apxInternalCfg/2 (OsIf_apxInternalCfg) @0608f630
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (write) OsIf_Timer_System_Init/4 (read) OsIf_Timer_System_GetCounter/5 (read) OsIf_Timer_System_GetElapsed/6 (read) OsIf_Timer_System_SetTimerFrequency/7 (read) OsIf_Timer_System_MicrosToTicks/8 (read) 
+  Availability: not-ready
+  Varpool flags:
+OsIf_abMdlInit/1 (OsIf_abMdlInit) @0608f5a0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (write) OsIf_Timer_System_GetCounter/5 (read) OsIf_Timer_System_GetElapsed/6 (read) OsIf_Timer_System_SetTimerFrequency/7 (read) OsIf_Timer_System_MicrosToTicks/8 (read) 
+  Availability: not-ready
+  Varpool flags:
+DevAssert/0 (DevAssert) @06034ee0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: OsIf_Timer_System_MicrosToTicks/8 OsIf_Timer_System_MicrosToTicks/8 OsIf_Timer_System_MicrosToTicks/8 OsIf_Timer_System_SetTimerFrequency/7 OsIf_Timer_System_SetTimerFrequency/7 OsIf_Timer_System_GetElapsed/6 OsIf_Timer_System_GetElapsed/6 OsIf_Timer_System_GetCounter/5 OsIf_Timer_System_GetCounter/5 OsIf_Timer_System_Init/4 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+OsIf_Timer_System_Internal_GetElapsed/12 (OsIf_Timer_System_Internal_GetElapsed) @0609b620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_GetElapsed/6 (11368907 (estimated locally),0.27 per call) 
+  Calls: 
+OsIf_Timer_System_Internal_GetCounter/11 (OsIf_Timer_System_Internal_GetCounter) @0609b460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_GetCounter/5 (11368907 (estimated locally),0.27 per call) 
+  Calls: 
+OsIf_Timer_System_Internal_Init/10 (OsIf_Timer_System_Internal_Init) @0609b1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: OsIf_Timer_System_Init/4 (35064607 (estimated locally),0.77 per call) 
+  Calls: 
+OsIf_apxPredefinedConfig/9 (OsIf_apxPredefinedConfig) @0608ff78
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+OsIf_Timer_System_MicrosToTicks/8 (OsIf_Timer_System_MicrosToTicks) @06096460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) OsIf_au32InternalFrequencies/3 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:42524432 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_SetTimerFrequency/7 (OsIf_Timer_System_SetTimerFrequency) @06096e00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) OsIf_au32InternalFrequencies/3 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:42524432 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_GetElapsed/6 (OsIf_Timer_System_GetElapsed) @06096b60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:42524432 (estimated locally) body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_GetElapsed/12 (11368907 (estimated locally),0.27 per call) 
+OsIf_Timer_System_GetCounter/5 (OsIf_Timer_System_GetCounter) @060968c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: OsIf_abMdlInit/1 (read) OsIf_apxInternalCfg/2 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:42524432 (estimated locally) body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_GetCounter/11 (11368907 (estimated locally),0.27 per call) 
+OsIf_Timer_System_Init/4 (OsIf_Timer_System_Init) @06096620
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: OsIf_apxPredefinedConfig/9 (read) OsIf_abMdlInit/1 (write) OsIf_apxInternalCfg/2 (write) OsIf_au32InternalFrequencies/3 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:45695715 (estimated locally) body optimize_size
+  Called by: 
+  Calls: OsIf_Timer_System_Internal_Init/10 (35064607 (estimated locally),0.77 per call) 
+OsIf_au32InternalFrequencies/3 (OsIf_au32InternalFrequencies) @0608f6c0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: OsIf_Timer_System_Init/4 (write) OsIf_Timer_System_SetTimerFrequency/7 (write) OsIf_Timer_System_MicrosToTicks/8 (read) 
+  Availability: available
+  Varpool flags:
+OsIf_apxInternalCfg/2 (OsIf_apxInternalCfg) @0608f630
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: OsIf_Timer_System_GetCounter/5 (read) OsIf_Timer_System_GetElapsed/6 (read) OsIf_Timer_System_SetTimerFrequency/7 (read) OsIf_Timer_System_Init/4 (write) OsIf_Timer_System_MicrosToTicks/8 (read) 
+  Availability: available
+  Varpool flags:
+OsIf_abMdlInit/1 (OsIf_abMdlInit) @0608f5a0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: OsIf_Timer_System_GetElapsed/6 (read) OsIf_Timer_System_SetTimerFrequency/7 (read) OsIf_Timer_System_Init/4 (write) OsIf_Timer_System_GetCounter/5 (read) OsIf_Timer_System_MicrosToTicks/8 (read) 
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: OsIf_au32InternalFrequencies/3 OsIf_apxInternalCfg/2 OsIf_abMdlInit/1
+Removing variables:
+
+Final Symbol table:
+
+OsIf_Timer_System_Internal_GetElapsed/12 (OsIf_Timer_System_Internal_GetElapsed) @0609b620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_Internal_GetCounter/11 (OsIf_Timer_System_Internal_GetCounter) @0609b460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_Internal_Init/10 (OsIf_Timer_System_Internal_Init) @0609b1c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+OsIf_apxPredefinedConfig/9 (OsIf_apxPredefinedConfig) @0608ff78
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+OsIf_Timer_System_MicrosToTicks/8 (OsIf_Timer_System_MicrosToTicks) @06096460
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:42524432 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_SetTimerFrequency/7 (OsIf_Timer_System_SetTimerFrequency) @06096e00
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:42524432 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_GetElapsed/6 (OsIf_Timer_System_GetElapsed) @06096b60
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:42524432 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_GetCounter/5 (OsIf_Timer_System_GetCounter) @060968c0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:42524432 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+OsIf_Timer_System_Init/4 (OsIf_Timer_System_Init) @06096620
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:45695715 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+OsIf_au32InternalFrequencies/3 (OsIf_au32InternalFrequencies) @0608f6c0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+OsIf_apxInternalCfg/2 (OsIf_apxInternalCfg) @0608f630
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Aux: @0608f6c0
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+OsIf_abMdlInit/1 (OsIf_abMdlInit) @0608f5a0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Aux: @0608f630
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

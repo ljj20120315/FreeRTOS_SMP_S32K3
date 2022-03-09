@@ -1,0 +1,5 @@
+Callgraph clone;Sys_GetCoreID;5;../Project_Settings/Startup_Code/system.c;404;7;SystemInit;6;../Project_Settings/Startup_Code/system.c;416;6;inlining to
+Callgraph clone;sys_m7_cache_disable;8;../Project_Settings/Startup_Code/system.c;598;13;SystemInit;6;../Project_Settings/Startup_Code/system.c;416;6;inlining to
+Callgraph clone;sys_m7_cache_init;7;../Project_Settings/Startup_Code/system.c;557;13;SystemInit;6;../Project_Settings/Startup_Code/system.c;416;6;inlining to
+Callgraph removal;sys_m7_cache_disable;8;../Project_Settings/Startup_Code/system.c;598;13
+Callgraph removal;sys_m7_cache_init;7;../Project_Settings/Startup_Code/system.c;557;13

@@ -1,0 +1,1028 @@
+Trivially needed symbols: Clock_Ip_axExtOscCallbacks/12
+
+
+Initial Symbol table:
+
+Clock_Ip_ReportClockErrors/17 (Clock_Ip_ReportClockErrors) @06f86380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 Clock_Ip_CompleteSxoscOsconEocv/9 Clock_Ip_CompleteSxoscOsconEocv/9 
+  Calls: 
+Clock_Ip_TimeoutExpired/16 (Clock_Ip_TimeoutExpired) @06f862a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 Clock_Ip_CompleteSxoscOsconEocv/9 
+  Calls: 
+Clock_Ip_apxXosc/15 (Clock_Ip_apxXosc) @06f8b360
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CompleteSxoscOsconEocv/9 (read) Clock_Ip_SetSxoscOsconEocv/8 (read) Clock_Ip_ResetSxoscOsconEocv/7 (read) Clock_Ip_ResetSxoscOsconEocv/7 (read) Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (read) Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (read) Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (read) Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (read) Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (read) Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (read) Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (read) Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_StartTimeout/14 (Clock_Ip_StartTimeout) @06f861c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 Clock_Ip_CompleteSxoscOsconEocv/9 
+  Calls: 
+Clock_Ip_au8ClockFeatures/13 (Clock_Ip_au8ClockFeatures) @06f8b2d0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CompleteSxoscOsconEocv/9 (read) Clock_Ip_SetSxoscOsconEocv/8 (read) Clock_Ip_ResetSxoscOsconEocv/7 (read) Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (read) Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (read) Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (read) Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (read) Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axExtOscCallbacks/12 (Clock_Ip_axExtOscCallbacks) @06e34af8
+  Type: variable definition analyzed
+  Visibility: public
+  Aux: @01981040
+  References: Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_DisableClockIpExternalOscillatorEmpty/1 (addr) Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (addr) Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (addr) Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (addr) Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (addr) Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (addr) Clock_Ip_ResetSxoscOsconEocv/7 (addr) Clock_Ip_SetSxoscOsconEocv/8 (addr) Clock_Ip_CompleteSxoscOsconEocv/9 (addr) Clock_Ip_DisableSxoscOsconEocv/10 (addr) Clock_Ip_EnableSxoscOsconEocv/11 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_EnableSxoscOsconEocv/11 (Clock_Ip_EnableSxoscOsconEocv) @06e38ee0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06e38c40
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_DisableSxoscOsconEocv/10 (Clock_Ip_DisableSxoscOsconEocv) @06e38c40
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06e389a0
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CompleteSxoscOsconEocv/9 (Clock_Ip_CompleteSxoscOsconEocv) @06e389a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06e38700
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/14 
+Clock_Ip_SetSxoscOsconEocv/8 (Clock_Ip_SetSxoscOsconEocv) @06e38700
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06e382a0
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ResetSxoscOsconEocv/7 (Clock_Ip_ResetSxoscOsconEocv) @06e382a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06e38000
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (Clock_Ip_EnableFxoscOsconBypEocvGmSel) @06e38000
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06e327e0
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (Clock_Ip_DisableFxoscOsconBypEocvGmSel) @06e327e0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06e322a0
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (Clock_Ip_CompleteFxoscOsconBypEocvGmSel) @06e322a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06e32e00
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/14 
+Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (Clock_Ip_SetFxoscOsconBypEocvGmSel) @06e32e00
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06e32700
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (Clock_Ip_ResetFxoscOsconBypEocvGmSel) @06e32700
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06e32460
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_DisableClockIpExternalOscillatorEmpty/1 (Clock_Ip_DisableClockIpExternalOscillatorEmpty) @06e32460
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @06e321c0
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ExternalOscillatorEmpty/0 (Clock_Ip_ExternalOscillatorEmpty) @06e321c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @01981040
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Clock_Ip_ReportClockErrors/17 (Clock_Ip_ReportClockErrors) @06f86380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 Clock_Ip_CompleteSxoscOsconEocv/9 Clock_Ip_CompleteSxoscOsconEocv/9 
+  Calls: 
+Clock_Ip_TimeoutExpired/16 (Clock_Ip_TimeoutExpired) @06f862a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 Clock_Ip_CompleteSxoscOsconEocv/9 
+  Calls: 
+Clock_Ip_apxXosc/15 (Clock_Ip_apxXosc) @06f8b360
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CompleteSxoscOsconEocv/9 (read) Clock_Ip_SetSxoscOsconEocv/8 (read) Clock_Ip_ResetSxoscOsconEocv/7 (read) Clock_Ip_ResetSxoscOsconEocv/7 (read) Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (read) Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (read) Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (read) Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (read) Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (read) Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (read) Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (read) Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_StartTimeout/14 (Clock_Ip_StartTimeout) @06f861c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 Clock_Ip_CompleteSxoscOsconEocv/9 
+  Calls: 
+Clock_Ip_au8ClockFeatures/13 (Clock_Ip_au8ClockFeatures) @06f8b2d0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CompleteSxoscOsconEocv/9 (read) Clock_Ip_SetSxoscOsconEocv/8 (read) Clock_Ip_ResetSxoscOsconEocv/7 (read) Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (read) Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (read) Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (read) Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (read) Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axExtOscCallbacks/12 (Clock_Ip_axExtOscCallbacks) @06e34af8
+  Type: variable definition analyzed
+  Visibility: public
+  References: Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_DisableClockIpExternalOscillatorEmpty/1 (addr) Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (addr) Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (addr) Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (addr) Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (addr) Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (addr) Clock_Ip_ResetSxoscOsconEocv/7 (addr) Clock_Ip_SetSxoscOsconEocv/8 (addr) Clock_Ip_CompleteSxoscOsconEocv/9 (addr) Clock_Ip_DisableSxoscOsconEocv/10 (addr) Clock_Ip_EnableSxoscOsconEocv/11 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_EnableSxoscOsconEocv/11 (Clock_Ip_EnableSxoscOsconEocv) @06e38ee0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_DisableSxoscOsconEocv/10 (Clock_Ip_DisableSxoscOsconEocv) @06e38c40
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CompleteSxoscOsconEocv/9 (Clock_Ip_CompleteSxoscOsconEocv) @06e389a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/14 
+Clock_Ip_SetSxoscOsconEocv/8 (Clock_Ip_SetSxoscOsconEocv) @06e38700
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ResetSxoscOsconEocv/7 (Clock_Ip_ResetSxoscOsconEocv) @06e382a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (Clock_Ip_EnableFxoscOsconBypEocvGmSel) @06e38000
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (Clock_Ip_DisableFxoscOsconBypEocvGmSel) @06e327e0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (Clock_Ip_CompleteFxoscOsconBypEocvGmSel) @06e322a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/14 
+Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (Clock_Ip_SetFxoscOsconBypEocvGmSel) @06e32e00
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (Clock_Ip_ResetFxoscOsconBypEocvGmSel) @06e32700
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_DisableClockIpExternalOscillatorEmpty/1 (Clock_Ip_DisableClockIpExternalOscillatorEmpty) @06e32460
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ExternalOscillatorEmpty/0 (Clock_Ip_ExternalOscillatorEmpty) @06e321c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+
+Initial Symbol table:
+
+Clock_Ip_ReportClockErrors/17 (Clock_Ip_ReportClockErrors) @06f86380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 Clock_Ip_CompleteSxoscOsconEocv/9 Clock_Ip_CompleteSxoscOsconEocv/9 
+  Calls: 
+Clock_Ip_TimeoutExpired/16 (Clock_Ip_TimeoutExpired) @06f862a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 Clock_Ip_CompleteSxoscOsconEocv/9 
+  Calls: 
+Clock_Ip_apxXosc/15 (Clock_Ip_apxXosc) @06f8b360
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CompleteSxoscOsconEocv/9 (read) Clock_Ip_SetSxoscOsconEocv/8 (read) Clock_Ip_ResetSxoscOsconEocv/7 (read) Clock_Ip_ResetSxoscOsconEocv/7 (read) Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (read) Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (read) Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (read) Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (read) Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (read) Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (read) Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (read) Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_StartTimeout/14 (Clock_Ip_StartTimeout) @06f861c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 Clock_Ip_CompleteSxoscOsconEocv/9 
+  Calls: 
+Clock_Ip_au8ClockFeatures/13 (Clock_Ip_au8ClockFeatures) @06f8b2d0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CompleteSxoscOsconEocv/9 (read) Clock_Ip_SetSxoscOsconEocv/8 (read) Clock_Ip_ResetSxoscOsconEocv/7 (read) Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (read) Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (read) Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (read) Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (read) Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axExtOscCallbacks/12 (Clock_Ip_axExtOscCallbacks) @06e34af8
+  Type: variable definition analyzed
+  Visibility: public
+  References: Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_DisableClockIpExternalOscillatorEmpty/1 (addr) Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (addr) Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (addr) Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (addr) Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (addr) Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (addr) Clock_Ip_ResetSxoscOsconEocv/7 (addr) Clock_Ip_SetSxoscOsconEocv/8 (addr) Clock_Ip_CompleteSxoscOsconEocv/9 (addr) Clock_Ip_DisableSxoscOsconEocv/10 (addr) Clock_Ip_EnableSxoscOsconEocv/11 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_EnableSxoscOsconEocv/11 (Clock_Ip_EnableSxoscOsconEocv) @06e38ee0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_DisableSxoscOsconEocv/10 (Clock_Ip_DisableSxoscOsconEocv) @06e38c40
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CompleteSxoscOsconEocv/9 (Clock_Ip_CompleteSxoscOsconEocv) @06e389a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/14 
+Clock_Ip_SetSxoscOsconEocv/8 (Clock_Ip_SetSxoscOsconEocv) @06e38700
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ResetSxoscOsconEocv/7 (Clock_Ip_ResetSxoscOsconEocv) @06e382a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (Clock_Ip_EnableFxoscOsconBypEocvGmSel) @06e38000
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (Clock_Ip_DisableFxoscOsconBypEocvGmSel) @06e327e0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (Clock_Ip_CompleteFxoscOsconBypEocvGmSel) @06e322a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/14 
+Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (Clock_Ip_SetFxoscOsconBypEocvGmSel) @06e32e00
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (Clock_Ip_ResetFxoscOsconBypEocvGmSel) @06e32700
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_DisableClockIpExternalOscillatorEmpty/1 (Clock_Ip_DisableClockIpExternalOscillatorEmpty) @06e32460
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ExternalOscillatorEmpty/0 (Clock_Ip_ExternalOscillatorEmpty) @06e321c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Clock_Ip_ReportClockErrors/17 (Clock_Ip_ReportClockErrors) @06f86380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 Clock_Ip_CompleteSxoscOsconEocv/9 Clock_Ip_CompleteSxoscOsconEocv/9 
+  Calls: 
+Clock_Ip_TimeoutExpired/16 (Clock_Ip_TimeoutExpired) @06f862a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 Clock_Ip_CompleteSxoscOsconEocv/9 
+  Calls: 
+Clock_Ip_apxXosc/15 (Clock_Ip_apxXosc) @06f8b360
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CompleteSxoscOsconEocv/9 (read) Clock_Ip_SetSxoscOsconEocv/8 (read) Clock_Ip_ResetSxoscOsconEocv/7 (read) Clock_Ip_ResetSxoscOsconEocv/7 (read) Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (read) Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (read) Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (read) Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (read) Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (read) Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (read) Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (read) Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_StartTimeout/14 (Clock_Ip_StartTimeout) @06f861c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 Clock_Ip_CompleteSxoscOsconEocv/9 
+  Calls: 
+Clock_Ip_au8ClockFeatures/13 (Clock_Ip_au8ClockFeatures) @06f8b2d0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CompleteSxoscOsconEocv/9 (read) Clock_Ip_SetSxoscOsconEocv/8 (read) Clock_Ip_ResetSxoscOsconEocv/7 (read) Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (read) Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (read) Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (read) Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (read) Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_axExtOscCallbacks/12 (Clock_Ip_axExtOscCallbacks) @06e34af8
+  Type: variable definition analyzed
+  Visibility: public
+  References: Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_DisableClockIpExternalOscillatorEmpty/1 (addr) Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (addr) Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (addr) Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (addr) Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (addr) Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (addr) Clock_Ip_ResetSxoscOsconEocv/7 (addr) Clock_Ip_SetSxoscOsconEocv/8 (addr) Clock_Ip_CompleteSxoscOsconEocv/9 (addr) Clock_Ip_DisableSxoscOsconEocv/10 (addr) Clock_Ip_EnableSxoscOsconEocv/11 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_EnableSxoscOsconEocv/11 (Clock_Ip_EnableSxoscOsconEocv) @06e38ee0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_DisableSxoscOsconEocv/10 (Clock_Ip_DisableSxoscOsconEocv) @06e38c40
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CompleteSxoscOsconEocv/9 (Clock_Ip_CompleteSxoscOsconEocv) @06e389a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/14 
+Clock_Ip_SetSxoscOsconEocv/8 (Clock_Ip_SetSxoscOsconEocv) @06e38700
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ResetSxoscOsconEocv/7 (Clock_Ip_ResetSxoscOsconEocv) @06e382a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (Clock_Ip_EnableFxoscOsconBypEocvGmSel) @06e38000
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (Clock_Ip_DisableFxoscOsconBypEocvGmSel) @06e327e0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (Clock_Ip_CompleteFxoscOsconBypEocvGmSel) @06e322a0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/14 
+Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (Clock_Ip_SetFxoscOsconBypEocvGmSel) @06e32e00
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (Clock_Ip_ResetFxoscOsconBypEocvGmSel) @06e32700
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_DisableClockIpExternalOscillatorEmpty/1 (Clock_Ip_DisableClockIpExternalOscillatorEmpty) @06e32460
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ExternalOscillatorEmpty/0 (Clock_Ip_ExternalOscillatorEmpty) @06e321c0
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Clock_Ip_DisableClockIpExternalOscillatorEmpty/19 (Clock_Ip_DisableClockIpExternalOscillatorEmpty) @071751c0
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 1
+  References: 
+  Referring: 
+  Function Clock_Ip_DisableClockIpExternalOscillatorEmpty/19 is inline copy in Clock_Ip_DisableSxoscOsconEocv/10
+  Clone of Clock_Ip_DisableClockIpExternalOscillatorEmpty/1
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local icf_merged nonfreeing_fn optimize_size
+  Called by: Clock_Ip_DisableSxoscOsconEocv/10 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_ExternalOscillatorEmpty/18 (Clock_Ip_ExternalOscillatorEmpty) @071750e0
+  Type: function definition analyzed
+  Visibility:
+  next sharing asm name: 0
+  References: 
+  Referring: 
+  Function Clock_Ip_ExternalOscillatorEmpty/18 is inline copy in Clock_Ip_EnableSxoscOsconEocv/11
+  Clone of Clock_Ip_ExternalOscillatorEmpty/0
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local icf_merged nonfreeing_fn optimize_size
+  Called by: Clock_Ip_EnableSxoscOsconEocv/11 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_ReportClockErrors/17 (Clock_Ip_ReportClockErrors) @06f86380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (114863530 (estimated locally),0.12 per call) Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (37904965 (estimated locally),0.04 per call) 
+  Calls: 
+Clock_Ip_TimeoutExpired/16 (Clock_Ip_TimeoutExpired) @06f862a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (1073741824 (estimated locally),1.17 per call) 
+  Calls: 
+Clock_Ip_apxXosc/15 (Clock_Ip_apxXosc) @06f8b360
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (read) Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (read) Clock_Ip_SetSxoscOsconEocv/8 (read) Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (read) Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (read) Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_StartTimeout/14 (Clock_Ip_StartTimeout) @06f861c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (114863530 (estimated locally),0.12 per call) 
+  Calls: 
+Clock_Ip_au8ClockFeatures/13 (Clock_Ip_au8ClockFeatures) @06f8b2d0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (read) Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (read) Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (read) Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (read) Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (read) Clock_Ip_SetSxoscOsconEocv/8 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axExtOscCallbacks/12 (Clock_Ip_axExtOscCallbacks) @06e34af8
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_DisableClockIpExternalOscillatorEmpty/1 (addr) Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (addr) Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (addr) Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (addr) Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (addr) Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (addr) Clock_Ip_ResetSxoscOsconEocv/7 (addr) Clock_Ip_SetSxoscOsconEocv/8 (addr) Clock_Ip_CompleteSxoscOsconEocv/9 (addr) Clock_Ip_DisableSxoscOsconEocv/10 (addr) Clock_Ip_EnableSxoscOsconEocv/11 (addr) 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_EnableSxoscOsconEocv/11 (Clock_Ip_EnableSxoscOsconEocv) @06e38ee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged nonfreeing_fn optimize_size
+  Called by: 
+  Calls: Clock_Ip_ExternalOscillatorEmpty/18 (inlined) (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_DisableSxoscOsconEocv/10 (Clock_Ip_DisableSxoscOsconEocv) @06e38c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged nonfreeing_fn optimize_size
+  Called by: 
+  Calls: Clock_Ip_DisableClockIpExternalOscillatorEmpty/19 (inlined) (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_CompleteSxoscOsconEocv/9 (Clock_Ip_CompleteSxoscOsconEocv) @06e389a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:918908241 (estimated locally) body icf_merged optimize_size
+  Called by: 
+  Calls: Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (918908241 (estimated locally),1.00 per call) 
+Clock_Ip_SetSxoscOsconEocv/8 (Clock_Ip_SetSxoscOsconEocv) @06e38700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ResetSxoscOsconEocv/7 (Clock_Ip_ResetSxoscOsconEocv) @06e382a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged nonfreeing_fn optimize_size
+  Called by: 
+  Calls: Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (Clock_Ip_EnableFxoscOsconBypEocvGmSel) @06e38000
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (Clock_Ip_DisableFxoscOsconBypEocvGmSel) @06e327e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (Clock_Ip_CompleteFxoscOsconBypEocvGmSel) @06e322a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:918908241 (estimated locally) body icf_merged optimize_size
+  Called by: Clock_Ip_CompleteSxoscOsconEocv/9 (918908241 (estimated locally),1.00 per call) 
+  Calls: Clock_Ip_ReportClockErrors/17 (114863530 (estimated locally),0.12 per call) Clock_Ip_ReportClockErrors/17 (37904965 (estimated locally),0.04 per call) Clock_Ip_TimeoutExpired/16 (1073741824 (estimated locally),1.17 per call) Clock_Ip_StartTimeout/14 (114863530 (estimated locally),0.12 per call) 
+Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (Clock_Ip_SetFxoscOsconBypEocvGmSel) @06e32e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (Clock_Ip_ResetFxoscOsconBypEocvGmSel) @06e32700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/13 (read) Clock_Ip_apxXosc/15 (read) 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged nonfreeing_fn optimize_size
+  Called by: Clock_Ip_ResetSxoscOsconEocv/7 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_DisableClockIpExternalOscillatorEmpty/1 (Clock_Ip_DisableClockIpExternalOscillatorEmpty) @06e32460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  previous sharing asm name: 19
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ExternalOscillatorEmpty/0 (Clock_Ip_ExternalOscillatorEmpty) @06e321c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  previous sharing asm name: 18
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Clock_Ip_axExtOscCallbacks/12
+Removing variables:
+
+Final Symbol table:
+
+Clock_Ip_ReportClockErrors/17 (Clock_Ip_ReportClockErrors) @06f86380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_TimeoutExpired/16 (Clock_Ip_TimeoutExpired) @06f862a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_apxXosc/15 (Clock_Ip_apxXosc) @06f8b360
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_StartTimeout/14 (Clock_Ip_StartTimeout) @06f861c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_au8ClockFeatures/13 (Clock_Ip_au8ClockFeatures) @06f8b2d0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axExtOscCallbacks/12 (Clock_Ip_axExtOscCallbacks) @06e34af8
+  Type: variable definition analyzed
+  Visibility: externally_visible asm_written public
+  Aux: @00000001
+  References: Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_DisableClockIpExternalOscillatorEmpty/1 (addr) Clock_Ip_ExternalOscillatorEmpty/0 (addr) Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (addr) Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (addr) Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (addr) Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (addr) Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (addr) Clock_Ip_ResetSxoscOsconEocv/7 (addr) Clock_Ip_SetSxoscOsconEocv/8 (addr) Clock_Ip_CompleteSxoscOsconEocv/9 (addr) Clock_Ip_DisableSxoscOsconEocv/10 (addr) Clock_Ip_EnableSxoscOsconEocv/11 (addr) 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_EnableSxoscOsconEocv/11 (Clock_Ip_EnableSxoscOsconEocv) @06e38ee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) icf_merged nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_DisableSxoscOsconEocv/10 (Clock_Ip_DisableSxoscOsconEocv) @06e38c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) icf_merged nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CompleteSxoscOsconEocv/9 (Clock_Ip_CompleteSxoscOsconEocv) @06e389a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:918908241 (estimated locally) icf_merged optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetSxoscOsconEocv/8 (Clock_Ip_SetSxoscOsconEocv) @06e38700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ResetSxoscOsconEocv/7 (Clock_Ip_ResetSxoscOsconEocv) @06e382a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) icf_merged nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_EnableFxoscOsconBypEocvGmSel/6 (Clock_Ip_EnableFxoscOsconBypEocvGmSel) @06e38000
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_DisableFxoscOsconBypEocvGmSel/5 (Clock_Ip_DisableFxoscOsconBypEocvGmSel) @06e327e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 (Clock_Ip_CompleteFxoscOsconBypEocvGmSel) @06e322a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:918908241 (estimated locally) icf_merged optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetFxoscOsconBypEocvGmSel/3 (Clock_Ip_SetFxoscOsconBypEocvGmSel) @06e32e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 (Clock_Ip_ResetFxoscOsconBypEocvGmSel) @06e32700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) icf_merged nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_DisableClockIpExternalOscillatorEmpty/1 (Clock_Ip_DisableClockIpExternalOscillatorEmpty) @06e32460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) icf_merged nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ExternalOscillatorEmpty/0 (Clock_Ip_ExternalOscillatorEmpty) @06e321c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) Clock_Ip_axExtOscCallbacks/12 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) icf_merged nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 

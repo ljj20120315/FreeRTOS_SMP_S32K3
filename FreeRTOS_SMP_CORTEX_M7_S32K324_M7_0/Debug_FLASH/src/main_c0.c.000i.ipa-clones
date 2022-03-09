@@ -1,0 +1,2 @@
+Callgraph clone;MultiCore_Enable;2;../src/main_c0.c;52;6;MultiCore_Enable.part.0;12;../src/main_c0.c;52;6;part
+Callgraph clone;MultiCore_Enable;2;../src/main_c0.c;52;6;main_c0;3;../src/main_c0.c;100;5;inlining to

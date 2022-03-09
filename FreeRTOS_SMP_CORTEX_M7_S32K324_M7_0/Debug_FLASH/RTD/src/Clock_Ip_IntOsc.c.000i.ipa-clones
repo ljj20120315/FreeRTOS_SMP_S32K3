@@ -1,0 +1,6 @@
+Callgraph clone;Clock_Ip_SetFircStdby;2;../RTD/src/Clock_Ip_IntOsc.c;204;13;Clock_Ip_SetFircStdby.part.0;9;../RTD/src/Clock_Ip_IntOsc.c;204;13;part
+Callgraph clone;Clock_Ip_SetSircStdby;5;../RTD/src/Clock_Ip_IntOsc.c;230;13;Clock_Ip_SetSircStdby.part.0;10;../RTD/src/Clock_Ip_IntOsc.c;230;13;part
+Callgraph clone;Clock_Ip_SetSircStdby.part.0;10;../RTD/src/Clock_Ip_IntOsc.c;230;13;Clock_Ip_SetSircStdby;5;../RTD/src/Clock_Ip_IntOsc.c;230;13;inlining to
+Callgraph clone;Clock_Ip_SetFircStdby.part.0;9;../RTD/src/Clock_Ip_IntOsc.c;204;13;Clock_Ip_SetFircStdby;2;../RTD/src/Clock_Ip_IntOsc.c;204;13;inlining to
+Callgraph removal;Clock_Ip_SetFircStdby.part.0;9;../RTD/src/Clock_Ip_IntOsc.c;204;13
+Callgraph removal;Clock_Ip_SetSircStdby.part.0;10;../RTD/src/Clock_Ip_IntOsc.c;230;13

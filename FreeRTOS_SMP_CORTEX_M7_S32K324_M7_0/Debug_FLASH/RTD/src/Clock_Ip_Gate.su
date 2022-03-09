@@ -1,0 +1,4 @@
+../RTD/src/Clock_Ip_Gate.c:202:13:Clock_Ip_ClockSetGateEmpty	0	static
+../RTD/src/Clock_Ip_Gate.c:207:13:Clock_Ip_ClockUpdateGateEmpty	0	static
+../RTD/src/Clock_Ip_Gate.c:215:13:Clock_Ip_ClockSetGateMcMePartitionCollectionClockRequest	40	static
+../RTD/src/Clock_Ip_Gate.c:280:13:Clock_Ip_ClockUpdateGateMcMePartitionCollectionClockRequest	16	static

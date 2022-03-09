@@ -1,0 +1,11 @@
+Callgraph clone;Clock_Ip_DistributePll;11;../RTD/src/Clock_Ip.c;958;6;Clock_Ip_DistributePll.part.0;62;../RTD/src/Clock_Ip.c;958;6;part
+Callgraph clone;Clock_Ip_UpdateDriverContext;5;../RTD/src/Clock_Ip.c;203;13;Clock_Ip_UpdateDriverContext.constprop.0;63;../RTD/src/Clock_Ip.c;203;13;constprop
+Callgraph clone;Clock_Ip_UpdateDriverContext.constprop.0;63;../RTD/src/Clock_Ip.c;203;13;Clock_Ip_InitClock;9;../RTD/src/Clock_Ip.c;676;6;inlining to
+Callgraph clone;Clock_Ip_DistributePll.part.0;62;../RTD/src/Clock_Ip.c;958;6;Clock_Ip_DistributePll;11;../RTD/src/Clock_Ip.c;958;6;inlining to
+Callgraph clone;Clock_Ip_ResetClockConfiguration;7;../RTD/src/Clock_Ip.c;545;13;Clock_Ip_InitClock;9;../RTD/src/Clock_Ip.c;676;6;inlining to
+Callgraph clone;Clock_Ip_CallEmptyCallbacks;6;../RTD/src/Clock_Ip.c;509;13;Clock_Ip_InitClock;9;../RTD/src/Clock_Ip.c;676;6;inlining to
+Callgraph removal;Clock_Ip_UpdateDriverContext;5;../RTD/src/Clock_Ip.c;203;13
+Callgraph removal;Clock_Ip_ResetClockConfiguration;7;../RTD/src/Clock_Ip.c;545;13
+Callgraph removal;Clock_Ip_UpdateDriverContext.constprop.0;63;../RTD/src/Clock_Ip.c;203;13
+Callgraph removal;Clock_Ip_CallEmptyCallbacks;6;../RTD/src/Clock_Ip.c;509;13
+Callgraph removal;Clock_Ip_DistributePll.part.0;62;../RTD/src/Clock_Ip.c;958;6

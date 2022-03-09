@@ -1,0 +1,1399 @@
+
+Marking local functions: Xrdc_Ip_GetDetailError/13 Xrdc_Get_Secure_Attribute/8 Xrdc_Get_Priviledge_Attribute/7 Xrdc_Ip_GetErrAttribute/6 Xrdc_Domain_Init/5 Xrdc_Peripheral_Access_Config/4 Xrdc_Memory_Config_Descriptor/3 DevAssert/0
+
+
+Marking externally visible functions: Xrdc_Ip_GetDomainIDErrorStatus/19 Xrdc_Ip_LockProcessID/18 Xrdc_Ip_SetProcessID/17 Xrdc_Ip_GetDomainID/16 Xrdc_Ip_Init/15 Xrdc_Ip_GetDomainIDErrorStatus_Privileged/14 Xrdc_Ip_LockProcessID_Privileged/12 Xrdc_Ip_SetProcessID_Privileged/11 Xrdc_Ip_Init_Privileged/10 Xrdc_Ip_GetDomainID_Privileged/9
+
+
+Marking externally visible variables:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_00/21 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_00) @06e731c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Xrdc_Ip_SetProcessID_Privileged/11 Xrdc_Ip_SetProcessID_Privileged/11 
+  Calls: 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_00/20 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_00) @06e730e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Xrdc_Ip_SetProcessID_Privileged/11 Xrdc_Ip_SetProcessID_Privileged/11 
+  Calls: 
+Xrdc_Ip_GetDomainIDErrorStatus/19 (Xrdc_Ip_GetDomainIDErrorStatus) @06d56c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Xrdc_Ip_GetDomainIDErrorStatus_Privileged/14 
+Xrdc_Ip_LockProcessID/18 (Xrdc_Ip_LockProcessID) @06d569a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Xrdc_Ip_LockProcessID_Privileged/12 
+Xrdc_Ip_SetProcessID/17 (Xrdc_Ip_SetProcessID) @06d56700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Xrdc_Ip_SetProcessID_Privileged/11 
+Xrdc_Ip_GetDomainID/16 (Xrdc_Ip_GetDomainID) @06d56460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Xrdc_Ip_GetDomainID_Privileged/9 
+Xrdc_Ip_Init/15 (Xrdc_Ip_Init) @06d561c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Xrdc_Ip_Init_Privileged/10 
+Xrdc_Ip_GetDomainIDErrorStatus_Privileged/14 (Xrdc_Ip_GetDomainIDErrorStatus_Privileged) @06d38ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: Xrdc_Ip_GetDomainIDErrorStatus/19 
+  Calls: Xrdc_Ip_GetDetailError/13 Xrdc_Ip_GetDetailError/13 DevAssert/0 DevAssert/0 
+Xrdc_Ip_GetDetailError/13 (Xrdc_Ip_GetDetailError) @06d38e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Xrdc_Ip_GetDomainIDErrorStatus_Privileged/14 Xrdc_Ip_GetDomainIDErrorStatus_Privileged/14 
+  Calls: Xrdc_Ip_GetErrAttribute/6 
+Xrdc_Ip_LockProcessID_Privileged/12 (Xrdc_Ip_LockProcessID_Privileged) @06d38a80
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: g_bAvailablePidRegisters/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: Xrdc_Ip_LockProcessID/18 
+  Calls: DevAssert/0 DevAssert/0 
+Xrdc_Ip_SetProcessID_Privileged/11 (Xrdc_Ip_SetProcessID_Privileged) @06d387e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: g_bAvailablePidRegisters/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: Xrdc_Ip_SetProcessID/17 
+  Calls: SchM_Exit_Rm_RM_EXCLUSIVE_AREA_00/21 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_00/20 SchM_Exit_Rm_RM_EXCLUSIVE_AREA_00/21 SchM_Enter_Rm_RM_EXCLUSIVE_AREA_00/20 DevAssert/0 DevAssert/0 DevAssert/0 
+Xrdc_Ip_Init_Privileged/10 (Xrdc_Ip_Init_Privileged) @06d38460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: Xrdc_Ip_Init/15 
+  Calls: Xrdc_Domain_Init/5 Xrdc_Peripheral_Access_Config/4 Xrdc_Memory_Config_Descriptor/3 DevAssert/0 DevAssert/0 DevAssert/0 DevAssert/0 DevAssert/0 
+Xrdc_Ip_GetDomainID_Privileged/9 (Xrdc_Ip_GetDomainID_Privileged) @06d38000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: Xrdc_Ip_GetDomainID/16 
+  Calls: 
+Xrdc_Get_Secure_Attribute/8 (Xrdc_Get_Secure_Attribute) @06d808c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Xrdc_Domain_Init/5 
+  Calls: 
+Xrdc_Get_Priviledge_Attribute/7 (Xrdc_Get_Priviledge_Attribute) @06d80380
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Xrdc_Domain_Init/5 
+  Calls: 
+Xrdc_Ip_GetErrAttribute/6 (Xrdc_Ip_GetErrAttribute) @06d80d20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Xrdc_Ip_GetDetailError/13 
+  Calls: 
+Xrdc_Domain_Init/5 (Xrdc_Domain_Init) @06d80a80
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Xrdc_Ip_Init_Privileged/10 
+  Calls: Xrdc_Get_Priviledge_Attribute/7 Xrdc_Get_Secure_Attribute/8 DevAssert/0 DevAssert/0 
+Xrdc_Peripheral_Access_Config/4 (Xrdc_Peripheral_Access_Config) @06d807e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Xrdc_Ip_Init_Privileged/10 
+  Calls: DevAssert/0 DevAssert/0 
+Xrdc_Memory_Config_Descriptor/3 (Xrdc_Memory_Config_Descriptor) @06d80540
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Xrdc_Ip_Init_Privileged/10 
+  Calls: DevAssert/0 DevAssert/0 
+g_bAvailablePidRegisters/1 (g_bAvailablePidRegisters) @06d7b6c0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Xrdc_Ip_SetProcessID_Privileged/11 (read) Xrdc_Ip_LockProcessID_Privileged/12 (read) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @06d7d000
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Xrdc_Ip_GetDomainIDErrorStatus_Privileged/14 Xrdc_Ip_GetDomainIDErrorStatus_Privileged/14 Xrdc_Ip_LockProcessID_Privileged/12 Xrdc_Ip_LockProcessID_Privileged/12 Xrdc_Ip_SetProcessID_Privileged/11 Xrdc_Ip_SetProcessID_Privileged/11 Xrdc_Ip_SetProcessID_Privileged/11 Xrdc_Domain_Init/5 Xrdc_Domain_Init/5 Xrdc_Peripheral_Access_Config/4 Xrdc_Peripheral_Access_Config/4 Xrdc_Memory_Config_Descriptor/3 Xrdc_Memory_Config_Descriptor/3 Xrdc_Ip_Init_Privileged/10 Xrdc_Ip_Init_Privileged/10 Xrdc_Ip_Init_Privileged/10 Xrdc_Ip_Init_Privileged/10 Xrdc_Ip_Init_Privileged/10 
+  Calls: 
+Xrdc_Ip_GetDomainIDErrorStatus (uint32 u32Instance, struct Xrdc_Ip_DomainIDErrStatusType * pXrdcDomainIDErrorStatus)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Xrdc_Ip_GetDomainIDErrorStatus_Privileged (u32Instance, pXrdcDomainIDErrorStatus);
+  return;
+
+}
+
+
+Xrdc_Ip_LockProcessID (uint8 u8MasterCore)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Xrdc_Ip_LockProcessID_Privileged (u8MasterCore);
+  return;
+
+}
+
+
+Xrdc_Ip_SetProcessID (uint8 u8MasterCore, uint8 u8Pid, Xrdc_Ip_SecureAttributeType eSecureAttr)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Xrdc_Ip_SetProcessID_Privileged (u8MasterCore, u8Pid, eSecureAttr);
+  return;
+
+}
+
+
+Xrdc_Ip_GetDomainID (uint32 u32Instance)
+{
+  uint32 D.6138;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  D.6138 = Xrdc_Ip_GetDomainID_Privileged (u32Instance);
+  return D.6138;
+
+}
+
+
+Xrdc_Ip_Init (const struct Xrdc_Ip_ConfigType * pXrdcConfig)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Xrdc_Ip_Init_Privileged (pXrdcConfig);
+  return;
+
+}
+
+
+Xrdc_Ip_GetDomainIDErrorStatus_Privileged (uint32 u32Instance, struct Xrdc_Ip_DomainIDErrStatusType * pXrdcDomainIDErrorStatus)
+{
+  uint8 u8MCRInstanceNumber;
+  uint8 u8PACInstanceNumber;
+  uint8 u8counter;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = u32Instance == 0;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  _2 = pXrdcDomainIDErrorStatus != 0B;
+  DevAssert (_2);
+  # DEBUG BEGIN_STMT
+  _3 = 1076330496;
+  _4 = _3 + 240;
+  _5 = (volatile uint32 *) _4;
+  _6 = *_5;
+  _7 = _6 >> 16;
+  _8 = (unsigned char) _7;
+  u8MCRInstanceNumber = _8 + 1;
+  # DEBUG BEGIN_STMT
+  u8counter = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Xrdc_Ip_GetDetailError (u32Instance, u8counter, pXrdcDomainIDErrorStatus);
+  # DEBUG BEGIN_STMT
+  _9 = 1076330496;
+  _10 = (long unsigned int) u8counter;
+  _11 = _10 << 4;
+  _12 = _9 + _11;
+  _13 = _12 + 1036;
+  _14 = (volatile uint32 *) _13;
+  *_14 = 1073741824;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  u8counter.1_15 = u8counter;
+  u8counter = u8counter.1_15 + 1;
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  if (u8counter < u8MCRInstanceNumber)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _16 = 1076330496;
+  _17 = _16 + 240;
+  _18 = (volatile uint32 *) _17;
+  _19 = *_18;
+  _20 = _19 >> 24;
+  _21 = (unsigned char) _20;
+  _22 = _21 & 15;
+  u8PACInstanceNumber = _22 + 1;
+  # DEBUG BEGIN_STMT
+  u8counter = 0;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _23 = u8counter + 16;
+  Xrdc_Ip_GetDetailError (u32Instance, _23, pXrdcDomainIDErrorStatus);
+  # DEBUG BEGIN_STMT
+  _24 = 1076330496;
+  _25 = (long unsigned int) u8counter;
+  _26 = _25 << 4;
+  _27 = _24 + _26;
+  _28 = _27 + 1036;
+  _29 = (volatile uint32 *) _28;
+  *_29 = 1073741824;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  u8counter.2_30 = u8counter;
+  u8counter = u8counter.2_30 + 1;
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  if (u8counter < u8PACInstanceNumber)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  return;
+
+}
+
+
+Xrdc_Ip_GetDetailError (uint32 u32Instance, uint8 u8SubInstance, struct Xrdc_Ip_DomainIDErrStatusType * pXrdcDomainIDErrorStatus)
+{
+  volatile uint32 u32DomainIDAccess;
+  uint32 u32ErrorStatus;
+  uint32 u32ErrorState;
+  uint32 u32ErrorAcces;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = 1076330496;
+  _2 = (long unsigned int) u8SubInstance;
+  _3 = _2 << 4;
+  _4 = _1 + _3;
+  _5 = _4 + 1028;
+  _6 = (volatile uint32 *) _5;
+  u32ErrorStatus = *_6;
+  # DEBUG BEGIN_STMT
+  u32ErrorState = u32ErrorStatus >> 30;
+  # DEBUG BEGIN_STMT
+  if (u32ErrorState <= 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _7 = (int) u8SubInstance;
+  pXrdcDomainIDErrorStatus->ErrorStatus[_7].ErrState = 0;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  if (u32ErrorState == 2)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _8 = (int) u8SubInstance;
+  pXrdcDomainIDErrorStatus->ErrorStatus[_8].ErrState = 1;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _9 = (int) u8SubInstance;
+  pXrdcDomainIDErrorStatus->ErrorStatus[_9].ErrState = 2;
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  if (u32ErrorState > 1)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _10 = 1076330496;
+  _11 = _10 + 244;
+  _12 = (volatile uint32 *) _11;
+  _13 = *_12;
+  u32DomainIDAccess = _13;
+  # DEBUG BEGIN_STMT
+  u32DomainIDAccess.3_14 = u32DomainIDAccess;
+  if (u32DomainIDAccess.3_14 <= 2)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  u32DomainIDAccess.4_15 = u32DomainIDAccess;
+  pXrdcDomainIDErrorStatus->DomainIDAccessError = u32DomainIDAccess.4_15;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  pXrdcDomainIDErrorStatus->DomainIDAccessError = 255;
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  _16 = 1076330496;
+  _17 = (long unsigned int) u8SubInstance;
+  _18 = _17 << 4;
+  _19 = _16 + _18;
+  _20 = _19 + 1024;
+  _21 = (volatile uint32 *) _20;
+  _22 = (int) u8SubInstance;
+  _23 = *_21;
+  pXrdcDomainIDErrorStatus->ErrorStatus[_22].u32AddError = _23;
+  # DEBUG BEGIN_STMT
+  _24 = 1076330496;
+  _25 = (long unsigned int) u8SubInstance;
+  _26 = _25 << 4;
+  _27 = _24 + _26;
+  _28 = _27 + 1032;
+  _29 = (volatile uint32 *) _28;
+  _30 = (int) u8SubInstance;
+  _31 = *_29;
+  pXrdcDomainIDErrorStatus->ErrorStatus[_30].u32AddErrorRemain = _31;
+  # DEBUG BEGIN_STMT
+  _32 = u32ErrorStatus >> 24;
+  _33 = (int) u8SubInstance;
+  _34 = _32 & 7;
+  pXrdcDomainIDErrorStatus->ErrorStatus[_33].u32ErrPort = _34;
+  # DEBUG BEGIN_STMT
+  _35 = u32ErrorStatus >> 11;
+  u32ErrorAcces = _35 & 1;
+  # DEBUG BEGIN_STMT
+  if (u32ErrorAcces == 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  _36 = (int) u8SubInstance;
+  pXrdcDomainIDErrorStatus->ErrorStatus[_36].ErrAccess = 1;
+  goto <bb 16>; [INV]
+
+  <bb 13> :
+  # DEBUG BEGIN_STMT
+  if (u32ErrorAcces == 1)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  # DEBUG BEGIN_STMT
+  _37 = (int) u8SubInstance;
+  pXrdcDomainIDErrorStatus->ErrorStatus[_37].ErrAccess = 2;
+  goto <bb 16>; [INV]
+
+  <bb 15> :
+  # DEBUG BEGIN_STMT
+  _38 = (int) u8SubInstance;
+  pXrdcDomainIDErrorStatus->ErrorStatus[_38].ErrAccess = 0;
+
+  <bb 16> :
+  # DEBUG BEGIN_STMT
+  _39 = u32ErrorStatus >> 8;
+  _40 = _39 & 7;
+  _41 = (int) u8SubInstance;
+  _42 = Xrdc_Ip_GetErrAttribute (_40);
+  pXrdcDomainIDErrorStatus->ErrorStatus[_41].ErrAttribute = _42;
+
+  <bb 17> :
+  return;
+
+}
+
+
+Xrdc_Ip_LockProcessID_Privileged (uint8 u8MasterCore)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = u8MasterCore <= 4;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  _2 = (int) u8MasterCore;
+  _3 = g_bAvailablePidRegisters[_2];
+  _4 = _3;
+  DevAssert (_4);
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  _5 = 1076330496;
+  _6 = (long unsigned int) u8MasterCore;
+  _7 = _6 << 2;
+  _8 = _5 + _7;
+  _9 = _8 + 1792;
+  _10 = (volatile uint32 *) _9;
+  _11 = *_10;
+  _12 = 1076330496;
+  _13 = (long unsigned int) u8MasterCore;
+  _14 = _13 << 2;
+  _15 = _12 + _14;
+  _16 = _15 + 1792;
+  _17 = (volatile uint32 *) _16;
+  _18 = _11 | 1610612736;
+  *_17 = _18;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  return;
+
+}
+
+
+Xrdc_Ip_SetProcessID_Privileged (uint8 u8MasterCore, uint8 u8Pid, Xrdc_Ip_SecureAttributeType eSecureAttr)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = u8MasterCore <= 4;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  _2 = u8Pid <= 30;
+  DevAssert (_2);
+  # DEBUG BEGIN_STMT
+  _3 = (int) u8MasterCore;
+  _4 = g_bAvailablePidRegisters[_3];
+  _5 = _4;
+  DevAssert (_5);
+  # DEBUG BEGIN_STMT
+  _6 = 1076330496;
+  _7 = _6 + 248;
+  _8 = (volatile uint32 *) _7;
+  _9 = *_8;
+  _10 = (long unsigned int) u8MasterCore;
+  _11 = _9 >> _10;
+  _12 = _11 & 1;
+  if (_12 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  if (eSecureAttr == 1)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Rm_RM_EXCLUSIVE_AREA_00 ();
+  # DEBUG BEGIN_STMT
+  _13 = 1076330496;
+  _14 = (long unsigned int) u8MasterCore;
+  _15 = _14 << 2;
+  _16 = _13 + _15;
+  _17 = _16 + 1792;
+  _18 = (volatile uint32 *) _17;
+  _19 = *_18;
+  _20 = _19 & 4294967232;
+  _21 = (long unsigned int) u8Pid;
+  _22 = _21 & 31;
+  _23 = _20 | _22;
+  _24 = 1076330496;
+  _25 = (long unsigned int) u8MasterCore;
+  _26 = _25 << 2;
+  _27 = _24 + _26;
+  _28 = _27 + 1792;
+  _29 = (volatile uint32 *) _28;
+  _30 = _23 | 32;
+  *_29 = _30;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Rm_RM_EXCLUSIVE_AREA_00 ();
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  SchM_Enter_Rm_RM_EXCLUSIVE_AREA_00 ();
+  # DEBUG BEGIN_STMT
+  _31 = 1076330496;
+  _32 = (long unsigned int) u8MasterCore;
+  _33 = _32 << 2;
+  _34 = _31 + _33;
+  _35 = _34 + 1792;
+  _36 = (volatile uint32 *) _35;
+  _37 = *_36;
+  _38 = _37 & 4294967232;
+  _39 = (long unsigned int) u8Pid;
+  _40 = _39 & 31;
+  _41 = 1076330496;
+  _42 = (long unsigned int) u8MasterCore;
+  _43 = _42 << 2;
+  _44 = _41 + _43;
+  _45 = _44 + 1792;
+  _46 = (volatile uint32 *) _45;
+  _47 = _38 | _40;
+  *_46 = _47;
+  # DEBUG BEGIN_STMT
+  SchM_Exit_Rm_RM_EXCLUSIVE_AREA_00 ();
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+
+  <bb 6> :
+  return;
+
+}
+
+
+Xrdc_Ip_Init_Privileged (const struct Xrdc_Ip_ConfigType * pXrdcConfig)
+{
+  uint32 u32counter;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  u32counter = 0;
+  # DEBUG BEGIN_STMT
+  _1 = pXrdcConfig != 0B;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  _2 = pXrdcConfig->u32DomainConfigCnt;
+  _3 = _2 != 0;
+  DevAssert (_3);
+  # DEBUG BEGIN_STMT
+  _4 = pXrdcConfig->pMemoryDesConfig;
+  _5 = _4 != 0B;
+  DevAssert (_5);
+  # DEBUG BEGIN_STMT
+  _6 = pXrdcConfig->pPeripheralDescriptorConfig;
+  _7 = _6 != 0B;
+  DevAssert (_7);
+  # DEBUG BEGIN_STMT
+  _8 = pXrdcConfig->pDomainConfig;
+  _9 = _8 != 0B;
+  DevAssert (_9);
+  # DEBUG BEGIN_STMT
+  u32counter = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _10 = pXrdcConfig->pInstanceInUsed;
+  _11 = u32counter * 4;
+  _12 = _10 + _11;
+  _13 = *_12;
+  _14 = 1076330496;
+  _15 = (volatile uint32 *) _14;
+  _16 = *_15;
+  _17 = pXrdcConfig->pInstanceInUsed;
+  _18 = u32counter * 4;
+  _19 = _17 + _18;
+  _20 = *_19;
+  _21 = 1076330496;
+  _22 = (volatile uint32 *) _21;
+  _23 = _16 & 4294967294;
+  *_22 = _23;
+  # DEBUG BEGIN_STMT
+  u32counter = u32counter + 1;
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _24 = pXrdcConfig->u32InstanceInUsedCnt;
+  if (u32counter < _24)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  u32counter = 0;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _25 = pXrdcConfig->pMemoryDesConfig;
+  _26 = u32counter * 40;
+  _27 = _25 + _26;
+  Xrdc_Memory_Config_Descriptor (_27);
+  # DEBUG BEGIN_STMT
+  u32counter = u32counter + 1;
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  _28 = pXrdcConfig->u32MemoryConfigCnt;
+  if (u32counter < _28)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  u32counter = 0;
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  _29 = pXrdcConfig->pPeripheralDescriptorConfig;
+  _30 = u32counter * 24;
+  _31 = _29 + _30;
+  Xrdc_Peripheral_Access_Config (_31);
+  # DEBUG BEGIN_STMT
+  u32counter = u32counter + 1;
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  _32 = pXrdcConfig->u32PeripheralConfigCnt;
+  if (u32counter < _32)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  u32counter = 0;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  _33 = pXrdcConfig->pDomainConfig;
+  _34 = u32counter * 44;
+  _35 = _33 + _34;
+  Xrdc_Domain_Init (_35);
+  # DEBUG BEGIN_STMT
+  u32counter = u32counter + 1;
+
+  <bb 13> :
+  # DEBUG BEGIN_STMT
+  _36 = pXrdcConfig->u32DomainConfigCnt;
+  if (u32counter < _36)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 14> :
+  # DEBUG BEGIN_STMT
+  u32counter = 0;
+  goto <bb 16>; [INV]
+
+  <bb 15> :
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  _37 = pXrdcConfig->pInstanceInUsed;
+  _38 = u32counter * 4;
+  _39 = _37 + _38;
+  _40 = *_39;
+  _41 = 1076330496;
+  _42 = (volatile uint32 *) _41;
+  _43 = *_42;
+  _44 = pXrdcConfig->pInstanceInUsed;
+  _45 = u32counter * 4;
+  _46 = _44 + _45;
+  _47 = *_46;
+  _48 = 1076330496;
+  _49 = (volatile uint32 *) _48;
+  _50 = _43 | 1;
+  *_49 = _50;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  u32counter = u32counter + 1;
+
+  <bb 16> :
+  # DEBUG BEGIN_STMT
+  _51 = pXrdcConfig->u32InstanceInUsedCnt;
+  if (u32counter < _51)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 17> :
+  return;
+
+}
+
+
+Xrdc_Ip_GetDomainID_Privileged (uint32 u32Instance)
+{
+  uint32 u32Value;
+  uint32 D.6086;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  _1 = 1076330496;
+  _2 = _1 + 244;
+  _3 = (volatile uint32 *) _2;
+  u32Value = *_3;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  D.6086 = u32Value;
+  return D.6086;
+
+}
+
+
+Xrdc_Get_Secure_Attribute (Xrdc_Ip_SecureAttributeType eXrdcSecure)
+{
+  uint32 Ret;
+  uint32 D.6103;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  if (eXrdcSecure == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Ret = 64;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  if (eXrdcSecure == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  Ret = 0;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  Ret = 192;
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  D.6103 = Ret;
+  return D.6103;
+
+}
+
+
+Xrdc_Get_Priviledge_Attribute (Xrdc_Ip_PriviledgedAttributeType eXrdcPriviledge)
+{
+  uint32 Ret;
+  uint32 D.6111;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  if (eXrdcPriviledge == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Ret = 0;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  if (eXrdcPriviledge == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  Ret = 16;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  Ret = 48;
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  D.6111 = Ret;
+  return D.6111;
+
+}
+
+
+Xrdc_Ip_GetErrAttribute (uint32 u32ErrorAttribute)
+{
+  Xrdc_Ip_ErrorAttributeType errorStatus;
+  Xrdc_Ip_ErrorAttributeType D.6135;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  errorStatus = 0;
+  # DEBUG BEGIN_STMT
+  switch (u32ErrorAttribute) <default: <L11> [INV], case 0: <L0> [INV], case 1: <L1> [INV], case 2: <L2> [INV], case 3: <L3> [INV], case 4: <L4> [INV], case 5: <L5> [INV], case 6: <L6> [INV], case 7: <L7> [INV]>
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  errorStatus = 1;
+  # DEBUG BEGIN_STMT
+  goto <bb 11>; [INV]
+
+  <bb 4> :
+<L1>:
+  # DEBUG BEGIN_STMT
+  errorStatus = 2;
+  # DEBUG BEGIN_STMT
+  goto <bb 11>; [INV]
+
+  <bb 5> :
+<L2>:
+  # DEBUG BEGIN_STMT
+  errorStatus = 3;
+  # DEBUG BEGIN_STMT
+  goto <bb 11>; [INV]
+
+  <bb 6> :
+<L3>:
+  # DEBUG BEGIN_STMT
+  errorStatus = 4;
+  # DEBUG BEGIN_STMT
+  goto <bb 11>; [INV]
+
+  <bb 7> :
+<L4>:
+  # DEBUG BEGIN_STMT
+  errorStatus = 5;
+  # DEBUG BEGIN_STMT
+  goto <bb 11>; [INV]
+
+  <bb 8> :
+<L5>:
+  # DEBUG BEGIN_STMT
+  errorStatus = 6;
+  # DEBUG BEGIN_STMT
+  goto <bb 11>; [INV]
+
+  <bb 9> :
+<L6>:
+  # DEBUG BEGIN_STMT
+  errorStatus = 7;
+  # DEBUG BEGIN_STMT
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+<L7>:
+  # DEBUG BEGIN_STMT
+  errorStatus = 8;
+  # DEBUG BEGIN_STMT
+
+  <bb 11> :
+<L11>:
+  # DEBUG BEGIN_STMT
+  D.6135 = errorStatus;
+  return D.6135;
+
+}
+
+
+Xrdc_Domain_Init (const struct Xrdc_Ip_DomainConfigType * pDomainConfig)
+{
+  uint32 u32UserAtt;
+  uint32 u32SecureAtt;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = pDomainConfig != 0B;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  _2 = pDomainConfig->u32XrdcInstance;
+  _3 = _2 == 0;
+  DevAssert (_3);
+  # DEBUG BEGIN_STMT
+  _4 = pDomainConfig->XrdcCoreMdacInstance;
+  if (_4 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  _5 = pDomainConfig->u32XrdcDomainID;
+  _6 = _5 & 7;
+  _7 = pDomainConfig->u32XrdcProcessIDEnable;
+  _8 = _6 | _7;
+  _9 = pDomainConfig->u32XrdcProcessID;
+  _10 = _9 << 16;
+  _11 = _8 | _10;
+  _12 = pDomainConfig->u32XrdcProcessIDMask;
+  _13 = _12 << 8;
+  _14 = _11 | _13;
+  _15 = pDomainConfig->u32XrdcInstance;
+  _16 = 1076330496;
+  _17 = pDomainConfig->XrdcMdacInstance;
+  _18 = _17 << 5;
+  _19 = _16 + _18;
+  _20 = pDomainConfig->u32XrdcWordDescriptor;
+  _21 = _20 << 2;
+  _22 = _19 + _21;
+  _23 = _22 + 2048;
+  _24 = (volatile uint32 *) _23;
+  _25 = _14 | 2147483648;
+  *_24 = _25;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  goto <bb 6>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _26 = pDomainConfig->XrdcCoreMdacInstance;
+  if (_26 == 1)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _27 = pDomainConfig->u32XrdcDomainID;
+  _28 = _27 & 7;
+  _29 = pDomainConfig->u32XrdcInstance;
+  _30 = 1076330496;
+  _31 = pDomainConfig->XrdcMdacInstance;
+  _32 = _31 << 5;
+  _33 = _30 + _32;
+  _34 = _33 + 2048;
+  _35 = (volatile uint32 *) _34;
+  _36 = _28 | 2684354560;
+  *_35 = _36;
+  # DEBUG BEGIN_STMT
+  _37 = pDomainConfig->eXrdcSecureOutput;
+  u32SecureAtt = Xrdc_Get_Secure_Attribute (_37);
+  # DEBUG BEGIN_STMT
+  _38 = pDomainConfig->eXrdcPriviledgeOutput;
+  u32UserAtt = Xrdc_Get_Priviledge_Attribute (_38);
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  _39 = pDomainConfig->u32XrdcInstance;
+  _40 = 1076330496;
+  _41 = pDomainConfig->XrdcMdacInstance;
+  _42 = _41 << 5;
+  _43 = _40 + _42;
+  _44 = _43 + 2048;
+  _45 = (volatile uint32 *) _44;
+  _46 = *_45;
+  _47 = _46 & 4294967055;
+  _48 = u32UserAtt | u32SecureAtt;
+  _49 = pDomainConfig->u32XrdcInstance;
+  _50 = 1076330496;
+  _51 = pDomainConfig->XrdcMdacInstance;
+  _52 = _51 << 5;
+  _53 = _50 + _52;
+  _54 = _53 + 2048;
+  _55 = (volatile uint32 *) _54;
+  _56 = _47 | _48;
+  *_55 = _56;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Xrdc_Peripheral_Access_Config (const struct Xrdc_Ip_PeripheralConfigType * pXrdcPerDescriptor)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = pXrdcPerDescriptor != 0B;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  _2 = pXrdcPerDescriptor->u32XrdcInstance;
+  _3 = _2 == 0;
+  DevAssert (_3);
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  _4 = pXrdcPerDescriptor->u32XrdcInstance;
+  _5 = 1076330496;
+  _6 = pXrdcPerDescriptor->u32XrdcPdacInstance;
+  _7 = _6 >> 7;
+  _8 = _7 * 1024;
+  _9 = _5 + _8;
+  _10 = pXrdcPerDescriptor->u32XrdcPdacInstance;
+  _11 = _10 << 3;
+  _12 = _11 & 1016;
+  _13 = _9 + _12;
+  _14 = _13 + 4100;
+  _15 = (volatile uint32 *) _14;
+  _16 = *_15;
+  _17 = pXrdcPerDescriptor->u32XrdcInstance;
+  _18 = 1076330496;
+  _19 = pXrdcPerDescriptor->u32XrdcPdacInstance;
+  _20 = _19 >> 7;
+  _21 = _20 * 1024;
+  _22 = _18 + _21;
+  _23 = pXrdcPerDescriptor->u32XrdcPdacInstance;
+  _24 = _23 << 3;
+  _25 = _24 & 1016;
+  _26 = _22 + _25;
+  _27 = _26 + 4100;
+  _28 = (volatile uint32 *) _27;
+  _29 = _16 & 2147483647;
+  *_28 = _29;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  _30 = pXrdcPerDescriptor->u32XrdcSema4Enable;
+  _31 = pXrdcPerDescriptor->u32XrdcSema4Number;
+  _32 = _31 << 24;
+  _33 = _32 & 251658240;
+  _34 = _30 | _33;
+  _35 = pXrdcPerDescriptor->u32XrdcPerPolicy;
+  _36 = pXrdcPerDescriptor->u32XrdcInstance;
+  _37 = 1076330496;
+  _38 = pXrdcPerDescriptor->u32XrdcPdacInstance;
+  _39 = _38 >> 7;
+  _40 = _39 * 1024;
+  _41 = _37 + _40;
+  _42 = pXrdcPerDescriptor->u32XrdcPdacInstance;
+  _43 = _42 << 3;
+  _44 = _43 & 1016;
+  _45 = _41 + _44;
+  _46 = _45 + 4096;
+  _47 = (volatile uint32 *) _46;
+  _48 = _34 | _35;
+  *_47 = _48;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  _49 = pXrdcPerDescriptor->u32XrdcInstance;
+  _50 = 1076330496;
+  _51 = pXrdcPerDescriptor->u32XrdcPdacInstance;
+  _52 = _51 >> 7;
+  _53 = _52 * 1024;
+  _54 = _50 + _53;
+  _55 = pXrdcPerDescriptor->u32XrdcPdacInstance;
+  _56 = _55 << 3;
+  _57 = _56 & 1016;
+  _58 = _54 + _57;
+  _59 = _58 + 4100;
+  _60 = (volatile uint32 *) _59;
+  _61 = *_60;
+  _62 = _61 & 2130706432;
+  _63 = pXrdcPerDescriptor->u32XrdcPerPolicy1;
+  _64 = _62 | _63;
+  _65 = pXrdcPerDescriptor->u32XrdcInstance;
+  _66 = 1076330496;
+  _67 = pXrdcPerDescriptor->u32XrdcPdacInstance;
+  _68 = _67 >> 7;
+  _69 = _68 * 1024;
+  _70 = _66 + _69;
+  _71 = pXrdcPerDescriptor->u32XrdcPdacInstance;
+  _72 = _71 << 3;
+  _73 = _72 & 1016;
+  _74 = _70 + _73;
+  _75 = _74 + 4100;
+  _76 = (volatile uint32 *) _75;
+  _77 = _64 | 2147483648;
+  *_76 = _77;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  return;
+
+}
+
+
+Xrdc_Memory_Config_Descriptor (const struct Xrdc_Ip_MemConfigType * pXrdcMemDescriptor)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = pXrdcMemDescriptor != 0B;
+  DevAssert (_1);
+  # DEBUG BEGIN_STMT
+  _2 = pXrdcMemDescriptor->u32XrdcInstance;
+  _3 = _2 == 0;
+  DevAssert (_3);
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  _4 = pXrdcMemDescriptor->u32XrdcInstance;
+  _5 = 1076330496;
+  _6 = pXrdcMemDescriptor->u32XrdcMrcInstance;
+  _7 = _6 << 4;
+  _8 = pXrdcMemDescriptor->u32XrdcMrcRegionDescriptor;
+  _9 = _7 + _8;
+  _10 = _9 * 32;
+  _11 = _5 + _10;
+  _12 = _11 + 8204;
+  _13 = (volatile uint32 *) _12;
+  _14 = *_13;
+  _15 = pXrdcMemDescriptor->u32XrdcInstance;
+  _16 = 1076330496;
+  _17 = pXrdcMemDescriptor->u32XrdcMrcInstance;
+  _18 = _17 << 4;
+  _19 = pXrdcMemDescriptor->u32XrdcMrcRegionDescriptor;
+  _20 = _18 + _19;
+  _21 = _20 * 32;
+  _22 = _16 + _21;
+  _23 = _22 + 8204;
+  _24 = (volatile uint32 *) _23;
+  _25 = _14 & 2147483647;
+  *_24 = _25;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  _26 = pXrdcMemDescriptor->u32XrdcStartAddress;
+  _27 = pXrdcMemDescriptor->u32XrdcInstance;
+  _28 = 1076330496;
+  _29 = pXrdcMemDescriptor->u32XrdcMrcInstance;
+  _30 = _29 << 4;
+  _31 = pXrdcMemDescriptor->u32XrdcMrcRegionDescriptor;
+  _32 = _30 + _31;
+  _33 = _32 * 32;
+  _34 = _28 + _33;
+  _35 = _34 + 8192;
+  _36 = (volatile uint32 *) _35;
+  _37 = _26 | 1;
+  *_36 = _37;
+  # DEBUG BEGIN_STMT
+  _38 = pXrdcMemDescriptor->u32XrdcEndAddress;
+  _39 = pXrdcMemDescriptor->u32XrdcInstance;
+  _40 = 1076330496;
+  _41 = pXrdcMemDescriptor->u32XrdcMrcInstance;
+  _42 = _41 << 4;
+  _43 = pXrdcMemDescriptor->u32XrdcMrcRegionDescriptor;
+  _44 = _42 + _43;
+  _45 = _44 * 32;
+  _46 = _40 + _45;
+  _47 = _46 + 8196;
+  _48 = (volatile uint32 *) _47;
+  _49 = _38 | 1;
+  *_48 = _49;
+  # DEBUG BEGIN_STMT
+  _50 = pXrdcMemDescriptor->u32XrdcSema4Enable;
+  _51 = pXrdcMemDescriptor->u32XrdcSema4Number;
+  _52 = _51 << 24;
+  _53 = _52 & 251658240;
+  _54 = _50 | _53;
+  _55 = pXrdcMemDescriptor->u32XrdcMemPolicy;
+  _56 = pXrdcMemDescriptor->u32XrdcInstance;
+  _57 = 1076330496;
+  _58 = pXrdcMemDescriptor->u32XrdcMrcInstance;
+  _59 = _58 << 4;
+  _60 = pXrdcMemDescriptor->u32XrdcMrcRegionDescriptor;
+  _61 = _59 + _60;
+  _62 = _61 * 32;
+  _63 = _57 + _62;
+  _64 = _63 + 8200;
+  _65 = (volatile uint32 *) _64;
+  _66 = _54 | _55;
+  *_65 = _66;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  _67 = pXrdcMemDescriptor->u32XrdcInstance;
+  _68 = 1076330496;
+  _69 = pXrdcMemDescriptor->u32XrdcMrcInstance;
+  _70 = _69 << 4;
+  _71 = pXrdcMemDescriptor->u32XrdcMrcRegionDescriptor;
+  _72 = _70 + _71;
+  _73 = _72 * 32;
+  _74 = _68 + _73;
+  _75 = _74 + 8204;
+  _76 = (volatile uint32 *) _75;
+  _77 = *_76;
+  _78 = _77 & 2130706432;
+  _79 = pXrdcMemDescriptor->u32XrdcMemPolicy1;
+  _80 = _78 | _79;
+  _81 = pXrdcMemDescriptor->u32XrdcInstance;
+  _82 = 1076330496;
+  _83 = pXrdcMemDescriptor->u32XrdcMrcInstance;
+  _84 = _83 << 4;
+  _85 = pXrdcMemDescriptor->u32XrdcMrcRegionDescriptor;
+  _86 = _84 + _85;
+  _87 = _86 * 32;
+  _88 = _82 + _87;
+  _89 = _88 + 8204;
+  _90 = (volatile uint32 *) _89;
+  _91 = _80 | 2147483648;
+  *_90 = _91;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  return;
+
+}
+
+
+DevAssert (volatile boolean x)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  x.0_1 = x;
+  if (x.0_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  goto <bb 3>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

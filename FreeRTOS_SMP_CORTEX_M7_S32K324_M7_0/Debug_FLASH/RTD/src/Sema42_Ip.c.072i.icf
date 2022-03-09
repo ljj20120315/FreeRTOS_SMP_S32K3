@@ -1,0 +1,562 @@
+Dump after hash based groups
+Congruence classes: 14 with total: 16 items (in a non-singular class: 4)
+Class size histogram [number of members]: number of classes
+     1:     12
+     2:      2
+Dump after WPA based types groups
+Congruence classes: 14 with total: 16 items (in a non-singular class: 4)
+Class size histogram [number of members]: number of classes
+     1:     12
+     2:      2
+Worklist has been filled with: 6
+Address reference subdivision created: 0 new classes.
+Dump after callgraph-based congruence reduction
+Congruence classes: 14 with total: 16 items (in a non-singular class: 2)
+Class size histogram [number of members]: number of classes
+     1:     14
+     2:      1
+Init called for 2 items (12.50%).
+Dump after full equality comparison of groups
+Congruence classes: 14 with total: 16 items (in a non-singular class: 2)
+Class size histogram [number of members]: number of classes
+     1:     14
+     2:      1
+Worklist has been filled with: 6
+Address reference subdivision created: 0 new classes.
+Congruence classes: 14 with total: 16 items (in a non-singular class: 2)
+Class size histogram [number of members]: number of classes
+     1:     14
+     2:      1
+
+Item count: 16
+Congruent classes before: 15, after: 15
+Average class size before: 1.07, after: 1.07
+Average non-singular class size: 2.00, count: 1
+Equal symbols: 1
+Totally needed symbols: 2, fraction of loaded symbols: 100.00%
+
+
+Symbols to be put in SSA form
+{ D.5769 D.5945 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 3
+Number of blocks to update: 2 ( 67%)
+
+
+
+Analyzing function: Sema42_Ip_Init_Privileged/3
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Sema42_Ip_Init_Privileged/3
+
+IPA function summary for Sema42_Ip_Init_Privileged/3 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Sema42_Ip_Init/11 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size: 2 stack: 0
+
+
+Analyzing function: Sema42_Ip_Init_Privileged/3
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Sema42_Ip_Init_Privileged/3
+
+IPA function summary for Sema42_Ip_Init_Privileged/3 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     5
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Sema42_Ip_Init/11 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size: 2 stack: 0
+
+
+
+ local analysis of Sema42_Ip_Init_Privileged/3
+   scanning: Sema42_Ip_Init (u32Instance_2(D)); [tail call]
+  scanning: return;
+Function is locally const.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Sema42_Ip_GetResetGateIndex (const uint32 u32Instance)
+{
+  uint8 _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _4 = Sema42_Ip_GetResetGateIndex_Privileged (u32Instance_2(D));
+  return _4;
+
+}
+
+
+Sema42_Ip_GetResetGateBusMaster (const uint32 u32Instance)
+{
+  uint8 _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _4 = Sema42_Ip_GetResetGateBusMaster_Privileged (u32Instance_2(D));
+  return _4;
+
+}
+
+
+Sema42_Ip_IsResetGateStateIdle (const uint32 u32Instance)
+{
+  uint8 gateStatus;
+  boolean result;
+  short unsigned int _4;
+  unsigned int _5;
+  unsigned int _6;
+  unsigned char _7;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG u32Instance => u32Instance_3(D)
+  # DEBUG INLINE_ENTRY Sema42_Ip_IsResetGateStateIdle_Privileged
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG base => 1078329344B
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _4 ={v} MEM[(const struct SEMA42_Type *)1078329344B].RSTGT.R;
+  _5 = (unsigned int) _4;
+  _6 = _5 >> 12;
+  _7 = (unsigned char) _6;
+  gateStatus_8 = _7 & 3;
+  # DEBUG gateStatus => gateStatus_8
+  # DEBUG BEGIN_STMT
+  # DEBUG u32Instance => NULL
+  # DEBUG gateStatus => NULL
+  # DEBUG gateStatus => (uint32) gateStatus_8
+  # DEBUG BEGIN_STMT
+  if (gateStatus_8 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 3>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  # DEBUG result => 1
+
+  <bb 4> [local count: 1073741824]:
+  # result_1 = PHI <0(2), 1(3)>
+  # DEBUG result => result_1
+  # DEBUG BEGIN_STMT
+  return result_1;
+
+}
+
+
+Sema42_Ip_GetGateLocker (const uint32 u32Instance, const uint8 u8GateIndex)
+{
+  uint8 _5;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _5 = Sema42_Ip_GetGateLocker_Privileged (u32Instance_2(D), u8GateIndex_3(D));
+  return _5;
+
+}
+
+
+Sema42_Ip_ResetGate (const uint32 u32Instance, const uint8 u8GateIndex)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Sema42_Ip_ResetGate_Privileged (u32Instance_2(D), u8GateIndex_3(D));
+  return;
+
+}
+
+
+Sema42_Ip_UnlockGate (const uint32 u32Instance, const uint8 u8GateIndex)
+{
+  Sema42_Ip_StatusType stat;
+  unsigned char _1;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Sema42_Ip_UnlockGate_Privileged (u32Instance_4(D), u8GateIndex_5(D));
+  # DEBUG gateStatus => (uint32) _1
+  # DEBUG BEGIN_STMT
+  if (_1 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 3>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  # DEBUG stat => 0
+
+  <bb 4> [local count: 1073741824]:
+  # stat_2 = PHI <1(2), 0(3)>
+  # DEBUG stat => stat_2
+  # DEBUG BEGIN_STMT
+  return stat_2;
+
+}
+
+
+Sema42_Ip_LockGate (const uint32 u32Instance, const uint8 u8GateIndex, uint8 u8DomainId)
+{
+  uint32 gateStatus;
+  Sema42_Ip_StatusType stat;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Sema42_Ip_LockGate_Privileged (u32Instance_6(D), u8GateIndex_7(D), u8DomainId_8(D));
+  gateStatus_10 = (uint32) _1;
+  # DEBUG gateStatus => gateStatus_10
+  # DEBUG BEGIN_STMT
+  if (gateStatus_10 != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  _2 = (long unsigned int) u8DomainId_8(D);
+  _3 = _2 + 1;
+  if (_3 != gateStatus_10)
+    goto <bb 6>; [66.00%]
+  else
+    goto <bb 4>; [34.00%]
+
+  <bb 4> [local count: 719407025]:
+  if (gateStatus_10 == 0)
+    goto <bb 6>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 5> [local count: 359703512]:
+  # DEBUG BEGIN_STMT
+  # DEBUG stat => 0
+
+  <bb 6> [local count: 1073741824]:
+  # stat_4 = PHI <1(4), 0(5), 1(3)>
+  # DEBUG stat => stat_4
+  # DEBUG BEGIN_STMT
+  return stat_4;
+
+}
+
+
+Sema42_Ip_Init (const uint32 u32Instance)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG u32Instance => u32Instance_2(D)
+  # DEBUG INLINE_ENTRY Sema42_Ip_Init_Privileged
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG base => 1078329344B
+  # DEBUG BEGIN_STMT
+  # DEBUG base => 1078329344B
+  # DEBUG INLINE_ENTRY Sema42_Ip_ResetAllGates
+  # DEBUG BEGIN_STMT
+  MEM[(struct SEMA42_Type *)1078329344B].RSTGT.W ={v} 57856;
+  # DEBUG BEGIN_STMT
+  MEM[(struct SEMA42_Type *)1078329344B].RSTGT.W ={v} 7488;
+  # DEBUG base => NULL
+  # DEBUG u32Instance => NULL
+  return;
+
+}
+
+
+Sema42_Ip_GetResetGateIndex_Privileged (const uint32 u32Instance)
+{
+  uint8 ResetGate;
+  short unsigned int _1;
+
+  <bb 2> [local count: 1073741823]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG base => 1078329344B
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(const struct SEMA42_Type *)1078329344B].RSTGT.R;
+  ResetGate_4 = (uint8) _1;
+  # DEBUG ResetGate => ResetGate_4
+  # DEBUG BEGIN_STMT
+  if (ResetGate_4 > 63)
+    goto <bb 5>; [35.00%]
+  else
+    goto <bb 3>; [65.00%]
+
+  <bb 3> [local count: 697932184]:
+  # DEBUG BEGIN_STMT
+  if (ResetGate_4 > 15)
+    goto <bb 4>; [35.00%]
+  else
+    goto <bb 5>; [65.00%]
+
+  <bb 4> [local count: 244276265]:
+  # DEBUG BEGIN_STMT
+  # DEBUG ResetGate => 255
+
+  <bb 5> [local count: 1073741824]:
+  # ResetGate_2 = PHI <64(2), ResetGate_4(3), 255(4)>
+  # DEBUG ResetGate => ResetGate_2
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return ResetGate_2;
+
+}
+
+
+Sema42_Ip_GetResetGateBusMaster_Privileged (const uint32 u32Instance)
+{
+  uint8 DomainNumber;
+  short unsigned int _1;
+  unsigned int _2;
+  unsigned int _3;
+  unsigned char _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG base => 1078329344B
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(const struct SEMA42_Type *)1078329344B].RSTGT.R;
+  _2 = (unsigned int) _1;
+  _3 = _2 >> 8;
+  _4 = (unsigned char) _3;
+  DomainNumber_7 = _4 & 15;
+  # DEBUG DomainNumber => DomainNumber_7
+  # DEBUG BEGIN_STMT
+  if (DomainNumber_7 <= 2)
+    goto <bb 4>; [65.00%]
+  else
+    goto <bb 3>; [35.00%]
+
+  <bb 3> [local count: 375809640]:
+  # DEBUG BEGIN_STMT
+  # DEBUG DomainNumber => 255
+
+  <bb 4> [local count: 1073741824]:
+  # DomainNumber_5 = PHI <DomainNumber_7(2), 255(3)>
+  # DEBUG DomainNumber => DomainNumber_5
+  # DEBUG BEGIN_STMT
+  return DomainNumber_5;
+
+}
+
+
+Sema42_Ip_IsResetGateStateIdle_Privileged (const uint32 u32Instance)
+{
+  uint8 gateStatus;
+  short unsigned int _1;
+  unsigned int _2;
+  unsigned int _3;
+  unsigned char _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG base => 1078329344B
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(const struct SEMA42_Type *)1078329344B].RSTGT.R;
+  _2 = (unsigned int) _1;
+  _3 = _2 >> 12;
+  _4 = (unsigned char) _3;
+  gateStatus_6 = _4 & 3;
+  # DEBUG gateStatus => gateStatus_6
+  # DEBUG BEGIN_STMT
+  return gateStatus_6;
+
+}
+
+
+Sema42_Ip_GetGateLocker_Privileged (const uint32 u32Instance, const uint8 u8GateIndex)
+{
+  uint8 DomainLocker;
+  unsigned char _1;
+  int _2;
+  unsigned char _3;
+  unsigned char _5;
+
+  <bb 2> [local count: 1073741823]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG base => 1078329344B
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = u8GateIndex_6(D) ^ 3;
+  _2 = (int) _1;
+  _3 ={v} MEM[(const struct SEMA42_Type *)1078329344B].GATE[_2];
+  DomainLocker_8 = _3 & 15;
+  # DEBUG DomainLocker => DomainLocker_8
+  # DEBUG BEGIN_STMT
+  _5 = _3 & 12;
+  if (_5 != 0)
+    goto <bb 5>; [35.00%]
+  else
+    goto <bb 3>; [65.00%]
+
+  <bb 3> [local count: 697932184]:
+  # DEBUG BEGIN_STMT
+  if (DomainLocker_8 != 0)
+    goto <bb 4>; [65.00%]
+  else
+    goto <bb 5>; [35.00%]
+
+  <bb 4> [local count: 453655918]:
+  # DEBUG BEGIN_STMT
+  DomainLocker_9 = DomainLocker_8 + 255;
+  # DEBUG DomainLocker => DomainLocker_9
+
+  <bb 5> [local count: 1073741824]:
+  # DomainLocker_4 = PHI <255(2), DomainLocker_9(4), 255(3)>
+  # DEBUG DomainLocker => DomainLocker_4
+  # DEBUG BEGIN_STMT
+  return DomainLocker_4;
+
+}
+
+
+Sema42_Ip_ResetGate_Privileged (const uint32 u32Instance, const uint8 u8GateIndex)
+{
+  short unsigned int _1;
+  short unsigned int _2;
+  short unsigned int _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG base => 1078329344B
+  # DEBUG BEGIN_STMT
+  _1 = (short unsigned int) u8GateIndex_4(D);
+  _2 = _1 | 57856;
+  MEM[(struct SEMA42_Type *)1078329344B].RSTGT.W ={v} _2;
+  # DEBUG BEGIN_STMT
+  _3 = _1 | 7424;
+  MEM[(struct SEMA42_Type *)1078329344B].RSTGT.W ={v} _3;
+  return;
+
+}
+
+
+Sema42_Ip_UnlockGate_Privileged (const uint32 u32Instance, const uint8 u8GateIndex)
+{
+  uint8 gateStatus;
+  unsigned char _1;
+  int _2;
+  unsigned char _3;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG base => 1078329344B
+  # DEBUG BEGIN_STMT
+  _1 = u8GateIndex_4(D) ^ 3;
+  _2 = (int) _1;
+  MEM[(struct SEMA42_Type *)1078329344B].GATE[_2] ={v} 0;
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct SEMA42_Type *)1078329344B].GATE[_2];
+  gateStatus_7 = _3 & 15;
+  # DEBUG gateStatus => gateStatus_7
+  # DEBUG BEGIN_STMT
+  return gateStatus_7;
+
+}
+
+
+Sema42_Ip_LockGate_Privileged (const uint32 u32Instance, const uint8 u8GateIndex, uint8 u8DomainId)
+{
+  uint8 gateStatus;
+  unsigned char _1;
+  int _2;
+  unsigned char _3;
+  unsigned char _4;
+  unsigned char _5;
+  unsigned char _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG base => 1078329344B
+  # DEBUG BEGIN_STMT
+  _1 = u8GateIndex_9(D) ^ 3;
+  _2 = (int) _1;
+  _3 ={v} MEM[(struct SEMA42_Type *)1078329344B].GATE[_2];
+  gateStatus_11 = _3 & 15;
+  # DEBUG gateStatus => gateStatus_11
+  # DEBUG BEGIN_STMT
+  if (gateStatus_11 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  _4 = u8DomainId_12(D) + 1;
+  _5 = _4 & 15;
+  MEM[(struct SEMA42_Type *)1078329344B].GATE[_2] ={v} _5;
+  # DEBUG BEGIN_STMT
+  _6 ={v} MEM[(struct SEMA42_Type *)1078329344B].GATE[_2];
+  gateStatus_14 = _6 & 15;
+  # DEBUG gateStatus => gateStatus_14
+
+  <bb 4> [local count: 1073741824]:
+  # gateStatus_7 = PHI <gateStatus_11(2), gateStatus_14(3)>
+  # DEBUG gateStatus => gateStatus_7
+  # DEBUG BEGIN_STMT
+  return gateStatus_7;
+
+}
+
+
+Sema42_Ip_Init_Privileged (const uint32 u32Instance)
+{
+  <bb 2> [local count: 1073741824]:
+  Sema42_Ip_Init (u32Instance_2(D)); [tail call]
+  return;
+
+}
+
+

@@ -1,0 +1,13 @@
+../RTD/src/Mpu_M7_Ip.c:234:13:Mpu_M7_Ip_ComputeAccessRights	0	static
+../RTD/src/Mpu_M7_Ip.c:257:6:Mpu_M7_Ip_GetErrorRegisters	0	static
+../RTD/src/Mpu_M7_Ip.c:395:6:Mpu_M7_Ip_SetRegionConfig_Privileged	24	static
+../RTD/src/Mpu_M7_Ip.c:479:6:Mpu_M7_Ip_Deinit_Privileged	8	static
+../RTD/src/Mpu_M7_Ip.c:293:6:Mpu_M7_Ip_Init_Privileged	16	static
+../RTD/src/Mpu_M7_Ip.c:515:6:Mpu_M7_Ip_EnableRegion_Privileged	0	static
+../RTD/src/Mpu_M7_Ip.c:562:6:Mpu_M7_Ip_SetAccessRight_Privileged	16	static
+../RTD/src/Mpu_M7_Ip.c:604:6:Mpu_M7_Ip_Init	0	static
+../RTD/src/Mpu_M7_Ip.c:627:6:Mpu_M7_Ip_SetRegionConfig	0	static
+../RTD/src/Mpu_M7_Ip.c:647:6:Mpu_M7_Ip_Deinit	0	static
+../RTD/src/Mpu_M7_Ip.c:670:6:Mpu_M7_Ip_EnableRegion	0	static
+../RTD/src/Mpu_M7_Ip.c:693:6:Mpu_M7_Ip_SetAccessRight	0	static
+../RTD/src/Mpu_M7_Ip.c:719:9:Mpu_M7_Ip_GetErrorDetails	16	static

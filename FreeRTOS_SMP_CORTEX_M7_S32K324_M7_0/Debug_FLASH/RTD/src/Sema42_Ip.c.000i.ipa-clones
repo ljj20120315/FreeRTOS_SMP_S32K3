@@ -1,0 +1,5 @@
+Callgraph clone;Sema42_Ip_ResetAllGates;2;../RTD/src/Sema42_Ip.c;146;19;Sema42_Ip_Init_Privileged;3;../RTD/src/Sema42_Ip.c;166;6;inlining to
+Callgraph removal;Sema42_Ip_ResetAllGates;2;../RTD/src/Sema42_Ip.c;146;19
+Callgraph clone;Sema42_Ip_Init_Privileged;3;../RTD/src/Sema42_Ip.c;166;6;Sema42_Ip_Init;11;../RTD/src/Sema42_Ip.c;475;6;inlining to
+Callgraph clone;Sema42_Ip_IsResetGateStateIdle_Privileged;8;../RTD/src/Sema42_Ip.c;354;7;Sema42_Ip_IsResetGateStateIdle;16;../RTD/src/Sema42_Ip.c;625;9;inlining to
+Callgraph clone;Sema42_Ip_Init;11;../RTD/src/Sema42_Ip.c;475;6;Sema42_Ip_Init_Privileged;3;../RTD/src/Sema42_Ip.c;166;6;inlining to

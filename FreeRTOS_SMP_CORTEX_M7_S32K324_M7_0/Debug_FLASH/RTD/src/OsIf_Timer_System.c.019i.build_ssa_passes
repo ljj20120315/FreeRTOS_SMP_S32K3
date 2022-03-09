@@ -1,0 +1,264 @@
+OsIf_Timer_System_MicrosToTicks (uint32 Micros)
+{
+  uint32 CoreId;
+  uint32 ticks;
+  uint64 interim;
+  uint32 D.5806;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  ticks = 0;
+  # DEBUG BEGIN_STMT
+  CoreId = 0;
+  # DEBUG BEGIN_STMT
+  _1 = OsIf_abMdlInit[CoreId];
+  _2 = ~_1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  DevAssert (0);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _3 = OsIf_apxInternalCfg[CoreId];
+  if (_3 == 0B)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  DevAssert (0);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _4 = (long long unsigned int) Micros;
+  _5 = OsIf_au32InternalFrequencies[CoreId];
+  _6 = (long long unsigned int) _5;
+  interim = _4 * _6;
+  # DEBUG BEGIN_STMT
+  interim = interim / 1000000;
+  # DEBUG BEGIN_STMT
+  _7 = interim <= 4294967295;
+  DevAssert (_7);
+  # DEBUG BEGIN_STMT
+  ticks = (uint32) interim;
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  D.5806 = ticks;
+  return D.5806;
+
+}
+
+
+OsIf_Timer_System_SetTimerFrequency (uint32 Freq)
+{
+  uint32 CoreId;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  CoreId = 0;
+  # DEBUG BEGIN_STMT
+  _1 = OsIf_abMdlInit[CoreId];
+  _2 = ~_1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  DevAssert (0);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _3 = OsIf_apxInternalCfg[CoreId];
+  if (_3 == 0B)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  DevAssert (0);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  OsIf_au32InternalFrequencies[CoreId] = Freq;
+
+  <bb 7> :
+  return;
+
+}
+
+
+OsIf_Timer_System_GetElapsed (uint32 * const CurrentRef)
+{
+  uint32 CoreId;
+  uint32 Elapsed;
+  uint32 D.5792;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Elapsed = 0;
+  # DEBUG BEGIN_STMT
+  CoreId = 0;
+  # DEBUG BEGIN_STMT
+  _1 = OsIf_abMdlInit[CoreId];
+  _2 = ~_1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  DevAssert (0);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _3 = OsIf_apxInternalCfg[CoreId];
+  if (_3 == 0B)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  DevAssert (0);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Elapsed = OsIf_Timer_System_Internal_GetElapsed (CurrentRef);
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  D.5792 = Elapsed;
+  return D.5792;
+
+}
+
+
+OsIf_Timer_System_GetCounter ()
+{
+  uint32 CoreId;
+  uint32 Counter;
+  uint32 D.5784;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Counter = 0;
+  # DEBUG BEGIN_STMT
+  CoreId = 0;
+  # DEBUG BEGIN_STMT
+  _1 = OsIf_abMdlInit[CoreId];
+  _2 = ~_1;
+  if (_2 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  DevAssert (0);
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _3 = OsIf_apxInternalCfg[CoreId];
+  if (_3 == 0B)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  DevAssert (0);
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Counter = OsIf_Timer_System_Internal_GetCounter ();
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  D.5784 = Counter;
+  return D.5784;
+
+}
+
+
+OsIf_Timer_System_Init ()
+{
+  uint32 CoreId;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  CoreId = 0;
+  # DEBUG BEGIN_STMT
+  _1 = OsIf_apxPredefinedConfig[CoreId];
+  if (_1 == 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  DevAssert (0);
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  OsIf_abMdlInit[CoreId] = 1;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _2 = OsIf_apxPredefinedConfig[CoreId];
+  OsIf_apxInternalCfg[CoreId] = _2;
+  # DEBUG BEGIN_STMT
+  _3 = OsIf_apxInternalCfg[CoreId];
+  _4 = _3->counterFrequency;
+  OsIf_au32InternalFrequencies[CoreId] = _4;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  OsIf_Timer_System_Internal_Init ();
+  return;
+
+}
+
+
+DevAssert (volatile boolean x)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  x.0_1 = x;
+  if (x.0_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  goto <bb 3>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

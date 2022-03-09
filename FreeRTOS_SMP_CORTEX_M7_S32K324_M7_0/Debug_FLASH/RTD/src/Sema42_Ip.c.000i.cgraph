@@ -1,0 +1,913 @@
+Trivially needed symbols: Sema42_Ip_GetResetGateIndex/18 Sema42_Ip_GetResetGateBusMaster/17 Sema42_Ip_IsResetGateStateIdle/16 Sema42_Ip_GetGateLocker/15 Sema42_Ip_ResetGate/14 Sema42_Ip_UnlockGate/13 Sema42_Ip_LockGate/12 Sema42_Ip_Init/11 Sema42_Ip_GetResetGateIndex_Privileged/10 Sema42_Ip_GetResetGateBusMaster_Privileged/9 Sema42_Ip_IsResetGateStateIdle_Privileged/8 Sema42_Ip_GetGateLocker_Privileged/7 Sema42_Ip_ResetGate_Privileged/6 Sema42_Ip_UnlockGate_Privileged/5 Sema42_Ip_LockGate_Privileged/4 Sema42_Ip_Init_Privileged/3
+
+
+Initial Symbol table:
+
+Sema42_Ip_GetResetGateIndex/18 (Sema42_Ip_GetResetGateIndex) @061bc2a0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @01981040
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_GetResetGateIndex_Privileged/10 
+Sema42_Ip_GetResetGateBusMaster/17 (Sema42_Ip_GetResetGateBusMaster) @061bcee0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @061bc2a0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_GetResetGateBusMaster_Privileged/9 
+Sema42_Ip_IsResetGateStateIdle/16 (Sema42_Ip_IsResetGateStateIdle) @061bcc40
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @061bcee0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_IsResetGateStateIdle_Privileged/8 
+Sema42_Ip_GetGateLocker/15 (Sema42_Ip_GetGateLocker) @061bc9a0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @061bcc40
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_GetGateLocker_Privileged/7 
+Sema42_Ip_ResetGate/14 (Sema42_Ip_ResetGate) @061bc700
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @061bc9a0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_ResetGate_Privileged/6 
+Sema42_Ip_UnlockGate/13 (Sema42_Ip_UnlockGate) @061bc460
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @061bc700
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_UnlockGate_Privileged/5 
+Sema42_Ip_LockGate/12 (Sema42_Ip_LockGate) @061bc1c0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @061bc460
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_LockGate_Privileged/4 
+Sema42_Ip_Init/11 (Sema42_Ip_Init) @061b5d20
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @061bc1c0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_Init_Privileged/3 
+Sema42_Ip_GetResetGateIndex_Privileged/10 (Sema42_Ip_GetResetGateIndex_Privileged) @061b57e0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @061b5d20
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_GetResetGateIndex/18 
+  Calls: 
+Sema42_Ip_GetResetGateBusMaster_Privileged/9 (Sema42_Ip_GetResetGateBusMaster_Privileged) @061b5ee0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @061b57e0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_GetResetGateBusMaster/17 
+  Calls: 
+Sema42_Ip_IsResetGateStateIdle_Privileged/8 (Sema42_Ip_IsResetGateStateIdle_Privileged) @061b5c40
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @061b5ee0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_IsResetGateStateIdle/16 
+  Calls: 
+Sema42_Ip_GetGateLocker_Privileged/7 (Sema42_Ip_GetGateLocker_Privileged) @061b59a0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @061b5c40
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_GetGateLocker/15 
+  Calls: 
+Sema42_Ip_ResetGate_Privileged/6 (Sema42_Ip_ResetGate_Privileged) @061b5700
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @061b59a0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_ResetGate/14 
+  Calls: 
+Sema42_Ip_UnlockGate_Privileged/5 (Sema42_Ip_UnlockGate_Privileged) @061b50e0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @061b5700
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_UnlockGate/13 
+  Calls: 
+Sema42_Ip_LockGate_Privileged/4 (Sema42_Ip_LockGate_Privileged) @06092c40
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @061b50e0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_LockGate/12 
+  Calls: 
+Sema42_Ip_Init_Privileged/3 (Sema42_Ip_Init_Privileged) @06092e00
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06092c40
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_Init/11 
+  Calls: Sema42_Ip_ResetAllGates/2 
+Sema42_Ip_ResetAllGates/2 (Sema42_Ip_ResetAllGates) @06092b60
+  Type: function definition analyzed
+  Visibility:
+  Aux: @06092c40
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_Init_Privileged/3 
+  Calls: 
+Sema42_Ip_Base/1 (Sema42_Ip_Base) @06091510
+  Type: variable definition
+  Visibility:
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @06049e00
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols: Sema42_Ip_Base/1 DevAssert/0
+
+Reclaimed Symbol table:
+
+Sema42_Ip_GetResetGateIndex/18 (Sema42_Ip_GetResetGateIndex) @061bc2a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_GetResetGateIndex_Privileged/10 
+Sema42_Ip_GetResetGateBusMaster/17 (Sema42_Ip_GetResetGateBusMaster) @061bcee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_GetResetGateBusMaster_Privileged/9 
+Sema42_Ip_IsResetGateStateIdle/16 (Sema42_Ip_IsResetGateStateIdle) @061bcc40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_IsResetGateStateIdle_Privileged/8 
+Sema42_Ip_GetGateLocker/15 (Sema42_Ip_GetGateLocker) @061bc9a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_GetGateLocker_Privileged/7 
+Sema42_Ip_ResetGate/14 (Sema42_Ip_ResetGate) @061bc700
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_ResetGate_Privileged/6 
+Sema42_Ip_UnlockGate/13 (Sema42_Ip_UnlockGate) @061bc460
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_UnlockGate_Privileged/5 
+Sema42_Ip_LockGate/12 (Sema42_Ip_LockGate) @061bc1c0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_LockGate_Privileged/4 
+Sema42_Ip_Init/11 (Sema42_Ip_Init) @061b5d20
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_Init_Privileged/3 
+Sema42_Ip_GetResetGateIndex_Privileged/10 (Sema42_Ip_GetResetGateIndex_Privileged) @061b57e0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_GetResetGateIndex/18 
+  Calls: 
+Sema42_Ip_GetResetGateBusMaster_Privileged/9 (Sema42_Ip_GetResetGateBusMaster_Privileged) @061b5ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_GetResetGateBusMaster/17 
+  Calls: 
+Sema42_Ip_IsResetGateStateIdle_Privileged/8 (Sema42_Ip_IsResetGateStateIdle_Privileged) @061b5c40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_IsResetGateStateIdle/16 
+  Calls: 
+Sema42_Ip_GetGateLocker_Privileged/7 (Sema42_Ip_GetGateLocker_Privileged) @061b59a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_GetGateLocker/15 
+  Calls: 
+Sema42_Ip_ResetGate_Privileged/6 (Sema42_Ip_ResetGate_Privileged) @061b5700
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_ResetGate/14 
+  Calls: 
+Sema42_Ip_UnlockGate_Privileged/5 (Sema42_Ip_UnlockGate_Privileged) @061b50e0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_UnlockGate/13 
+  Calls: 
+Sema42_Ip_LockGate_Privileged/4 (Sema42_Ip_LockGate_Privileged) @06092c40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_LockGate/12 
+  Calls: 
+Sema42_Ip_Init_Privileged/3 (Sema42_Ip_Init_Privileged) @06092e00
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_Init/11 
+  Calls: Sema42_Ip_ResetAllGates/2 
+Sema42_Ip_ResetAllGates/2 (Sema42_Ip_ResetAllGates) @06092b60
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_Init_Privileged/3 
+  Calls: 
+
+
+Initial Symbol table:
+
+Sema42_Ip_GetResetGateIndex/18 (Sema42_Ip_GetResetGateIndex) @061bc2a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_GetResetGateIndex_Privileged/10 
+Sema42_Ip_GetResetGateBusMaster/17 (Sema42_Ip_GetResetGateBusMaster) @061bcee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_GetResetGateBusMaster_Privileged/9 
+Sema42_Ip_IsResetGateStateIdle/16 (Sema42_Ip_IsResetGateStateIdle) @061bcc40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_IsResetGateStateIdle_Privileged/8 
+Sema42_Ip_GetGateLocker/15 (Sema42_Ip_GetGateLocker) @061bc9a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_GetGateLocker_Privileged/7 
+Sema42_Ip_ResetGate/14 (Sema42_Ip_ResetGate) @061bc700
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_ResetGate_Privileged/6 
+Sema42_Ip_UnlockGate/13 (Sema42_Ip_UnlockGate) @061bc460
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_UnlockGate_Privileged/5 
+Sema42_Ip_LockGate/12 (Sema42_Ip_LockGate) @061bc1c0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_LockGate_Privileged/4 
+Sema42_Ip_Init/11 (Sema42_Ip_Init) @061b5d20
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_Init_Privileged/3 
+Sema42_Ip_GetResetGateIndex_Privileged/10 (Sema42_Ip_GetResetGateIndex_Privileged) @061b57e0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_GetResetGateIndex/18 
+  Calls: 
+Sema42_Ip_GetResetGateBusMaster_Privileged/9 (Sema42_Ip_GetResetGateBusMaster_Privileged) @061b5ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_GetResetGateBusMaster/17 
+  Calls: 
+Sema42_Ip_IsResetGateStateIdle_Privileged/8 (Sema42_Ip_IsResetGateStateIdle_Privileged) @061b5c40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_IsResetGateStateIdle/16 
+  Calls: 
+Sema42_Ip_GetGateLocker_Privileged/7 (Sema42_Ip_GetGateLocker_Privileged) @061b59a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_GetGateLocker/15 
+  Calls: 
+Sema42_Ip_ResetGate_Privileged/6 (Sema42_Ip_ResetGate_Privileged) @061b5700
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_ResetGate/14 
+  Calls: 
+Sema42_Ip_UnlockGate_Privileged/5 (Sema42_Ip_UnlockGate_Privileged) @061b50e0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_UnlockGate/13 
+  Calls: 
+Sema42_Ip_LockGate_Privileged/4 (Sema42_Ip_LockGate_Privileged) @06092c40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_LockGate/12 
+  Calls: 
+Sema42_Ip_Init_Privileged/3 (Sema42_Ip_Init_Privileged) @06092e00
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_Init/11 
+  Calls: Sema42_Ip_ResetAllGates/2 
+Sema42_Ip_ResetAllGates/2 (Sema42_Ip_ResetAllGates) @06092b60
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_Init_Privileged/3 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Sema42_Ip_GetResetGateIndex/18 (Sema42_Ip_GetResetGateIndex) @061bc2a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_GetResetGateIndex_Privileged/10 
+Sema42_Ip_GetResetGateBusMaster/17 (Sema42_Ip_GetResetGateBusMaster) @061bcee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_GetResetGateBusMaster_Privileged/9 
+Sema42_Ip_IsResetGateStateIdle/16 (Sema42_Ip_IsResetGateStateIdle) @061bcc40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_IsResetGateStateIdle_Privileged/8 
+Sema42_Ip_GetGateLocker/15 (Sema42_Ip_GetGateLocker) @061bc9a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_GetGateLocker_Privileged/7 
+Sema42_Ip_ResetGate/14 (Sema42_Ip_ResetGate) @061bc700
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_ResetGate_Privileged/6 
+Sema42_Ip_UnlockGate/13 (Sema42_Ip_UnlockGate) @061bc460
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_UnlockGate_Privileged/5 
+Sema42_Ip_LockGate/12 (Sema42_Ip_LockGate) @061bc1c0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_LockGate_Privileged/4 
+Sema42_Ip_Init/11 (Sema42_Ip_Init) @061b5d20
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_Init_Privileged/3 
+Sema42_Ip_GetResetGateIndex_Privileged/10 (Sema42_Ip_GetResetGateIndex_Privileged) @061b57e0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_GetResetGateIndex/18 
+  Calls: 
+Sema42_Ip_GetResetGateBusMaster_Privileged/9 (Sema42_Ip_GetResetGateBusMaster_Privileged) @061b5ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_GetResetGateBusMaster/17 
+  Calls: 
+Sema42_Ip_IsResetGateStateIdle_Privileged/8 (Sema42_Ip_IsResetGateStateIdle_Privileged) @061b5c40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_IsResetGateStateIdle/16 
+  Calls: 
+Sema42_Ip_GetGateLocker_Privileged/7 (Sema42_Ip_GetGateLocker_Privileged) @061b59a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_GetGateLocker/15 
+  Calls: 
+Sema42_Ip_ResetGate_Privileged/6 (Sema42_Ip_ResetGate_Privileged) @061b5700
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_ResetGate/14 
+  Calls: 
+Sema42_Ip_UnlockGate_Privileged/5 (Sema42_Ip_UnlockGate_Privileged) @061b50e0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_UnlockGate/13 
+  Calls: 
+Sema42_Ip_LockGate_Privileged/4 (Sema42_Ip_LockGate_Privileged) @06092c40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_LockGate/12 
+  Calls: 
+Sema42_Ip_Init_Privileged/3 (Sema42_Ip_Init_Privileged) @06092e00
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_Init/11 
+  Calls: Sema42_Ip_ResetAllGates/2 
+Sema42_Ip_ResetAllGates/2 (Sema42_Ip_ResetAllGates) @06092b60
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Sema42_Ip_Init_Privileged/3 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Sema42_Ip_Init/21 (Sema42_Ip_Init) @062f89a0
+  Type: function definition analyzed
+  Visibility: public
+  next sharing asm name: 11
+  References: 
+  Referring: 
+  Function Sema42_Ip_Init/21 is inline copy in Sema42_Ip_Init_Privileged/3
+  Clone of Sema42_Ip_Init/11
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local icf_merged nonfreeing_fn optimize_size
+  Called by: Sema42_Ip_Init_Privileged/3 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Sema42_Ip_GetResetGateIndex/18 (Sema42_Ip_GetResetGateIndex) @061bc2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: Sema42_Ip_GetResetGateIndex_Privileged/10 (1073741824 (estimated locally),1.00 per call) 
+Sema42_Ip_GetResetGateBusMaster/17 (Sema42_Ip_GetResetGateBusMaster) @061bcee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: Sema42_Ip_GetResetGateBusMaster_Privileged/9 (1073741824 (estimated locally),1.00 per call) 
+Sema42_Ip_IsResetGateStateIdle/16 (Sema42_Ip_IsResetGateStateIdle) @061bcc40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Sema42_Ip_GetGateLocker/15 (Sema42_Ip_GetGateLocker) @061bc9a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: Sema42_Ip_GetGateLocker_Privileged/7 (1073741824 (estimated locally),1.00 per call) 
+Sema42_Ip_ResetGate/14 (Sema42_Ip_ResetGate) @061bc700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: Sema42_Ip_ResetGate_Privileged/6 (1073741824 (estimated locally),1.00 per call) 
+Sema42_Ip_UnlockGate/13 (Sema42_Ip_UnlockGate) @061bc460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: Sema42_Ip_UnlockGate_Privileged/5 (1073741824 (estimated locally),1.00 per call) 
+Sema42_Ip_LockGate/12 (Sema42_Ip_LockGate) @061bc1c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: Sema42_Ip_LockGate_Privileged/4 (1073741824 (estimated locally),1.00 per call) 
+Sema42_Ip_Init/11 (Sema42_Ip_Init) @061b5d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  previous sharing asm name: 21
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Sema42_Ip_GetResetGateIndex_Privileged/10 (Sema42_Ip_GetResetGateIndex_Privileged) @061b57e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: Sema42_Ip_GetResetGateIndex/18 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Sema42_Ip_GetResetGateBusMaster_Privileged/9 (Sema42_Ip_GetResetGateBusMaster_Privileged) @061b5ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: Sema42_Ip_GetResetGateBusMaster/17 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Sema42_Ip_IsResetGateStateIdle_Privileged/8 (Sema42_Ip_IsResetGateStateIdle_Privileged) @061b5c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Sema42_Ip_GetGateLocker_Privileged/7 (Sema42_Ip_GetGateLocker_Privileged) @061b59a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: Sema42_Ip_GetGateLocker/15 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Sema42_Ip_ResetGate_Privileged/6 (Sema42_Ip_ResetGate_Privileged) @061b5700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: Sema42_Ip_ResetGate/14 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Sema42_Ip_UnlockGate_Privileged/5 (Sema42_Ip_UnlockGate_Privileged) @061b50e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: Sema42_Ip_UnlockGate/13 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Sema42_Ip_LockGate_Privileged/4 (Sema42_Ip_LockGate_Privileged) @06092c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: Sema42_Ip_LockGate/12 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Sema42_Ip_Init_Privileged/3 (Sema42_Ip_Init_Privileged) @06092e00
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body icf_merged nonfreeing_fn optimize_size
+  Called by: 
+  Calls: Sema42_Ip_Init/21 (inlined) (1073741824 (estimated locally),1.00 per call) 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables:
+Removing variables:
+
+Final Symbol table:
+
+Sema42_Ip_GetResetGateIndex/18 (Sema42_Ip_GetResetGateIndex) @061bc2a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Sema42_Ip_GetResetGateBusMaster/17 (Sema42_Ip_GetResetGateBusMaster) @061bcee0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Sema42_Ip_IsResetGateStateIdle/16 (Sema42_Ip_IsResetGateStateIdle) @061bcc40
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Sema42_Ip_GetGateLocker/15 (Sema42_Ip_GetGateLocker) @061bc9a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Sema42_Ip_ResetGate/14 (Sema42_Ip_ResetGate) @061bc700
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Sema42_Ip_UnlockGate/13 (Sema42_Ip_UnlockGate) @061bc460
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Sema42_Ip_LockGate/12 (Sema42_Ip_LockGate) @061bc1c0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Sema42_Ip_Init/11 (Sema42_Ip_Init) @061b5d20
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) icf_merged nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Sema42_Ip_GetResetGateIndex_Privileged/10 (Sema42_Ip_GetResetGateIndex_Privileged) @061b57e0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Sema42_Ip_GetResetGateBusMaster_Privileged/9 (Sema42_Ip_GetResetGateBusMaster_Privileged) @061b5ee0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Sema42_Ip_IsResetGateStateIdle_Privileged/8 (Sema42_Ip_IsResetGateStateIdle_Privileged) @061b5c40
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Sema42_Ip_GetGateLocker_Privileged/7 (Sema42_Ip_GetGateLocker_Privileged) @061b59a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741823 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Sema42_Ip_ResetGate_Privileged/6 (Sema42_Ip_ResetGate_Privileged) @061b5700
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Sema42_Ip_UnlockGate_Privileged/5 (Sema42_Ip_UnlockGate_Privileged) @061b50e0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Sema42_Ip_LockGate_Privileged/4 (Sema42_Ip_LockGate_Privileged) @06092c40
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Sema42_Ip_Init_Privileged/3 (Sema42_Ip_Init_Privileged) @06092e00
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) icf_merged nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 

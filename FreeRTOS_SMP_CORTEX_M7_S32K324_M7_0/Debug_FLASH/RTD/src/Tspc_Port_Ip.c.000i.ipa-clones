@@ -1,0 +1,4 @@
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Tspc_Port_Ip_EnableObeGroup;1;../RTD/src/Tspc_Port_Ip.c;123;6;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Tspc_Port_Ip_ConfigureObeGroup;2;../RTD/src/Tspc_Port_Ip.c;152;6;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Tspc_Port_Ip_ConfigureObeGroup;2;../RTD/src/Tspc_Port_Ip.c;152;6;inlining to
+Callgraph removal;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20

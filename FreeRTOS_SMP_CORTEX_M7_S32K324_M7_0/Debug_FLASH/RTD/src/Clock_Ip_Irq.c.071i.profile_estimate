@@ -1,0 +1,18 @@
+Histogram:
+
+========== IPA-profile speculative targets: ==========
+
+Summary for node Mcu_Cmu_ClockFail_IRQHandler/0:
+
+
+Mcu_Cmu_ClockFail_IRQHandler ()
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_CMU_ClockFailInt ();
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

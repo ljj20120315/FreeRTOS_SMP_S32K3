@@ -1,0 +1,45 @@
+main ()
+{
+  unsigned char _1;
+  int exit_code.0_2;
+  int _8;
+
+  <bb 2> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  if (_1 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 59055800]:
+  # DEBUG BEGIN_STMT
+  main_c0 ();
+  goto <bb 6>; [100.00%]
+
+  <bb 4> [local count: 59055800]:
+  # DEBUG BEGIN_STMT
+  main_c1 ();
+
+  <bb 6> [local count: 118111600]:
+
+  <bb 8> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  exit_code.0_2 ={v} exit_code;
+  if (exit_code.0_2 != 0)
+    goto <bb 7>; [11.00%]
+  else
+    goto <bb 9>; [89.00%]
+
+  <bb 9> [local count: 955630225]:
+  goto <bb 8>; [100.00%]
+
+  <bb 7> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  _8 ={v} exit_code;
+  return _8;
+
+}
+
+

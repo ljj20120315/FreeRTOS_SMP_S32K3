@@ -1,0 +1,949 @@
+Trivially needed symbols: SystemInit/6 Sys_GetCoreID/5 default_interrupt_routine/4 startup_go_to_user_mode/3 RESET_CATCH_CORE/2 rasr/1 rbar/0
+
+
+Initial Symbol table:
+
+__RAM_SHAREABLE_SIZE/19 (__RAM_SHAREABLE_SIZE) @06e72cf0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__RAM_SHAREABLE_START/18 (__RAM_SHAREABLE_START) @06e72ca8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__RAM_NO_CACHEABLE_SIZE/17 (__RAM_NO_CACHEABLE_SIZE) @06e72c60
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__RAM_NO_CACHEABLE_START/16 (__RAM_NO_CACHEABLE_START) @06e72c18
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__RAM_CACHEABLE_SIZE/15 (__RAM_CACHEABLE_SIZE) @06e72bd0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__INT_SRAM_START/14 (__INT_SRAM_START) @06e72b88
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__INT_DTCM_START/13 (__INT_DTCM_START) @06e72b40
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__ROM_DATA_START/12 (__ROM_DATA_START) @06e72af8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__ROM_CODE_START/11 (__ROM_CODE_START) @06e72ab0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__INT_ITCM_START/10 (__INT_ITCM_START) @06e72a68
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+sys_m7_cache_clean/9 (sys_m7_cache_clean) @06d1d620
+  Type: function definition analyzed
+  Visibility:
+  Aux: @06d1d0e0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: sys_m7_cache_init/7 sys_m7_cache_disable/8 SystemInit/6 
+  Calls: 
+sys_m7_cache_disable/8 (sys_m7_cache_disable) @06d1d0e0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @06d1dd20
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: SystemInit/6 
+  Calls: sys_m7_cache_clean/9 
+sys_m7_cache_init/7 (sys_m7_cache_init) @06d1dd20
+  Type: function definition analyzed
+  Visibility:
+  Aux: @01981040
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: SystemInit/6 
+  Calls: sys_m7_cache_clean/9 
+SystemInit/6 (SystemInit) @06d1da80
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @01981040
+  References: rbar/0 (write) rasr/1 (write) __INT_ITCM_START/10 (addr) rbar/0 (write) rasr/1 (write) __ROM_CODE_START/11 (addr) rbar/0 (write) rasr/1 (write) __ROM_DATA_START/12 (addr) rbar/0 (write) rasr/1 (write) __INT_DTCM_START/13 (addr) rbar/0 (write) rasr/1 (write) __INT_SRAM_START/14 (addr) rbar/0 (write) __RAM_CACHEABLE_SIZE/15 (addr) rasr/1 (write) __RAM_NO_CACHEABLE_START/16 (addr) rbar/0 (write) __RAM_NO_CACHEABLE_SIZE/17 (addr) rasr/1 (write) __RAM_SHAREABLE_START/18 (addr) rbar/0 (write) __RAM_SHAREABLE_SIZE/19 (addr) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rasr/1 (read) rbar/0 (read) rasr/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: sys_m7_cache_init/7 sys_m7_cache_disable/8 sys_m7_cache_clean/9 Sys_GetCoreID/5 
+Sys_GetCoreID/5 (Sys_GetCoreID) @06d1d7e0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06d1da80
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: SystemInit/6 
+  Calls: 
+default_interrupt_routine/4 (default_interrupt_routine) @06d1d540
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06d1d7e0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+startup_go_to_user_mode/3 (startup_go_to_user_mode) @06d1d2a0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06d1d540
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+RESET_CATCH_CORE/2 (RESET_CATCH_CORE) @06d1a438
+  Type: variable definition analyzed
+  Visibility: public
+  Aux: @06d1d2a0
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags:
+rasr/1 (rasr) @06d1a318
+  Type: variable definition analyzed
+  Visibility: force_output public
+  Aux: @06d1a438
+  References: 
+  Referring: SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (read) SystemInit/6 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+rbar/0 (rbar) @06d1a288
+  Type: variable definition analyzed
+  Visibility: force_output public
+  Aux: @06d1a318
+  References: 
+  Referring: SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+__RAM_SHAREABLE_SIZE/19 (__RAM_SHAREABLE_SIZE) @06e72cf0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__RAM_SHAREABLE_START/18 (__RAM_SHAREABLE_START) @06e72ca8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__RAM_NO_CACHEABLE_SIZE/17 (__RAM_NO_CACHEABLE_SIZE) @06e72c60
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__RAM_NO_CACHEABLE_START/16 (__RAM_NO_CACHEABLE_START) @06e72c18
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__RAM_CACHEABLE_SIZE/15 (__RAM_CACHEABLE_SIZE) @06e72bd0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__INT_SRAM_START/14 (__INT_SRAM_START) @06e72b88
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__INT_DTCM_START/13 (__INT_DTCM_START) @06e72b40
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__ROM_DATA_START/12 (__ROM_DATA_START) @06e72af8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__ROM_CODE_START/11 (__ROM_CODE_START) @06e72ab0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__INT_ITCM_START/10 (__INT_ITCM_START) @06e72a68
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+sys_m7_cache_clean/9 (sys_m7_cache_clean) @06d1d620
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: sys_m7_cache_init/7 sys_m7_cache_disable/8 SystemInit/6 
+  Calls: 
+sys_m7_cache_disable/8 (sys_m7_cache_disable) @06d1d0e0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: SystemInit/6 
+  Calls: sys_m7_cache_clean/9 
+sys_m7_cache_init/7 (sys_m7_cache_init) @06d1dd20
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: SystemInit/6 
+  Calls: sys_m7_cache_clean/9 
+SystemInit/6 (SystemInit) @06d1da80
+  Type: function definition analyzed
+  Visibility: public
+  References: rbar/0 (write) rasr/1 (write) __INT_ITCM_START/10 (addr) rbar/0 (write) rasr/1 (write) __ROM_CODE_START/11 (addr) rbar/0 (write) rasr/1 (write) __ROM_DATA_START/12 (addr) rbar/0 (write) rasr/1 (write) __INT_DTCM_START/13 (addr) rbar/0 (write) rasr/1 (write) __INT_SRAM_START/14 (addr) rbar/0 (write) __RAM_CACHEABLE_SIZE/15 (addr) rasr/1 (write) __RAM_NO_CACHEABLE_START/16 (addr) rbar/0 (write) __RAM_NO_CACHEABLE_SIZE/17 (addr) rasr/1 (write) __RAM_SHAREABLE_START/18 (addr) rbar/0 (write) __RAM_SHAREABLE_SIZE/19 (addr) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rasr/1 (read) rbar/0 (read) rasr/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: sys_m7_cache_init/7 sys_m7_cache_disable/8 sys_m7_cache_clean/9 Sys_GetCoreID/5 
+Sys_GetCoreID/5 (Sys_GetCoreID) @06d1d7e0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: SystemInit/6 
+  Calls: 
+default_interrupt_routine/4 (default_interrupt_routine) @06d1d540
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+startup_go_to_user_mode/3 (startup_go_to_user_mode) @06d1d2a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+RESET_CATCH_CORE/2 (RESET_CATCH_CORE) @06d1a438
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags:
+rasr/1 (rasr) @06d1a318
+  Type: variable definition analyzed
+  Visibility: force_output public
+  References: 
+  Referring: SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (read) SystemInit/6 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+rbar/0 (rbar) @06d1a288
+  Type: variable definition analyzed
+  Visibility: force_output public
+  References: 
+  Referring: SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+
+Initial Symbol table:
+
+__RAM_SHAREABLE_SIZE/19 (__RAM_SHAREABLE_SIZE) @06e72cf0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__RAM_SHAREABLE_START/18 (__RAM_SHAREABLE_START) @06e72ca8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__RAM_NO_CACHEABLE_SIZE/17 (__RAM_NO_CACHEABLE_SIZE) @06e72c60
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__RAM_NO_CACHEABLE_START/16 (__RAM_NO_CACHEABLE_START) @06e72c18
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__RAM_CACHEABLE_SIZE/15 (__RAM_CACHEABLE_SIZE) @06e72bd0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__INT_SRAM_START/14 (__INT_SRAM_START) @06e72b88
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__INT_DTCM_START/13 (__INT_DTCM_START) @06e72b40
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__ROM_DATA_START/12 (__ROM_DATA_START) @06e72af8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__ROM_CODE_START/11 (__ROM_CODE_START) @06e72ab0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__INT_ITCM_START/10 (__INT_ITCM_START) @06e72a68
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+sys_m7_cache_clean/9 (sys_m7_cache_clean) @06d1d620
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: sys_m7_cache_init/7 sys_m7_cache_disable/8 SystemInit/6 
+  Calls: 
+sys_m7_cache_disable/8 (sys_m7_cache_disable) @06d1d0e0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: SystemInit/6 
+  Calls: sys_m7_cache_clean/9 
+sys_m7_cache_init/7 (sys_m7_cache_init) @06d1dd20
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: SystemInit/6 
+  Calls: sys_m7_cache_clean/9 
+SystemInit/6 (SystemInit) @06d1da80
+  Type: function definition analyzed
+  Visibility: public
+  References: rbar/0 (write) rasr/1 (write) __INT_ITCM_START/10 (addr) rbar/0 (write) rasr/1 (write) __ROM_CODE_START/11 (addr) rbar/0 (write) rasr/1 (write) __ROM_DATA_START/12 (addr) rbar/0 (write) rasr/1 (write) __INT_DTCM_START/13 (addr) rbar/0 (write) rasr/1 (write) __INT_SRAM_START/14 (addr) rbar/0 (write) __RAM_CACHEABLE_SIZE/15 (addr) rasr/1 (write) __RAM_NO_CACHEABLE_START/16 (addr) rbar/0 (write) __RAM_NO_CACHEABLE_SIZE/17 (addr) rasr/1 (write) __RAM_SHAREABLE_START/18 (addr) rbar/0 (write) __RAM_SHAREABLE_SIZE/19 (addr) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rasr/1 (read) rbar/0 (read) rasr/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: sys_m7_cache_init/7 sys_m7_cache_disable/8 sys_m7_cache_clean/9 Sys_GetCoreID/5 
+Sys_GetCoreID/5 (Sys_GetCoreID) @06d1d7e0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: SystemInit/6 
+  Calls: 
+default_interrupt_routine/4 (default_interrupt_routine) @06d1d540
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+startup_go_to_user_mode/3 (startup_go_to_user_mode) @06d1d2a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+RESET_CATCH_CORE/2 (RESET_CATCH_CORE) @06d1a438
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags:
+rasr/1 (rasr) @06d1a318
+  Type: variable definition analyzed
+  Visibility: force_output public
+  References: 
+  Referring: SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (read) SystemInit/6 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+rbar/0 (rbar) @06d1a288
+  Type: variable definition analyzed
+  Visibility: force_output public
+  References: 
+  Referring: SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+__RAM_SHAREABLE_SIZE/19 (__RAM_SHAREABLE_SIZE) @06e72cf0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__RAM_SHAREABLE_START/18 (__RAM_SHAREABLE_START) @06e72ca8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__RAM_NO_CACHEABLE_SIZE/17 (__RAM_NO_CACHEABLE_SIZE) @06e72c60
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__RAM_NO_CACHEABLE_START/16 (__RAM_NO_CACHEABLE_START) @06e72c18
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__RAM_CACHEABLE_SIZE/15 (__RAM_CACHEABLE_SIZE) @06e72bd0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__INT_SRAM_START/14 (__INT_SRAM_START) @06e72b88
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__INT_DTCM_START/13 (__INT_DTCM_START) @06e72b40
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__ROM_DATA_START/12 (__ROM_DATA_START) @06e72af8
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__ROM_CODE_START/11 (__ROM_CODE_START) @06e72ab0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+__INT_ITCM_START/10 (__INT_ITCM_START) @06e72a68
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not-ready
+  Varpool flags:
+sys_m7_cache_clean/9 (sys_m7_cache_clean) @06d1d620
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: sys_m7_cache_init/7 sys_m7_cache_disable/8 SystemInit/6 
+  Calls: 
+sys_m7_cache_disable/8 (sys_m7_cache_disable) @06d1d0e0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: SystemInit/6 
+  Calls: sys_m7_cache_clean/9 
+sys_m7_cache_init/7 (sys_m7_cache_init) @06d1dd20
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: SystemInit/6 
+  Calls: sys_m7_cache_clean/9 
+SystemInit/6 (SystemInit) @06d1da80
+  Type: function definition analyzed
+  Visibility: public
+  References: rbar/0 (write) rasr/1 (write) __INT_ITCM_START/10 (addr) rbar/0 (write) rasr/1 (write) __ROM_CODE_START/11 (addr) rbar/0 (write) rasr/1 (write) __ROM_DATA_START/12 (addr) rbar/0 (write) rasr/1 (write) __INT_DTCM_START/13 (addr) rbar/0 (write) rasr/1 (write) __INT_SRAM_START/14 (addr) rbar/0 (write) __RAM_CACHEABLE_SIZE/15 (addr) rasr/1 (write) __RAM_NO_CACHEABLE_START/16 (addr) rbar/0 (write) __RAM_NO_CACHEABLE_SIZE/17 (addr) rasr/1 (write) __RAM_SHAREABLE_START/18 (addr) rbar/0 (write) __RAM_SHAREABLE_SIZE/19 (addr) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rasr/1 (read) rbar/0 (read) rasr/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: sys_m7_cache_init/7 sys_m7_cache_disable/8 sys_m7_cache_clean/9 Sys_GetCoreID/5 
+Sys_GetCoreID/5 (Sys_GetCoreID) @06d1d7e0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: SystemInit/6 
+  Calls: 
+default_interrupt_routine/4 (default_interrupt_routine) @06d1d540
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+startup_go_to_user_mode/3 (startup_go_to_user_mode) @06d1d2a0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+RESET_CATCH_CORE/2 (RESET_CATCH_CORE) @06d1a438
+  Type: variable definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Availability: not-ready
+  Varpool flags:
+rasr/1 (rasr) @06d1a318
+  Type: variable definition analyzed
+  Visibility: force_output public
+  References: 
+  Referring: SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (read) SystemInit/6 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+rbar/0 (rbar) @06d1a288
+  Type: variable definition analyzed
+  Visibility: force_output public
+  References: 
+  Referring: SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+__RAM_SHAREABLE_SIZE/19 (__RAM_SHAREABLE_SIZE) @06e72cf0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not_available
+  Varpool flags:
+__RAM_SHAREABLE_START/18 (__RAM_SHAREABLE_START) @06e72ca8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not_available
+  Varpool flags:
+__RAM_NO_CACHEABLE_SIZE/17 (__RAM_NO_CACHEABLE_SIZE) @06e72c60
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not_available
+  Varpool flags:
+__RAM_NO_CACHEABLE_START/16 (__RAM_NO_CACHEABLE_START) @06e72c18
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not_available
+  Varpool flags:
+__RAM_CACHEABLE_SIZE/15 (__RAM_CACHEABLE_SIZE) @06e72bd0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not_available
+  Varpool flags:
+__INT_SRAM_START/14 (__INT_SRAM_START) @06e72b88
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not_available
+  Varpool flags:
+__INT_DTCM_START/13 (__INT_DTCM_START) @06e72b40
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not_available
+  Varpool flags:
+__ROM_DATA_START/12 (__ROM_DATA_START) @06e72af8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not_available
+  Varpool flags:
+__ROM_CODE_START/11 (__ROM_CODE_START) @06e72ab0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not_available
+  Varpool flags:
+__INT_ITCM_START/10 (__INT_ITCM_START) @06e72a68
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not_available
+  Varpool flags:
+sys_m7_cache_clean/9 (sys_m7_cache_clean) @06d1d620
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:12992276 (estimated locally) body local optimize_size
+  Called by: SystemInit/6 (7140382 (estimated locally),0.67 per call) sys_m7_cache_init/7 (10737416 (estimated locally),1.00 per call) sys_m7_cache_disable/8 (7140382 (estimated locally),0.67 per call) 
+  Calls: 
+sys_m7_cache_disable/8 (sys_m7_cache_disable) @06d1d0e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Function sys_m7_cache_disable/8 is inline copy in SystemInit/6
+  Availability: local
+  Function flags: count:7140382 (estimated locally) body local optimize_size
+  Called by: SystemInit/6 (inlined) (7140382 (estimated locally),0.67 per call) 
+  Calls: sys_m7_cache_clean/9 (7140382 (estimated locally),0.67 per call) 
+sys_m7_cache_init/7 (sys_m7_cache_init) @06d1dd20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Function sys_m7_cache_init/7 is inline copy in SystemInit/6
+  Availability: local
+  Function flags: count:10737416 (estimated locally) body local optimize_size
+  Called by: SystemInit/6 (inlined) (10737416 (estimated locally),1.00 per call) 
+  Calls: sys_m7_cache_clean/9 (10737416 (estimated locally),1.00 per call) 
+SystemInit/6 (SystemInit) @06d1da80
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: rbar/0 (write) rasr/1 (write) __INT_ITCM_START/10 (addr) rbar/0 (write) rasr/1 (write) __ROM_CODE_START/11 (addr) rbar/0 (write) rasr/1 (write) __ROM_DATA_START/12 (addr) rbar/0 (write) rasr/1 (write) __INT_DTCM_START/13 (addr) rbar/0 (write) rasr/1 (write) __INT_SRAM_START/14 (addr) rbar/0 (write) __RAM_CACHEABLE_SIZE/15 (addr) rasr/1 (write) __RAM_NO_CACHEABLE_START/16 (addr) rbar/0 (write) __RAM_NO_CACHEABLE_SIZE/17 (addr) rasr/1 (write) __RAM_SHAREABLE_START/18 (addr) rbar/0 (write) __RAM_SHAREABLE_SIZE/19 (addr) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rasr/1 (read) rbar/0 (read) rasr/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:10737416 (estimated locally) body optimize_size
+  Called by: 
+  Calls: sys_m7_cache_init/7 (inlined) (10737416 (estimated locally),1.00 per call) sys_m7_cache_disable/8 (inlined) (7140382 (estimated locally),0.67 per call) sys_m7_cache_clean/9 (7140382 (estimated locally),0.67 per call) 
+Sys_GetCoreID/5 (Sys_GetCoreID) @06d1d7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+default_interrupt_routine/4 (default_interrupt_routine) @06d1d540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:10631108 (estimated locally) body nonfreeing_fn executed_once optimize_size
+  Called by: 
+  Calls: 
+startup_go_to_user_mode/3 (startup_go_to_user_mode) @06d1d2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+RESET_CATCH_CORE/2 (RESET_CATCH_CORE) @06d1a438
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+rasr/1 (rasr) @06d1a318
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible public
+  References: 
+  Referring: SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (read) SystemInit/6 (read) 
+  Availability: available
+  Varpool flags: initialized
+rbar/0 (rbar) @06d1a288
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible public
+  References: 
+  Referring: SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (read) 
+  Availability: available
+  Varpool flags: initialized
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: RESET_CATCH_CORE/2 rasr/1 rbar/0
+Removing variables:
+
+Final Symbol table:
+
+__RAM_SHAREABLE_SIZE/19 (__RAM_SHAREABLE_SIZE) @06e72cf0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+__RAM_SHAREABLE_START/18 (__RAM_SHAREABLE_START) @06e72ca8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+__RAM_NO_CACHEABLE_SIZE/17 (__RAM_NO_CACHEABLE_SIZE) @06e72c60
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+__RAM_NO_CACHEABLE_START/16 (__RAM_NO_CACHEABLE_START) @06e72c18
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+__RAM_CACHEABLE_SIZE/15 (__RAM_CACHEABLE_SIZE) @06e72bd0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+__INT_SRAM_START/14 (__INT_SRAM_START) @06e72b88
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+__INT_DTCM_START/13 (__INT_DTCM_START) @06e72b40
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+__ROM_DATA_START/12 (__ROM_DATA_START) @06e72af8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+__ROM_CODE_START/11 (__ROM_CODE_START) @06e72ab0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+__INT_ITCM_START/10 (__INT_ITCM_START) @06e72a68
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+sys_m7_cache_clean/9 (sys_m7_cache_clean) @06d1d620
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:12992276 (estimated locally) local optimize_size
+  Called by: 
+  Calls: 
+SystemInit/6 (SystemInit) @06d1da80
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:10737416 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Sys_GetCoreID/5 (Sys_GetCoreID) @06d1d7e0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+default_interrupt_routine/4 (default_interrupt_routine) @06d1d540
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:10631108 (estimated locally) nonfreeing_fn executed_once optimize_size
+  Called by: 
+  Calls: 
+startup_go_to_user_mode/3 (startup_go_to_user_mode) @06d1d2a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+RESET_CATCH_CORE/2 (RESET_CATCH_CORE) @06d1a438
+  Type: variable definition analyzed
+  Visibility: externally_visible asm_written public
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+rasr/1 (rasr) @06d1a318
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible asm_written public
+  Aux: @06d1a438
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized
+rbar/0 (rbar) @06d1a288
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible asm_written public
+  Aux: @06d1a318
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized

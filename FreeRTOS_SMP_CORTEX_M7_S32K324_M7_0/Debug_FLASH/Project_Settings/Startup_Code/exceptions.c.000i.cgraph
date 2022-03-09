@@ -1,0 +1,546 @@
+Trivially needed symbols: undefined_handler/9 SysTick_Handler/8 PendSV_Handler/7 DebugMon_Handler/6 SVC_Handler/5 UsageFault_Handler/4 BusFault_Handler/3 MemManage_Handler/2 HardFault_Handler/1 NMI_Handler/0
+
+
+Initial Symbol table:
+
+undefined_handler/9 (undefined_handler) @06c6f540
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @01981040
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+SysTick_Handler/8 (SysTick_Handler) @06c6f2a0
+  Type: function definition analyzed
+  Visibility: public weak
+  Aux: @06c6f540
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+PendSV_Handler/7 (PendSV_Handler) @06c6f000
+  Type: function definition analyzed
+  Visibility: public weak
+  Aux: @06c6f2a0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+DebugMon_Handler/6 (DebugMon_Handler) @06c6c9a0
+  Type: function definition analyzed
+  Visibility: public weak
+  Aux: @06c6f000
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+SVC_Handler/5 (SVC_Handler) @06c6c460
+  Type: function definition analyzed
+  Visibility: public weak
+  Aux: @06c6c9a0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+UsageFault_Handler/4 (UsageFault_Handler) @06c6ce00
+  Type: function definition analyzed
+  Visibility: public weak
+  Aux: @06c6c460
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+BusFault_Handler/3 (BusFault_Handler) @06c6cb60
+  Type: function definition analyzed
+  Visibility: public weak
+  Aux: @06c6ce00
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+MemManage_Handler/2 (MemManage_Handler) @06c6c8c0
+  Type: function definition analyzed
+  Visibility: public weak
+  Aux: @06c6cb60
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+HardFault_Handler/1 (HardFault_Handler) @06c6c620
+  Type: function definition analyzed
+  Visibility: public weak
+  Aux: @06c6c8c0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+NMI_Handler/0 (NMI_Handler) @06c6c380
+  Type: function definition analyzed
+  Visibility: public weak
+  Aux: @06c6c620
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+undefined_handler/9 (undefined_handler) @06c6f540
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+SysTick_Handler/8 (SysTick_Handler) @06c6f2a0
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+PendSV_Handler/7 (PendSV_Handler) @06c6f000
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+DebugMon_Handler/6 (DebugMon_Handler) @06c6c9a0
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+SVC_Handler/5 (SVC_Handler) @06c6c460
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+UsageFault_Handler/4 (UsageFault_Handler) @06c6ce00
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+BusFault_Handler/3 (BusFault_Handler) @06c6cb60
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+MemManage_Handler/2 (MemManage_Handler) @06c6c8c0
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+HardFault_Handler/1 (HardFault_Handler) @06c6c620
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+NMI_Handler/0 (NMI_Handler) @06c6c380
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+
+Initial Symbol table:
+
+undefined_handler/9 (undefined_handler) @06c6f540
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+SysTick_Handler/8 (SysTick_Handler) @06c6f2a0
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+PendSV_Handler/7 (PendSV_Handler) @06c6f000
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+DebugMon_Handler/6 (DebugMon_Handler) @06c6c9a0
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+SVC_Handler/5 (SVC_Handler) @06c6c460
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+UsageFault_Handler/4 (UsageFault_Handler) @06c6ce00
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+BusFault_Handler/3 (BusFault_Handler) @06c6cb60
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+MemManage_Handler/2 (MemManage_Handler) @06c6c8c0
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+HardFault_Handler/1 (HardFault_Handler) @06c6c620
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+NMI_Handler/0 (NMI_Handler) @06c6c380
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+undefined_handler/9 (undefined_handler) @06c6f540
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+SysTick_Handler/8 (SysTick_Handler) @06c6f2a0
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+PendSV_Handler/7 (PendSV_Handler) @06c6f000
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+DebugMon_Handler/6 (DebugMon_Handler) @06c6c9a0
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+SVC_Handler/5 (SVC_Handler) @06c6c460
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+UsageFault_Handler/4 (UsageFault_Handler) @06c6ce00
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+BusFault_Handler/3 (BusFault_Handler) @06c6cb60
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+MemManage_Handler/2 (MemManage_Handler) @06c6c8c0
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+HardFault_Handler/1 (HardFault_Handler) @06c6c620
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+NMI_Handler/0 (NMI_Handler) @06c6c380
+  Type: function definition analyzed
+  Visibility: public weak
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+undefined_handler/9 (undefined_handler) @06c6f540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:10631108 (estimated locally) body nonfreeing_fn executed_once optimize_size
+  Called by: 
+  Calls: 
+SysTick_Handler/8 (SysTick_Handler) @06c6f2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+PendSV_Handler/7 (PendSV_Handler) @06c6f000
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+DebugMon_Handler/6 (DebugMon_Handler) @06c6c9a0
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+SVC_Handler/5 (SVC_Handler) @06c6c460
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+UsageFault_Handler/4 (UsageFault_Handler) @06c6ce00
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+BusFault_Handler/3 (BusFault_Handler) @06c6cb60
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+MemManage_Handler/2 (MemManage_Handler) @06c6c8c0
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+HardFault_Handler/1 (HardFault_Handler) @06c6c620
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+NMI_Handler/0 (NMI_Handler) @06c6c380
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables:
+Removing variables:
+
+Final Symbol table:
+
+undefined_handler/9 (undefined_handler) @06c6f540
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:10631108 (estimated locally) nonfreeing_fn executed_once optimize_size
+  Called by: 
+  Calls: 
+SysTick_Handler/8 (SysTick_Handler) @06c6f2a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+PendSV_Handler/7 (PendSV_Handler) @06c6f000
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+DebugMon_Handler/6 (DebugMon_Handler) @06c6c9a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+SVC_Handler/5 (SVC_Handler) @06c6c460
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+UsageFault_Handler/4 (UsageFault_Handler) @06c6ce00
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+BusFault_Handler/3 (BusFault_Handler) @06c6cb60
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+MemManage_Handler/2 (MemManage_Handler) @06c6c8c0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+HardFault_Handler/1 (HardFault_Handler) @06c6c620
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+NMI_Handler/0 (NMI_Handler) @06c6c380
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public weak
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) optimize_size
+  Called by: 
+  Calls: 

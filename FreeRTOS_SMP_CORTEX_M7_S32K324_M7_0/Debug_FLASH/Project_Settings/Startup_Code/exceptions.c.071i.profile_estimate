@@ -1,0 +1,184 @@
+Histogram:
+
+========== IPA-profile speculative targets: ==========
+
+Summary for node undefined_handler/9:
+
+Summary for node SysTick_Handler/8:
+
+Summary for node PendSV_Handler/7:
+
+Summary for node DebugMon_Handler/6:
+
+Summary for node SVC_Handler/5:
+
+Summary for node UsageFault_Handler/4:
+
+Summary for node BusFault_Handler/3:
+
+Summary for node MemManage_Handler/2:
+
+Summary for node HardFault_Handler/1:
+
+Summary for node NMI_Handler/0:
+
+
+undefined_handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+SysTick_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+PendSV_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+DebugMon_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+SVC_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+UsageFault_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+BusFault_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+MemManage_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+HardFault_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+NMI_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+

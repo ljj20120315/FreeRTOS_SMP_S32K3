@@ -1,0 +1,374 @@
+Clock_Ip_CgmXPcfsSdurDivcDiveDivs (const struct Clock_Ip_PcfsConfigType * Config)
+{
+  uint32 DivEndValue;
+  uint32 DivStartValue;
+  uint32 DivcRate;
+  uint32 DivcInit;
+  uint32 Sdur;
+  uint32 K;
+  uint32 Var3;
+  uint32 Var2;
+  uint32 Var1;
+  uint32 Index;
+  uint32 Rate;
+  uint32 AmaxBrut;
+  uint32 Fsafe;
+  uint32 Finput;
+  static uint32 Hash[6];
+  static const uint32 PcfsRate[6] = {0, 12, 48, 112, 184, 1000};
+  static const uint32 AMax[6] = {0, 5, 10, 15, 20, 100};
+  uint32 HwIndex;
+  volatile struct Clock_Ip_CgmPcfsType * CgmPcfsBase;
+  <unnamed type> _1;
+  unsigned char _2;
+  int _3;
+  <unnamed type> _4;
+  unsigned char _5;
+  <unnamed type> _6;
+  unsigned char _7;
+  int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  long unsigned int _12;
+  <unnamed type> _13;
+  long unsigned int _14;
+  <unnamed type> _15;
+  long unsigned int _16;
+  long unsigned int _17;
+  long unsigned int _18;
+  long unsigned int _19;
+  long unsigned int _20;
+  long unsigned int _21;
+  <unnamed type> _22;
+  long unsigned int _23;
+  <unnamed type> _24;
+  long unsigned int _25;
+  long unsigned int _26;
+  <unnamed type> _27;
+  unsigned char _28;
+  int _29;
+  long unsigned int _30;
+  long unsigned int _31;
+  long unsigned int _32;
+  long unsigned int _33;
+  long unsigned int _34;
+  long unsigned int _35;
+  long unsigned int _36;
+  long unsigned int _37;
+  long unsigned int _38;
+  long unsigned int _39;
+  long unsigned int _40;
+  long unsigned int _41;
+  long unsigned int _42;
+  long unsigned int _43;
+  long unsigned int _44;
+  long unsigned int _45;
+  long unsigned int _46;
+  long unsigned int _47;
+  long unsigned int _48;
+  long unsigned int _49;
+  long unsigned int _50;
+  long unsigned int _51;
+  long unsigned int _52;
+  long unsigned int _53;
+  long unsigned int _54;
+  long unsigned int _55;
+  long unsigned int _56;
+  long unsigned int _57;
+  long unsigned int _58;
+  long unsigned int _59;
+  long unsigned int _60;
+  long unsigned int _61;
+  long unsigned int _62;
+  long unsigned int _63;
+  long unsigned int _64;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = Config_77(D)->SelectorName;
+  _2 = Clock_Ip_au8ClockFeatures[_1][0];
+  _3 = (int) _2;
+  CgmPcfsBase_78 = Clock_Ip_apxCgmPcfs[_3];
+  # DEBUG CgmPcfsBase => CgmPcfsBase_78
+  # DEBUG BEGIN_STMT
+  _4 = Config_77(D)->Name;
+  _5 = Clock_Ip_au8ClockFeatures[_4][7];
+  HwIndex_79 = (uint32) _5;
+  # DEBUG HwIndex => HwIndex_79
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Finput_80 = 0;
+  # DEBUG Finput => Finput_80
+  # DEBUG BEGIN_STMT
+  Fsafe_81 = 0;
+  # DEBUG Fsafe => Fsafe_81
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Rate_82 = 0;
+  # DEBUG Rate => Rate_82
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _6 = Config_77(D)->Name;
+  _7 = Clock_Ip_au8ClockFeatures[_6][7];
+  _8 = (int) _7;
+  _9 = Hash[_8];
+  _10 = Config_77(D)->ClockSourceFrequency;
+  _11 = Config_77(D)->MaxAllowableIDDchange;
+  _12 = _10 ^ _11;
+  _13 = Config_77(D)->Name;
+  _14 = _12 ^ _13;
+  _15 = Config_77(D)->SelectorName;
+  _16 = _14 ^ _15;
+  _17 = Config_77(D)->StepDuration;
+  _18 = _16 ^ _17;
+  if (_9 != _18)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _19 = Config_77(D)->ClockSourceFrequency;
+  _20 = Config_77(D)->MaxAllowableIDDchange;
+  _21 = _19 ^ _20;
+  _22 = Config_77(D)->Name;
+  _23 = _21 ^ _22;
+  _24 = Config_77(D)->SelectorName;
+  _25 = _23 ^ _24;
+  _26 = Config_77(D)->StepDuration;
+  _27 = Config_77(D)->Name;
+  _28 = Clock_Ip_au8ClockFeatures[_27][7];
+  _29 = (int) _28;
+  _30 = _25 ^ _26;
+  Hash[_29] = _30;
+  # DEBUG BEGIN_STMT
+  _31 = Config_77(D)->ClockSourceFrequency;
+  Finput_84 = _31 / 1000000;
+  # DEBUG Finput => Finput_84
+  # DEBUG BEGIN_STMT
+  _32 = Clock_Ip_GetConfiguredFrequencyValue (0);
+  Fsafe_86 = _32 / 1000000;
+  # DEBUG Fsafe => Fsafe_86
+  # DEBUG BEGIN_STMT
+  _33 = Config_77(D)->MaxAllowableIDDchange;
+  _34 = Config_77(D)->StepDuration;
+  _35 = _33 * _34;
+  _36 = _35 * 100000;
+  _37 = Finput_84 * 2360;
+  AmaxBrut_87 = _36 / _37;
+  # DEBUG AmaxBrut => AmaxBrut_87
+  # DEBUG BEGIN_STMT
+  Rate_88 = AmaxBrut_87;
+  # DEBUG Rate => Rate_88
+  # DEBUG BEGIN_STMT
+  _38 = AMax[0];
+  if (AmaxBrut_87 < _38)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  Rate_93 = PcfsRate[0];
+  # DEBUG Rate => Rate_93
+  goto <bb 12>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _39 = AMax[5];
+  if (AmaxBrut_87 > _39)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  Rate_92 = PcfsRate[5];
+  # DEBUG Rate => Rate_92
+  goto <bb 12>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  Index_89 = 1;
+  # DEBUG Index => Index_89
+  goto <bb 11>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  _40 = Index_68 + 4294967295;
+  _41 = AMax[_40];
+  if (AmaxBrut_87 > _41)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  Rate_90 = PcfsRate[Index_68];
+  # DEBUG Rate => Rate_90
+
+  <bb 10> :
+  # Rate_65 = PHI <Rate_66(8), Rate_90(9)>
+  # DEBUG Rate => Rate_65
+  # DEBUG BEGIN_STMT
+  Index_91 = Index_68 + 1;
+  # DEBUG Index => Index_91
+
+  <bb 11> :
+  # Rate_66 = PHI <Rate_88(7), Rate_65(10)>
+  # Index_68 = PHI <Index_89(7), Index_91(10)>
+  # DEBUG Index => Index_68
+  # DEBUG Rate => Rate_66
+  # DEBUG BEGIN_STMT
+  if (Index_68 <= 5)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 12> :
+  # Rate_67 = PHI <Rate_93(4), Rate_92(6), Rate_66(11)>
+  # DEBUG Rate => Rate_67
+  # DEBUG BEGIN_STMT
+  _42 = Finput_84 * 2048000;
+  _43 = Fsafe_86 * Rate_67;
+  _44 = _42 / _43;
+  _45 = 2048000 / Rate_67;
+  _46 = _44 - _45;
+  Var1_94 = _46 + 256;
+  # DEBUG Var1 => Var1_94
+  # DEBUG BEGIN_STMT
+  Var2_95 = 1073741824;
+  # DEBUG Var2 => Var2_95
+  # DEBUG BEGIN_STMT
+  Var3_96 = 0;
+  # DEBUG Var3 => Var3_96
+  # DEBUG BEGIN_STMT
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+  # DEBUG BEGIN_STMT
+  Var2_111 = Var2_71 >> 2;
+  # DEBUG Var2 => Var2_111
+
+  <bb 14> :
+  # Var2_71 = PHI <Var2_95(12), Var2_111(13)>
+  # DEBUG Var2 => Var2_71
+  # DEBUG BEGIN_STMT
+  if (Var2_71 > Var1_94)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 15> :
+  # DEBUG BEGIN_STMT
+  _47 = Var3_74 + Var2_72;
+  if (Var1_70 >= _47)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 16> :
+  # DEBUG BEGIN_STMT
+  _48 = Var3_74 + Var2_72;
+  Var1_107 = Var1_70 - _48;
+  # DEBUG Var1 => Var1_107
+  # DEBUG BEGIN_STMT
+  _49 = Var2_72 << 1;
+  Var3_108 = Var3_74 + _49;
+  # DEBUG Var3 => Var3_108
+
+  <bb 17> :
+  # Var1_69 = PHI <Var1_70(15), Var1_107(16)>
+  # Var3_73 = PHI <Var3_74(15), Var3_108(16)>
+  # DEBUG Var3 => Var3_73
+  # DEBUG Var1 => Var1_69
+  # DEBUG BEGIN_STMT
+  Var3_109 = Var3_73 >> 1;
+  # DEBUG Var3 => Var3_109
+  # DEBUG BEGIN_STMT
+  Var2_110 = Var2_72 >> 2;
+  # DEBUG Var2 => Var2_110
+
+  <bb 18> :
+  # Var1_70 = PHI <Var1_94(14), Var1_69(17)>
+  # Var2_72 = PHI <Var2_71(14), Var2_110(17)>
+  # Var3_74 = PHI <Var3_96(14), Var3_109(17)>
+  # DEBUG Var3 => Var3_74
+  # DEBUG Var2 => Var2_72
+  # DEBUG Var1 => Var1_70
+  # DEBUG BEGIN_STMT
+  if (Var2_72 != 0)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 19> :
+  # DEBUG BEGIN_STMT
+  _50 = Var3_74 << 2;
+  _51 = _50 + 191;
+  K_97 = _51 >> 7;
+  # DEBUG K => K_97
+  # DEBUG BEGIN_STMT
+  _52 = Config_77(D)->StepDuration;
+  Sdur_98 = Fsafe_86 * _52;
+  # DEBUG Sdur => Sdur_98
+  # DEBUG BEGIN_STMT
+  DivcInit_99 = Rate_67 * K_97;
+  # DEBUG DivcInit => DivcInit_99
+  # DEBUG BEGIN_STMT
+  DivcRate_100 = Rate_67;
+  # DEBUG DivcRate => DivcRate_100
+  # DEBUG BEGIN_STMT
+  _53 = Rate_67 * K_97;
+  _54 = K_97 + 1;
+  _55 = _53 * _54;
+  _56 = _55 >> 1;
+  DivStartValue_101 = _56 + 999;
+  # DEBUG DivStartValue => DivStartValue_101
+  # DEBUG BEGIN_STMT
+  _57 = Finput_84 * 1000;
+  _58 = _57 / Fsafe_86;
+  DivEndValue_102 = _58 + 4294967295;
+  # DEBUG DivEndValue => DivEndValue_102
+  # DEBUG BEGIN_STMT
+  _59 = Sdur_98 & 65535;
+  CgmPcfsBase_78->PCFS_SDUR ={v} _59;
+  # DEBUG BEGIN_STMT
+  _60 = DivcRate_100 & 255;
+  _61 = DivcInit_99 << 16;
+  _62 = _60 | _61;
+  CgmPcfsBase_78->PCFS[HwIndex_79].DIVC ={v} _62;
+  # DEBUG BEGIN_STMT
+  _63 = DivEndValue_102 & 1048575;
+  CgmPcfsBase_78->PCFS[HwIndex_79].DIVE ={v} _63;
+  # DEBUG BEGIN_STMT
+  _64 = DivStartValue_101 & 1048575;
+  CgmPcfsBase_78->PCFS[HwIndex_79].DIVS ={v} _64;
+
+  <bb 20> :
+  return;
+
+}
+
+
+Clock_Ip_ProgressiveFrequencyClockSwitchEmpty (const struct Clock_Ip_PcfsConfigType * Config)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

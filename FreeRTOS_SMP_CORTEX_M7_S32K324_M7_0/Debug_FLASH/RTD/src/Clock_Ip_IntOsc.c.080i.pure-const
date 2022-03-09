@@ -1,0 +1,782 @@
+
+
+ local analysis of Clock_Ip_SetSircStdby.part.0/10
+   scanning: _1 ={v} MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _2 = _1 | 256;
+  scanning: MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN ={v} _2;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: return;
+
+
+ local analysis of Clock_Ip_SetFircStdby.part.0/9
+   scanning: _1 ={v} MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _2 = _1 | 1;
+  scanning: MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE ={v} _2;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: return;
+
+
+ local analysis of Clock_Ip_DisableSircStdby/7
+   scanning: _1 ={v} MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _2 = _1 & 4294967039;
+  scanning: MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN ={v} _2;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: return;
+
+
+ local analysis of Clock_Ip_EnableSircStdby/6
+   scanning: _1 ={v} MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _2 = _1 | 256;
+  scanning: MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN ={v} _2;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: return;
+
+
+ local analysis of Clock_Ip_SetSircStdby/5
+   scanning: _1 = Config_7(D)->Enable;
+    Indirect ref read is not const
+  scanning: if (_1 != 0)
+  scanning: Clock_Ip_SetSircStdby.part.0 ();
+  scanning: _3 ={v} MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _5 = _3 & 4294967039;
+  scanning: MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN ={v} _5;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: return;
+
+
+ local analysis of Clock_Ip_DisableFircStdby/4
+   scanning: _1 ={v} MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _2 = _1 & 4294967294;
+  scanning: MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE ={v} _2;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: return;
+
+
+ local analysis of Clock_Ip_EnableFircStdby/3
+   scanning: _1 ={v} MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _2 = _1 | 1;
+  scanning: MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE ={v} _2;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: return;
+
+
+ local analysis of Clock_Ip_SetFircStdby/2
+   scanning: _1 = Config_7(D)->Enable;
+    Indirect ref read is not const
+  scanning: if (_1 != 0)
+  scanning: Clock_Ip_SetFircStdby.part.0 ();
+  scanning: _3 ={v} MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE;
+    Volatile stmt is not const/pure
+    Indirect ref read is not const
+  scanning: _5 = _3 & 4294967294;
+  scanning: MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE ={v} _5;
+    Volatile stmt is not const/pure
+    Indirect ref write is not const/pure
+  scanning: return;
+
+
+ local analysis of Clock_Ip_InternalOscillatorEmpty_Disable/1
+   scanning: return;
+Function is locally const.
+
+
+ local analysis of Clock_Ip_InternalOscillatorEmpty/0
+   scanning: return;
+Function is locally const.
+callgraph:
+
+Clock_Ip_SetSircStdby.part.0/10 (Clock_Ip_SetSircStdby.part.0) @06f6d380
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  Aux: @04c93de8
+  References: 
+  Referring: 
+  Function Clock_Ip_SetSircStdby.part.0/10 is inline copy in Clock_Ip_SetSircStdby/5
+  Availability: local
+  Function flags: count:536870912 (estimated locally) body local split_part optimize_size
+  Called by: Clock_Ip_SetSircStdby/5 (inlined) (536870912 (estimated locally),0.50 per call) 
+  Calls: 
+Clock_Ip_SetFircStdby.part.0/9 (Clock_Ip_SetFircStdby.part.0) @06f6d9a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  Aux: @04c93d08
+  References: 
+  Referring: 
+  Function Clock_Ip_SetFircStdby.part.0/9 is inline copy in Clock_Ip_SetFircStdby/2
+  Availability: local
+  Function flags: count:536870912 (estimated locally) body local split_part optimize_size
+  Called by: Clock_Ip_SetFircStdby/2 (inlined) (536870912 (estimated locally),0.50 per call) 
+  Calls: 
+Clock_Ip_DisableSircStdby/7 (Clock_Ip_DisableSircStdby) @06e98ee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93f08
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_EnableSircStdby/6 (Clock_Ip_EnableSircStdby) @06e98c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93be8
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetSircStdby/5 (Clock_Ip_SetSircStdby) @06e989a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93e28
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetSircStdby.part.0/10 (inlined) (536870912 (estimated locally),0.50 per call) 
+Clock_Ip_DisableFircStdby/4 (Clock_Ip_DisableFircStdby) @06e98700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93e48
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_EnableFircStdby/3 (Clock_Ip_EnableFircStdby) @06e98460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93f28
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetFircStdby/2 (Clock_Ip_SetFircStdby) @06e981c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93b88
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetFircStdby.part.0/9 (inlined) (536870912 (estimated locally),0.50 per call) 
+Clock_Ip_InternalOscillatorEmpty_Disable/1 (Clock_Ip_InternalOscillatorEmpty_Disable) @06e48ee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93ba8
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_InternalOscillatorEmpty/0 (Clock_Ip_InternalOscillatorEmpty) @06e48e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93c08
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+
+ ordered call graph: reduced for nothrow
+Clock_Ip_SetSircStdby.part.0/10 (Clock_Ip_SetSircStdby.part.0) @06f6d380
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  Aux: @04c93de8
+  References: 
+  Referring: 
+  Function Clock_Ip_SetSircStdby.part.0/10 is inline copy in Clock_Ip_SetSircStdby/5
+  Availability: local
+  Function flags: count:536870912 (estimated locally) body local split_part optimize_size
+  Called by: Clock_Ip_SetSircStdby/5 (inlined) (536870912 (estimated locally),0.50 per call) 
+  Calls: 
+Clock_Ip_SetFircStdby.part.0/9 (Clock_Ip_SetFircStdby.part.0) @06f6d9a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  Aux: @04c93d08
+  References: 
+  Referring: 
+  Function Clock_Ip_SetFircStdby.part.0/9 is inline copy in Clock_Ip_SetFircStdby/2
+  Availability: local
+  Function flags: count:536870912 (estimated locally) body local split_part optimize_size
+  Called by: Clock_Ip_SetFircStdby/2 (inlined) (536870912 (estimated locally),0.50 per call) 
+  Calls: 
+Clock_Ip_DisableSircStdby/7 (Clock_Ip_DisableSircStdby) @06e98ee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93f08
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_EnableSircStdby/6 (Clock_Ip_EnableSircStdby) @06e98c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93be8
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetSircStdby/5 (Clock_Ip_SetSircStdby) @06e989a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93e28
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetSircStdby.part.0/10 (inlined) (536870912 (estimated locally),0.50 per call) 
+Clock_Ip_DisableFircStdby/4 (Clock_Ip_DisableFircStdby) @06e98700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93e48
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_EnableFircStdby/3 (Clock_Ip_EnableFircStdby) @06e98460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93f28
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetFircStdby/2 (Clock_Ip_SetFircStdby) @06e981c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93b88
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetFircStdby.part.0/9 (inlined) (536870912 (estimated locally),0.50 per call) 
+Clock_Ip_InternalOscillatorEmpty_Disable/1 (Clock_Ip_InternalOscillatorEmpty_Disable) @06e48ee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93ba8
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_InternalOscillatorEmpty/0 (Clock_Ip_InternalOscillatorEmpty) @06e48e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93c08
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+
+
+MALLOC LATTICE Initial:
+Clock_Ip_SetSircStdby.part.0/10: malloc_bottom
+Clock_Ip_SetFircStdby.part.0/9: malloc_bottom
+Clock_Ip_DisableSircStdby/7: malloc_bottom
+Clock_Ip_EnableSircStdby/6: malloc_bottom
+Clock_Ip_SetSircStdby/5: malloc_bottom
+Clock_Ip_DisableFircStdby/4: malloc_bottom
+Clock_Ip_EnableFircStdby/3: malloc_bottom
+Clock_Ip_SetFircStdby/2: malloc_bottom
+Clock_Ip_InternalOscillatorEmpty_Disable/1: malloc_bottom
+Clock_Ip_InternalOscillatorEmpty/0: malloc_bottom
+
+
+MALLOC LATTICE after propagation:
+Clock_Ip_SetSircStdby.part.0/10: malloc_bottom
+Clock_Ip_SetFircStdby.part.0/9: malloc_bottom
+Clock_Ip_DisableSircStdby/7: malloc_bottom
+Clock_Ip_EnableSircStdby/6: malloc_bottom
+Clock_Ip_SetSircStdby/5: malloc_bottom
+Clock_Ip_DisableFircStdby/4: malloc_bottom
+Clock_Ip_EnableFircStdby/3: malloc_bottom
+Clock_Ip_SetFircStdby/2: malloc_bottom
+Clock_Ip_InternalOscillatorEmpty_Disable/1: malloc_bottom
+Clock_Ip_InternalOscillatorEmpty/0: malloc_bottom
+callgraph:
+
+Clock_Ip_SetSircStdby.part.0/10 (Clock_Ip_SetSircStdby.part.0) @06f6d380
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  Aux: @04c93de8
+  References: 
+  Referring: 
+  Function Clock_Ip_SetSircStdby.part.0/10 is inline copy in Clock_Ip_SetSircStdby/5
+  Availability: local
+  Function flags: count:536870912 (estimated locally) body local split_part optimize_size
+  Called by: Clock_Ip_SetSircStdby/5 (inlined) (536870912 (estimated locally),0.50 per call) 
+  Calls: 
+Clock_Ip_SetFircStdby.part.0/9 (Clock_Ip_SetFircStdby.part.0) @06f6d9a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  Aux: @04c93f08
+  References: 
+  Referring: 
+  Function Clock_Ip_SetFircStdby.part.0/9 is inline copy in Clock_Ip_SetFircStdby/2
+  Availability: local
+  Function flags: count:536870912 (estimated locally) body local split_part optimize_size
+  Called by: Clock_Ip_SetFircStdby/2 (inlined) (536870912 (estimated locally),0.50 per call) 
+  Calls: 
+Clock_Ip_DisableSircStdby/7 (Clock_Ip_DisableSircStdby) @06e98ee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93e28
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_EnableSircStdby/6 (Clock_Ip_EnableSircStdby) @06e98c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93d08
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetSircStdby/5 (Clock_Ip_SetSircStdby) @06e989a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93f28
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetSircStdby.part.0/10 (inlined) (536870912 (estimated locally),0.50 per call) 
+Clock_Ip_DisableFircStdby/4 (Clock_Ip_DisableFircStdby) @06e98700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93e48
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_EnableFircStdby/3 (Clock_Ip_EnableFircStdby) @06e98460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93c08
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetFircStdby/2 (Clock_Ip_SetFircStdby) @06e981c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93b88
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetFircStdby.part.0/9 (inlined) (536870912 (estimated locally),0.50 per call) 
+Clock_Ip_InternalOscillatorEmpty_Disable/1 (Clock_Ip_InternalOscillatorEmpty_Disable) @06e48ee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93ba8
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_InternalOscillatorEmpty/0 (Clock_Ip_InternalOscillatorEmpty) @06e48e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93be8
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+
+ ordered call graph: reduced
+Clock_Ip_DisableSircStdby/7 (Clock_Ip_DisableSircStdby) @06e98ee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93e28
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_EnableSircStdby/6 (Clock_Ip_EnableSircStdby) @06e98c40
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93d08
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetSircStdby/5 (Clock_Ip_SetSircStdby) @06e989a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93f28
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetSircStdby.part.0/10 (inlined) (536870912 (estimated locally),0.50 per call) 
+Clock_Ip_SetSircStdby.part.0/10 (Clock_Ip_SetSircStdby.part.0) @06f6d380
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  Aux: @04c93de8
+  References: 
+  Referring: 
+  Function Clock_Ip_SetSircStdby.part.0/10 is inline copy in Clock_Ip_SetSircStdby/5
+  Availability: local
+  Function flags: count:536870912 (estimated locally) body local split_part optimize_size
+  Called by: Clock_Ip_SetSircStdby/5 (inlined) (536870912 (estimated locally),0.50 per call) 
+  Calls: 
+Clock_Ip_DisableFircStdby/4 (Clock_Ip_DisableFircStdby) @06e98700
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93e48
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_EnableFircStdby/3 (Clock_Ip_EnableFircStdby) @06e98460
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93c08
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetFircStdby/2 (Clock_Ip_SetFircStdby) @06e981c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93b88
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetFircStdby.part.0/9 (inlined) (536870912 (estimated locally),0.50 per call) 
+Clock_Ip_SetFircStdby.part.0/9 (Clock_Ip_SetFircStdby.part.0) @06f6d9a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  Aux: @04c93f08
+  References: 
+  Referring: 
+  Function Clock_Ip_SetFircStdby.part.0/9 is inline copy in Clock_Ip_SetFircStdby/2
+  Availability: local
+  Function flags: count:536870912 (estimated locally) body local split_part optimize_size
+  Called by: Clock_Ip_SetFircStdby/2 (inlined) (536870912 (estimated locally),0.50 per call) 
+  Calls: 
+Clock_Ip_InternalOscillatorEmpty_Disable/1 (Clock_Ip_InternalOscillatorEmpty_Disable) @06e48ee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93ba8
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_InternalOscillatorEmpty/0 (Clock_Ip_InternalOscillatorEmpty) @06e48e00
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  Aux: @04c93be8
+  References: 
+  Referring: Clock_Ip_axIntOscCallbacks/8 (addr) Clock_Ip_axIntOscCallbacks/8 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+Function found not to call free: Clock_Ip_InternalOscillatorEmpty/0
+Function found not to call free: Clock_Ip_InternalOscillatorEmpty_Disable/1
+Function found not to call free: Clock_Ip_SetFircStdby.part.0/9
+Function found not to call free: Clock_Ip_SetFircStdby/2
+Function found not to call free: Clock_Ip_EnableFircStdby/3
+Function found not to call free: Clock_Ip_DisableFircStdby/4
+Function found not to call free: Clock_Ip_SetSircStdby.part.0/10
+Function found not to call free: Clock_Ip_SetSircStdby/5
+Function found not to call free: Clock_Ip_EnableSircStdby/6
+Function found not to call free: Clock_Ip_DisableSircStdby/7
+Clock_Ip_SetSircStdby.part.0 ()
+{
+  const struct Clock_Ip_IrcoscConfigType * Config;
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG D#4 s=> Config
+  # DEBUG Config => D#4
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN;
+  _2 = _1 | 256;
+  MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN ={v} _2;
+
+  <bb 3> [local count: 1073741824]:
+  return;
+
+}
+
+
+Clock_Ip_SetFircStdby.part.0 ()
+{
+  const struct Clock_Ip_IrcoscConfigType * Config;
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG D#2 s=> Config
+  # DEBUG Config => D#2
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE;
+  _2 = _1 | 1;
+  MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE ={v} _2;
+
+  <bb 3> [local count: 1073741824]:
+  return;
+
+}
+
+
+Clock_Ip_DisableSircStdby (Clock_Ip_NameType Name)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN;
+  _2 = _1 & 4294967039;
+  MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN ={v} _2;
+  return;
+
+}
+
+
+Clock_Ip_EnableSircStdby (const struct Clock_Ip_IrcoscConfigType * Config)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN;
+  _2 = _1 | 256;
+  MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN ={v} _2;
+  return;
+
+}
+
+
+Clock_Ip_SetSircStdby (const struct Clock_Ip_IrcoscConfigType * Config)
+{
+  short unsigned int _1;
+  long unsigned int _3;
+  long unsigned int _5;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_7(D)->Enable;
+  if (_1 != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870912]:
+  # DEBUG D#3 => Config_7(D)
+  Clock_Ip_SetSircStdby.part.0 ();
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN;
+  _5 = _3 & 4294967039;
+  MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN ={v} _5;
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+Clock_Ip_DisableFircStdby (Clock_Ip_NameType Name)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE;
+  _2 = _1 & 4294967294;
+  MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE ={v} _2;
+  return;
+
+}
+
+
+Clock_Ip_EnableFircStdby (const struct Clock_Ip_IrcoscConfigType * Config)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE;
+  _2 = _1 | 1;
+  MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE ={v} _2;
+  return;
+
+}
+
+
+Clock_Ip_SetFircStdby (const struct Clock_Ip_IrcoscConfigType * Config)
+{
+  short unsigned int _1;
+  long unsigned int _3;
+  long unsigned int _5;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_7(D)->Enable;
+  if (_1 != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870912]:
+  # DEBUG D#1 => Config_7(D)
+  Clock_Ip_SetFircStdby.part.0 ();
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE;
+  _5 = _3 & 4294967294;
+  MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE ={v} _5;
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+Clock_Ip_InternalOscillatorEmpty_Disable (Clock_Ip_NameType Name)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_InternalOscillatorEmpty (const struct Clock_Ip_IrcoscConfigType * Config)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

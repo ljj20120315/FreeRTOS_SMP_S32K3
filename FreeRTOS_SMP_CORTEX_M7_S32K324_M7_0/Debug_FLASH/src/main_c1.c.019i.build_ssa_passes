@@ -1,0 +1,21 @@
+main_c1 ()
+{
+  int D.6451;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  exit_code1.0_1 = exit_code1;
+  if (exit_code1.0_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 2>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  D.6451 = exit_code1;
+  return D.6451;
+
+}
+
+

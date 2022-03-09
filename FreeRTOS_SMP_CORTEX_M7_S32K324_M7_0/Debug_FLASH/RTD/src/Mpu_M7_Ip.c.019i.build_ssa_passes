@@ -1,0 +1,722 @@
+Mpu_M7_Ip_GetErrorDetails (struct Mpu_M7_Ip_ErrorDetailsType * pErrorDetails)
+{
+  uint8 errorCount;
+  uint32 errorAddress;
+  uint32 mmfsrCopy;
+  uint32 mmfsr;
+  boolean result;
+  boolean D.6093;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  result = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  errorCount = 0;
+  # DEBUG BEGIN_STMT
+  Mpu_M7_Ip_GetErrorRegisters (&mmfsr, &errorAddress);
+  # DEBUG BEGIN_STMT
+  mmfsrCopy = mmfsr;
+  # DEBUG BEGIN_STMT
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  mmfsr.9_1 = mmfsr;
+  _2 = (unsigned char) mmfsr.9_1;
+  _3 = _2 & 1;
+  errorCount = errorCount + _3;
+  # DEBUG BEGIN_STMT
+  mmfsr.10_4 = mmfsr;
+  _5 = mmfsr.10_4 >> 1;
+  mmfsr = _5;
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  mmfsr.11_6 = mmfsr;
+  if (mmfsr.11_6 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  if (errorCount > 1)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  pErrorDetails->eType = 5;
+  goto <bb 14>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  mmfsr = mmfsrCopy;
+  # DEBUG BEGIN_STMT
+  mmfsr.12_7 = mmfsr;
+  switch (mmfsr.12_7) <default: <L10> [INV], case 1: <L5> [INV], case 2: <L6> [INV], case 8: <L7> [INV], case 16: <L8> [INV], case 32: <L9> [INV]>
+
+  <bb 8> :
+<L5>:
+  # DEBUG BEGIN_STMT
+  pErrorDetails->eType = 0;
+  # DEBUG BEGIN_STMT
+  goto <bb 14>; [INV]
+
+  <bb 9> :
+<L6>:
+  # DEBUG BEGIN_STMT
+  pErrorDetails->eType = 1;
+  # DEBUG BEGIN_STMT
+  goto <bb 14>; [INV]
+
+  <bb 10> :
+<L7>:
+  # DEBUG BEGIN_STMT
+  pErrorDetails->eType = 3;
+  # DEBUG BEGIN_STMT
+  goto <bb 14>; [INV]
+
+  <bb 11> :
+<L8>:
+  # DEBUG BEGIN_STMT
+  pErrorDetails->eType = 2;
+  # DEBUG BEGIN_STMT
+  goto <bb 14>; [INV]
+
+  <bb 12> :
+<L9>:
+  # DEBUG BEGIN_STMT
+  pErrorDetails->eType = 4;
+  # DEBUG BEGIN_STMT
+  goto <bb 14>; [INV]
+
+  <bb 13> :
+<L10>:
+  # DEBUG BEGIN_STMT
+  pErrorDetails->eType = 6;
+  # DEBUG BEGIN_STMT
+
+  <bb 14> :
+  # DEBUG BEGIN_STMT
+  errorAddress.13_8 = errorAddress;
+  pErrorDetails->u32Address = errorAddress.13_8;
+  # DEBUG BEGIN_STMT
+  if (errorCount != 0)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 15> :
+  # DEBUG BEGIN_STMT
+  result = 1;
+
+  <bb 16> :
+  # DEBUG BEGIN_STMT
+  D.6093 = result;
+  mmfsr = {CLOBBER};
+  errorAddress = {CLOBBER};
+  return D.6093;
+
+}
+
+
+Mpu_M7_Ip_SetAccessRight (uint8 u8RegionNum, Mpu_M7_Ip_AccessRightsType eRights)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Mpu_M7_Ip_SetAccessRight_Privileged (u8RegionNum, eRights);
+  return;
+
+}
+
+
+Mpu_M7_Ip_EnableRegion (uint8 u8RegionNum, boolean bEnable)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Mpu_M7_Ip_EnableRegion_Privileged (u8RegionNum, bEnable);
+  return;
+
+}
+
+
+Mpu_M7_Ip_Deinit ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Mpu_M7_Ip_Deinit_Privileged ();
+  return;
+
+}
+
+
+Mpu_M7_Ip_SetRegionConfig (uint8 u8RegionNum, const struct Mpu_M7_Ip_RegionConfigType * const pUserConfigPtr)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Mpu_M7_Ip_SetRegionConfig_Privileged (u8RegionNum, pUserConfigPtr);
+  return;
+
+}
+
+
+Mpu_M7_Ip_Init (const struct Mpu_M7_Ip_ConfigType * pConfig)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Mpu_M7_Ip_Init_Privileged (pConfig);
+  return;
+
+}
+
+
+Mpu_M7_Ip_SetAccessRight_Privileged (uint8 u8RegionNum, Mpu_M7_Ip_AccessRightsType eRights)
+{
+  struct S32_MPU_Type * base;
+  uint32 regionAttributes;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  base = 3758153728B;
+  # DEBUG BEGIN_STMT
+  _1 = (long unsigned int) u8RegionNum;
+  base->RNR = _1;
+  # DEBUG BEGIN_STMT
+  _2 = base->RASR;
+  regionAttributes = _2;
+  # DEBUG BEGIN_STMT
+  Mpu_M7_Ip_ComputeAccessRights (&regionAttributes, eRights);
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  regionAttributes.8_3 = regionAttributes;
+  base->RASR = regionAttributes.8_3;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  regionAttributes = {CLOBBER};
+  return;
+
+}
+
+
+Mpu_M7_Ip_EnableRegion_Privileged (uint8 u8RegionNum, boolean bEnable)
+{
+  struct S32_MPU_Type * base;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  base = 3758153728B;
+  # DEBUG BEGIN_STMT
+  _1 = (long unsigned int) u8RegionNum;
+  base->RNR = _1;
+  # DEBUG BEGIN_STMT
+  if (bEnable != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  _2 = base->RASR;
+  _3 = _2 | 1;
+  base->RASR = _3;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  _4 = base->RASR;
+  _5 = _4 & 4294967294;
+  base->RASR = _5;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+
+  <bb 5> :
+  return;
+
+}
+
+
+Mpu_M7_Ip_Deinit_Privileged ()
+{
+  struct S32_MPU_Type * base;
+  uint8 region;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  base = 3758153728B;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  _1 = base->CTRL;
+  _2 = _1 & 4294967288;
+  base->CTRL = _2;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  region = 0;
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _3 = (long unsigned int) region;
+  base->RNR = _3;
+  # DEBUG BEGIN_STMT
+  base->RASR = 0;
+  # DEBUG BEGIN_STMT
+  base->RBAR = 0;
+  # DEBUG BEGIN_STMT
+  region.7_4 = region;
+  region = region.7_4 + 1;
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _5 = Mpu_M7_Ip_GetDRegion (base);
+  if (region < _5)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  return;
+
+}
+
+
+Mpu_M7_Ip_SetRegionConfig_Privileged (uint8 u8RegionNum, const struct Mpu_M7_Ip_RegionConfigType * const pUserConfigPtr)
+{
+  uint32 regionAttributes;
+  uint32 regionSize;
+  struct S32_MPU_Type * base;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  base = 3758153728B;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  regionAttributes = 0;
+  # DEBUG BEGIN_STMT
+  _1 = pUserConfigPtr->u32StartAddr;
+  _2 = pUserConfigPtr->u32EndAddr;
+  regionSize = Mpu_M7_Ip_CalculateRegionSize (_1, _2);
+  # DEBUG BEGIN_STMT
+  _3 = (long unsigned int) u8RegionNum;
+  base->RNR = _3;
+  # DEBUG BEGIN_STMT
+  _4 = pUserConfigPtr->u32StartAddr;
+  base->RBAR = _4;
+  # DEBUG BEGIN_STMT
+  _5 = regionSize + 4294967295;
+  _6 = _5 << 1;
+  _7 = _6 & 62;
+  regionAttributes.1_8 = regionAttributes;
+  _9 = _7 | regionAttributes.1_8;
+  regionAttributes = _9;
+  # DEBUG BEGIN_STMT
+  _10 = pUserConfigPtr->u32EndAddr;
+  _11 = pUserConfigPtr->u32StartAddr;
+  _12 = _10 - _11;
+  if (_12 > 31)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _13 = pUserConfigPtr->u8SubRegMask;
+  _14 = (long unsigned int) _13;
+  _15 = _14 << 8;
+  _16 = _15 & 65535;
+  regionAttributes.2_17 = regionAttributes;
+  _18 = _16 | regionAttributes.2_17;
+  regionAttributes = _18;
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _19 = pUserConfigPtr->bShareable;
+  if (_19 != 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  regionAttributes.3_20 = regionAttributes;
+  _21 = regionAttributes.3_20 | 262144;
+  regionAttributes = _21;
+  goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  regionAttributes.4_22 = regionAttributes;
+  _23 = regionAttributes.4_22 & 4294705151;
+  regionAttributes = _23;
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  _24 = pUserConfigPtr->eMemType;
+  if (_24 != 7)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 9>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  _25 = pUserConfigPtr->eMemType;
+  Mpu_M7_Ip_SetMemoryType (&regionAttributes, _25);
+  goto <bb 10>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  _26 = pUserConfigPtr->eInnerCachePolicy;
+  _27 = pUserConfigPtr->eOuterCachePolicy;
+  Mpu_M7_Ip_SetCachePolicies (&regionAttributes, _26, _27);
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  _28 = pUserConfigPtr->eAccessRight;
+  Mpu_M7_Ip_ComputeAccessRights (&regionAttributes, _28);
+  # DEBUG BEGIN_STMT
+  regionAttributes.5_29 = regionAttributes;
+  _30 = regionAttributes.5_29 | 1;
+  regionAttributes = _30;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  regionAttributes.6_31 = regionAttributes;
+  base->RASR = regionAttributes.6_31;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  regionAttributes = {CLOBBER};
+  return;
+
+}
+
+
+Mpu_M7_Ip_Init_Privileged (const struct Mpu_M7_Ip_ConfigType * pConfig)
+{
+  struct S32_MPU_Type * base;
+  const struct Mpu_M7_Ip_RegionConfigType * regionCfg;
+  uint8 region;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  base = 3758153728B;
+  # DEBUG BEGIN_STMT
+  Mpu_M7_Ip_Deinit ();
+  # DEBUG BEGIN_STMT
+  _1 = pConfig->bDefaultMapEn;
+  if (_1 != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _2 = base->CTRL;
+  _3 = _2 | 4;
+  base->CTRL = _3;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _4 = base->CTRL;
+  _5 = _4 & 4294967291;
+  base->CTRL = _5;
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _6 = pConfig->bEnableRunHFNMI;
+  if (_6 != 0)
+    goto <bb 6>; [INV]
+  else
+    goto <bb 7>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _7 = base->CTRL;
+  _8 = _7 | 2;
+  base->CTRL = _8;
+  goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  _9 = base->CTRL;
+  _10 = _9 & 4294967293;
+  base->CTRL = _10;
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  _11 = pConfig->bEnMemManageInterrupt;
+  if (_11 != 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  _12 = 3758153728B;
+  _13 = _12->SHCSR;
+  _14 = 3758153728B;
+  _15 = _13 | 65536;
+  _14->SHCSR = _15;
+  goto <bb 11>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  _16 = 3758153728B;
+  _17 = _16->SHCSR;
+  _18 = 3758153728B;
+  _19 = _17 & 4294901759;
+  _18->SHCSR = _19;
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  region = 0;
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  _20 = pConfig->pRegionConfigArr;
+  _21 = (unsigned int) region;
+  _22 = _21 * 32;
+  regionCfg = _20 + _22;
+  # DEBUG BEGIN_STMT
+  _23 = pConfig->pRegionConfigArr;
+  _24 = (unsigned int) region;
+  _25 = _24 * 32;
+  _26 = _23 + _25;
+  _27 = _26->u8RegionNum;
+  Mpu_M7_Ip_SetRegionConfig_Privileged (_27, regionCfg);
+  # DEBUG BEGIN_STMT
+  region.0_28 = region;
+  region = region.0_28 + 1;
+
+  <bb 13> :
+  # DEBUG BEGIN_STMT
+  _29 = pConfig->u8RegionCnt;
+  if (region < _29)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 14> :
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  # DEBUG BEGIN_STMT
+  _30 = base->CTRL;
+  _31 = _30 | 1;
+  base->CTRL = _31;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" DSB");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" ISB");
+  return;
+
+}
+
+
+Mpu_M7_Ip_GetErrorRegisters (uint32 * pMmfsr, uint32 * pAddress)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = 3758153728B;
+  _2 = _1->CFSR;
+  _3 = _2 & 59;
+  *pMmfsr = _3;
+  # DEBUG BEGIN_STMT
+  _4 = 3758153728B;
+  _5 = _4->CFSR;
+  _6 = _5 >> 7;
+  _7 = _6 & 1;
+  if (_7 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _8 = 3758153728B;
+  _9 = _8->MMFAR;
+  *pAddress = _9;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  *pAddress = 4294967295;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Mpu_M7_Ip_ComputeAccessRights (uint32 * pRegionAttr, Mpu_M7_Ip_AccessRightsType eAccessRights)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = *pRegionAttr;
+  _2 = _1 & 3909091327;
+  *pRegionAttr = _2;
+  # DEBUG BEGIN_STMT
+  _3 = *pRegionAttr;
+  _4 = eAccessRights << 24;
+  _5 = _4 & 117440512;
+  _6 = _3 | _5;
+  *pRegionAttr = _6;
+  # DEBUG BEGIN_STMT
+  _7 = (unsigned char) eAccessRights;
+  _8 = (int) _7;
+  _9 = _8 & 16;
+  if (_9 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _10 = *pRegionAttr;
+  _11 = _10 | 268435456;
+  *pRegionAttr = _11;
+  goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _12 = *pRegionAttr;
+  _13 = _12 & 4026531839;
+  *pRegionAttr = _13;
+
+  <bb 5> :
+  return;
+
+}
+
+
+Mpu_M7_Ip_SetCachePolicies (uint32 * pRegionAttr, Mpu_M7_Ip_CachePolicyType eInnerPolicy, Mpu_M7_Ip_CachePolicyType eOuterPolicy)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = *pRegionAttr;
+  _2 = eInnerPolicy >> 1;
+  _3 = _2 << 17;
+  _4 = _3 & 131072;
+  _5 = eInnerPolicy << 16;
+  _6 = _5 & 65536;
+  _7 = _4 | _6;
+  _8 = _1 | _7;
+  *pRegionAttr = _8;
+  # DEBUG BEGIN_STMT
+  _9 = *pRegionAttr;
+  _10 = eOuterPolicy << 19;
+  _11 = _10 & 1572864;
+  _12 = _9 | _11;
+  _13 = _12 | 2097152;
+  *pRegionAttr = _13;
+  return;
+
+}
+
+
+Mpu_M7_Ip_SetMemoryType (uint32 * pRegionAttr, Mpu_M7_Ip_MemoryType eType)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = *pRegionAttr;
+  _2 = u8Mpu_M7_MemoryTypeValues[eType];
+  _3 = (long unsigned int) _2;
+  _4 = _3 << 16;
+  _5 = _1 | _4;
+  *pRegionAttr = _5;
+  return;
+
+}
+
+
+Mpu_M7_Ip_CalculateRegionSize (uint32 u32StartAddr, uint32 u32EndAddr)
+{
+  uint32 u32Size;
+  uint32 finalSize;
+  uint32 D.6078;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  finalSize = 0;
+  # DEBUG BEGIN_STMT
+  u32Size = 0;
+  # DEBUG BEGIN_STMT
+  u32Size = u32EndAddr - u32StartAddr;
+  # DEBUG BEGIN_STMT
+  goto <bb 4>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  finalSize = finalSize + 1;
+  # DEBUG BEGIN_STMT
+  u32Size = u32Size >> 1;
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  if (u32Size != 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  D.6078 = finalSize;
+  return D.6078;
+
+}
+
+
+Mpu_M7_Ip_GetDRegion (const struct S32_MPU_Type * const base)
+{
+  uint8 D.6083;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = base->TYPE;
+  _2 = _1 >> 8;
+  D.6083 = (uint8) _2;
+  return D.6083;
+
+}
+
+

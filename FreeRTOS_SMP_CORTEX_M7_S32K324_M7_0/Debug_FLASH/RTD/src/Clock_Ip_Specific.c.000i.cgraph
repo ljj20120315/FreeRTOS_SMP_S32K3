@@ -1,0 +1,1290 @@
+Trivially needed symbols: Clock_Ip_PRAMCSetRamIWS/17 Clock_Ip_FLASH_SetFlashIWS/16 Clock_Ip_ClockPowerModeChangeNotification/15 Clock_Ip_ClockInitializeObjects/14 EnableSircInStandbyMode/13 DisableSircInStandbyMode/12 EnableFircInStandbyMode/11 DisableFircInStandbyMode/10 Clock_Ip_SpecificPlatformInitClock/9 Clock_Ip_SpecificPeripheralClockInitialization/8 Clock_Ip_McMeEnterKey/7 Clock_Ip_SetFlashWaitStates/6 Clock_Ip_SetRamWaitStates/5
+
+
+Initial Symbol table:
+
+Clock_Ip_GetConfiguredFrequencyValue/24 (Clock_Ip_GetConfiguredFrequencyValue) @063b3380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_PRAMCSetRamIWS/17 Clock_Ip_PRAMCSetRamIWS/17 
+  Calls: 
+Clock_Ip_pxConfig/23 (Clock_Ip_pxConfig) @063b0d38
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CodeInRamSetFlashWaitStates/4 (read) Clock_Ip_CodeInRamSetFlashWaitStates/4 (read) Clock_Ip_CodeInRamSetFlashWaitStates/4 (read) Clock_Ip_CodeInRamSetFlashWaitStates/4 (read) 
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_axIntOscCallbacks/22 (Clock_Ip_axIntOscCallbacks) @063b01b0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/14 (addr) Clock_Ip_ClockInitializeObjects/14 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8IrcoscCallbackIndex/21 (Clock_Ip_au8IrcoscCallbackIndex) @063b0168
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/14 (read) Clock_Ip_ClockInitializeObjects/14 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_ReportClockErrors/20 (Clock_Ip_ReportClockErrors) @0632c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 
+  Calls: 
+Clock_Ip_TimeoutExpired/19 (Clock_Ip_TimeoutExpired) @0632c8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 
+  Calls: 
+Clock_Ip_StartTimeout/18 (Clock_Ip_StartTimeout) @0632c7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 
+  Calls: 
+Clock_Ip_PRAMCSetRamIWS/17 (Clock_Ip_PRAMCSetRamIWS) @063287e0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @01981040
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Clock_Ip_SetRamWaitStates/5 
+  Calls: Clock_Ip_GetConfiguredFrequencyValue/24 Clock_Ip_GetConfiguredFrequencyValue/24 
+Clock_Ip_FLASH_SetFlashIWS/16 (Clock_Ip_FLASH_SetFlashIWS) @063282a0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @063287e0
+  References: Clock_Ip_SetFlashWaitStatesCallback/2 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Clock_Ip_SetFlashWaitStates/6 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+Clock_Ip_ClockPowerModeChangeNotification/15 (Clock_Ip_ClockPowerModeChangeNotification) @06328ee0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @063282a0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ClockInitializeObjects/14 (Clock_Ip_ClockInitializeObjects) @06328c40
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06328ee0
+  References: Clock_Ip_au8IrcoscCallbackIndex/21 (read) Clock_Ip_axIntOscCallbacks/22 (addr) Clock_Ip_pxSircStdbyClock/0 (write) Clock_Ip_au8IrcoscCallbackIndex/21 (read) Clock_Ip_axIntOscCallbacks/22 (addr) Clock_Ip_pxFircStdbyClock/1 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+EnableSircInStandbyMode/13 (EnableSircInStandbyMode) @063289a0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06328c40
+  References: Clock_Ip_pxSircStdbyClock/0 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+DisableSircInStandbyMode/12 (DisableSircInStandbyMode) @06328700
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @063289a0
+  References: Clock_Ip_pxSircStdbyClock/0 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+EnableFircInStandbyMode/11 (EnableFircInStandbyMode) @06328460
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06328700
+  References: Clock_Ip_pxFircStdbyClock/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+DisableFircInStandbyMode/10 (DisableFircInStandbyMode) @063281c0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @06328460
+  References: Clock_Ip_pxFircStdbyClock/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+Clock_Ip_SpecificPlatformInitClock/9 (Clock_Ip_SpecificPlatformInitClock) @062c9d20
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @063281c0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_PowerClockIpModules/3 
+Clock_Ip_SpecificPeripheralClockInitialization/8 (Clock_Ip_SpecificPeripheralClockInitialization) @062c9700
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @062c9d20
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_McMeEnterKey/7 (Clock_Ip_McMeEnterKey) @062c9ee0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @062c9700
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 
+  Calls: 
+Clock_Ip_SetFlashWaitStates/6 (Clock_Ip_SetFlashWaitStates) @062c9c40
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @062c9ee0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_FLASH_SetFlashIWS/16 
+Clock_Ip_SetRamWaitStates/5 (Clock_Ip_SetRamWaitStates) @062c98c0
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @062c9c40
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_PRAMCSetRamIWS/17 
+Clock_Ip_CodeInRamSetFlashWaitStates/4 (Clock_Ip_CodeInRamSetFlashWaitStates) @062c9620
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  Aux: @063287e0
+  References: Clock_Ip_pxConfig/23 (read) Clock_Ip_pxConfig/23 (read) Clock_Ip_pxConfig/23 (read) Clock_Ip_pxConfig/23 (read) 
+  Referring: Clock_Ip_SetFlashWaitStatesCallback/2 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_PowerClockIpModules/3 (Clock_Ip_PowerClockIpModules) @062c92a0
+  Type: function definition analyzed
+  Visibility:
+  Aux: @063281c0
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Clock_Ip_SpecificPlatformInitClock/9 
+  Calls: Clock_Ip_ReportClockErrors/20 Clock_Ip_TimeoutExpired/19 Clock_Ip_StartTimeout/18 Clock_Ip_McMeEnterKey/7 Clock_Ip_ReportClockErrors/20 Clock_Ip_TimeoutExpired/19 Clock_Ip_StartTimeout/18 Clock_Ip_McMeEnterKey/7 Clock_Ip_ReportClockErrors/20 Clock_Ip_TimeoutExpired/19 Clock_Ip_StartTimeout/18 Clock_Ip_McMeEnterKey/7 Clock_Ip_ReportClockErrors/20 Clock_Ip_TimeoutExpired/19 Clock_Ip_StartTimeout/18 Clock_Ip_McMeEnterKey/7 
+Clock_Ip_SetFlashWaitStatesCallback/2 (Clock_Ip_SetFlashWaitStatesCallback) @06279bd0
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @063287e0
+  References: Clock_Ip_CodeInRamSetFlashWaitStates/4 (addr) 
+  Referring: Clock_Ip_FLASH_SetFlashIWS/16 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+Clock_Ip_pxFircStdbyClock/1 (Clock_Ip_pxFircStdbyClock) @06279b40
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @06328460
+  References: 
+  Referring: DisableFircInStandbyMode/10 (read) EnableFircInStandbyMode/11 (read) Clock_Ip_ClockInitializeObjects/14 (write) 
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSircStdbyClock/0 (Clock_Ip_pxSircStdbyClock) @06279ab0
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @063289a0
+  References: 
+  Referring: DisableSircInStandbyMode/12 (read) EnableSircInStandbyMode/13 (read) Clock_Ip_ClockInitializeObjects/14 (write) 
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Clock_Ip_GetConfiguredFrequencyValue/24 (Clock_Ip_GetConfiguredFrequencyValue) @063b3380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_PRAMCSetRamIWS/17 Clock_Ip_PRAMCSetRamIWS/17 
+  Calls: 
+Clock_Ip_pxConfig/23 (Clock_Ip_pxConfig) @063b0d38
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CodeInRamSetFlashWaitStates/4 (read) Clock_Ip_CodeInRamSetFlashWaitStates/4 (read) Clock_Ip_CodeInRamSetFlashWaitStates/4 (read) Clock_Ip_CodeInRamSetFlashWaitStates/4 (read) 
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_axIntOscCallbacks/22 (Clock_Ip_axIntOscCallbacks) @063b01b0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/14 (addr) Clock_Ip_ClockInitializeObjects/14 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8IrcoscCallbackIndex/21 (Clock_Ip_au8IrcoscCallbackIndex) @063b0168
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/14 (read) Clock_Ip_ClockInitializeObjects/14 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_ReportClockErrors/20 (Clock_Ip_ReportClockErrors) @0632c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 
+  Calls: 
+Clock_Ip_TimeoutExpired/19 (Clock_Ip_TimeoutExpired) @0632c8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 
+  Calls: 
+Clock_Ip_StartTimeout/18 (Clock_Ip_StartTimeout) @0632c7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 
+  Calls: 
+Clock_Ip_PRAMCSetRamIWS/17 (Clock_Ip_PRAMCSetRamIWS) @063287e0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Clock_Ip_SetRamWaitStates/5 
+  Calls: Clock_Ip_GetConfiguredFrequencyValue/24 Clock_Ip_GetConfiguredFrequencyValue/24 
+Clock_Ip_FLASH_SetFlashIWS/16 (Clock_Ip_FLASH_SetFlashIWS) @063282a0
+  Type: function definition analyzed
+  Visibility: public
+  References: Clock_Ip_SetFlashWaitStatesCallback/2 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Clock_Ip_SetFlashWaitStates/6 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+Clock_Ip_ClockPowerModeChangeNotification/15 (Clock_Ip_ClockPowerModeChangeNotification) @06328ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ClockInitializeObjects/14 (Clock_Ip_ClockInitializeObjects) @06328c40
+  Type: function definition analyzed
+  Visibility: public
+  References: Clock_Ip_au8IrcoscCallbackIndex/21 (read) Clock_Ip_axIntOscCallbacks/22 (addr) Clock_Ip_pxSircStdbyClock/0 (write) Clock_Ip_au8IrcoscCallbackIndex/21 (read) Clock_Ip_axIntOscCallbacks/22 (addr) Clock_Ip_pxFircStdbyClock/1 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+EnableSircInStandbyMode/13 (EnableSircInStandbyMode) @063289a0
+  Type: function definition analyzed
+  Visibility: public
+  References: Clock_Ip_pxSircStdbyClock/0 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+DisableSircInStandbyMode/12 (DisableSircInStandbyMode) @06328700
+  Type: function definition analyzed
+  Visibility: public
+  References: Clock_Ip_pxSircStdbyClock/0 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+EnableFircInStandbyMode/11 (EnableFircInStandbyMode) @06328460
+  Type: function definition analyzed
+  Visibility: public
+  References: Clock_Ip_pxFircStdbyClock/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+DisableFircInStandbyMode/10 (DisableFircInStandbyMode) @063281c0
+  Type: function definition analyzed
+  Visibility: public
+  References: Clock_Ip_pxFircStdbyClock/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+Clock_Ip_SpecificPlatformInitClock/9 (Clock_Ip_SpecificPlatformInitClock) @062c9d20
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_PowerClockIpModules/3 
+Clock_Ip_SpecificPeripheralClockInitialization/8 (Clock_Ip_SpecificPeripheralClockInitialization) @062c9700
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_McMeEnterKey/7 (Clock_Ip_McMeEnterKey) @062c9ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 
+  Calls: 
+Clock_Ip_SetFlashWaitStates/6 (Clock_Ip_SetFlashWaitStates) @062c9c40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_FLASH_SetFlashIWS/16 
+Clock_Ip_SetRamWaitStates/5 (Clock_Ip_SetRamWaitStates) @062c98c0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_PRAMCSetRamIWS/17 
+Clock_Ip_CodeInRamSetFlashWaitStates/4 (Clock_Ip_CodeInRamSetFlashWaitStates) @062c9620
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_pxConfig/23 (read) Clock_Ip_pxConfig/23 (read) Clock_Ip_pxConfig/23 (read) Clock_Ip_pxConfig/23 (read) 
+  Referring: Clock_Ip_SetFlashWaitStatesCallback/2 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_PowerClockIpModules/3 (Clock_Ip_PowerClockIpModules) @062c92a0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Clock_Ip_SpecificPlatformInitClock/9 
+  Calls: Clock_Ip_ReportClockErrors/20 Clock_Ip_TimeoutExpired/19 Clock_Ip_StartTimeout/18 Clock_Ip_McMeEnterKey/7 Clock_Ip_ReportClockErrors/20 Clock_Ip_TimeoutExpired/19 Clock_Ip_StartTimeout/18 Clock_Ip_McMeEnterKey/7 Clock_Ip_ReportClockErrors/20 Clock_Ip_TimeoutExpired/19 Clock_Ip_StartTimeout/18 Clock_Ip_McMeEnterKey/7 Clock_Ip_ReportClockErrors/20 Clock_Ip_TimeoutExpired/19 Clock_Ip_StartTimeout/18 Clock_Ip_McMeEnterKey/7 
+Clock_Ip_SetFlashWaitStatesCallback/2 (Clock_Ip_SetFlashWaitStatesCallback) @06279bd0
+  Type: variable definition analyzed
+  Visibility:
+  References: Clock_Ip_CodeInRamSetFlashWaitStates/4 (addr) 
+  Referring: Clock_Ip_FLASH_SetFlashIWS/16 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+Clock_Ip_pxFircStdbyClock/1 (Clock_Ip_pxFircStdbyClock) @06279b40
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: DisableFircInStandbyMode/10 (read) EnableFircInStandbyMode/11 (read) Clock_Ip_ClockInitializeObjects/14 (write) 
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSircStdbyClock/0 (Clock_Ip_pxSircStdbyClock) @06279ab0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: DisableSircInStandbyMode/12 (read) EnableSircInStandbyMode/13 (read) Clock_Ip_ClockInitializeObjects/14 (write) 
+  Availability: not-ready
+  Varpool flags:
+
+
+Initial Symbol table:
+
+Clock_Ip_GetConfiguredFrequencyValue/24 (Clock_Ip_GetConfiguredFrequencyValue) @063b3380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_PRAMCSetRamIWS/17 Clock_Ip_PRAMCSetRamIWS/17 
+  Calls: 
+Clock_Ip_pxConfig/23 (Clock_Ip_pxConfig) @063b0d38
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CodeInRamSetFlashWaitStates/4 (read) Clock_Ip_CodeInRamSetFlashWaitStates/4 (read) Clock_Ip_CodeInRamSetFlashWaitStates/4 (read) Clock_Ip_CodeInRamSetFlashWaitStates/4 (read) 
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_axIntOscCallbacks/22 (Clock_Ip_axIntOscCallbacks) @063b01b0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/14 (addr) Clock_Ip_ClockInitializeObjects/14 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8IrcoscCallbackIndex/21 (Clock_Ip_au8IrcoscCallbackIndex) @063b0168
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/14 (read) Clock_Ip_ClockInitializeObjects/14 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_ReportClockErrors/20 (Clock_Ip_ReportClockErrors) @0632c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 
+  Calls: 
+Clock_Ip_TimeoutExpired/19 (Clock_Ip_TimeoutExpired) @0632c8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 
+  Calls: 
+Clock_Ip_StartTimeout/18 (Clock_Ip_StartTimeout) @0632c7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 
+  Calls: 
+Clock_Ip_PRAMCSetRamIWS/17 (Clock_Ip_PRAMCSetRamIWS) @063287e0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Clock_Ip_SetRamWaitStates/5 
+  Calls: Clock_Ip_GetConfiguredFrequencyValue/24 Clock_Ip_GetConfiguredFrequencyValue/24 
+Clock_Ip_FLASH_SetFlashIWS/16 (Clock_Ip_FLASH_SetFlashIWS) @063282a0
+  Type: function definition analyzed
+  Visibility: public
+  References: Clock_Ip_SetFlashWaitStatesCallback/2 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Clock_Ip_SetFlashWaitStates/6 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+Clock_Ip_ClockPowerModeChangeNotification/15 (Clock_Ip_ClockPowerModeChangeNotification) @06328ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ClockInitializeObjects/14 (Clock_Ip_ClockInitializeObjects) @06328c40
+  Type: function definition analyzed
+  Visibility: public
+  References: Clock_Ip_au8IrcoscCallbackIndex/21 (read) Clock_Ip_axIntOscCallbacks/22 (addr) Clock_Ip_pxSircStdbyClock/0 (write) Clock_Ip_au8IrcoscCallbackIndex/21 (read) Clock_Ip_axIntOscCallbacks/22 (addr) Clock_Ip_pxFircStdbyClock/1 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+EnableSircInStandbyMode/13 (EnableSircInStandbyMode) @063289a0
+  Type: function definition analyzed
+  Visibility: public
+  References: Clock_Ip_pxSircStdbyClock/0 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+DisableSircInStandbyMode/12 (DisableSircInStandbyMode) @06328700
+  Type: function definition analyzed
+  Visibility: public
+  References: Clock_Ip_pxSircStdbyClock/0 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+EnableFircInStandbyMode/11 (EnableFircInStandbyMode) @06328460
+  Type: function definition analyzed
+  Visibility: public
+  References: Clock_Ip_pxFircStdbyClock/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+DisableFircInStandbyMode/10 (DisableFircInStandbyMode) @063281c0
+  Type: function definition analyzed
+  Visibility: public
+  References: Clock_Ip_pxFircStdbyClock/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+Clock_Ip_SpecificPlatformInitClock/9 (Clock_Ip_SpecificPlatformInitClock) @062c9d20
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_PowerClockIpModules/3 
+Clock_Ip_SpecificPeripheralClockInitialization/8 (Clock_Ip_SpecificPeripheralClockInitialization) @062c9700
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_McMeEnterKey/7 (Clock_Ip_McMeEnterKey) @062c9ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 
+  Calls: 
+Clock_Ip_SetFlashWaitStates/6 (Clock_Ip_SetFlashWaitStates) @062c9c40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_FLASH_SetFlashIWS/16 
+Clock_Ip_SetRamWaitStates/5 (Clock_Ip_SetRamWaitStates) @062c98c0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_PRAMCSetRamIWS/17 
+Clock_Ip_CodeInRamSetFlashWaitStates/4 (Clock_Ip_CodeInRamSetFlashWaitStates) @062c9620
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_pxConfig/23 (read) Clock_Ip_pxConfig/23 (read) Clock_Ip_pxConfig/23 (read) Clock_Ip_pxConfig/23 (read) 
+  Referring: Clock_Ip_SetFlashWaitStatesCallback/2 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_PowerClockIpModules/3 (Clock_Ip_PowerClockIpModules) @062c92a0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Clock_Ip_SpecificPlatformInitClock/9 
+  Calls: Clock_Ip_ReportClockErrors/20 Clock_Ip_TimeoutExpired/19 Clock_Ip_StartTimeout/18 Clock_Ip_McMeEnterKey/7 Clock_Ip_ReportClockErrors/20 Clock_Ip_TimeoutExpired/19 Clock_Ip_StartTimeout/18 Clock_Ip_McMeEnterKey/7 Clock_Ip_ReportClockErrors/20 Clock_Ip_TimeoutExpired/19 Clock_Ip_StartTimeout/18 Clock_Ip_McMeEnterKey/7 Clock_Ip_ReportClockErrors/20 Clock_Ip_TimeoutExpired/19 Clock_Ip_StartTimeout/18 Clock_Ip_McMeEnterKey/7 
+Clock_Ip_SetFlashWaitStatesCallback/2 (Clock_Ip_SetFlashWaitStatesCallback) @06279bd0
+  Type: variable definition analyzed
+  Visibility:
+  References: Clock_Ip_CodeInRamSetFlashWaitStates/4 (addr) 
+  Referring: Clock_Ip_FLASH_SetFlashIWS/16 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+Clock_Ip_pxFircStdbyClock/1 (Clock_Ip_pxFircStdbyClock) @06279b40
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: DisableFircInStandbyMode/10 (read) EnableFircInStandbyMode/11 (read) Clock_Ip_ClockInitializeObjects/14 (write) 
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSircStdbyClock/0 (Clock_Ip_pxSircStdbyClock) @06279ab0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: DisableSircInStandbyMode/12 (read) EnableSircInStandbyMode/13 (read) Clock_Ip_ClockInitializeObjects/14 (write) 
+  Availability: not-ready
+  Varpool flags:
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+Clock_Ip_GetConfiguredFrequencyValue/24 (Clock_Ip_GetConfiguredFrequencyValue) @063b3380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_PRAMCSetRamIWS/17 Clock_Ip_PRAMCSetRamIWS/17 
+  Calls: 
+Clock_Ip_pxConfig/23 (Clock_Ip_pxConfig) @063b0d38
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CodeInRamSetFlashWaitStates/4 (read) Clock_Ip_CodeInRamSetFlashWaitStates/4 (read) Clock_Ip_CodeInRamSetFlashWaitStates/4 (read) Clock_Ip_CodeInRamSetFlashWaitStates/4 (read) 
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_axIntOscCallbacks/22 (Clock_Ip_axIntOscCallbacks) @063b01b0
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/14 (addr) Clock_Ip_ClockInitializeObjects/14 (addr) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_au8IrcoscCallbackIndex/21 (Clock_Ip_au8IrcoscCallbackIndex) @063b0168
+  Type: variable
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/14 (read) Clock_Ip_ClockInitializeObjects/14 (read) 
+  Availability: not-ready
+  Varpool flags: read-only
+Clock_Ip_ReportClockErrors/20 (Clock_Ip_ReportClockErrors) @0632c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 
+  Calls: 
+Clock_Ip_TimeoutExpired/19 (Clock_Ip_TimeoutExpired) @0632c8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 
+  Calls: 
+Clock_Ip_StartTimeout/18 (Clock_Ip_StartTimeout) @0632c7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 
+  Calls: 
+Clock_Ip_PRAMCSetRamIWS/17 (Clock_Ip_PRAMCSetRamIWS) @063287e0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Clock_Ip_SetRamWaitStates/5 
+  Calls: Clock_Ip_GetConfiguredFrequencyValue/24 Clock_Ip_GetConfiguredFrequencyValue/24 
+Clock_Ip_FLASH_SetFlashIWS/16 (Clock_Ip_FLASH_SetFlashIWS) @063282a0
+  Type: function definition analyzed
+  Visibility: public
+  References: Clock_Ip_SetFlashWaitStatesCallback/2 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Clock_Ip_SetFlashWaitStates/6 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+Clock_Ip_ClockPowerModeChangeNotification/15 (Clock_Ip_ClockPowerModeChangeNotification) @06328ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ClockInitializeObjects/14 (Clock_Ip_ClockInitializeObjects) @06328c40
+  Type: function definition analyzed
+  Visibility: public
+  References: Clock_Ip_au8IrcoscCallbackIndex/21 (read) Clock_Ip_axIntOscCallbacks/22 (addr) Clock_Ip_pxSircStdbyClock/0 (write) Clock_Ip_au8IrcoscCallbackIndex/21 (read) Clock_Ip_axIntOscCallbacks/22 (addr) Clock_Ip_pxFircStdbyClock/1 (write) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+EnableSircInStandbyMode/13 (EnableSircInStandbyMode) @063289a0
+  Type: function definition analyzed
+  Visibility: public
+  References: Clock_Ip_pxSircStdbyClock/0 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+DisableSircInStandbyMode/12 (DisableSircInStandbyMode) @06328700
+  Type: function definition analyzed
+  Visibility: public
+  References: Clock_Ip_pxSircStdbyClock/0 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+EnableFircInStandbyMode/11 (EnableFircInStandbyMode) @06328460
+  Type: function definition analyzed
+  Visibility: public
+  References: Clock_Ip_pxFircStdbyClock/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+DisableFircInStandbyMode/10 (DisableFircInStandbyMode) @063281c0
+  Type: function definition analyzed
+  Visibility: public
+  References: Clock_Ip_pxFircStdbyClock/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+Clock_Ip_SpecificPlatformInitClock/9 (Clock_Ip_SpecificPlatformInitClock) @062c9d20
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_PowerClockIpModules/3 
+Clock_Ip_SpecificPeripheralClockInitialization/8 (Clock_Ip_SpecificPeripheralClockInitialization) @062c9700
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_McMeEnterKey/7 (Clock_Ip_McMeEnterKey) @062c9ee0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 
+  Calls: 
+Clock_Ip_SetFlashWaitStates/6 (Clock_Ip_SetFlashWaitStates) @062c9c40
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_FLASH_SetFlashIWS/16 
+Clock_Ip_SetRamWaitStates/5 (Clock_Ip_SetRamWaitStates) @062c98c0
+  Type: function definition analyzed
+  Visibility: public
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_PRAMCSetRamIWS/17 
+Clock_Ip_CodeInRamSetFlashWaitStates/4 (Clock_Ip_CodeInRamSetFlashWaitStates) @062c9620
+  Type: function definition analyzed
+  Visibility:
+  Address is taken.
+  References: Clock_Ip_pxConfig/23 (read) Clock_Ip_pxConfig/23 (read) Clock_Ip_pxConfig/23 (read) Clock_Ip_pxConfig/23 (read) 
+  Referring: Clock_Ip_SetFlashWaitStatesCallback/2 (addr) 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_PowerClockIpModules/3 (Clock_Ip_PowerClockIpModules) @062c92a0
+  Type: function definition analyzed
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: Clock_Ip_SpecificPlatformInitClock/9 
+  Calls: Clock_Ip_ReportClockErrors/20 Clock_Ip_TimeoutExpired/19 Clock_Ip_StartTimeout/18 Clock_Ip_McMeEnterKey/7 Clock_Ip_ReportClockErrors/20 Clock_Ip_TimeoutExpired/19 Clock_Ip_StartTimeout/18 Clock_Ip_McMeEnterKey/7 Clock_Ip_ReportClockErrors/20 Clock_Ip_TimeoutExpired/19 Clock_Ip_StartTimeout/18 Clock_Ip_McMeEnterKey/7 Clock_Ip_ReportClockErrors/20 Clock_Ip_TimeoutExpired/19 Clock_Ip_StartTimeout/18 Clock_Ip_McMeEnterKey/7 
+Clock_Ip_SetFlashWaitStatesCallback/2 (Clock_Ip_SetFlashWaitStatesCallback) @06279bd0
+  Type: variable definition analyzed
+  Visibility:
+  References: Clock_Ip_CodeInRamSetFlashWaitStates/4 (addr) 
+  Referring: Clock_Ip_FLASH_SetFlashIWS/16 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+Clock_Ip_pxFircStdbyClock/1 (Clock_Ip_pxFircStdbyClock) @06279b40
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: DisableFircInStandbyMode/10 (read) EnableFircInStandbyMode/11 (read) Clock_Ip_ClockInitializeObjects/14 (write) 
+  Availability: not-ready
+  Varpool flags:
+Clock_Ip_pxSircStdbyClock/0 (Clock_Ip_pxSircStdbyClock) @06279ab0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: DisableSircInStandbyMode/12 (read) EnableSircInStandbyMode/13 (read) Clock_Ip_ClockInitializeObjects/14 (write) 
+  Availability: not-ready
+  Varpool flags:
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+Clock_Ip_PRAMCSetRamIWS.part.0/25 (Clock_Ip_PRAMCSetRamIWS.part.0) @063bf0e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  References: 
+  Referring: 
+  Function Clock_Ip_PRAMCSetRamIWS.part.0/25 is inline copy in Clock_Ip_PRAMCSetRamIWS/17
+  Availability: local
+  Function flags: count:354334801 (estimated locally) body local split_part nonfreeing_fn optimize_size
+  Called by: Clock_Ip_PRAMCSetRamIWS/17 (inlined) (354334801 (estimated locally),0.33 per call) 
+  Calls: 
+Clock_Ip_GetConfiguredFrequencyValue/24 (Clock_Ip_GetConfiguredFrequencyValue) @063b3380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_PRAMCSetRamIWS/17 (1073741824 (estimated locally),1.00 per call) Clock_Ip_PRAMCSetRamIWS/17 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_pxConfig/23 (Clock_Ip_pxConfig) @063b0d38
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CodeInRamSetFlashWaitStates/4 (read) 
+  Availability: not_available
+  Varpool flags:
+Clock_Ip_axIntOscCallbacks/22 (Clock_Ip_axIntOscCallbacks) @063b01b0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/14 (addr) Clock_Ip_ClockInitializeObjects/14 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8IrcoscCallbackIndex/21 (Clock_Ip_au8IrcoscCallbackIndex) @063b0168
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/14 (read) Clock_Ip_ClockInitializeObjects/14 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_ReportClockErrors/20 (Clock_Ip_ReportClockErrors) @0632c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 (116930486 (estimated locally),0.11 per call) Clock_Ip_PowerClockIpModules/3 (116930486 (estimated locally),0.11 per call) Clock_Ip_PowerClockIpModules/3 (116930486 (estimated locally),0.11 per call) Clock_Ip_PowerClockIpModules/3 (116930486 (estimated locally),0.11 per call) 
+  Calls: 
+Clock_Ip_TimeoutExpired/19 (Clock_Ip_TimeoutExpired) @0632c8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 (3312314176 (estimated locally),3.08 per call) Clock_Ip_PowerClockIpModules/3 (3312314167 (estimated locally),3.08 per call) Clock_Ip_PowerClockIpModules/3 (3312314155 (estimated locally),3.08 per call) Clock_Ip_PowerClockIpModules/3 (3312314142 (estimated locally),3.08 per call) 
+  Calls: 
+Clock_Ip_StartTimeout/18 (Clock_Ip_StartTimeout) @0632c7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 (354334804 (estimated locally),0.33 per call) Clock_Ip_PowerClockIpModules/3 (354334804 (estimated locally),0.33 per call) Clock_Ip_PowerClockIpModules/3 (354334801 (estimated locally),0.33 per call) Clock_Ip_PowerClockIpModules/3 (354334801 (estimated locally),0.33 per call) 
+  Calls: 
+Clock_Ip_PRAMCSetRamIWS/17 (Clock_Ip_PRAMCSetRamIWS) @063287e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: Clock_Ip_SetRamWaitStates/5 (1073741824 (estimated locally),1.00 per call) 
+  Calls: Clock_Ip_PRAMCSetRamIWS.part.0/25 (inlined) (354334801 (estimated locally),0.33 per call) Clock_Ip_GetConfiguredFrequencyValue/24 (1073741824 (estimated locally),1.00 per call) Clock_Ip_GetConfiguredFrequencyValue/24 (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_FLASH_SetFlashIWS/16 (Clock_Ip_FLASH_SetFlashIWS) @063282a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_SetFlashWaitStatesCallback/2 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: Clock_Ip_SetFlashWaitStates/6 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+   Indirect call(1073741824 (estimated locally),1.00 per call)  Num speculative call targets: 0
+Clock_Ip_ClockPowerModeChangeNotification/15 (Clock_Ip_ClockPowerModeChangeNotification) @06328ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ClockInitializeObjects/14 (Clock_Ip_ClockInitializeObjects) @06328c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_au8IrcoscCallbackIndex/21 (read) Clock_Ip_axIntOscCallbacks/22 (addr) Clock_Ip_pxSircStdbyClock/0 (write) Clock_Ip_au8IrcoscCallbackIndex/21 (read) Clock_Ip_axIntOscCallbacks/22 (addr) Clock_Ip_pxFircStdbyClock/1 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+EnableSircInStandbyMode/13 (EnableSircInStandbyMode) @063289a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_pxSircStdbyClock/0 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call(1073741824 (estimated locally),1.00 per call)  Num speculative call targets: 0
+DisableSircInStandbyMode/12 (DisableSircInStandbyMode) @06328700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_pxSircStdbyClock/0 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call(1073741824 (estimated locally),1.00 per call)  Num speculative call targets: 0
+EnableFircInStandbyMode/11 (EnableFircInStandbyMode) @06328460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_pxFircStdbyClock/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call(1073741824 (estimated locally),1.00 per call)  Num speculative call targets: 0
+DisableFircInStandbyMode/10 (DisableFircInStandbyMode) @063281c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_pxFircStdbyClock/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call(1073741824 (estimated locally),1.00 per call)  Num speculative call targets: 0
+Clock_Ip_SpecificPlatformInitClock/9 (Clock_Ip_SpecificPlatformInitClock) @062c9d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_PowerClockIpModules/3 (inlined) (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_SpecificPeripheralClockInitialization/8 (Clock_Ip_SpecificPeripheralClockInitialization) @062c9700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_McMeEnterKey/7 (Clock_Ip_McMeEnterKey) @062c9ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 (354334804 (estimated locally),0.33 per call) Clock_Ip_PowerClockIpModules/3 (354334804 (estimated locally),0.33 per call) Clock_Ip_PowerClockIpModules/3 (354334801 (estimated locally),0.33 per call) Clock_Ip_PowerClockIpModules/3 (354334801 (estimated locally),0.33 per call) 
+  Calls: 
+Clock_Ip_SetFlashWaitStates/6 (Clock_Ip_SetFlashWaitStates) @062c9c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_FLASH_SetFlashIWS/16 (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_SetRamWaitStates/5 (Clock_Ip_SetRamWaitStates) @062c98c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_PRAMCSetRamIWS/17 (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_CodeInRamSetFlashWaitStates/4 (Clock_Ip_CodeInRamSetFlashWaitStates) @062c9620
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_pxConfig/23 (read) 
+  Referring: Clock_Ip_SetFlashWaitStatesCallback/2 (addr) 
+  Availability: available
+  Function flags: count:164090757 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_PowerClockIpModules/3 (Clock_Ip_PowerClockIpModules) @062c92a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Function Clock_Ip_PowerClockIpModules/3 is inline copy in Clock_Ip_SpecificPlatformInitClock/9
+  Availability: local
+  Function flags: count:1073741824 (estimated locally) body local optimize_size
+  Called by: Clock_Ip_SpecificPlatformInitClock/9 (inlined) (1073741824 (estimated locally),1.00 per call) 
+  Calls: Clock_Ip_ReportClockErrors/20 (116930486 (estimated locally),0.11 per call) Clock_Ip_TimeoutExpired/19 (3312314176 (estimated locally),3.08 per call) Clock_Ip_StartTimeout/18 (354334804 (estimated locally),0.33 per call) Clock_Ip_McMeEnterKey/7 (354334804 (estimated locally),0.33 per call) Clock_Ip_ReportClockErrors/20 (116930486 (estimated locally),0.11 per call) Clock_Ip_TimeoutExpired/19 (3312314167 (estimated locally),3.08 per call) Clock_Ip_StartTimeout/18 (354334804 (estimated locally),0.33 per call) Clock_Ip_McMeEnterKey/7 (354334804 (estimated locally),0.33 per call) Clock_Ip_ReportClockErrors/20 (116930486 (estimated locally),0.11 per call) Clock_Ip_TimeoutExpired/19 (3312314155 (estimated locally),3.08 per call) Clock_Ip_StartTimeout/18 (354334801 (estimated locally),0.33 per call) Clock_Ip_McMeEnterKey/7 (354334801 (estimated locally),0.33 per call) Clock_Ip_ReportClockErrors/20 (116930486 (estimated locally),0.11 per call) Clock_Ip_TimeoutExpired/19 (3312314142 (estimated locally),3.08 per call) Clock_Ip_StartTimeout/18 (354334801 (estimated locally),0.33 per call) Clock_Ip_McMeEnterKey/7 (354334801 (estimated locally),0.33 per call) 
+Clock_Ip_SetFlashWaitStatesCallback/2 (Clock_Ip_SetFlashWaitStatesCallback) @06279bd0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Clock_Ip_CodeInRamSetFlashWaitStates/4 (addr) 
+  Referring: Clock_Ip_FLASH_SetFlashIWS/16 (read) 
+  Availability: available
+  Varpool flags: initialized used-by-single-function read-only const-value-known
+Clock_Ip_pxFircStdbyClock/1 (Clock_Ip_pxFircStdbyClock) @06279b40
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: DisableFircInStandbyMode/10 (read) EnableFircInStandbyMode/11 (read) Clock_Ip_ClockInitializeObjects/14 (write) 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxSircStdbyClock/0 (Clock_Ip_pxSircStdbyClock) @06279ab0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: DisableSircInStandbyMode/12 (read) EnableSircInStandbyMode/13 (read) Clock_Ip_ClockInitializeObjects/14 (write) 
+  Availability: available
+  Varpool flags:
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: Clock_Ip_pxFircStdbyClock/1 Clock_Ip_pxSircStdbyClock/0
+Removing variables: Clock_Ip_SetFlashWaitStatesCallback/2
+
+Final Symbol table:
+
+Clock_Ip_GetConfiguredFrequencyValue/24 (Clock_Ip_GetConfiguredFrequencyValue) @063b3380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_pxConfig/23 (Clock_Ip_pxConfig) @063b0d38
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags:
+Clock_Ip_axIntOscCallbacks/22 (Clock_Ip_axIntOscCallbacks) @063b01b0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8IrcoscCallbackIndex/21 (Clock_Ip_au8IrcoscCallbackIndex) @063b0168
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_ReportClockErrors/20 (Clock_Ip_ReportClockErrors) @0632c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_TimeoutExpired/19 (Clock_Ip_TimeoutExpired) @0632c8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_StartTimeout/18 (Clock_Ip_StartTimeout) @0632c7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_PRAMCSetRamIWS/17 (Clock_Ip_PRAMCSetRamIWS) @063287e0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_FLASH_SetFlashIWS/16 (Clock_Ip_FLASH_SetFlashIWS) @063282a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ClockPowerModeChangeNotification/15 (Clock_Ip_ClockPowerModeChangeNotification) @06328ee0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ClockInitializeObjects/14 (Clock_Ip_ClockInitializeObjects) @06328c40
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+EnableSircInStandbyMode/13 (EnableSircInStandbyMode) @063289a0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+DisableSircInStandbyMode/12 (DisableSircInStandbyMode) @06328700
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+EnableFircInStandbyMode/11 (EnableFircInStandbyMode) @06328460
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+DisableFircInStandbyMode/10 (DisableFircInStandbyMode) @063281c0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SpecificPlatformInitClock/9 (Clock_Ip_SpecificPlatformInitClock) @062c9d20
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SpecificPeripheralClockInitialization/8 (Clock_Ip_SpecificPeripheralClockInitialization) @062c9700
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_McMeEnterKey/7 (Clock_Ip_McMeEnterKey) @062c9ee0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetFlashWaitStates/6 (Clock_Ip_SetFlashWaitStates) @062c9c40
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetRamWaitStates/5 (Clock_Ip_SetRamWaitStates) @062c98c0
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CodeInRamSetFlashWaitStates/4 (Clock_Ip_CodeInRamSetFlashWaitStates) @062c9620
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Address is taken.
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:164090757 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_pxFircStdbyClock/1 (Clock_Ip_pxFircStdbyClock) @06279b40
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxSircStdbyClock/0 (Clock_Ip_pxSircStdbyClock) @06279ab0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Aux: @06279b40
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:

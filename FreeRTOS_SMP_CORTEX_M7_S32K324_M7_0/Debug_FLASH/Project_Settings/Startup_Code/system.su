@@ -1,0 +1,5 @@
+../Project_Settings/Startup_Code/system.c:609:13:sys_m7_cache_clean	16	static
+../Project_Settings/Startup_Code/system.c:272:6:startup_go_to_user_mode	0	static
+../Project_Settings/Startup_Code/system.c:285:6:default_interrupt_routine	0	static
+../Project_Settings/Startup_Code/system.c:404:7:Sys_GetCoreID	0	static
+../Project_Settings/Startup_Code/system.c:416:6:SystemInit	16	static

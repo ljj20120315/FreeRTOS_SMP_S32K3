@@ -1,0 +1,3222 @@
+IPA function summary for Clock_Ip_UpdateDriverContext.constprop/63 inlinable
+  global time:     18.630000
+  self size:       9
+  global size:     9
+  min size:       6
+  self stack:      0
+  global stack:    0
+    size:4.000000, time:3.330000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_ClockInitializeObjects/52 function body not available
+      freq:0.33 loop depth: 0 size: 1 time: 10
+    Clock_Ip_CallEmptyCallbacks/6 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 1 time: 10 callee size:44 stack: 0
+
+IPA function summary for Clock_Ip_DistributePll.part.0/62 inlinable
+  global time:     348.840003
+  self size:       65
+  global size:     65
+  min size:       62
+  self stack:      0
+  global stack:    0
+    size:48.000000, time:200.598183
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_SpecificPeripheralClockInitialization/51 function body not available
+      freq:0.50 loop depth: 0 size: 2 time: 11
+    indirect call loop depth: 1 freq:2.75 size: 4 time: 16
+    indirect call loop depth: 1 freq:4.05 size: 4 time: 16
+    indirect call loop depth: 1 freq:2.00 size: 4 time: 16
+
+IPA function summary for Clock_Ip_GetConfiguredFrequencyValue/25 inlinable
+  global time:     55.889298
+  self size:       16
+  global size:     16
+  min size:       13
+  self stack:      0
+  global stack:    0
+    size:13.000000, time:53.889298
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for Clock_Ip_TimeoutExpired/24 inlinable
+  global time:     19.000000
+  self size:       11
+  global size:     11
+  min size:       7
+  self stack:      0
+  global stack:    0
+    size:3.000000, time:3.000000
+    size:4.000000, time:3.000000,  executed if:(not inlined)
+  calls:
+    OsIf_GetElapsed/61 function body not available
+      freq:1.00 loop depth: 0 size: 4 time: 13
+       op1 is compile time invariant
+
+IPA function summary for Clock_Ip_StartTimeout/23 inlinable
+  global time:     30.000000
+  self size:       13
+  global size:     13
+  min size:       9
+  self stack:      0
+  global stack:    0
+    size:1.500000, time:1.500000
+    size:4.500000, time:3.500000,  executed if:(not inlined)
+  calls:
+    OsIf_MicrosToTicks/60 function body not available
+      freq:1.00 loop depth: 0 size: 4 time: 13
+       op1 is compile time invariant
+    OsIf_GetCounter/59 function body not available
+      freq:1.00 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+
+IPA function summary for Clock_Ip_ReportClockErrors/22 inlinable
+  global time:     20.000000
+  self size:       9
+  global size:     9
+  min size:       6
+  self stack:      0
+  global stack:    0
+    size:1.000000, time:1.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    indirect call loop depth: 0 freq:1.00 size: 5 time: 17
+
+IPA function summary for Clock_Ip_EnableSircInStandby/21 inlinable
+  global time:     18.630000
+  self size:       9
+  global size:     9
+  min size:       6
+  self stack:      0
+  global stack:    0
+    size:4.000000, time:3.330000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    EnableSircInStandbyMode/58 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    Clock_Ip_ClockInitializeObjects/52 function body not available
+      freq:0.33 loop depth: 0 size: 1 time: 10
+
+IPA function summary for Clock_Ip_DisableSircInStandby/20 inlinable
+  global time:     18.630000
+  self size:       9
+  global size:     9
+  min size:       6
+  self stack:      0
+  global stack:    0
+    size:4.000000, time:3.330000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    DisableSircInStandbyMode/57 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    Clock_Ip_ClockInitializeObjects/52 function body not available
+      freq:0.33 loop depth: 0 size: 1 time: 10
+
+IPA function summary for Clock_Ip_EnableFircInStandby/19 inlinable
+  global time:     18.630000
+  self size:       9
+  global size:     9
+  min size:       6
+  self stack:      0
+  global stack:    0
+    size:4.000000, time:3.330000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    EnableFircInStandbyMode/56 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    Clock_Ip_ClockInitializeObjects/52 function body not available
+      freq:0.33 loop depth: 0 size: 1 time: 10
+
+IPA function summary for Clock_Ip_DisableFircInStandby/18 inlinable
+  global time:     18.630000
+  self size:       9
+  global size:     9
+  min size:       6
+  self stack:      0
+  global stack:    0
+    size:4.000000, time:3.330000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    DisableFircInStandbyMode/55 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    Clock_Ip_ClockInitializeObjects/52 function body not available
+      freq:0.33 loop depth: 0 size: 1 time: 10
+
+IPA function summary for Clock_Ip_EnableModuleClock/17 inlinable
+  global time:     25.000000
+  self size:       14
+  global size:     14
+  min size:       10
+  self stack:      0
+  global stack:    0
+    size:5.000000, time:5.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed)
+  calls:
+    indirect call loop depth: 0 freq:1.00 size: 5 time: 17
+
+IPA function summary for Clock_Ip_DisableModuleClock/16 inlinable
+  global time:     25.000000
+  self size:       14
+  global size:     14
+  min size:       10
+  self stack:      0
+  global stack:    0
+    size:5.000000, time:5.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed)
+  calls:
+    indirect call loop depth: 0 freq:1.00 size: 5 time: 17
+
+IPA function summary for Clock_Ip_InstallNotificationsCallback/15 inlinable
+  global time:     3.000000
+  self size:       4
+  global size:     4
+  min size:       1
+  self stack:      0
+  global stack:    0
+    size:1.000000, time:1.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for Clock_Ip_ClearClockMonitorStatus/14 inlinable
+  global time:     24.000000
+  self size:       13
+  global size:     13
+  min size:       9
+  self stack:      0
+  global stack:    0
+    size:5.000000, time:5.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed)
+  calls:
+    indirect call loop depth: 0 freq:1.00 size: 4 time: 16
+
+IPA function summary for Clock_Ip_GetClockMonitorStatus/13 inlinable
+  global time:     25.000000
+  self size:       14
+  global size:     14
+  min size:       10
+  self stack:      0
+  global stack:    0
+    size:5.000000, time:5.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed)
+  calls:
+    indirect call loop depth: 0 freq:1.00 size: 5 time: 17
+
+IPA function summary for Clock_Ip_DisableClockMonitor/12 inlinable
+  global time:     24.000000
+  self size:       13
+  global size:     13
+  min size:       9
+  self stack:      0
+  global stack:    0
+    size:5.000000, time:5.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed)
+  calls:
+    indirect call loop depth: 0 freq:1.00 size: 4 time: 16
+
+IPA function summary for Clock_Ip_DistributePll/11 inlinable
+  global time:     12.000000
+  self size:       7
+  global size:     7
+  min size:       4
+  self stack:      0
+  global stack:    0
+    size:3.000000, time:3.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_DistributePll.part.0/62 function not considered for inlining
+      freq:0.70 loop depth: 0 size: 1 time: 10 callee size:32 stack: 0
+
+IPA function summary for Clock_Ip_GetPllStatus/10 inlinable
+  global time:     267.071751
+  self size:       21
+  global size:     21
+  min size:       18
+  self stack:      0
+  global stack:    0
+    size:13.000000, time:114.896473
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    indirect call loop depth: 1 freq:8.83 size: 5 time: 17
+
+IPA function summary for Clock_Ip_InitClock/9 inlinable
+  global time:     1315.663383
+  self size:       292
+  global size:     292
+  min size:       274
+  self stack:      0
+  global stack:    0
+    size:183.500000, time:524.178992
+    size:18.500000, time:52.548173,  executed if:(not inlined)
+  calls:
+    Clock_Ip_SpecificPeripheralClockInitialization/51 function body not available
+      freq:0.50 loop depth: 0 size: 2 time: 11
+    Clock_Ip_SetFlashWaitStates/45 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    Clock_Ip_SetRamWaitStates/44 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    Clock_Ip_UpdateDriverContext.constprop/63 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size: 4 stack: 0
+    Clock_Ip_ResetClockConfiguration/7 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size:33 stack: 0
+    Clock_Ip_SpecificPlatformInitClock/26 function body not available
+      freq:1.00 loop depth: 0 size: 2 time: 11
+    indirect call loop depth: 1 freq:2.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:4.05 size: 4 time: 16
+    indirect call loop depth: 1 freq:5.34 size: 4 time: 16
+    indirect call loop depth: 0 freq:1.00 size: 5 time: 17
+    indirect call loop depth: 0 freq:1.00 size: 5 time: 17
+    indirect call loop depth: 0 freq:1.00 size: 5 time: 17
+    indirect call loop depth: 0 freq:1.00 size: 5 time: 17
+    indirect call loop depth: 1 freq:1.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:1.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:2.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:4.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:1.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:1.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:8.09 size: 4 time: 16
+    indirect call loop depth: 1 freq:1.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:1.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:2.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:2.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:2.80 size: 4 time: 16
+
+IPA function summary for Clock_Ip_Init/8 inlinable
+  global time:     21.379000
+  self size:       13
+  global size:     13
+  min size:       10
+  self stack:      0
+  global stack:    0
+    size:5.000000, time:3.660000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_DistributePll/11 function not considered for inlining
+      freq:0.11 loop depth: 0 size: 1 time: 10 callee size: 3 stack: 0
+    Clock_Ip_GetPllStatus/10 function not considered for inlining
+      freq:0.33 loop depth: 0 size: 2 time: 11 callee size:10 stack: 0
+    Clock_Ip_InitClock/9 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size:146 stack: 0
+
+IPA function summary for Clock_Ip_ResetClockConfiguration/7 inlinable
+  global time:     340.462648
+  self size:       67
+  global size:     67
+  min size:       60
+  self stack:      0
+  global stack:    0
+    size:43.500000, time:136.457696
+    size:6.500000, time:9.545605,  executed if:(not inlined)
+    size:0.500000, time:0.500000,  executed if:(not inlined),  nonconst if:(op0[ref offset: 56] changed) && (not inlined)
+    size:0.500000, time:0.500000,  nonconst if:(op0[ref offset: 56] changed)
+  loop iterations:(op0[ref offset: 56] changed)
+  calls:
+    indirect call loop depth: 1 freq:2.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:1.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:1.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:8.09 size: 4 time: 16
+
+IPA function summary for Clock_Ip_CallEmptyCallbacks/6 inlinable
+  global time:     142.000000
+  self size:       88
+  global size:     88
+  min size:       85
+  self stack:      0
+  global stack:    0
+    size:20.000000, time:11.500000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+    indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+    indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+    indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+    indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+    indirect call loop depth: 0 freq:0.50 size: 5 time: 17
+    indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+    indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+    indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+    indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+    indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+    indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+    indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+    indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+    indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+    indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+
+IPA function summary for Clock_Ip_NotificatonsEmptyCallback/4 inlinable
+  global time:     2.000000
+  self size:       3
+  global size:     3
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+
+Flattening functions:
+Overall time estimate: 2793.456085 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+Enqueueing calls in Clock_Ip_UpdateDriverContext.constprop/63.
+Enqueueing calls in Clock_Ip_DistributePll.part.0/62.
+Enqueueing calls in Clock_Ip_GetConfiguredFrequencyValue/25.
+Enqueueing calls in Clock_Ip_TimeoutExpired/24.
+Enqueueing calls in Clock_Ip_StartTimeout/23.
+Enqueueing calls in Clock_Ip_ReportClockErrors/22.
+Enqueueing calls in Clock_Ip_EnableSircInStandby/21.
+Enqueueing calls in Clock_Ip_DisableSircInStandby/20.
+Enqueueing calls in Clock_Ip_EnableFircInStandby/19.
+Enqueueing calls in Clock_Ip_DisableFircInStandby/18.
+Enqueueing calls in Clock_Ip_EnableModuleClock/17.
+Enqueueing calls in Clock_Ip_DisableModuleClock/16.
+Enqueueing calls in Clock_Ip_InstallNotificationsCallback/15.
+Enqueueing calls in Clock_Ip_ClearClockMonitorStatus/14.
+Enqueueing calls in Clock_Ip_GetClockMonitorStatus/13.
+Enqueueing calls in Clock_Ip_DisableClockMonitor/12.
+Enqueueing calls in Clock_Ip_DistributePll/11.
+Enqueueing calls in Clock_Ip_GetPllStatus/10.
+Enqueueing calls in Clock_Ip_InitClock/9.
+Enqueueing calls in Clock_Ip_Init/8.
+Enqueueing calls in Clock_Ip_ResetClockConfiguration/7.
+Enqueueing calls in Clock_Ip_CallEmptyCallbacks/6.
+Enqueueing calls in Clock_Ip_NotificatonsEmptyCallback/4.
+
+Considering Clock_Ip_UpdateDriverContext.constprop/63 with 9 size
+ to be inlined into Clock_Ip_InitClock/9 in ../RTD/src/Clock_Ip.c:731
+ Estimated badness is -0.043919, frequency 1.00.
+node context cache: 0 hits, 0 misses, 3 initializations
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+
+Inlining Clock_Ip_DistributePll.part.0/62 size 65.
+ Called once from Clock_Ip_DistributePll/11 7 insns.
+ Inlined into Clock_Ip_DistributePll/11 which now has 68 size
+
+Inlining Clock_Ip_ResetClockConfiguration/7 size 67.
+ Called once from Clock_Ip_InitClock/9 296 insns.
+ Inlined into Clock_Ip_InitClock/9 which now has 354 size
+
+Inlining Clock_Ip_CallEmptyCallbacks/6 size 88.
+ Called once from Clock_Ip_UpdateDriverContext.constprop/63 9 insns.
+ Inlined into Clock_Ip_UpdateDriverContext.constprop/63 which now has 9 size
+Overall time estimate: 2634.358479 weighted by profile: 0.000000
+
+Why inlining failed?
+function body not available                       :       17 calls, 12.500000 freq, 0 count
+--param max-inline-insns-auto limit reached       :        2 calls, 1.330000 freq, 0 count
+call is unlikely and code size would grow         :        1 calls, 0.108900 freq, 0 count
+IPA function summary for Clock_Ip_GetConfiguredFrequencyValue/25 inlinable
+  global time:     55.889298
+  self size:       16
+  global size:     16
+  min size:       13
+  self stack:      0
+  global stack:    0
+    size:13.000000, time:53.889298
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for Clock_Ip_TimeoutExpired/24 inlinable
+  global time:     19.000000
+  self size:       11
+  global size:     11
+  min size:       7
+  self stack:      0
+  global stack:    0
+    size:3.000000, time:3.000000
+    size:4.000000, time:3.000000,  executed if:(not inlined)
+  calls:
+    OsIf_GetElapsed/61 function body not available
+      freq:1.00 loop depth: 0 size: 4 time: 13
+       op1 is compile time invariant
+
+IPA function summary for Clock_Ip_StartTimeout/23 inlinable
+  global time:     30.000000
+  self size:       13
+  global size:     13
+  min size:       9
+  self stack:      0
+  global stack:    0
+    size:1.500000, time:1.500000
+    size:4.500000, time:3.500000,  executed if:(not inlined)
+  calls:
+    OsIf_MicrosToTicks/60 function body not available
+      freq:1.00 loop depth: 0 size: 4 time: 13
+       op1 is compile time invariant
+    OsIf_GetCounter/59 function body not available
+      freq:1.00 loop depth: 0 size: 3 time: 12
+       op0 is compile time invariant
+
+IPA function summary for Clock_Ip_ReportClockErrors/22 inlinable
+  global time:     20.000000
+  self size:       9
+  global size:     9
+  min size:       6
+  self stack:      0
+  global stack:    0
+    size:1.000000, time:1.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    indirect call loop depth: 0 freq:1.00 size: 5 time: 17
+
+IPA function summary for Clock_Ip_EnableSircInStandby/21 inlinable
+  global time:     18.630000
+  self size:       9
+  global size:     9
+  min size:       6
+  self stack:      0
+  global stack:    0
+    size:4.000000, time:3.330000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    EnableSircInStandbyMode/58 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    Clock_Ip_ClockInitializeObjects/52 function body not available
+      freq:0.33 loop depth: 0 size: 1 time: 10
+
+IPA function summary for Clock_Ip_DisableSircInStandby/20 inlinable
+  global time:     18.630000
+  self size:       9
+  global size:     9
+  min size:       6
+  self stack:      0
+  global stack:    0
+    size:4.000000, time:3.330000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    DisableSircInStandbyMode/57 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    Clock_Ip_ClockInitializeObjects/52 function body not available
+      freq:0.33 loop depth: 0 size: 1 time: 10
+
+IPA function summary for Clock_Ip_EnableFircInStandby/19 inlinable
+  global time:     18.630000
+  self size:       9
+  global size:     9
+  min size:       6
+  self stack:      0
+  global stack:    0
+    size:4.000000, time:3.330000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    EnableFircInStandbyMode/56 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    Clock_Ip_ClockInitializeObjects/52 function body not available
+      freq:0.33 loop depth: 0 size: 1 time: 10
+
+IPA function summary for Clock_Ip_DisableFircInStandby/18 inlinable
+  global time:     18.630000
+  self size:       9
+  global size:     9
+  min size:       6
+  self stack:      0
+  global stack:    0
+    size:4.000000, time:3.330000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    DisableFircInStandbyMode/55 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    Clock_Ip_ClockInitializeObjects/52 function body not available
+      freq:0.33 loop depth: 0 size: 1 time: 10
+
+IPA function summary for Clock_Ip_EnableModuleClock/17 inlinable
+  global time:     25.000000
+  self size:       14
+  global size:     14
+  min size:       10
+  self stack:      0
+  global stack:    0
+    size:5.000000, time:5.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed)
+  calls:
+    indirect call loop depth: 0 freq:1.00 size: 5 time: 17
+
+IPA function summary for Clock_Ip_DisableModuleClock/16 inlinable
+  global time:     25.000000
+  self size:       14
+  global size:     14
+  min size:       10
+  self stack:      0
+  global stack:    0
+    size:5.000000, time:5.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed)
+  calls:
+    indirect call loop depth: 0 freq:1.00 size: 5 time: 17
+
+IPA function summary for Clock_Ip_InstallNotificationsCallback/15 inlinable
+  global time:     3.000000
+  self size:       4
+  global size:     4
+  min size:       1
+  self stack:      0
+  global stack:    0
+    size:1.000000, time:1.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for Clock_Ip_ClearClockMonitorStatus/14 inlinable
+  global time:     24.000000
+  self size:       13
+  global size:     13
+  min size:       9
+  self stack:      0
+  global stack:    0
+    size:5.000000, time:5.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed)
+  calls:
+    indirect call loop depth: 0 freq:1.00 size: 4 time: 16
+
+IPA function summary for Clock_Ip_GetClockMonitorStatus/13 inlinable
+  global time:     25.000000
+  self size:       14
+  global size:     14
+  min size:       10
+  self stack:      0
+  global stack:    0
+    size:5.000000, time:5.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed)
+  calls:
+    indirect call loop depth: 0 freq:1.00 size: 5 time: 17
+
+IPA function summary for Clock_Ip_DisableClockMonitor/12 inlinable
+  global time:     24.000000
+  self size:       13
+  global size:     13
+  min size:       9
+  self stack:      0
+  global stack:    0
+    size:5.000000, time:5.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+    size:1.000000, time:1.000000,  nonconst if:(op0 changed)
+  calls:
+    indirect call loop depth: 0 freq:1.00 size: 4 time: 16
+
+IPA function summary for Clock_Ip_DistributePll/11 inlinable
+  global time:     247.788002
+  self size:       7
+  global size:     68
+  min size:       65
+  self stack:      0
+  global stack:    0
+  estimated growth:3
+    size:51.000000, time:143.418728
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_DistributePll.part.0/62 inlined
+      freq:0.70
+      Stack frame offset 0, callee self size 0
+      Clock_Ip_SpecificPeripheralClockInitialization/51 function body not available
+        freq:0.35 loop depth: 0 size: 2 time: 11
+      indirect call loop depth: 1 freq:1.93 size: 4 time: 16
+      indirect call loop depth: 1 freq:2.83 size: 4 time: 16
+      indirect call loop depth: 1 freq:1.40 size: 4 time: 16
+
+IPA function summary for Clock_Ip_GetPllStatus/10 inlinable
+  global time:     267.071751
+  self size:       21
+  global size:     21
+  min size:       18
+  self stack:      0
+  global stack:    0
+  estimated growth:16
+    size:13.000000, time:114.896473
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    indirect call loop depth: 1 freq:8.83 size: 5 time: 17
+
+IPA function summary for Clock_Ip_InitClock/9 inlinable
+  global time:     1770.710426
+  self size:       292
+  global size:     438
+  min size:       420
+  self stack:      0
+  global stack:    0
+  estimated growth:272
+    size:251.500000, time:675.966688
+    size:18.500000, time:52.548173,  executed if:(not inlined)
+  calls:
+    Clock_Ip_SpecificPeripheralClockInitialization/51 function body not available
+      freq:0.50 loop depth: 0 size: 2 time: 11
+    Clock_Ip_SetFlashWaitStates/45 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    Clock_Ip_SetRamWaitStates/44 function body not available
+      freq:1.00 loop depth: 0 size: 1 time: 10
+    Clock_Ip_UpdateDriverContext.constprop/63 inlined
+      freq:1.00
+      Stack frame offset 0, callee self size 0
+      Clock_Ip_ClockInitializeObjects/52 function body not available
+        freq:0.33 loop depth: 0 size: 1 time: 10
+      Clock_Ip_CallEmptyCallbacks/6 inlined
+        freq:1.00
+        Stack frame offset 0, callee self size 0
+        indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+        indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+        indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+        indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+        indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+        indirect call loop depth: 0 freq:0.50 size: 5 time: 17
+        indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+        indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+        indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+        indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+        indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+        indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+        indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+        indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+        indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+        indirect call loop depth: 0 freq:0.50 size: 4 time: 16
+    Clock_Ip_ResetClockConfiguration/7 inlined
+      freq:1.00
+      Stack frame offset 0, callee self size 0
+      indirect call loop depth: 1 freq:2.00 size: 4 time: 16
+      indirect call loop depth: 1 freq:1.00 size: 4 time: 16
+      indirect call loop depth: 1 freq:1.00 size: 4 time: 16
+      indirect call loop depth: 1 freq:8.09 size: 4 time: 16
+    Clock_Ip_SpecificPlatformInitClock/26 function body not available
+      freq:1.00 loop depth: 0 size: 2 time: 11
+    indirect call loop depth: 1 freq:2.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:4.05 size: 4 time: 16
+    indirect call loop depth: 1 freq:5.34 size: 4 time: 16
+    indirect call loop depth: 0 freq:1.00 size: 5 time: 17
+    indirect call loop depth: 0 freq:1.00 size: 5 time: 17
+    indirect call loop depth: 0 freq:1.00 size: 5 time: 17
+    indirect call loop depth: 0 freq:1.00 size: 5 time: 17
+    indirect call loop depth: 1 freq:1.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:1.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:2.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:4.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:1.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:1.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:8.09 size: 4 time: 16
+    indirect call loop depth: 1 freq:1.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:1.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:2.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:2.00 size: 4 time: 16
+    indirect call loop depth: 1 freq:2.80 size: 4 time: 16
+
+IPA function summary for Clock_Ip_Init/8 inlinable
+  global time:     21.379000
+  self size:       13
+  global size:     13
+  min size:       10
+  self stack:      0
+  global stack:    0
+    size:5.000000, time:3.660000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_DistributePll/11 call is unlikely and code size would grow
+      freq:0.11 loop depth: 0 size: 1 time: 10 callee size:34 stack: 0
+    Clock_Ip_GetPllStatus/10 --param max-inline-insns-auto limit reached
+      freq:0.33 loop depth: 0 size: 2 time: 11 callee size:10 stack: 0
+    Clock_Ip_InitClock/9 --param max-inline-insns-auto limit reached
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size:219 stack: 0
+
+IPA function summary for Clock_Ip_NotificatonsEmptyCallback/4 inlinable
+  global time:     2.000000
+  self size:       3
+  global size:     3
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Clock_Ip_UpdateDriverContext.constprop.0/63 (Clock_Ip_UpdateDriverContext.constprop) @07174540
+  Type: function definition analyzed
+  Visibility:
+  References: Clock_Ip_bObjectsAreInitialized/1 (read) Clock_Ip_bObjectsAreInitialized/1 (write) 
+  Referring: 
+  Function Clock_Ip_UpdateDriverContext.constprop/63 is inline copy in Clock_Ip_InitClock/9
+  Clone of Clock_Ip_UpdateDriverContext/5
+  Availability: local
+  Function flags: count:118111600 (estimated locally) local optimize_size
+  Called by: Clock_Ip_InitClock/9 (inlined) (118111600 (estimated locally),1.00 per call) 
+  Calls: Clock_Ip_ClockInitializeObjects/52 (38976828 (estimated locally),0.33 per call) Clock_Ip_CallEmptyCallbacks/6 (inlined) (118111600 (estimated locally),1.00 per call) 
+Clock_Ip_DistributePll.part.0/62 (Clock_Ip_DistributePll.part.0) @06f6a8c0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly artificial
+  References: Clock_Ip_aeSourceTypeClockName/46 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8SelectorCallbackIndex/47 (read) Clock_Ip_axSelectorCallbacks/48 (read) Clock_Ip_pxConfig/2 (read) Clock_Ip_bClockTreeIsConsumingPll/0 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8GateCallbackIndex/49 (read) Clock_Ip_axGateCallbacks/50 (read) Clock_Ip_pxConfig/2 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8CmuCallbackIndex/28 (read) Clock_Ip_axCmuCallbacks/29 (read) Clock_Ip_pxConfig/2 (read) 
+  Referring: 
+  Function Clock_Ip_DistributePll.part.0/62 is inline copy in Clock_Ip_DistributePll/11
+  Availability: local
+  Function flags: count:118111600 (estimated locally) body local split_part optimize_size
+  Called by: Clock_Ip_DistributePll/11 (inlined) (118111600 (estimated locally),0.70 per call) 
+  Calls: Clock_Ip_SpecificPeripheralClockInitialization/51 (59055800 (estimated locally),0.35 per call) 
+   Indirect call(324914280 (estimated locally),1.93 per call)  Num speculative call targets: 0
+   Indirect call(477815112 (estimated locally),2.83 per call)  Num speculative call targets: 0
+   Indirect call(236223196 (estimated locally),1.40 per call)  Num speculative call targets: 0
+OsIf_GetElapsed/61 (OsIf_GetElapsed) @06fb0c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_TimeoutExpired/24 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+OsIf_MicrosToTicks/60 (OsIf_MicrosToTicks) @06fb0a80
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_StartTimeout/23 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+OsIf_GetCounter/59 (OsIf_GetCounter) @06fb09a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_StartTimeout/23 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+EnableSircInStandbyMode/58 (EnableSircInStandbyMode) @06fb0700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_EnableSircInStandby/21 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+DisableSircInStandbyMode/57 (DisableSircInStandbyMode) @06fb0540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_DisableSircInStandby/20 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+EnableFircInStandbyMode/56 (EnableFircInStandbyMode) @06fb0380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_EnableFircInStandby/19 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+DisableFircInStandbyMode/55 (DisableFircInStandbyMode) @06fb01c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_DisableFircInStandby/18 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_aeHwPllName/54 (Clock_Ip_aeHwPllName) @06fa3c60
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_GetPllStatus/10 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+FunctionWasCalled.0/53 (FunctionWasCalled) @06fa3480
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_CallEmptyCallbacks/6 (read) Clock_Ip_CallEmptyCallbacks/6 (write) 
+  Availability: available
+  Varpool flags: initialized
+Clock_Ip_ClockInitializeObjects/52 (Clock_Ip_ClockInitializeObjects) @06f6ab60
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_UpdateDriverContext.constprop.0/63 (38976828 (estimated locally),0.33 per call) Clock_Ip_EnableSircInStandby/21 (354334800 (estimated locally),0.33 per call) Clock_Ip_DisableSircInStandby/20 (354334800 (estimated locally),0.33 per call) Clock_Ip_EnableFircInStandby/19 (354334800 (estimated locally),0.33 per call) Clock_Ip_DisableFircInStandby/18 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+Clock_Ip_SpecificPeripheralClockInitialization/51 (Clock_Ip_SpecificPeripheralClockInitialization) @06f6a700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_DistributePll.part.0/62 (59055800 (estimated locally),0.35 per call) Clock_Ip_InitClock/9 (59055800 (estimated locally),0.50 per call) 
+  Calls: 
+Clock_Ip_axGateCallbacks/50 (Clock_Ip_axGateCallbacks) @06f9c870
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_DisableModuleClock/16 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_DistributePll.part.0/62 (read) Clock_Ip_CallEmptyCallbacks/6 (read) Clock_Ip_CallEmptyCallbacks/6 (read) Clock_Ip_EnableModuleClock/17 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8GateCallbackIndex/49 (Clock_Ip_au8GateCallbackIndex) @06f9c828
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_DistributePll.part.0/62 (read) Clock_Ip_DisableModuleClock/16 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_EnableModuleClock/17 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axSelectorCallbacks/48 (Clock_Ip_axSelectorCallbacks) @06f9c798
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CallEmptyCallbacks/6 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_ResetClockConfiguration/7 (read) Clock_Ip_DistributePll.part.0/62 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8SelectorCallbackIndex/47 (Clock_Ip_au8SelectorCallbackIndex) @06f9c750
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_InitClock/9 (read) Clock_Ip_ResetClockConfiguration/7 (read) Clock_Ip_DistributePll.part.0/62 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_aeSourceTypeClockName/46 (Clock_Ip_aeSourceTypeClockName) @06f9c708
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_InitClock/9 (read) Clock_Ip_DistributePll.part.0/62 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_SetFlashWaitStates/45 (Clock_Ip_SetFlashWaitStates) @06f6a620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_InitClock/9 (118111600 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_SetRamWaitStates/44 (Clock_Ip_SetRamWaitStates) @06f6a540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_InitClock/9 (118111600 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_axFracDivCallbacks/43 (Clock_Ip_axFracDivCallbacks) @06f9c4c8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CallEmptyCallbacks/6 (read) Clock_Ip_ResetClockConfiguration/7 (read) Clock_Ip_CallEmptyCallbacks/6 (read) Clock_Ip_InitClock/9 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8FractionalDividerCallbackIndex/42 (Clock_Ip_au8FractionalDividerCallbackIndex) @06f9c480
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ResetClockConfiguration/7 (read) Clock_Ip_InitClock/9 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axPllCallbacks/41 (Clock_Ip_axPllCallbacks) @06f9c318
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CallEmptyCallbacks/6 (read) Clock_Ip_CallEmptyCallbacks/6 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_ResetClockConfiguration/7 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_GetPllStatus/10 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8PllCallbackIndex/40 (Clock_Ip_au8PllCallbackIndex) @06f9c2d0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ResetClockConfiguration/7 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_GetPllStatus/10 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axDividerCallbacks/39 (Clock_Ip_axDividerCallbacks) @06f9c1f8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CallEmptyCallbacks/6 (read) Clock_Ip_InitClock/9 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8DividerCallbackIndex/38 (Clock_Ip_au8DividerCallbackIndex) @06f9c1b0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_InitClock/9 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axDividerTriggerCallbacks/37 (Clock_Ip_axDividerTriggerCallbacks) @06f9c120
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CallEmptyCallbacks/6 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8DividerTriggerCallbackIndex/36 (Clock_Ip_au8DividerTriggerCallbackIndex) @06f9c0d8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axPcfsCallbacks/35 (Clock_Ip_axPcfsCallbacks) @06f9c048
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CallEmptyCallbacks/6 (read) Clock_Ip_InitClock/9 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8PcfsCallbackIndex/34 (Clock_Ip_au8PcfsCallbackIndex) @06f9c000
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_InitClock/9 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axExtOscCallbacks/33 (Clock_Ip_axExtOscCallbacks) @06f77ee8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ResetClockConfiguration/7 (read) Clock_Ip_CallEmptyCallbacks/6 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8XoscCallbackIndex/32 (Clock_Ip_au8XoscCallbackIndex) @06f77ea0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ResetClockConfiguration/7 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axIntOscCallbacks/31 (Clock_Ip_axIntOscCallbacks) @06f77e10
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CallEmptyCallbacks/6 (read) Clock_Ip_InitClock/9 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8IrcoscCallbackIndex/30 (Clock_Ip_au8IrcoscCallbackIndex) @06f77dc8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_InitClock/9 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axCmuCallbacks/29 (Clock_Ip_axCmuCallbacks) @06f77cf0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CallEmptyCallbacks/6 (read) Clock_Ip_CallEmptyCallbacks/6 (read) Clock_Ip_GetClockMonitorStatus/13 (read) Clock_Ip_CallEmptyCallbacks/6 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_DistributePll.part.0/62 (read) Clock_Ip_DisableClockMonitor/12 (read) Clock_Ip_CallEmptyCallbacks/6 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_ClearClockMonitorStatus/14 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8CmuCallbackIndex/28 (Clock_Ip_au8CmuCallbackIndex) @06f77ca8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_InitClock/9 (read) Clock_Ip_DistributePll.part.0/62 (read) Clock_Ip_DisableClockMonitor/12 (read) Clock_Ip_GetClockMonitorStatus/13 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_ClearClockMonitorStatus/14 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/27 (Clock_Ip_au8ClockFeatures) @06f77c60
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_InitClock/9 (read) Clock_Ip_DisableModuleClock/16 (read) Clock_Ip_DistributePll.part.0/62 (read) Clock_Ip_DisableClockMonitor/12 (read) Clock_Ip_GetClockMonitorStatus/13 (read) Clock_Ip_ClearClockMonitorStatus/14 (read) Clock_Ip_ResetClockConfiguration/7 (read) Clock_Ip_ResetClockConfiguration/7 (read) Clock_Ip_ResetClockConfiguration/7 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_GetPllStatus/10 (read) Clock_Ip_ResetClockConfiguration/7 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_DistributePll.part.0/62 (read) Clock_Ip_DistributePll.part.0/62 (read) Clock_Ip_EnableModuleClock/17 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_SpecificPlatformInitClock/26 (Clock_Ip_SpecificPlatformInitClock) @06f6a380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_InitClock/9 (118111600 (estimated locally),1.00 per call) 
+  Calls: 
+Clock_Ip_GetConfiguredFrequencyValue/25 (Clock_Ip_GetConfiguredFrequencyValue) @06f54620
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_pxConfig/2 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:164090757 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_TimeoutExpired/24 (Clock_Ip_TimeoutExpired) @06f540e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: OsIf_GetElapsed/61 (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_StartTimeout/23 (Clock_Ip_StartTimeout) @06f54d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: OsIf_MicrosToTicks/60 (1073741824 (estimated locally),1.00 per call) OsIf_GetCounter/59 (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_ReportClockErrors/22 (Clock_Ip_ReportClockErrors) @06f54a80
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_pfkNotificationsCallback/3 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call(1073741824 (estimated locally),1.00 per call)  Num speculative call targets: 0
+Clock_Ip_EnableSircInStandby/21 (Clock_Ip_EnableSircInStandby) @06f547e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_bObjectsAreInitialized/1 (read) Clock_Ip_bObjectsAreInitialized/1 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: EnableSircInStandbyMode/58 (1073741824 (estimated locally),1.00 per call) Clock_Ip_ClockInitializeObjects/52 (354334800 (estimated locally),0.33 per call) 
+Clock_Ip_DisableSircInStandby/20 (Clock_Ip_DisableSircInStandby) @06f54540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_bObjectsAreInitialized/1 (read) Clock_Ip_bObjectsAreInitialized/1 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: DisableSircInStandbyMode/57 (1073741824 (estimated locally),1.00 per call) Clock_Ip_ClockInitializeObjects/52 (354334800 (estimated locally),0.33 per call) 
+Clock_Ip_EnableFircInStandby/19 (Clock_Ip_EnableFircInStandby) @06f542a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_bObjectsAreInitialized/1 (read) Clock_Ip_bObjectsAreInitialized/1 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: EnableFircInStandbyMode/56 (1073741824 (estimated locally),1.00 per call) Clock_Ip_ClockInitializeObjects/52 (354334800 (estimated locally),0.33 per call) 
+Clock_Ip_DisableFircInStandby/18 (Clock_Ip_DisableFircInStandby) @06f54000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_bObjectsAreInitialized/1 (read) Clock_Ip_bObjectsAreInitialized/1 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: DisableFircInStandbyMode/55 (1073741824 (estimated locally),1.00 per call) Clock_Ip_ClockInitializeObjects/52 (354334800 (estimated locally),0.33 per call) 
+Clock_Ip_EnableModuleClock/17 (Clock_Ip_EnableModuleClock) @06f4db60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8GateCallbackIndex/49 (read) Clock_Ip_axGateCallbacks/50 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call(1073741824 (estimated locally),1.00 per call)  Num speculative call targets: 0
+Clock_Ip_DisableModuleClock/16 (Clock_Ip_DisableModuleClock) @06f4d620
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8GateCallbackIndex/49 (read) Clock_Ip_axGateCallbacks/50 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call(1073741824 (estimated locally),1.00 per call)  Num speculative call targets: 0
+Clock_Ip_InstallNotificationsCallback/15 (Clock_Ip_InstallNotificationsCallback) @06f4d0e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_pfkNotificationsCallback/3 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ClearClockMonitorStatus/14 (Clock_Ip_ClearClockMonitorStatus) @06f4dd20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8CmuCallbackIndex/28 (read) Clock_Ip_axCmuCallbacks/29 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call(1073741824 (estimated locally),1.00 per call)  Num speculative call targets: 0
+Clock_Ip_GetClockMonitorStatus/13 (Clock_Ip_GetClockMonitorStatus) @06f4da80
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8CmuCallbackIndex/28 (read) Clock_Ip_axCmuCallbacks/29 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call(1073741824 (estimated locally),1.00 per call)  Num speculative call targets: 0
+Clock_Ip_DisableClockMonitor/12 (Clock_Ip_DisableClockMonitor) @06f4d7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8CmuCallbackIndex/28 (read) Clock_Ip_axCmuCallbacks/29 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call(1073741824 (estimated locally),1.00 per call)  Num speculative call targets: 0
+Clock_Ip_DistributePll/11 (Clock_Ip_DistributePll) @06f4d540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_pxConfig/2 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:168730857 (estimated locally) body optimize_size
+  Called by: Clock_Ip_Init/8 (116930483 (estimated locally),0.11 per call) 
+  Calls: Clock_Ip_DistributePll.part.0/62 (inlined) (118111600 (estimated locally),0.70 per call) 
+Clock_Ip_GetPllStatus/10 (Clock_Ip_GetPllStatus) @06f4d2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_aeHwPllName/54 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8PllCallbackIndex/40 (read) Clock_Ip_axPllCallbacks/41 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:114863530 (estimated locally) body optimize_size
+  Called by: Clock_Ip_Init/8 (354334800 (estimated locally),0.33 per call) 
+  Calls: 
+   Indirect call(1014686026 (estimated locally),8.83 per call)  Num speculative call targets: 0
+Clock_Ip_InitClock/9 (Clock_Ip_InitClock) @06f4d000
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_pxConfig/2 (write) Clock_Ip_pxConfig/2 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8CmuCallbackIndex/28 (read) Clock_Ip_axCmuCallbacks/29 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8IrcoscCallbackIndex/30 (read) Clock_Ip_axIntOscCallbacks/31 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8XoscCallbackIndex/32 (read) Clock_Ip_axExtOscCallbacks/33 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8PcfsCallbackIndex/34 (read) Clock_Ip_axPcfsCallbacks/35 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8DividerTriggerCallbackIndex/36 (read) Clock_Ip_axDividerTriggerCallbacks/37 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8DividerCallbackIndex/38 (read) Clock_Ip_axDividerCallbacks/39 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8DividerTriggerCallbackIndex/36 (read) Clock_Ip_axDividerTriggerCallbacks/37 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8PllCallbackIndex/40 (read) Clock_Ip_axPllCallbacks/41 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8CmuCallbackIndex/28 (read) Clock_Ip_axCmuCallbacks/29 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8XoscCallbackIndex/32 (read) Clock_Ip_axExtOscCallbacks/33 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8PllCallbackIndex/40 (read) Clock_Ip_axPllCallbacks/41 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8FractionalDividerCallbackIndex/42 (read) Clock_Ip_axFracDivCallbacks/43 (read) Clock_Ip_pfkNotificationsCallback/3 (read) Clock_Ip_pfkNotificationsCallback/3 (read) Clock_Ip_pfkNotificationsCallback/3 (read) Clock_Ip_pfkNotificationsCallback/3 (read) Clock_Ip_bClockTreeIsConsumingPll/0 (write) Clock_Ip_aeSourceTypeClockName/46 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8SelectorCallbackIndex/47 (read) Clock_Ip_axSelectorCallbacks/48 (read) Clock_Ip_bClockTreeIsConsumingPll/0 (write) Clock_Ip_bClockTreeIsConsumingPll/0 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8GateCallbackIndex/49 (read) Clock_Ip_axGateCallbacks/50 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8CmuCallbackIndex/28 (read) Clock_Ip_axCmuCallbacks/29 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:118111600 (estimated locally) body optimize_size
+  Called by: Clock_Ip_Init/8 (1073741824 (estimated locally),1.00 per call) 
+  Calls: Clock_Ip_SpecificPeripheralClockInitialization/51 (59055800 (estimated locally),0.50 per call) Clock_Ip_SetFlashWaitStates/45 (118111600 (estimated locally),1.00 per call) Clock_Ip_SetRamWaitStates/44 (118111600 (estimated locally),1.00 per call) Clock_Ip_UpdateDriverContext.constprop.0/63 (inlined) (118111600 (estimated locally),1.00 per call) Clock_Ip_ResetClockConfiguration/7 (inlined) (118111600 (estimated locally),1.00 per call) Clock_Ip_SpecificPlatformInitClock/26 (118111600 (estimated locally),1.00 per call) 
+   Indirect call(236223196 (estimated locally),2.00 per call)  Num speculative call targets: 0
+   Indirect call(477815112 (estimated locally),4.05 per call)  Num speculative call targets: 0
+   Indirect call(630715945 (estimated locally),5.34 per call)  Num speculative call targets: 0
+   Indirect call(118111600 (estimated locally),1.00 per call)  Num speculative call targets: 0
+   Indirect call(118111600 (estimated locally),1.00 per call)  Num speculative call targets: 0
+   Indirect call(118111600 (estimated locally),1.00 per call)  Num speculative call targets: 0
+   Indirect call(118111600 (estimated locally),1.00 per call)  Num speculative call targets: 0
+   Indirect call(118111600 (estimated locally),1.00 per call)  Num speculative call targets: 0
+   Indirect call(118111600 (estimated locally),1.00 per call)  Num speculative call targets: 0
+   Indirect call(236258635 (estimated locally),2.00 per call)  Num speculative call targets: 0
+   Indirect call(472446391 (estimated locally),4.00 per call)  Num speculative call targets: 0
+   Indirect call(118111600 (estimated locally),1.00 per call)  Num speculative call targets: 0
+   Indirect call(118111600 (estimated locally),1.00 per call)  Num speculative call targets: 0
+   Indirect call(955630225 (estimated locally),8.09 per call)  Num speculative call targets: 0
+   Indirect call(118111600 (estimated locally),1.00 per call)  Num speculative call targets: 0
+   Indirect call(118111600 (estimated locally),1.00 per call)  Num speculative call targets: 0
+   Indirect call(236258635 (estimated locally),2.00 per call)  Num speculative call targets: 0
+   Indirect call(236258635 (estimated locally),2.00 per call)  Num speculative call targets: 0
+   Indirect call(330712475 (estimated locally),2.80 per call)  Num speculative call targets: 0
+Clock_Ip_Init/8 (Clock_Ip_Init) @06e9cb60
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_bClockTreeIsConsumingPll/0 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_DistributePll/11 (116930483 (estimated locally),0.11 per call) Clock_Ip_GetPllStatus/10 (354334800 (estimated locally),0.33 per call) Clock_Ip_InitClock/9 (1073741824 (estimated locally),1.00 per call) 
+Clock_Ip_ResetClockConfiguration/7 (Clock_Ip_ResetClockConfiguration) @06e9c620
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8SelectorCallbackIndex/47 (read) Clock_Ip_axSelectorCallbacks/48 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8FractionalDividerCallbackIndex/42 (read) Clock_Ip_axFracDivCallbacks/43 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8PllCallbackIndex/40 (read) Clock_Ip_axPllCallbacks/41 (read) Clock_Ip_au8ClockFeatures/27 (read) Clock_Ip_au8XoscCallbackIndex/32 (read) Clock_Ip_axExtOscCallbacks/33 (read) 
+  Referring: 
+  Function Clock_Ip_ResetClockConfiguration/7 is inline copy in Clock_Ip_InitClock/9
+  Availability: local
+  Function flags: count:118111600 (estimated locally) body local optimize_size
+  Called by: Clock_Ip_InitClock/9 (inlined) (118111600 (estimated locally),1.00 per call) 
+  Calls: 
+   Indirect call(236258635 (estimated locally),2.00 per call)  Num speculative call targets: 0
+   Indirect call(118111600 (estimated locally),1.00 per call)  Num speculative call targets: 0
+   Indirect call(118111600 (estimated locally),1.00 per call)  Num speculative call targets: 0
+   Indirect call(955630225 (estimated locally),8.09 per call)  Num speculative call targets: 0
+Clock_Ip_CallEmptyCallbacks/6 (Clock_Ip_CallEmptyCallbacks) @06e9cd20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: FunctionWasCalled.0/53 (read) FunctionWasCalled.0/53 (write) Clock_Ip_axCmuCallbacks/29 (read) Clock_Ip_axCmuCallbacks/29 (read) Clock_Ip_axCmuCallbacks/29 (read) Clock_Ip_axCmuCallbacks/29 (read) Clock_Ip_axDividerCallbacks/39 (read) Clock_Ip_axDividerTriggerCallbacks/37 (read) Clock_Ip_axExtOscCallbacks/33 (read) Clock_Ip_axFracDivCallbacks/43 (read) Clock_Ip_axFracDivCallbacks/43 (read) Clock_Ip_axGateCallbacks/50 (read) Clock_Ip_axGateCallbacks/50 (read) Clock_Ip_axIntOscCallbacks/31 (read) Clock_Ip_axPllCallbacks/41 (read) Clock_Ip_axPllCallbacks/41 (read) Clock_Ip_axSelectorCallbacks/48 (read) Clock_Ip_axPcfsCallbacks/35 (read) 
+  Referring: 
+  Function Clock_Ip_CallEmptyCallbacks/6 is inline copy in Clock_Ip_InitClock/9
+  Availability: local
+  Function flags: count:118111600 (estimated locally) body local optimize_size
+  Called by: Clock_Ip_UpdateDriverContext.constprop.0/63 (inlined) (118111600 (estimated locally),1.00 per call) 
+  Calls: 
+   Indirect call(59055800 (estimated locally),0.50 per call)  Num speculative call targets: 0
+   Indirect call(59055800 (estimated locally),0.50 per call)  Num speculative call targets: 0
+   Indirect call(59055800 (estimated locally),0.50 per call)  Num speculative call targets: 0
+   Indirect call(59055800 (estimated locally),0.50 per call)  Num speculative call targets: 0
+   Indirect call(59055800 (estimated locally),0.50 per call)  Num speculative call targets: 0
+   Indirect call(59055800 (estimated locally),0.50 per call)  Num speculative call targets: 0
+   Indirect call(59055800 (estimated locally),0.50 per call)  Num speculative call targets: 0
+   Indirect call(59055800 (estimated locally),0.50 per call)  Num speculative call targets: 0
+   Indirect call(59055800 (estimated locally),0.50 per call)  Num speculative call targets: 0
+   Indirect call(59055800 (estimated locally),0.50 per call)  Num speculative call targets: 0
+   Indirect call(59055800 (estimated locally),0.50 per call)  Num speculative call targets: 0
+   Indirect call(59055800 (estimated locally),0.50 per call)  Num speculative call targets: 0
+   Indirect call(59055800 (estimated locally),0.50 per call)  Num speculative call targets: 0
+   Indirect call(59055800 (estimated locally),0.50 per call)  Num speculative call targets: 0
+   Indirect call(59055800 (estimated locally),0.50 per call)  Num speculative call targets: 0
+   Indirect call(59055800 (estimated locally),0.50 per call)  Num speculative call targets: 0
+Clock_Ip_UpdateDriverContext/5 (Clock_Ip_UpdateDriverContext) @06e9ca80
+  Type: function
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_NotificatonsEmptyCallback/4 (Clock_Ip_NotificatonsEmptyCallback) @06e9c7e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_pfkNotificationsCallback/3 (addr) 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_pfkNotificationsCallback/3 (Clock_Ip_pfkNotificationsCallback) @06e9a948
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Clock_Ip_NotificatonsEmptyCallback/4 (addr) 
+  Referring: Clock_Ip_InstallNotificationsCallback/15 (write) Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_InitClock/9 (read) Clock_Ip_ReportClockErrors/22 (read) 
+  Availability: available
+  Varpool flags: initialized
+Clock_Ip_pxConfig/2 (Clock_Ip_pxConfig) @06e9a438
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: Clock_Ip_InitClock/9 (write) Clock_Ip_InitClock/9 (read) Clock_Ip_DistributePll.part.0/62 (read) Clock_Ip_DistributePll.part.0/62 (read) Clock_Ip_DistributePll.part.0/62 (read) Clock_Ip_DistributePll/11 (read) Clock_Ip_GetConfiguredFrequencyValue/25 (read) 
+  Availability: available
+  Varpool flags:
+Clock_Ip_bObjectsAreInitialized/1 (Clock_Ip_bObjectsAreInitialized) @06e9a3f0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_EnableFircInStandby/19 (read) Clock_Ip_EnableFircInStandby/19 (write) Clock_Ip_DisableSircInStandby/20 (read) Clock_Ip_DisableSircInStandby/20 (write) Clock_Ip_UpdateDriverContext.constprop.0/63 (read) Clock_Ip_UpdateDriverContext.constprop.0/63 (write) Clock_Ip_DisableFircInStandby/18 (read) Clock_Ip_DisableFircInStandby/18 (write) Clock_Ip_EnableSircInStandby/21 (read) Clock_Ip_EnableSircInStandby/21 (write) 
+  Availability: available
+  Varpool flags:
+Clock_Ip_bClockTreeIsConsumingPll/0 (Clock_Ip_bClockTreeIsConsumingPll) @06e9a360
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_InitClock/9 (read) Clock_Ip_DistributePll.part.0/62 (read) Clock_Ip_InitClock/9 (write) Clock_Ip_InitClock/9 (write) Clock_Ip_Init/8 (read) 
+  Availability: available
+  Varpool flags:
+
+;; Function Clock_Ip_NotificatonsEmptyCallback (Clock_Ip_NotificatonsEmptyCallback, funcdef_no=0, decl_uid=6568, cgraph_uid=1, symbol_order=4)
+
+Clock_Ip_NotificatonsEmptyCallback (Clock_Ip_NotificationType Notification, Clock_Ip_NameType ClockName)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_InitClock (Clock_Ip_InitClock, funcdef_no=5, decl_uid=6252, cgraph_uid=6, symbol_order=9)
+
+
+Symbols to be put in SSA form
+{ D.6799 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 76
+Number of blocks to update: 75 ( 99%)
+
+
+Merging blocks 5 and 54
+Removing basic block 10
+Removing basic block 42
+Removing basic block 43
+Removing basic block 44
+Removing basic block 45
+Removing basic block 46
+Removing basic block 47
+Removing basic block 48
+Removing basic block 49
+Removing basic block 50
+Removing basic block 51
+Removing basic block 52
+Removing basic block 53
+Removing basic block 66
+Removing basic block 67
+Removing basic block 68
+Merging blocks 71 and 73
+Removing basic block 72
+;; 20 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56
+;;
+;; Loop 15
+;;  header 55, latch 54
+;;  depth 1, outer 0
+;;  nodes: 55 54
+;;
+;; Loop 14
+;;  header 52, latch 51
+;;  depth 1, outer 0
+;;  nodes: 52 51
+;;
+;; Loop 13
+;;  header 49, latch 48
+;;  depth 1, outer 0
+;;  nodes: 49 48 46 47 45
+;;
+;; Loop 12
+;;  header 43, latch 42
+;;  depth 1, outer 0
+;;  nodes: 43 42
+;;
+;; Loop 11
+;;  header 41, latch 40
+;;  depth 1, outer 0
+;;  nodes: 41 40
+;;
+;; Loop 10
+;;  header 39, latch 38
+;;  depth 1, outer 0
+;;  nodes: 39 38
+;;
+;; Loop 9
+;;  header 37, latch 36
+;;  depth 1, outer 0
+;;  nodes: 37 36
+;;
+;; Loop 8
+;;  header 35, latch 34
+;;  depth 1, outer 0
+;;  nodes: 35 34
+;;
+;; Loop 7
+;;  header 33, latch 32
+;;  depth 1, outer 0
+;;  nodes: 33 32
+;;
+;; Loop 6
+;;  header 31, latch 30
+;;  depth 1, outer 0
+;;  nodes: 31 30
+;;
+;; Loop 5
+;;  header 29, latch 28
+;;  depth 1, outer 0
+;;  nodes: 29 28
+;;
+;; Loop 4
+;;  header 27, latch 26
+;;  depth 1, outer 0
+;;  nodes: 27 26
+;;
+;; Loop 3
+;;  header 20, latch 19
+;;  depth 1, outer 0
+;;  nodes: 20 19
+;;
+;; Loop 2
+;;  header 18, latch 17
+;;  depth 1, outer 0
+;;  nodes: 18 17
+;;
+;; Loop 16
+;;  header 16, latch 15
+;;  depth 1, outer 0
+;;  nodes: 16 15
+;;
+;; Loop 17
+;;  header 13, latch 12
+;;  depth 1, outer 0
+;;  nodes: 13 12
+;;
+;; Loop 18
+;;  header 10, latch 9
+;;  depth 1, outer 0
+;;  nodes: 10 9
+;;
+;; Loop 19
+;;  header 7, latch 6
+;;  depth 1, outer 0
+;;  nodes: 7 6
+;;
+;; Loop 1
+;;  header 4, latch 3
+;;  depth 1, outer 0
+;;  nodes: 4 3
+;; 2 succs { 4 5 }
+;; 3 succs { 4 }
+;; 4 succs { 3 5 }
+;; 5 succs { 7 }
+;; 6 succs { 7 }
+;; 7 succs { 6 8 }
+;; 8 succs { 10 }
+;; 9 succs { 10 }
+;; 10 succs { 9 11 }
+;; 11 succs { 13 }
+;; 12 succs { 13 }
+;; 13 succs { 12 14 }
+;; 14 succs { 16 }
+;; 15 succs { 16 }
+;; 16 succs { 15 18 }
+;; 17 succs { 18 }
+;; 18 succs { 17 20 }
+;; 19 succs { 20 }
+;; 20 succs { 19 21 }
+;; 21 succs { 22 23 }
+;; 22 succs { 23 }
+;; 23 succs { 24 25 }
+;; 24 succs { 25 }
+;; 25 succs { 27 }
+;; 26 succs { 27 }
+;; 27 succs { 26 29 }
+;; 28 succs { 29 }
+;; 29 succs { 28 31 }
+;; 30 succs { 31 }
+;; 31 succs { 30 33 }
+;; 32 succs { 33 }
+;; 33 succs { 32 35 }
+;; 34 succs { 35 }
+;; 35 succs { 34 37 }
+;; 36 succs { 37 }
+;; 37 succs { 36 39 }
+;; 38 succs { 39 }
+;; 39 succs { 38 41 }
+;; 40 succs { 41 }
+;; 41 succs { 40 43 }
+;; 42 succs { 43 }
+;; 43 succs { 42 44 }
+;; 44 succs { 49 }
+;; 45 succs { 46 47 }
+;; 46 succs { 48 }
+;; 47 succs { 48 }
+;; 48 succs { 49 }
+;; 49 succs { 45 50 }
+;; 50 succs { 52 56 }
+;; 51 succs { 52 }
+;; 52 succs { 51 53 }
+;; 53 succs { 55 }
+;; 54 succs { 55 }
+;; 55 succs { 54 56 }
+;; 56 succs { 1 }
+cyclic probability of bb 4 is 0.800000; turning freq 0.700000 to 3.500000
+cyclic probability of bb 7 is 0.890000; turning freq 1.000000 to 9.090909
+cyclic probability of bb 10 is 0.500000; turning freq 1.000000 to 2.000000
+cyclic probability of bb 13 is 0.500000; turning freq 1.000000 to 2.000000
+cyclic probability of bb 16 is 0.666700; turning freq 1.000000 to 3.000300
+cyclic probability of bb 18 is 0.666700; turning freq 1.000000 to 3.000300
+cyclic probability of bb 20 is 0.666700; turning freq 1.000000 to 3.000300
+cyclic probability of bb 27 is 0.500000; turning freq 1.000000 to 2.000000
+cyclic probability of bb 29 is 0.500000; turning freq 1.000000 to 2.000000
+cyclic probability of bb 31 is 0.890000; turning freq 1.000000 to 9.090909
+cyclic probability of bb 33 is 0.500000; turning freq 1.000000 to 2.000000
+cyclic probability of bb 35 is 0.500000; turning freq 1.000000 to 2.000000
+cyclic probability of bb 37 is 0.800000; turning freq 1.000000 to 5.000000
+cyclic probability of bb 39 is 0.666700; turning freq 1.000000 to 3.000300
+cyclic probability of bb 41 is 0.500000; turning freq 1.000000 to 2.000000
+cyclic probability of bb 43 is 0.500000; turning freq 1.000000 to 2.000000
+cyclic probability of bb 49 is 0.890000; turning freq 1.000000 to 9.090909
+cyclic probability of bb 52 is 0.890000; turning freq 0.500000 to 4.545455
+cyclic probability of bb 55 is 0.800000; turning freq 0.500000 to 2.500000
+Clock_Ip_InitClock (const struct Clock_Ip_ClockConfigType * Config)
+{
+  static boolean FunctionWasCalled = 0;
+  uint32 CallbackIndex;
+  uint32 Index;
+  uint32 Index;
+  uint32 CallbackIndex;
+  const struct Clock_Ip_ClockConfigType * Clock_Ip_pxConfig.1_1;
+  <unnamed type> _2;
+  unsigned char _3;
+  int _4;
+  unsigned char _5;
+  void (*<T6a6>) (const struct Clock_Ip_CmuConfigType *) _6;
+  const struct Clock_Ip_CmuConfigType * _7;
+  unsigned char _8;
+  long unsigned int _9;
+  <unnamed type> _10;
+  unsigned char _11;
+  int _12;
+  unsigned char _13;
+  void (*<T632>) (const struct Clock_Ip_IrcoscConfigType *) _14;
+  const struct Clock_Ip_IrcoscConfigType * _15;
+  unsigned char _16;
+  long unsigned int _17;
+  <unnamed type> _18;
+  unsigned char _19;
+  int _20;
+  unsigned char _21;
+  void (*<T641>) (const struct Clock_Ip_XoscConfigType *) _22;
+  const struct Clock_Ip_XoscConfigType * _23;
+  unsigned char _24;
+  long unsigned int _25;
+  <unnamed type> _26;
+  unsigned char _27;
+  int _28;
+  unsigned char _29;
+  void (*<T6b8>) (const struct Clock_Ip_PcfsConfigType *) _30;
+  const struct Clock_Ip_PcfsConfigType * _31;
+  unsigned char _32;
+  long unsigned int _33;
+  <unnamed type> _34;
+  unsigned char _35;
+  int _36;
+  unsigned char _37;
+  void (*<T65a>) (const struct Clock_Ip_DividerTriggerConfigType *) _38;
+  const struct Clock_Ip_DividerTriggerConfigType * _39;
+  unsigned char _40;
+  long unsigned int _41;
+  <unnamed type> _42;
+  unsigned char _43;
+  int _44;
+  unsigned char _45;
+  void (*<T64f>) (const struct Clock_Ip_DividerConfigType *) _46;
+  const struct Clock_Ip_DividerConfigType * _47;
+  unsigned char _48;
+  long unsigned int _49;
+  <unnamed type> _50;
+  unsigned char _51;
+  int _52;
+  unsigned char _53;
+  void (*<T65a>) (const struct Clock_Ip_DividerTriggerConfigType *) _54;
+  const struct Clock_Ip_DividerTriggerConfigType * _55;
+  unsigned char _56;
+  long unsigned int _57;
+  <unnamed type> _58;
+  unsigned char _59;
+  int _60;
+  unsigned char _61;
+  void (*<T677>) (const struct Clock_Ip_PllConfigType *) _62;
+  const struct Clock_Ip_PllConfigType * _63;
+  unsigned char _64;
+  long unsigned int _65;
+  <unnamed type> _66;
+  unsigned char _67;
+  int _68;
+  unsigned char _69;
+  void (*<T6a6>) (const struct Clock_Ip_CmuConfigType *) _70;
+  const struct Clock_Ip_CmuConfigType * _71;
+  unsigned char _72;
+  long unsigned int _73;
+  <unnamed type> _74;
+  unsigned char _75;
+  int _76;
+  unsigned char _77;
+  void (*<T641>) (const struct Clock_Ip_XoscConfigType *) _78;
+  const struct Clock_Ip_XoscConfigType * _79;
+  unsigned char _80;
+  long unsigned int _81;
+  <unnamed type> _82;
+  unsigned char _83;
+  int _84;
+  unsigned char _85;
+  void (*<T677>) (const struct Clock_Ip_PllConfigType *) _86;
+  const struct Clock_Ip_PllConfigType * _87;
+  unsigned char _88;
+  long unsigned int _89;
+  <unnamed type> _90;
+  unsigned char _91;
+  int _92;
+  unsigned char _93;
+  void (*<T666>) (const struct Clock_Ip_FracDivConfigType *) _94;
+  const struct Clock_Ip_FracDivConfigType * _95;
+  unsigned char _96;
+  long unsigned int _97;
+  void (*<T534>) (Clock_Ip_NotificationType, Clock_Ip_NameType) Clock_Ip_pfkNotificationsCallback.2_98;
+  void (*<T534>) (Clock_Ip_NotificationType, Clock_Ip_NameType) Clock_Ip_pfkNotificationsCallback.3_99;
+  void (*<T534>) (Clock_Ip_NotificationType, Clock_Ip_NameType) Clock_Ip_pfkNotificationsCallback.4_100;
+  void (*<T534>) (Clock_Ip_NotificationType, Clock_Ip_NameType) Clock_Ip_pfkNotificationsCallback.5_101;
+  <unnamed type> _102;
+  <unnamed type> _103;
+  <unnamed type> _104;
+  unsigned char _105;
+  int _106;
+  unsigned char _107;
+  void (*<T68a>) (const struct Clock_Ip_SelectorConfigType *) _108;
+  const struct Clock_Ip_SelectorConfigType * _109;
+  unsigned char _110;
+  long unsigned int _111;
+  _Bool Clock_Ip_bClockTreeIsConsumingPll.6_112;
+  <unnamed type> _113;
+  unsigned char _114;
+  int _115;
+  unsigned char _116;
+  void (*<T696>) (const struct Clock_Ip_GateConfigType *) _117;
+  const struct Clock_Ip_GateConfigType * _118;
+  unsigned char _119;
+  long unsigned int _120;
+  const struct Clock_IP_SpecificPeriphConfigType * _121;
+  <unnamed type> _122;
+  unsigned char _123;
+  int _124;
+  unsigned char _125;
+  void (*<T6a6>) (const struct Clock_Ip_CmuConfigType *) _126;
+  const struct Clock_Ip_CmuConfigType * _127;
+  unsigned char _128;
+  long unsigned int _129;
+  unsigned char _223;
+  long unsigned int _226;
+  <unnamed type> _227;
+  unsigned char _228;
+  int _229;
+  unsigned char _230;
+  void (*<T68a>) (const struct Clock_Ip_SelectorConfigType *) _232;
+  const struct Clock_Ip_SelectorConfigType * _233;
+  unsigned char _234;
+  long unsigned int _237;
+  <unnamed type> _238;
+  unsigned char _239;
+  int _240;
+  unsigned char _241;
+  void (*<T666>) (const struct Clock_Ip_FracDivConfigType *) _243;
+  const struct Clock_Ip_FracDivConfigType * _244;
+  unsigned char _245;
+  long unsigned int _248;
+  <unnamed type> _249;
+  unsigned char _250;
+  int _251;
+  unsigned char _252;
+  void (*<T677>) (const struct Clock_Ip_PllConfigType *) _254;
+  const struct Clock_Ip_PllConfigType * _255;
+  unsigned char _256;
+  long unsigned int _259;
+  <unnamed type> _260;
+  unsigned char _261;
+  int _262;
+  unsigned char _263;
+  void (*<T641>) (const struct Clock_Ip_XoscConfigType *) _265;
+  const struct Clock_Ip_XoscConfigType * _266;
+  _Bool Clock_Ip_bObjectsAreInitialized.7_267;
+  _Bool FunctionWasCalled.8_268;
+  void (*<T6a6>) (const struct Clock_Ip_CmuConfigType *) _269;
+  void (*<T635>) (Clock_Ip_NameType) _270;
+  void (*<T635>) (Clock_Ip_NameType) _271;
+  Clock_Ip_CmuStatusType (*<T6ac>) (Clock_Ip_NameType) _272;
+  void (*<T64f>) (const struct Clock_Ip_DividerConfigType *) _273;
+  void (*<T65a>) (const struct Clock_Ip_DividerTriggerConfigType *) _274;
+  void (*<T641>) (const struct Clock_Ip_XoscConfigType *) _275;
+  void (*<T666>) (const struct Clock_Ip_FracDivConfigType *) _276;
+  Clock_Ip_DfsStatusType (*<T66c>) (Clock_Ip_NameType) _277;
+  void (*<T696>) (const struct Clock_Ip_GateConfigType *) _278;
+  void (*<T69b>) (Clock_Ip_NameType, boolean) _279;
+  void (*<T632>) (const struct Clock_Ip_IrcoscConfigType *) _280;
+  void (*<T677>) (const struct Clock_Ip_PllConfigType *) _281;
+  Clock_Ip_PllStatusReturnType (*<T67d>) (Clock_Ip_NameType) _282;
+  void (*<T68a>) (const struct Clock_Ip_SelectorConfigType *) _283;
+  void (*<T6b8>) (const struct Clock_Ip_PcfsConfigType *) _284;
+
+  <bb 2> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pxConfig = Config_164(D);
+  # DEBUG BEGIN_STMT
+  Clock_Ip_SpecificPlatformInitClock (Config_164(D));
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pxConfig.1_1 = Clock_Ip_pxConfig;
+  if (Clock_Ip_pxConfig.1_1 != 0B)
+    goto <bb 4>; [70.00%]
+  else
+    goto <bb 5>; [30.00%]
+
+  <bb 3> [local count: 330712475]:
+  # DEBUG BEGIN_STMT
+  _2 = Config_164(D)->Cmus[Index_130].Name;
+  _3 = Clock_Ip_au8ClockFeatures[_2][1];
+  _4 = (int) _3;
+  _5 = Clock_Ip_au8CmuCallbackIndex[_4];
+  CallbackIndex_167 = (uint32) _5;
+  # DEBUG CallbackIndex => CallbackIndex_167
+  # DEBUG BEGIN_STMT
+  _6 = Clock_Ip_axCmuCallbacks[CallbackIndex_167].Reset;
+  _7 = &Config_164(D)->Cmus[Index_130];
+  _6 (_7);
+  # DEBUG BEGIN_STMT
+  Index_169 = Index_130 + 1;
+  # DEBUG Index => Index_169
+
+  <bb 4> [local count: 413390596]:
+  # Index_130 = PHI <Index_169(3), 0(2)>
+  # DEBUG Index => Index_130
+  # DEBUG BEGIN_STMT
+  _8 = Config_164(D)->CmusCount;
+  _9 = (long unsigned int) _8;
+  if (_9 > Index_130)
+    goto <bb 3>; [80.00%]
+  else
+    goto <bb 5>; [20.00%]
+
+  <bb 5> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  # DEBUG Config => Config_164(D)
+  # DEBUG INLINE_ENTRY Clock_Ip_ResetClockConfiguration
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _223 = Config_164(D)->SelectorsCount;
+  Index_224 = (uint32) _223;
+  # DEBUG Index => Index_224
+  goto <bb 7>; [100.00%]
+
+  <bb 6> [local count: 955630225]:
+  # DEBUG BEGIN_STMT
+  _226 = Index_225 + 4294967295;
+  _227 = Config_164(D)->Selectors[_226].Name;
+  _228 = Clock_Ip_au8ClockFeatures[_227][1];
+  _229 = (int) _228;
+  _230 = Clock_Ip_au8SelectorCallbackIndex[_229];
+  CallbackIndex_231 = (uint32) _230;
+  # DEBUG CallbackIndex => CallbackIndex_231
+  # DEBUG BEGIN_STMT
+  _232 = Clock_Ip_axSelectorCallbacks[CallbackIndex_231].Reset;
+  _233 = &Config_164(D)->Selectors[_226];
+  _232 (_233);
+  # DEBUG BEGIN_STMT
+  # DEBUG Index => _226
+
+  <bb 7> [local count: 1073741824]:
+  # Index_225 = PHI <Index_224(5), _226(6)>
+  # DEBUG Index => Index_225
+  # DEBUG BEGIN_STMT
+  if (Index_225 != 0)
+    goto <bb 6>; [89.00%]
+  else
+    goto <bb 8>; [11.00%]
+
+  <bb 8> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  _234 = Config_164(D)->FracDivsCount;
+  Index_235 = (uint32) _234;
+  # DEBUG Index => Index_235
+  goto <bb 10>; [100.00%]
+
+  <bb 9> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  _237 = Index_236 + 4294967295;
+  _238 = Config_164(D)->FracDivs[_237].Name;
+  _239 = Clock_Ip_au8ClockFeatures[_238][1];
+  _240 = (int) _239;
+  _241 = Clock_Ip_au8FractionalDividerCallbackIndex[_240];
+  CallbackIndex_242 = (uint32) _241;
+  # DEBUG CallbackIndex => CallbackIndex_242
+  # DEBUG BEGIN_STMT
+  _243 = Clock_Ip_axFracDivCallbacks[CallbackIndex_242].Reset;
+  _244 = &Config_164(D)->FracDivs[_237];
+  _243 (_244);
+  # DEBUG BEGIN_STMT
+  # DEBUG Index => _237
+
+  <bb 10> [local count: 236223200]:
+  # Index_236 = PHI <Index_235(8), _237(9)>
+  # DEBUG Index => Index_236
+  # DEBUG BEGIN_STMT
+  if (Index_236 != 0)
+    goto <bb 9>; [50.00%]
+  else
+    goto <bb 11>; [50.00%]
+
+  <bb 11> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  _245 = Config_164(D)->PllsCount;
+  Index_246 = (uint32) _245;
+  # DEBUG Index => Index_246
+  goto <bb 13>; [100.00%]
+
+  <bb 12> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  _248 = Index_247 + 4294967295;
+  _249 = Config_164(D)->Plls[_248].Name;
+  _250 = Clock_Ip_au8ClockFeatures[_249][1];
+  _251 = (int) _250;
+  _252 = Clock_Ip_au8PllCallbackIndex[_251];
+  CallbackIndex_253 = (uint32) _252;
+  # DEBUG CallbackIndex => CallbackIndex_253
+  # DEBUG BEGIN_STMT
+  _254 = Clock_Ip_axPllCallbacks[CallbackIndex_253].Reset;
+  _255 = &Config_164(D)->Plls[_248];
+  _254 (_255);
+  # DEBUG BEGIN_STMT
+  # DEBUG Index => _248
+
+  <bb 13> [local count: 236223200]:
+  # Index_247 = PHI <Index_246(11), _248(12)>
+  # DEBUG Index => Index_247
+  # DEBUG BEGIN_STMT
+  if (Index_247 != 0)
+    goto <bb 12>; [50.00%]
+  else
+    goto <bb 14>; [50.00%]
+
+  <bb 14> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  _256 = Config_164(D)->XoscsCount;
+  Index_257 = (uint32) _256;
+  # DEBUG Index => Index_257
+  goto <bb 16>; [100.00%]
+
+  <bb 15> [local count: 236258635]:
+  # DEBUG BEGIN_STMT
+  _259 = Index_258 + 4294967295;
+  _260 = Config_164(D)->Xoscs[_259].Name;
+  _261 = Clock_Ip_au8ClockFeatures[_260][1];
+  _262 = (int) _261;
+  _263 = Clock_Ip_au8XoscCallbackIndex[_262];
+  CallbackIndex_264 = (uint32) _263;
+  # DEBUG CallbackIndex => CallbackIndex_264
+  # DEBUG BEGIN_STMT
+  _265 = Clock_Ip_axExtOscCallbacks[CallbackIndex_264].Reset;
+  _266 = &Config_164(D)->Xoscs[_259];
+  _265 (_266);
+  # DEBUG BEGIN_STMT
+  # DEBUG Index => _259
+
+  <bb 16> [local count: 354370235]:
+  # Index_258 = PHI <Index_257(14), _259(15)>
+  # DEBUG Index => Index_258
+  # DEBUG BEGIN_STMT
+  if (Index_258 != 0)
+    goto <bb 15>; [66.67%]
+  else
+    goto <bb 18>; [33.33%]
+
+  <bb 17> [local count: 236258635]:
+  # DEBUG BEGIN_STMT
+  _10 = Config_164(D)->Ircoscs[Index_131].Name;
+  _11 = Clock_Ip_au8ClockFeatures[_10][1];
+  _12 = (int) _11;
+  _13 = Clock_Ip_au8IrcoscCallbackIndex[_12];
+  CallbackIndex_220 = (uint32) _13;
+  # DEBUG CallbackIndex => CallbackIndex_220
+  # DEBUG BEGIN_STMT
+  _14 = Clock_Ip_axIntOscCallbacks[CallbackIndex_220].Set;
+  _15 = &Config_164(D)->Ircoscs[Index_131];
+  _14 (_15);
+  # DEBUG BEGIN_STMT
+  Index_222 = Index_131 + 1;
+  # DEBUG Index => Index_222
+
+  <bb 18> [local count: 354370235]:
+  # Index_131 = PHI <0(16), Index_222(17)>
+  # DEBUG Config => NULL
+  # DEBUG Index => NULL
+  # DEBUG CallbackIndex => NULL
+  # DEBUG Index => NULL
+  # DEBUG Index => Index_131
+  # DEBUG BEGIN_STMT
+  _16 = Config_164(D)->IrcoscsCount;
+  _17 = (long unsigned int) _16;
+  if (_17 > Index_131)
+    goto <bb 17>; [66.67%]
+  else
+    goto <bb 20>; [33.33%]
+
+  <bb 19> [local count: 236258635]:
+  # DEBUG BEGIN_STMT
+  _18 = Config_164(D)->Xoscs[Index_132].Name;
+  _19 = Clock_Ip_au8ClockFeatures[_18][1];
+  _20 = (int) _19;
+  _21 = Clock_Ip_au8XoscCallbackIndex[_20];
+  CallbackIndex_217 = (uint32) _21;
+  # DEBUG CallbackIndex => CallbackIndex_217
+  # DEBUG BEGIN_STMT
+  _22 = Clock_Ip_axExtOscCallbacks[CallbackIndex_217].Set;
+  _23 = &Config_164(D)->Xoscs[Index_132];
+  _22 (_23);
+  # DEBUG BEGIN_STMT
+  Index_219 = Index_132 + 1;
+  # DEBUG Index => Index_219
+
+  <bb 20> [local count: 354370235]:
+  # Index_132 = PHI <Index_219(19), 0(18)>
+  # DEBUG Index => Index_132
+  # DEBUG BEGIN_STMT
+  _24 = Config_164(D)->XoscsCount;
+  _25 = (long unsigned int) _24;
+  if (_25 > Index_132)
+    goto <bb 19>; [66.67%]
+  else
+    goto <bb 21>; [33.33%]
+
+  <bb 21> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  # DEBUG D#1 => Config_164(D)
+  # DEBUG INLINE_ENTRY Clock_Ip_UpdateDriverContext
+  # DEBUG D#2 => D#1
+  # DEBUG Config => D#2
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Clock_Ip_bObjectsAreInitialized.7_267 = Clock_Ip_bObjectsAreInitialized;
+  if (Clock_Ip_bObjectsAreInitialized.7_267 != 0)
+    goto <bb 23>; [67.00%]
+  else
+    goto <bb 22>; [33.00%]
+
+  <bb 22> [local count: 38976828]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_ClockInitializeObjects ();
+  # DEBUG BEGIN_STMT
+  Clock_Ip_bObjectsAreInitialized = 1;
+
+  <bb 23> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY Clock_Ip_CallEmptyCallbacks
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  FunctionWasCalled.8_268 = FunctionWasCalled;
+  if (FunctionWasCalled.8_268 != 0)
+    goto <bb 25>; [50.00%]
+  else
+    goto <bb 24>; [50.00%]
+
+  <bb 24> [local count: 59055800]:
+  # DEBUG BEGIN_STMT
+  FunctionWasCalled = 1;
+  # DEBUG BEGIN_STMT
+  _269 = Clock_Ip_axCmuCallbacks[0].Set;
+  _269 (0B);
+  # DEBUG BEGIN_STMT
+  _270 = Clock_Ip_axCmuCallbacks[0].Disable;
+  _270 (145);
+  # DEBUG BEGIN_STMT
+  _271 = Clock_Ip_axCmuCallbacks[0].Clear;
+  _271 (145);
+  # DEBUG BEGIN_STMT
+  _272 = Clock_Ip_axCmuCallbacks[0].GetStatus;
+  _272 (145);
+  # DEBUG BEGIN_STMT
+  _273 = Clock_Ip_axDividerCallbacks[0].Set;
+  _273 (0B);
+  # DEBUG BEGIN_STMT
+  _274 = Clock_Ip_axDividerTriggerCallbacks[0].Configure;
+  _274 (0B);
+  # DEBUG BEGIN_STMT
+  _275 = Clock_Ip_axExtOscCallbacks[0].Reset;
+  _275 (0B);
+  # DEBUG BEGIN_STMT
+  _276 = Clock_Ip_axFracDivCallbacks[0].Set;
+  _276 (0B);
+  # DEBUG BEGIN_STMT
+  _277 = Clock_Ip_axFracDivCallbacks[0].Complete;
+  _277 (145);
+  # DEBUG BEGIN_STMT
+  _278 = Clock_Ip_axGateCallbacks[0].Set;
+  _278 (0B);
+  # DEBUG BEGIN_STMT
+  _279 = Clock_Ip_axGateCallbacks[0].Update;
+  _279 (145, 0);
+  # DEBUG BEGIN_STMT
+  _280 = Clock_Ip_axIntOscCallbacks[0].Set;
+  _280 (0B);
+  # DEBUG BEGIN_STMT
+  _281 = Clock_Ip_axPllCallbacks[0].Set;
+  _281 (0B);
+  # DEBUG BEGIN_STMT
+  _282 = Clock_Ip_axPllCallbacks[0].Complete;
+  _282 (145);
+  # DEBUG BEGIN_STMT
+  _283 = Clock_Ip_axSelectorCallbacks[0].Set;
+  _283 (0B);
+  # DEBUG BEGIN_STMT
+  _284 = Clock_Ip_axPcfsCallbacks[0].Set;
+  _284 (0B);
+
+  <bb 25> [local count: 118111600]:
+  goto <bb 27>; [100.00%]
+
+  <bb 26> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  _26 = Config_164(D)->Pcfs[Index_133].Name;
+  _27 = Clock_Ip_au8ClockFeatures[_26][1];
+  _28 = (int) _27;
+  _29 = Clock_Ip_au8PcfsCallbackIndex[_28];
+  CallbackIndex_214 = (uint32) _29;
+  # DEBUG CallbackIndex => CallbackIndex_214
+  # DEBUG BEGIN_STMT
+  _30 = Clock_Ip_axPcfsCallbacks[CallbackIndex_214].Set;
+  _31 = &Config_164(D)->Pcfs[Index_133];
+  _30 (_31);
+  # DEBUG BEGIN_STMT
+  Index_216 = Index_133 + 1;
+  # DEBUG Index => Index_216
+
+  <bb 27> [local count: 236223200]:
+  # Index_133 = PHI <0(25), Index_216(26)>
+  # DEBUG Config => NULL
+  # DEBUG Index => NULL
+  # DEBUG Index => Index_133
+  # DEBUG BEGIN_STMT
+  _32 = Config_164(D)->PcfsCount;
+  _33 = (long unsigned int) _32;
+  if (_33 > Index_133)
+    goto <bb 26>; [50.00%]
+  else
+    goto <bb 29>; [50.00%]
+
+  <bb 28> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  _34 = Config_164(D)->DividerTriggers[Index_134].Name;
+  _35 = Clock_Ip_au8ClockFeatures[_34][1];
+  _36 = (int) _35;
+  _37 = Clock_Ip_au8DividerTriggerCallbackIndex[_36];
+  CallbackIndex_211 = (uint32) _37;
+  # DEBUG CallbackIndex => CallbackIndex_211
+  # DEBUG BEGIN_STMT
+  _38 = Clock_Ip_axDividerTriggerCallbacks[CallbackIndex_211].Configure;
+  _39 = &Config_164(D)->DividerTriggers[Index_134];
+  _38 (_39);
+  # DEBUG BEGIN_STMT
+  Index_213 = Index_134 + 1;
+  # DEBUG Index => Index_213
+
+  <bb 29> [local count: 236223200]:
+  # Index_134 = PHI <Index_213(28), 0(27)>
+  # DEBUG Index => Index_134
+  # DEBUG BEGIN_STMT
+  _40 = Config_164(D)->DividerTriggersCount;
+  _41 = (long unsigned int) _40;
+  if (_41 > Index_134)
+    goto <bb 28>; [50.00%]
+  else
+    goto <bb 31>; [50.00%]
+
+  <bb 30> [local count: 955630225]:
+  # DEBUG BEGIN_STMT
+  _42 = Config_164(D)->Dividers[Index_135].Name;
+  _43 = Clock_Ip_au8ClockFeatures[_42][1];
+  _44 = (int) _43;
+  _45 = Clock_Ip_au8DividerCallbackIndex[_44];
+  CallbackIndex_208 = (uint32) _45;
+  # DEBUG CallbackIndex => CallbackIndex_208
+  # DEBUG BEGIN_STMT
+  _46 = Clock_Ip_axDividerCallbacks[CallbackIndex_208].Set;
+  _47 = &Config_164(D)->Dividers[Index_135];
+  _46 (_47);
+  # DEBUG BEGIN_STMT
+  Index_210 = Index_135 + 1;
+  # DEBUG Index => Index_210
+
+  <bb 31> [local count: 1073741824]:
+  # Index_135 = PHI <Index_210(30), 0(29)>
+  # DEBUG Index => Index_135
+  # DEBUG BEGIN_STMT
+  _48 = Config_164(D)->DividersCount;
+  _49 = (long unsigned int) _48;
+  if (_49 > Index_135)
+    goto <bb 30>; [89.00%]
+  else
+    goto <bb 33>; [11.00%]
+
+  <bb 32> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  _50 = Config_164(D)->DividerTriggers[Index_136].Name;
+  _51 = Clock_Ip_au8ClockFeatures[_50][1];
+  _52 = (int) _51;
+  _53 = Clock_Ip_au8DividerTriggerCallbackIndex[_52];
+  CallbackIndex_205 = (uint32) _53;
+  # DEBUG CallbackIndex => CallbackIndex_205
+  # DEBUG BEGIN_STMT
+  _54 = Clock_Ip_axDividerTriggerCallbacks[CallbackIndex_205].TriggerUpdate;
+  _55 = &Config_164(D)->DividerTriggers[Index_136];
+  _54 (_55);
+  # DEBUG BEGIN_STMT
+  Index_207 = Index_136 + 1;
+  # DEBUG Index => Index_207
+
+  <bb 33> [local count: 236223200]:
+  # Index_136 = PHI <Index_207(32), 0(31)>
+  # DEBUG Index => Index_136
+  # DEBUG BEGIN_STMT
+  _56 = Config_164(D)->DividerTriggersCount;
+  _57 = (long unsigned int) _56;
+  if (_57 > Index_136)
+    goto <bb 32>; [50.00%]
+  else
+    goto <bb 35>; [50.00%]
+
+  <bb 34> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  _58 = Config_164(D)->Plls[Index_137].Name;
+  _59 = Clock_Ip_au8ClockFeatures[_58][1];
+  _60 = (int) _59;
+  _61 = Clock_Ip_au8PllCallbackIndex[_60];
+  CallbackIndex_202 = (uint32) _61;
+  # DEBUG CallbackIndex => CallbackIndex_202
+  # DEBUG BEGIN_STMT
+  _62 = Clock_Ip_axPllCallbacks[CallbackIndex_202].Set;
+  _63 = &Config_164(D)->Plls[Index_137];
+  _62 (_63);
+  # DEBUG BEGIN_STMT
+  Index_204 = Index_137 + 1;
+  # DEBUG Index => Index_204
+
+  <bb 35> [local count: 236223200]:
+  # Index_137 = PHI <Index_204(34), 0(33)>
+  # DEBUG Index => Index_137
+  # DEBUG BEGIN_STMT
+  _64 = Config_164(D)->PllsCount;
+  _65 = (long unsigned int) _64;
+  if (_65 > Index_137)
+    goto <bb 34>; [50.00%]
+  else
+    goto <bb 37>; [50.00%]
+
+  <bb 36> [local count: 472446391]:
+  # DEBUG BEGIN_STMT
+  _66 = Config_164(D)->Cmus[Index_138].Name;
+  _67 = Clock_Ip_au8ClockFeatures[_66][1];
+  _68 = (int) _67;
+  _69 = Clock_Ip_au8CmuCallbackIndex[_68];
+  CallbackIndex_199 = (uint32) _69;
+  # DEBUG CallbackIndex => CallbackIndex_199
+  # DEBUG BEGIN_STMT
+  _70 = Clock_Ip_axCmuCallbacks[CallbackIndex_199].Set;
+  _71 = &Config_164(D)->Cmus[Index_138];
+  _70 (_71);
+  # DEBUG BEGIN_STMT
+  Index_201 = Index_138 + 1;
+  # DEBUG Index => Index_201
+
+  <bb 37> [local count: 590557992]:
+  # Index_138 = PHI <Index_201(36), 0(35)>
+  # DEBUG Index => Index_138
+  # DEBUG BEGIN_STMT
+  _72 = Config_164(D)->CmusCount;
+  _73 = (long unsigned int) _72;
+  if (_73 > Index_138)
+    goto <bb 36>; [80.00%]
+  else
+    goto <bb 39>; [20.00%]
+
+  <bb 38> [local count: 236258635]:
+  # DEBUG BEGIN_STMT
+  _74 = Config_164(D)->Xoscs[Index_139].Name;
+  _75 = Clock_Ip_au8ClockFeatures[_74][1];
+  _76 = (int) _75;
+  _77 = Clock_Ip_au8XoscCallbackIndex[_76];
+  CallbackIndex_196 = (uint32) _77;
+  # DEBUG CallbackIndex => CallbackIndex_196
+  # DEBUG BEGIN_STMT
+  _78 = Clock_Ip_axExtOscCallbacks[CallbackIndex_196].Complete;
+  _79 = &Config_164(D)->Xoscs[Index_139];
+  _78 (_79);
+  # DEBUG BEGIN_STMT
+  Index_198 = Index_139 + 1;
+  # DEBUG Index => Index_198
+
+  <bb 39> [local count: 354370235]:
+  # Index_139 = PHI <Index_198(38), 0(37)>
+  # DEBUG Index => Index_139
+  # DEBUG BEGIN_STMT
+  _80 = Config_164(D)->XoscsCount;
+  _81 = (long unsigned int) _80;
+  if (_81 > Index_139)
+    goto <bb 38>; [66.67%]
+  else
+    goto <bb 41>; [33.33%]
+
+  <bb 40> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  _82 = Config_164(D)->Plls[Index_140].Name;
+  _83 = Clock_Ip_au8ClockFeatures[_82][1];
+  _84 = (int) _83;
+  _85 = Clock_Ip_au8PllCallbackIndex[_84];
+  CallbackIndex_193 = (uint32) _85;
+  # DEBUG CallbackIndex => CallbackIndex_193
+  # DEBUG BEGIN_STMT
+  _86 = Clock_Ip_axPllCallbacks[CallbackIndex_193].Enable;
+  _87 = &Config_164(D)->Plls[Index_140];
+  _86 (_87);
+  # DEBUG BEGIN_STMT
+  Index_195 = Index_140 + 1;
+  # DEBUG Index => Index_195
+
+  <bb 41> [local count: 236223200]:
+  # Index_140 = PHI <Index_195(40), 0(39)>
+  # DEBUG Index => Index_140
+  # DEBUG BEGIN_STMT
+  _88 = Config_164(D)->PllsCount;
+  _89 = (long unsigned int) _88;
+  if (_89 > Index_140)
+    goto <bb 40>; [50.00%]
+  else
+    goto <bb 43>; [50.00%]
+
+  <bb 42> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  _90 = Config_164(D)->FracDivs[Index_141].Name;
+  _91 = Clock_Ip_au8ClockFeatures[_90][1];
+  _92 = (int) _91;
+  _93 = Clock_Ip_au8FractionalDividerCallbackIndex[_92];
+  CallbackIndex_190 = (uint32) _93;
+  # DEBUG CallbackIndex => CallbackIndex_190
+  # DEBUG BEGIN_STMT
+  _94 = Clock_Ip_axFracDivCallbacks[CallbackIndex_190].Set;
+  _95 = &Config_164(D)->FracDivs[Index_141];
+  _94 (_95);
+  # DEBUG BEGIN_STMT
+  Index_192 = Index_141 + 1;
+  # DEBUG Index => Index_192
+
+  <bb 43> [local count: 236223200]:
+  # Index_141 = PHI <Index_192(42), 0(41)>
+  # DEBUG Index => Index_141
+  # DEBUG BEGIN_STMT
+  _96 = Config_164(D)->FracDivsCount;
+  _97 = (long unsigned int) _96;
+  if (_97 > Index_141)
+    goto <bb 42>; [50.00%]
+  else
+    goto <bb 44>; [50.00%]
+
+  <bb 44> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pfkNotificationsCallback.2_98 = Clock_Ip_pfkNotificationsCallback;
+  Clock_Ip_pfkNotificationsCallback.2_98 (4, 145);
+  # DEBUG BEGIN_STMT
+  Clock_Ip_SetRamWaitStates ();
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pfkNotificationsCallback.3_99 = Clock_Ip_pfkNotificationsCallback;
+  Clock_Ip_pfkNotificationsCallback.3_99 (5, 145);
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pfkNotificationsCallback.4_100 = Clock_Ip_pfkNotificationsCallback;
+  Clock_Ip_pfkNotificationsCallback.4_100 (6, 145);
+  # DEBUG BEGIN_STMT
+  Clock_Ip_SetFlashWaitStates ();
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pfkNotificationsCallback.5_101 = Clock_Ip_pfkNotificationsCallback;
+  Clock_Ip_pfkNotificationsCallback.5_101 (7, 145);
+  # DEBUG BEGIN_STMT
+  Clock_Ip_bClockTreeIsConsumingPll = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG Index => 0
+  goto <bb 49>; [100.00%]
+
+  <bb 45> [local count: 955630225]:
+  # DEBUG BEGIN_STMT
+  _102 = Config_164(D)->Selectors[Index_142].Value;
+  _103 = Clock_Ip_aeSourceTypeClockName[_102];
+  if (_103 != 3)
+    goto <bb 46>; [66.00%]
+  else
+    goto <bb 47>; [34.00%]
+
+  <bb 46> [local count: 630715945]:
+  # DEBUG BEGIN_STMT
+  _104 = Config_164(D)->Selectors[Index_142].Name;
+  _105 = Clock_Ip_au8ClockFeatures[_104][1];
+  _106 = (int) _105;
+  _107 = Clock_Ip_au8SelectorCallbackIndex[_106];
+  CallbackIndex_187 = (uint32) _107;
+  # DEBUG CallbackIndex => CallbackIndex_187
+  # DEBUG BEGIN_STMT
+  _108 = Clock_Ip_axSelectorCallbacks[CallbackIndex_187].Set;
+  _109 = &Config_164(D)->Selectors[Index_142];
+  _108 (_109);
+  goto <bb 48>; [100.00%]
+
+  <bb 47> [local count: 324914280]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_bClockTreeIsConsumingPll = 1;
+
+  <bb 48> [local count: 955630225]:
+  # DEBUG BEGIN_STMT
+  Index_189 = Index_142 + 1;
+  # DEBUG Index => Index_189
+
+  <bb 49> [local count: 1073741824]:
+  # Index_142 = PHI <0(44), Index_189(48)>
+  # DEBUG Index => Index_142
+  # DEBUG BEGIN_STMT
+  _110 = Config_164(D)->SelectorsCount;
+  _111 = (long unsigned int) _110;
+  if (_111 > Index_142)
+    goto <bb 45>; [89.00%]
+  else
+    goto <bb 50>; [11.00%]
+
+  <bb 50> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_bClockTreeIsConsumingPll.6_112 = Clock_Ip_bClockTreeIsConsumingPll;
+  if (Clock_Ip_bClockTreeIsConsumingPll.6_112 != 0)
+    goto <bb 56>; [50.00%]
+  else
+    goto <bb 52>; [50.00%]
+
+  <bb 51> [local count: 477815112]:
+  # DEBUG BEGIN_STMT
+  _113 = Config_164(D)->Gates[Index_143].Name;
+  _114 = Clock_Ip_au8ClockFeatures[_113][1];
+  _115 = (int) _114;
+  _116 = Clock_Ip_au8GateCallbackIndex[_115];
+  CallbackIndex_183 = (uint32) _116;
+  # DEBUG CallbackIndex => CallbackIndex_183
+  # DEBUG BEGIN_STMT
+  _117 = Clock_Ip_axGateCallbacks[CallbackIndex_183].Set;
+  _118 = &Config_164(D)->Gates[Index_143];
+  _117 (_118);
+  # DEBUG BEGIN_STMT
+  Index_185 = Index_143 + 1;
+  # DEBUG Index => Index_185
+
+  <bb 52> [local count: 536870913]:
+  # Index_143 = PHI <Index_185(51), 0(50)>
+  # DEBUG Index => Index_143
+  # DEBUG BEGIN_STMT
+  _119 = Config_164(D)->GatesCount;
+  _120 = (long unsigned int) _119;
+  if (_120 > Index_143)
+    goto <bb 51>; [89.00%]
+  else
+    goto <bb 53>; [11.00%]
+
+  <bb 53> [local count: 59055800]:
+  # DEBUG BEGIN_STMT
+  _121 = &Config_164(D)->SpecificPeriphalConfiguration;
+  Clock_Ip_SpecificPeripheralClockInitialization (_121);
+  # DEBUG BEGIN_STMT
+  # DEBUG Index => 0
+  goto <bb 55>; [100.00%]
+
+  <bb 54> [local count: 236223196]:
+  # DEBUG BEGIN_STMT
+  _122 = Config_164(D)->Cmus[Index_144].Name;
+  _123 = Clock_Ip_au8ClockFeatures[_122][1];
+  _124 = (int) _123;
+  _125 = Clock_Ip_au8CmuCallbackIndex[_124];
+  CallbackIndex_180 = (uint32) _125;
+  # DEBUG CallbackIndex => CallbackIndex_180
+  # DEBUG BEGIN_STMT
+  _126 = Clock_Ip_axCmuCallbacks[CallbackIndex_180].Enable;
+  _127 = &Config_164(D)->Cmus[Index_144];
+  _126 (_127);
+  # DEBUG BEGIN_STMT
+  Index_182 = Index_144 + 1;
+  # DEBUG Index => Index_182
+
+  <bb 55> [local count: 295278996]:
+  # Index_144 = PHI <0(53), Index_182(54)>
+  # DEBUG Index => Index_144
+  # DEBUG BEGIN_STMT
+  _128 = Config_164(D)->CmusCount;
+  _129 = (long unsigned int) _128;
+  if (_129 > Index_144)
+    goto <bb 54>; [80.00%]
+  else
+    goto <bb 56>; [20.00%]
+
+  <bb 56> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_GetPllStatus (Clock_Ip_GetPllStatus, funcdef_no=6, decl_uid=6254, cgraph_uid=7, symbol_order=10)
+
+Clock_Ip_GetPllStatus ()
+{
+  uint32 CallbackIndex;
+  uint32 Index;
+  Clock_Ip_PllStatusReturnType PllStatus;
+  Clock_Ip_PllStatusType RetValue;
+  <unnamed type> _1;
+  unsigned char _2;
+  int _3;
+  unsigned char _4;
+  Clock_Ip_PllStatusReturnType (*<T67d>) (Clock_Ip_NameType) _5;
+
+  <bb 2> [local count: 114863530]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetValue => 2
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG Index => 0
+  goto <bb 7>; [100.00%]
+
+  <bb 3> [local count: 1014686026]:
+  # DEBUG BEGIN_STMT
+  _1 = Clock_Ip_aeHwPllName[0];
+  _2 = Clock_Ip_au8ClockFeatures[_1][1];
+  _3 = (int) _2;
+  _4 = Clock_Ip_au8PllCallbackIndex[_3];
+  CallbackIndex_13 = (uint32) _4;
+  # DEBUG CallbackIndex => CallbackIndex_13
+  # DEBUG BEGIN_STMT
+  _5 = Clock_Ip_axPllCallbacks[CallbackIndex_13].Complete;
+  PllStatus_15 = _5 (_1);
+  # DEBUG PllStatus => PllStatus_15
+  # DEBUG BEGIN_STMT
+  if (PllStatus_15 == 1)
+    goto <bb 8>; [5.50%]
+  else
+    goto <bb 4>; [94.50%]
+
+  <bb 4> [local count: 958878296]:
+  # DEBUG BEGIN_STMT
+  if (PllStatus_15 == 2)
+    goto <bb 5>; [34.00%]
+  else
+    goto <bb 6>; [66.00%]
+
+  <bb 5> [local count: 326018624]:
+  # DEBUG BEGIN_STMT
+  # DEBUG RetValue => 0
+
+  <bb 6> [local count: 958878296]:
+  # RetValue_6 = PHI <RetValue_7(4), 0(5)>
+  # Index_16 = PHI <1(4), 1(5)>
+
+  <bb 7> [local count: 1073741824]:
+  # RetValue_7 = PHI <RetValue_6(6), 2(2)>
+  # Index_9 = PHI <Index_16(6), 0(2)>
+  # DEBUG Index => Index_9
+  # DEBUG RetValue => RetValue_7
+  # DEBUG BEGIN_STMT
+  if (Index_9 == 0)
+    goto <bb 3>; [94.50%]
+  else
+    goto <bb 8>; [5.50%]
+
+  <bb 8> [local count: 114863531]:
+  # RetValue_8 = PHI <1(3), RetValue_7(7)>
+  # DEBUG RetValue => RetValue_8
+  # DEBUG BEGIN_STMT
+  return RetValue_8;
+
+}
+
+
+
+;; Function Clock_Ip_DistributePll (Clock_Ip_DistributePll, funcdef_no=7, decl_uid=6256, cgraph_uid=8, symbol_order=11)
+
+
+Symbols to be put in SSA form
+{ D.6801 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 19
+Number of blocks to update: 18 ( 95%)
+
+
+Merging blocks 3 and 6
+Removing basic block 5
+Removing basic block 12
+;; 7 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+;;
+;; Loop 4
+;;  header 13, latch 12
+;;  depth 1, outer 0
+;;  nodes: 13 12
+;;
+;; Loop 5
+;;  header 10, latch 9
+;;  depth 1, outer 0
+;;  nodes: 10 9
+;;
+;; Loop 6
+;;  header 7, latch 6
+;;  depth 1, outer 0
+;;  nodes: 7 6 4 5
+;; 2 succs { 3 15 }
+;; 3 succs { 7 }
+;; 4 succs { 5 6 }
+;; 5 succs { 6 }
+;; 6 succs { 7 }
+;; 7 succs { 4 8 }
+;; 8 succs { 10 14 }
+;; 9 succs { 10 }
+;; 10 succs { 9 11 }
+;; 11 succs { 13 }
+;; 12 succs { 13 }
+;; 13 succs { 12 14 }
+;; 14 succs { 15 }
+;; 15 succs { 1 }
+cyclic probability of bb 7 is 0.890000; turning freq 0.700000 to 6.363636
+cyclic probability of bb 10 is 0.890000; turning freq 0.350000 to 3.181818
+cyclic probability of bb 13 is 0.800000; turning freq 0.350000 to 1.750000
+Clock_Ip_DistributePll ()
+{
+  uint32 CallbackIndex;
+  uint32 Index;
+  uint32 Index;
+  const struct Clock_Ip_ClockConfigType * Clock_Ip_pxConfig.9_1;
+  const struct Clock_Ip_ClockConfigType * Clock_Ip_pxConfig.13_7;
+  <unnamed type> _9;
+  <unnamed type> _10;
+  <unnamed type> _11;
+  unsigned char _12;
+  int _13;
+  unsigned char _14;
+  void (*<T68a>) (const struct Clock_Ip_SelectorConfigType *) _16;
+  const struct Clock_Ip_SelectorConfigType * _17;
+  unsigned char _19;
+  long unsigned int _20;
+  _Bool Clock_Ip_bClockTreeIsConsumingPll.14_21;
+  const struct Clock_Ip_ClockConfigType * Clock_Ip_pxConfig.17_22;
+  <unnamed type> _24;
+  unsigned char _25;
+  int _26;
+  unsigned char _27;
+  void (*<T696>) (const struct Clock_Ip_GateConfigType *) _29;
+  const struct Clock_Ip_GateConfigType * _30;
+  unsigned char _32;
+  long unsigned int _33;
+  const struct Clock_Ip_ClockConfigType * Clock_Ip_pxConfig.17_34;
+  const struct Clock_IP_SpecificPeriphConfigType * _35;
+  const struct Clock_Ip_ClockConfigType * Clock_Ip_pxConfig.21_36;
+  <unnamed type> _38;
+  unsigned char _39;
+  int _40;
+  unsigned char _41;
+  void (*<T6a6>) (const struct Clock_Ip_CmuConfigType *) _43;
+  const struct Clock_Ip_CmuConfigType * _44;
+  unsigned char _46;
+  long unsigned int _47;
+
+  <bb 2> [local count: 168730857]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pxConfig.9_1 = Clock_Ip_pxConfig;
+  if (Clock_Ip_pxConfig.9_1 != 0B)
+    goto <bb 3>; [70.00%]
+  else
+    goto <bb 15>; [30.00%]
+
+  <bb 3> [local count: 118111600]:
+  # Index_4 = PHI <0(2)>
+  # DEBUG INLINE_ENTRY Clock_Ip_DistributePll
+  goto <bb 7>; [100.00%]
+
+  <bb 4> [local count: 955630226]:
+  # DEBUG BEGIN_STMT
+  _9 = Clock_Ip_pxConfig.13_7->Selectors[Index_8].Value;
+  _10 = Clock_Ip_aeSourceTypeClockName[_9];
+  if (_10 == 3)
+    goto <bb 5>; [34.00%]
+  else
+    goto <bb 6>; [66.00%]
+
+  <bb 5> [local count: 324914280]:
+  # DEBUG BEGIN_STMT
+  _11 = Clock_Ip_pxConfig.13_7->Selectors[Index_8].Name;
+  _12 = Clock_Ip_au8ClockFeatures[_11][1];
+  _13 = (int) _12;
+  _14 = Clock_Ip_au8SelectorCallbackIndex[_13];
+  CallbackIndex_15 = (uint32) _14;
+  # DEBUG CallbackIndex => CallbackIndex_15
+  # DEBUG BEGIN_STMT
+  _16 = Clock_Ip_axSelectorCallbacks[CallbackIndex_15].Set;
+  _17 = &Clock_Ip_pxConfig.13_7->Selectors[Index_8];
+  _16 (_17);
+
+  <bb 6> [local count: 955630227]:
+  # DEBUG BEGIN_STMT
+  Index_18 = Index_8 + 1;
+  # DEBUG Index => Index_18
+
+  <bb 7> [local count: 1073741824]:
+  # Index_8 = PHI <0(3), Index_18(6)>
+  # DEBUG Index => Index_8
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pxConfig.13_7 = Clock_Ip_pxConfig;
+  _19 = Clock_Ip_pxConfig.13_7->SelectorsCount;
+  _20 = (long unsigned int) _19;
+  if (Index_8 < _20)
+    goto <bb 4>; [89.00%]
+  else
+    goto <bb 8>; [11.00%]
+
+  <bb 8> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_bClockTreeIsConsumingPll.14_21 = Clock_Ip_bClockTreeIsConsumingPll;
+  if (Clock_Ip_bClockTreeIsConsumingPll.14_21 != 0)
+    goto <bb 10>; [50.00%]
+  else
+    goto <bb 14>; [50.00%]
+
+  <bb 9> [local count: 477815113]:
+  # DEBUG BEGIN_STMT
+  _24 = Clock_Ip_pxConfig.17_22->Gates[Index_23].Name;
+  _25 = Clock_Ip_au8ClockFeatures[_24][1];
+  _26 = (int) _25;
+  _27 = Clock_Ip_au8GateCallbackIndex[_26];
+  CallbackIndex_28 = (uint32) _27;
+  # DEBUG CallbackIndex => CallbackIndex_28
+  # DEBUG BEGIN_STMT
+  _29 = Clock_Ip_axGateCallbacks[CallbackIndex_28].Set;
+  _30 = &Clock_Ip_pxConfig.17_22->Gates[Index_23];
+  _29 (_30);
+  # DEBUG BEGIN_STMT
+  Index_31 = Index_23 + 1;
+  # DEBUG Index => Index_31
+
+  <bb 10> [local count: 536870913]:
+  # Index_23 = PHI <0(8), Index_31(9)>
+  # DEBUG Index => Index_23
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pxConfig.17_22 = Clock_Ip_pxConfig;
+  _32 = Clock_Ip_pxConfig.17_22->GatesCount;
+  _33 = (long unsigned int) _32;
+  if (Index_23 < _33)
+    goto <bb 9>; [89.00%]
+  else
+    goto <bb 11>; [11.00%]
+
+  <bb 11> [local count: 59055800]:
+  # Clock_Ip_pxConfig.17_34 = PHI <Clock_Ip_pxConfig.17_22(10)>
+  # DEBUG BEGIN_STMT
+  _35 = &Clock_Ip_pxConfig.17_34->SpecificPeriphalConfiguration;
+  Clock_Ip_SpecificPeripheralClockInitialization (_35);
+  # DEBUG BEGIN_STMT
+  # DEBUG Index => 0
+  goto <bb 13>; [100.00%]
+
+  <bb 12> [local count: 236223196]:
+  # DEBUG BEGIN_STMT
+  _38 = Clock_Ip_pxConfig.21_36->Cmus[Index_37].Name;
+  _39 = Clock_Ip_au8ClockFeatures[_38][1];
+  _40 = (int) _39;
+  _41 = Clock_Ip_au8CmuCallbackIndex[_40];
+  CallbackIndex_42 = (uint32) _41;
+  # DEBUG CallbackIndex => CallbackIndex_42
+  # DEBUG BEGIN_STMT
+  _43 = Clock_Ip_axCmuCallbacks[CallbackIndex_42].Enable;
+  _44 = &Clock_Ip_pxConfig.21_36->Cmus[Index_37];
+  _43 (_44);
+  # DEBUG BEGIN_STMT
+  Index_45 = Index_37 + 1;
+  # DEBUG Index => Index_45
+
+  <bb 13> [local count: 295278996]:
+  # Index_37 = PHI <0(11), Index_45(12)>
+  # DEBUG Index => Index_37
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pxConfig.21_36 = Clock_Ip_pxConfig;
+  _46 = Clock_Ip_pxConfig.21_36->CmusCount;
+  _47 = (long unsigned int) _46;
+  if (Index_37 < _47)
+    goto <bb 12>; [80.00%]
+  else
+    goto <bb 14>; [20.00%]
+
+  <bb 14> [local count: 118111600]:
+
+  <bb 15> [local count: 168730857]:
+  # DEBUG Index => NULL
+  # DEBUG CallbackIndex => NULL
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_Init (Clock_Ip_Init, funcdef_no=4, decl_uid=6250, cgraph_uid=5, symbol_order=8)
+
+Clock_Ip_Init (const struct Clock_Ip_ClockConfigType * Config)
+{
+  Clock_Ip_PllStatusType PllStatus;
+  Clock_Ip_StatusType ClockStatus;
+  _Bool Clock_Ip_bClockTreeIsConsumingPll.0_1;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG ClockStatus => 1
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Clock_Ip_InitClock (Config_5(D));
+  # DEBUG BEGIN_STMT
+  Clock_Ip_bClockTreeIsConsumingPll.0_1 = Clock_Ip_bClockTreeIsConsumingPll;
+  if (Clock_Ip_bClockTreeIsConsumingPll.0_1 != 0)
+    goto <bb 3>; [33.00%]
+  else
+    goto <bb 5>; [67.00%]
+
+  <bb 3> [local count: 354334800]:
+  # DEBUG BEGIN_STMT
+  PllStatus_8 = Clock_Ip_GetPllStatus ();
+  # DEBUG PllStatus => PllStatus_8
+  # DEBUG BEGIN_STMT
+  if (PllStatus_8 == 0)
+    goto <bb 4>; [33.00%]
+  else
+    goto <bb 5>; [67.00%]
+
+  <bb 4> [local count: 116930483]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_DistributePll ();
+  # DEBUG BEGIN_STMT
+  # DEBUG ClockStatus => 0
+
+  <bb 5> [local count: 1073741824]:
+  # ClockStatus_2 = PHI <0(4), 0(2), 1(3)>
+  # DEBUG ClockStatus => ClockStatus_2
+  # DEBUG BEGIN_STMT
+  return ClockStatus_2;
+
+}
+
+
+
+;; Function Clock_Ip_DisableClockMonitor (Clock_Ip_DisableClockMonitor, funcdef_no=8, decl_uid=6264, cgraph_uid=9, symbol_order=12)
+
+Clock_Ip_DisableClockMonitor (Clock_Ip_NameType ClockName)
+{
+  uint32 CallbackIndex;
+  unsigned char _1;
+  int _2;
+  unsigned char _3;
+  void (*<T635>) (Clock_Ip_NameType) _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Clock_Ip_au8ClockFeatures[ClockName_6(D)][1];
+  _2 = (int) _1;
+  _3 = Clock_Ip_au8CmuCallbackIndex[_2];
+  CallbackIndex_7 = (uint32) _3;
+  # DEBUG CallbackIndex => CallbackIndex_7
+  # DEBUG BEGIN_STMT
+  _4 = Clock_Ip_axCmuCallbacks[CallbackIndex_7].Disable;
+  _4 (ClockName_6(D));
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_GetClockMonitorStatus (Clock_Ip_GetClockMonitorStatus, funcdef_no=9, decl_uid=6262, cgraph_uid=10, symbol_order=13)
+
+Clock_Ip_GetClockMonitorStatus (Clock_Ip_NameType ClockName)
+{
+  uint32 CallbackIndex;
+  unsigned char _1;
+  int _2;
+  unsigned char _3;
+  Clock_Ip_CmuStatusType (*<T6ac>) (Clock_Ip_NameType) _4;
+  Clock_Ip_CmuStatusType _9;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Clock_Ip_au8ClockFeatures[ClockName_6(D)][1];
+  _2 = (int) _1;
+  _3 = Clock_Ip_au8CmuCallbackIndex[_2];
+  CallbackIndex_7 = (uint32) _3;
+  # DEBUG CallbackIndex => CallbackIndex_7
+  # DEBUG BEGIN_STMT
+  _4 = Clock_Ip_axCmuCallbacks[CallbackIndex_7].GetStatus;
+  _9 = _4 (ClockName_6(D));
+  return _9;
+
+}
+
+
+
+;; Function Clock_Ip_ClearClockMonitorStatus (Clock_Ip_ClearClockMonitorStatus, funcdef_no=10, decl_uid=6260, cgraph_uid=11, symbol_order=14)
+
+Clock_Ip_ClearClockMonitorStatus (Clock_Ip_NameType ClockName)
+{
+  uint32 CallbackIndex;
+  unsigned char _1;
+  int _2;
+  unsigned char _3;
+  void (*<T635>) (Clock_Ip_NameType) _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Clock_Ip_au8ClockFeatures[ClockName_6(D)][1];
+  _2 = (int) _1;
+  _3 = Clock_Ip_au8CmuCallbackIndex[_2];
+  CallbackIndex_7 = (uint32) _3;
+  # DEBUG CallbackIndex => CallbackIndex_7
+  # DEBUG BEGIN_STMT
+  _4 = Clock_Ip_axCmuCallbacks[CallbackIndex_7].Clear;
+  _4 (ClockName_6(D));
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_InstallNotificationsCallback (Clock_Ip_InstallNotificationsCallback, funcdef_no=11, decl_uid=6258, cgraph_uid=12, symbol_order=15)
+
+Clock_Ip_InstallNotificationsCallback (void (*Clock_Ip_NotificationsCallbackType) (Clock_Ip_NotificationType, Clock_Ip_NameType) Callback)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pfkNotificationsCallback = Callback_2(D);
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_DisableModuleClock (Clock_Ip_DisableModuleClock, funcdef_no=12, decl_uid=6266, cgraph_uid=13, symbol_order=16)
+
+Clock_Ip_DisableModuleClock (Clock_Ip_NameType ClockName)
+{
+  uint32 CallbackIndex;
+  unsigned char _1;
+  int _2;
+  unsigned char _3;
+  void (*<T69b>) (Clock_Ip_NameType, boolean) _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Clock_Ip_au8ClockFeatures[ClockName_6(D)][1];
+  _2 = (int) _1;
+  _3 = Clock_Ip_au8GateCallbackIndex[_2];
+  CallbackIndex_7 = (uint32) _3;
+  # DEBUG CallbackIndex => CallbackIndex_7
+  # DEBUG BEGIN_STMT
+  _4 = Clock_Ip_axGateCallbacks[CallbackIndex_7].Update;
+  _4 (ClockName_6(D), 1);
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_EnableModuleClock (Clock_Ip_EnableModuleClock, funcdef_no=13, decl_uid=6268, cgraph_uid=14, symbol_order=17)
+
+Clock_Ip_EnableModuleClock (Clock_Ip_NameType ClockName)
+{
+  uint32 CallbackIndex;
+  unsigned char _1;
+  int _2;
+  unsigned char _3;
+  void (*<T69b>) (Clock_Ip_NameType, boolean) _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Clock_Ip_au8ClockFeatures[ClockName_6(D)][1];
+  _2 = (int) _1;
+  _3 = Clock_Ip_au8GateCallbackIndex[_2];
+  CallbackIndex_7 = (uint32) _3;
+  # DEBUG CallbackIndex => CallbackIndex_7
+  # DEBUG BEGIN_STMT
+  _4 = Clock_Ip_axGateCallbacks[CallbackIndex_7].Update;
+  _4 (ClockName_6(D), 0);
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_DisableFircInStandby (Clock_Ip_DisableFircInStandby, funcdef_no=14, decl_uid=6270, cgraph_uid=15, symbol_order=18)
+
+Clock_Ip_DisableFircInStandby ()
+{
+  _Bool Clock_Ip_bObjectsAreInitialized.22_1;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_bObjectsAreInitialized.22_1 = Clock_Ip_bObjectsAreInitialized;
+  if (Clock_Ip_bObjectsAreInitialized.22_1 != 0)
+    goto <bb 4>; [67.00%]
+  else
+    goto <bb 3>; [33.00%]
+
+  <bb 3> [local count: 354334800]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_ClockInitializeObjects ();
+  # DEBUG BEGIN_STMT
+  Clock_Ip_bObjectsAreInitialized = 1;
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  DisableFircInStandbyMode ();
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_EnableFircInStandby (Clock_Ip_EnableFircInStandby, funcdef_no=15, decl_uid=6272, cgraph_uid=16, symbol_order=19)
+
+Clock_Ip_EnableFircInStandby ()
+{
+  _Bool Clock_Ip_bObjectsAreInitialized.23_1;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_bObjectsAreInitialized.23_1 = Clock_Ip_bObjectsAreInitialized;
+  if (Clock_Ip_bObjectsAreInitialized.23_1 != 0)
+    goto <bb 4>; [67.00%]
+  else
+    goto <bb 3>; [33.00%]
+
+  <bb 3> [local count: 354334800]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_ClockInitializeObjects ();
+  # DEBUG BEGIN_STMT
+  Clock_Ip_bObjectsAreInitialized = 1;
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  EnableFircInStandbyMode ();
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_DisableSircInStandby (Clock_Ip_DisableSircInStandby, funcdef_no=16, decl_uid=6274, cgraph_uid=17, symbol_order=20)
+
+Clock_Ip_DisableSircInStandby ()
+{
+  _Bool Clock_Ip_bObjectsAreInitialized.24_1;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_bObjectsAreInitialized.24_1 = Clock_Ip_bObjectsAreInitialized;
+  if (Clock_Ip_bObjectsAreInitialized.24_1 != 0)
+    goto <bb 4>; [67.00%]
+  else
+    goto <bb 3>; [33.00%]
+
+  <bb 3> [local count: 354334800]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_ClockInitializeObjects ();
+  # DEBUG BEGIN_STMT
+  Clock_Ip_bObjectsAreInitialized = 1;
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  DisableSircInStandbyMode ();
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_EnableSircInStandby (Clock_Ip_EnableSircInStandby, funcdef_no=17, decl_uid=6276, cgraph_uid=18, symbol_order=21)
+
+Clock_Ip_EnableSircInStandby ()
+{
+  _Bool Clock_Ip_bObjectsAreInitialized.25_1;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_bObjectsAreInitialized.25_1 = Clock_Ip_bObjectsAreInitialized;
+  if (Clock_Ip_bObjectsAreInitialized.25_1 != 0)
+    goto <bb 4>; [67.00%]
+  else
+    goto <bb 3>; [33.00%]
+
+  <bb 3> [local count: 354334800]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_ClockInitializeObjects ();
+  # DEBUG BEGIN_STMT
+  Clock_Ip_bObjectsAreInitialized = 1;
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  EnableSircInStandbyMode ();
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_ReportClockErrors (Clock_Ip_ReportClockErrors, funcdef_no=18, decl_uid=6522, cgraph_uid=19, symbol_order=22)
+
+Clock_Ip_ReportClockErrors (Clock_Ip_NotificationType Error, Clock_Ip_NameType ClockName)
+{
+  void (*<T534>) (Clock_Ip_NotificationType, Clock_Ip_NameType) Clock_Ip_pfkNotificationsCallback.26_1;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pfkNotificationsCallback.26_1 = Clock_Ip_pfkNotificationsCallback;
+  Clock_Ip_pfkNotificationsCallback.26_1 (Error_3(D), ClockName_4(D));
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_StartTimeout (Clock_Ip_StartTimeout, funcdef_no=19, decl_uid=6541, cgraph_uid=20, symbol_order=23)
+
+Clock_Ip_StartTimeout (uint32 * StartTimeOut, uint32 * ElapsedTimeOut, uint32 * TimeoutTicksOut, uint32 TimeoutUs)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = OsIf_GetCounter (0);
+  *StartTimeOut_5(D) = _1;
+  # DEBUG BEGIN_STMT
+  *ElapsedTimeOut_7(D) = 0;
+  # DEBUG BEGIN_STMT
+  _2 = OsIf_MicrosToTicks (TimeoutUs_9(D), 0);
+  *TimeoutTicksOut_11(D) = _2;
+  return;
+
+}
+
+
+
+;; Function Clock_Ip_TimeoutExpired (Clock_Ip_TimeoutExpired, funcdef_no=20, decl_uid=6545, cgraph_uid=21, symbol_order=24)
+
+Clock_Ip_TimeoutExpired (uint32 * StartTimeInOut, uint32 * ElapsedTimeInOut, uint32 TimeoutTicks)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _6;
+  boolean _10;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _6 = OsIf_GetElapsed (StartTimeInOut_4(D), 0);
+  _1 = *ElapsedTimeInOut_7(D);
+  _2 = _1 + _6;
+  *ElapsedTimeInOut_7(D) = _2;
+  # DEBUG BEGIN_STMT
+  _10 = _2 >= TimeoutTicks_9(D);
+  return _10;
+
+}
+
+
+
+;; Function Clock_Ip_GetConfiguredFrequencyValue (Clock_Ip_GetConfiguredFrequencyValue, funcdef_no=21, decl_uid=6528, cgraph_uid=22, symbol_order=25)
+
+Clock_Ip_GetConfiguredFrequencyValue (Clock_Ip_NameType ClockName)
+{
+  uint32 Index;
+  uint32 ReturnValue;
+  const struct Clock_Ip_ClockConfigType * Clock_Ip_pxConfig.27_1;
+  <unnamed type> _2;
+  unsigned char _4;
+  long unsigned int _5;
+
+  <bb 2> [local count: 164090757]:
+  # DEBUG BEGIN_STMT
+  # DEBUG ReturnValue => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pxConfig.27_1 = Clock_Ip_pxConfig;
+  if (Clock_Ip_pxConfig.27_1 != 0B)
+    goto <bb 8>; [70.00%]
+  else
+    goto <bb 7>; [30.00%]
+
+  <bb 8> [local count: 114863530]:
+  goto <bb 6>; [100.00%]
+
+  <bb 3> [local count: 1014686026]:
+  # DEBUG BEGIN_STMT
+  _2 = Clock_Ip_pxConfig.27_1->ConfiguredFrequencies[Index_7].Name;
+  if (_2 == ClockName_9(D))
+    goto <bb 4>; [5.50%]
+  else
+    goto <bb 5>; [94.50%]
+
+  <bb 4> [local count: 55807731]:
+  # Index_3 = PHI <Index_7(3)>
+  # DEBUG BEGIN_STMT
+  ReturnValue_11 = Clock_Ip_pxConfig.27_1->ConfiguredFrequencies[Index_3].ConfiguredFrequencyValue;
+  # DEBUG ReturnValue => ReturnValue_11
+  # DEBUG BEGIN_STMT
+  goto <bb 7>; [100.00%]
+
+  <bb 5> [local count: 958878295]:
+  # DEBUG BEGIN_STMT
+  Index_10 = Index_7 + 1;
+  # DEBUG Index => Index_10
+
+  <bb 6> [local count: 1073741824]:
+  # Index_7 = PHI <Index_10(5), 0(8)>
+  # DEBUG Index => Index_7
+  # DEBUG BEGIN_STMT
+  _4 = Clock_Ip_pxConfig.27_1->ConfigureFrequenciesCount;
+  _5 = (long unsigned int) _4;
+  if (_5 > Index_7)
+    goto <bb 3>; [94.50%]
+  else
+    goto <bb 7>; [5.50%]
+
+  <bb 7> [local count: 164090758]:
+  # ReturnValue_6 = PHI <0(2), ReturnValue_11(4), 0(6)>
+  # DEBUG ReturnValue => ReturnValue_6
+  # DEBUG BEGIN_STMT
+  return ReturnValue_6;
+
+}
+
+

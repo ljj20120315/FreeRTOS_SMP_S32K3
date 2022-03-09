@@ -1,0 +1,11 @@
+Callgraph clone;Port_schm_read_msr;22;../RTD/src/SchM_Port.c;315;8;SchM_Enter_Port_PORT_EXCLUSIVE_AREA_00;23;../RTD/src/SchM_Port.c;399;6;inlining to
+Callgraph clone;Port_schm_read_msr;22;../RTD/src/SchM_Port.c;315;8;SchM_Enter_Port_PORT_EXCLUSIVE_AREA_01;25;../RTD/src/SchM_Port.c;435;6;inlining to
+Callgraph clone;Port_schm_read_msr;22;../RTD/src/SchM_Port.c;315;8;SchM_Enter_Port_PORT_EXCLUSIVE_AREA_02;27;../RTD/src/SchM_Port.c;471;6;inlining to
+Callgraph clone;Port_schm_read_msr;22;../RTD/src/SchM_Port.c;315;8;SchM_Enter_Port_PORT_EXCLUSIVE_AREA_03;29;../RTD/src/SchM_Port.c;507;6;inlining to
+Callgraph clone;Port_schm_read_msr;22;../RTD/src/SchM_Port.c;315;8;SchM_Enter_Port_PORT_EXCLUSIVE_AREA_04;31;../RTD/src/SchM_Port.c;543;6;inlining to
+Callgraph clone;Port_schm_read_msr;22;../RTD/src/SchM_Port.c;315;8;SchM_Enter_Port_PORT_EXCLUSIVE_AREA_05;33;../RTD/src/SchM_Port.c;579;6;inlining to
+Callgraph clone;Port_schm_read_msr;22;../RTD/src/SchM_Port.c;315;8;SchM_Enter_Port_PORT_EXCLUSIVE_AREA_06;35;../RTD/src/SchM_Port.c;615;6;inlining to
+Callgraph clone;Port_schm_read_msr;22;../RTD/src/SchM_Port.c;315;8;SchM_Enter_Port_PORT_EXCLUSIVE_AREA_07;37;../RTD/src/SchM_Port.c;651;6;inlining to
+Callgraph clone;Port_schm_read_msr;22;../RTD/src/SchM_Port.c;315;8;SchM_Enter_Port_PORT_EXCLUSIVE_AREA_08;39;../RTD/src/SchM_Port.c;687;6;inlining to
+Callgraph clone;Port_schm_read_msr;22;../RTD/src/SchM_Port.c;315;8;SchM_Enter_Port_PORT_EXCLUSIVE_AREA_09;41;../RTD/src/SchM_Port.c;723;6;inlining to
+Callgraph clone;Port_schm_read_msr;22;../RTD/src/SchM_Port.c;315;8;SchM_Enter_Port_PORT_EXCLUSIVE_AREA_10;43;../RTD/src/SchM_Port.c;759;6;inlining to

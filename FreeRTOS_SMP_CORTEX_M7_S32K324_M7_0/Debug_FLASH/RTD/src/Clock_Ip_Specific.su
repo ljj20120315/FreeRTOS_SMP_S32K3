@@ -1,0 +1,14 @@
+../RTD/src/Clock_Ip_Specific.c:303:13:Clock_Ip_CodeInRamSetFlashWaitStates	12	static
+../RTD/src/Clock_Ip_Specific.c:405:6:Clock_Ip_McMeEnterKey	0	static
+../RTD/src/Clock_Ip_Specific.c:413:6:Clock_Ip_SpecificPeripheralClockInitialization	0	static
+../RTD/src/Clock_Ip_Specific.c:418:6:Clock_Ip_SpecificPlatformInitClock	24	static
+../RTD/src/Clock_Ip_Specific.c:431:6:DisableFircInStandbyMode	0	static
+../RTD/src/Clock_Ip_Specific.c:437:6:EnableFircInStandbyMode	24	static
+../RTD/src/Clock_Ip_Specific.c:445:6:DisableSircInStandbyMode	0	static
+../RTD/src/Clock_Ip_Specific.c:451:6:EnableSircInStandbyMode	24	static
+../RTD/src/Clock_Ip_Specific.c:459:6:Clock_Ip_ClockInitializeObjects	0	static
+../RTD/src/Clock_Ip_Specific.c:468:6:Clock_Ip_ClockPowerModeChangeNotification	0	static
+../RTD/src/Clock_Ip_Specific.c:579:6:Clock_Ip_FLASH_SetFlashIWS	0	static
+../RTD/src/Clock_Ip_Specific.c:399:6:Clock_Ip_SetFlashWaitStates	0	static
+../RTD/src/Clock_Ip_Specific.c:598:6:Clock_Ip_PRAMCSetRamIWS	8	static
+../RTD/src/Clock_Ip_Specific.c:381:6:Clock_Ip_SetRamWaitStates	0	static

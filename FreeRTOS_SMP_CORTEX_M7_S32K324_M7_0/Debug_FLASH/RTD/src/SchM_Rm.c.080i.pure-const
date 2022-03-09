@@ -1,0 +1,3247 @@
+
+
+ local analysis of SchM_Exit_Rm_RM_EXCLUSIVE_AREA_12/52
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_12[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 = _2 + 4294967295;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_12[u32CoreId_10] ={v} _3;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 ={v} msr_RM_EXCLUSIVE_AREA_12[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _5 = _4 & 1;
+  scanning: if (_5 == 0)
+  scanning: _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_12[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_6 == 0)
+  scanning: __asm__ __volatile__(" cpsie i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Enter_Rm_RM_EXCLUSIVE_AREA_12/51
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_12[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_2 == 0)
+  scanning: __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+    volatile is not const/pure
+  scanning: msr_RM_EXCLUSIVE_AREA_12[u32CoreId_10] ={v} reg_tmp_14;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 ={v} msr_RM_EXCLUSIVE_AREA_12[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 = _3 & 1;
+  scanning: if (_4 == 0)
+  scanning: __asm__ __volatile__(" cpsid i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_12[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _6 = _5 + 1;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_12[u32CoreId_10] ={v} _6;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Exit_Rm_RM_EXCLUSIVE_AREA_11/50
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_11[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 = _2 + 4294967295;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_11[u32CoreId_10] ={v} _3;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 ={v} msr_RM_EXCLUSIVE_AREA_11[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _5 = _4 & 1;
+  scanning: if (_5 == 0)
+  scanning: _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_11[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_6 == 0)
+  scanning: __asm__ __volatile__(" cpsie i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Enter_Rm_RM_EXCLUSIVE_AREA_11/49
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_11[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_2 == 0)
+  scanning: __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+    volatile is not const/pure
+  scanning: msr_RM_EXCLUSIVE_AREA_11[u32CoreId_10] ={v} reg_tmp_14;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 ={v} msr_RM_EXCLUSIVE_AREA_11[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 = _3 & 1;
+  scanning: if (_4 == 0)
+  scanning: __asm__ __volatile__(" cpsid i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_11[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _6 = _5 + 1;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_11[u32CoreId_10] ={v} _6;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Exit_Rm_RM_EXCLUSIVE_AREA_10/48
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_10[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 = _2 + 4294967295;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_10[u32CoreId_10] ={v} _3;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 ={v} msr_RM_EXCLUSIVE_AREA_10[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _5 = _4 & 1;
+  scanning: if (_5 == 0)
+  scanning: _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_10[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_6 == 0)
+  scanning: __asm__ __volatile__(" cpsie i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Enter_Rm_RM_EXCLUSIVE_AREA_10/47
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_10[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_2 == 0)
+  scanning: __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+    volatile is not const/pure
+  scanning: msr_RM_EXCLUSIVE_AREA_10[u32CoreId_10] ={v} reg_tmp_14;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 ={v} msr_RM_EXCLUSIVE_AREA_10[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 = _3 & 1;
+  scanning: if (_4 == 0)
+  scanning: __asm__ __volatile__(" cpsid i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_10[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _6 = _5 + 1;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_10[u32CoreId_10] ={v} _6;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Exit_Rm_RM_EXCLUSIVE_AREA_09/46
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_09[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 = _2 + 4294967295;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_09[u32CoreId_10] ={v} _3;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 ={v} msr_RM_EXCLUSIVE_AREA_09[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _5 = _4 & 1;
+  scanning: if (_5 == 0)
+  scanning: _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_09[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_6 == 0)
+  scanning: __asm__ __volatile__(" cpsie i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Enter_Rm_RM_EXCLUSIVE_AREA_09/45
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_09[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_2 == 0)
+  scanning: __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+    volatile is not const/pure
+  scanning: msr_RM_EXCLUSIVE_AREA_09[u32CoreId_10] ={v} reg_tmp_14;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 ={v} msr_RM_EXCLUSIVE_AREA_09[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 = _3 & 1;
+  scanning: if (_4 == 0)
+  scanning: __asm__ __volatile__(" cpsid i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_09[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _6 = _5 + 1;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_09[u32CoreId_10] ={v} _6;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Exit_Rm_RM_EXCLUSIVE_AREA_08/44
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_08[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 = _2 + 4294967295;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_08[u32CoreId_10] ={v} _3;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 ={v} msr_RM_EXCLUSIVE_AREA_08[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _5 = _4 & 1;
+  scanning: if (_5 == 0)
+  scanning: _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_08[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_6 == 0)
+  scanning: __asm__ __volatile__(" cpsie i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Enter_Rm_RM_EXCLUSIVE_AREA_08/43
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_08[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_2 == 0)
+  scanning: __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+    volatile is not const/pure
+  scanning: msr_RM_EXCLUSIVE_AREA_08[u32CoreId_10] ={v} reg_tmp_14;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 ={v} msr_RM_EXCLUSIVE_AREA_08[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 = _3 & 1;
+  scanning: if (_4 == 0)
+  scanning: __asm__ __volatile__(" cpsid i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_08[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _6 = _5 + 1;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_08[u32CoreId_10] ={v} _6;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Exit_Rm_RM_EXCLUSIVE_AREA_07/42
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_07[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 = _2 + 4294967295;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_07[u32CoreId_10] ={v} _3;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 ={v} msr_RM_EXCLUSIVE_AREA_07[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _5 = _4 & 1;
+  scanning: if (_5 == 0)
+  scanning: _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_07[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_6 == 0)
+  scanning: __asm__ __volatile__(" cpsie i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Enter_Rm_RM_EXCLUSIVE_AREA_07/41
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_07[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_2 == 0)
+  scanning: __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+    volatile is not const/pure
+  scanning: msr_RM_EXCLUSIVE_AREA_07[u32CoreId_10] ={v} reg_tmp_14;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 ={v} msr_RM_EXCLUSIVE_AREA_07[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 = _3 & 1;
+  scanning: if (_4 == 0)
+  scanning: __asm__ __volatile__(" cpsid i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_07[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _6 = _5 + 1;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_07[u32CoreId_10] ={v} _6;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/40
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_06[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 = _2 + 4294967295;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_06[u32CoreId_10] ={v} _3;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 ={v} msr_RM_EXCLUSIVE_AREA_06[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _5 = _4 & 1;
+  scanning: if (_5 == 0)
+  scanning: _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_06[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_6 == 0)
+  scanning: __asm__ __volatile__(" cpsie i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/39
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_06[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_2 == 0)
+  scanning: __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+    volatile is not const/pure
+  scanning: msr_RM_EXCLUSIVE_AREA_06[u32CoreId_10] ={v} reg_tmp_14;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 ={v} msr_RM_EXCLUSIVE_AREA_06[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 = _3 & 1;
+  scanning: if (_4 == 0)
+  scanning: __asm__ __volatile__(" cpsid i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_06[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _6 = _5 + 1;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_06[u32CoreId_10] ={v} _6;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05/38
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_05[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 = _2 + 4294967295;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_05[u32CoreId_10] ={v} _3;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 ={v} msr_RM_EXCLUSIVE_AREA_05[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _5 = _4 & 1;
+  scanning: if (_5 == 0)
+  scanning: _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_05[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_6 == 0)
+  scanning: __asm__ __volatile__(" cpsie i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/37
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_05[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_2 == 0)
+  scanning: __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+    volatile is not const/pure
+  scanning: msr_RM_EXCLUSIVE_AREA_05[u32CoreId_10] ={v} reg_tmp_14;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 ={v} msr_RM_EXCLUSIVE_AREA_05[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 = _3 & 1;
+  scanning: if (_4 == 0)
+  scanning: __asm__ __volatile__(" cpsid i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_05[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _6 = _5 + 1;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_05[u32CoreId_10] ={v} _6;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04/36
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_04[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 = _2 + 4294967295;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_04[u32CoreId_10] ={v} _3;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 ={v} msr_RM_EXCLUSIVE_AREA_04[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _5 = _4 & 1;
+  scanning: if (_5 == 0)
+  scanning: _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_04[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_6 == 0)
+  scanning: __asm__ __volatile__(" cpsie i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/35
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_04[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_2 == 0)
+  scanning: __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+    volatile is not const/pure
+  scanning: msr_RM_EXCLUSIVE_AREA_04[u32CoreId_10] ={v} reg_tmp_14;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 ={v} msr_RM_EXCLUSIVE_AREA_04[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 = _3 & 1;
+  scanning: if (_4 == 0)
+  scanning: __asm__ __volatile__(" cpsid i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_04[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _6 = _5 + 1;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_04[u32CoreId_10] ={v} _6;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Exit_Rm_RM_EXCLUSIVE_AREA_03/34
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_03[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 = _2 + 4294967295;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_03[u32CoreId_10] ={v} _3;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 ={v} msr_RM_EXCLUSIVE_AREA_03[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _5 = _4 & 1;
+  scanning: if (_5 == 0)
+  scanning: _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_03[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_6 == 0)
+  scanning: __asm__ __volatile__(" cpsie i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Enter_Rm_RM_EXCLUSIVE_AREA_03/33
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_03[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_2 == 0)
+  scanning: __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+    volatile is not const/pure
+  scanning: msr_RM_EXCLUSIVE_AREA_03[u32CoreId_10] ={v} reg_tmp_14;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 ={v} msr_RM_EXCLUSIVE_AREA_03[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 = _3 & 1;
+  scanning: if (_4 == 0)
+  scanning: __asm__ __volatile__(" cpsid i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_03[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _6 = _5 + 1;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_03[u32CoreId_10] ={v} _6;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Exit_Rm_RM_EXCLUSIVE_AREA_02/32
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_02[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 = _2 + 4294967295;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_02[u32CoreId_10] ={v} _3;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 ={v} msr_RM_EXCLUSIVE_AREA_02[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _5 = _4 & 1;
+  scanning: if (_5 == 0)
+  scanning: _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_02[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_6 == 0)
+  scanning: __asm__ __volatile__(" cpsie i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Enter_Rm_RM_EXCLUSIVE_AREA_02/31
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_02[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_2 == 0)
+  scanning: __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+    volatile is not const/pure
+  scanning: msr_RM_EXCLUSIVE_AREA_02[u32CoreId_10] ={v} reg_tmp_14;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 ={v} msr_RM_EXCLUSIVE_AREA_02[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 = _3 & 1;
+  scanning: if (_4 == 0)
+  scanning: __asm__ __volatile__(" cpsid i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_02[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _6 = _5 + 1;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_02[u32CoreId_10] ={v} _6;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Exit_Rm_RM_EXCLUSIVE_AREA_01/30
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_01[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 = _2 + 4294967295;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_01[u32CoreId_10] ={v} _3;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 ={v} msr_RM_EXCLUSIVE_AREA_01[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _5 = _4 & 1;
+  scanning: if (_5 == 0)
+  scanning: _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_01[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_6 == 0)
+  scanning: __asm__ __volatile__(" cpsie i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Enter_Rm_RM_EXCLUSIVE_AREA_01/29
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_01[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_2 == 0)
+  scanning: __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+    volatile is not const/pure
+  scanning: msr_RM_EXCLUSIVE_AREA_01[u32CoreId_10] ={v} reg_tmp_14;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 ={v} msr_RM_EXCLUSIVE_AREA_01[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 = _3 & 1;
+  scanning: if (_4 == 0)
+  scanning: __asm__ __volatile__(" cpsid i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_01[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _6 = _5 + 1;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_01[u32CoreId_10] ={v} _6;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Exit_Rm_RM_EXCLUSIVE_AREA_00/28
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_00[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 = _2 + 4294967295;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_00[u32CoreId_10] ={v} _3;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 ={v} msr_RM_EXCLUSIVE_AREA_00[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _5 = _4 & 1;
+  scanning: if (_5 == 0)
+  scanning: _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_00[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_6 == 0)
+  scanning: __asm__ __volatile__(" cpsie i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of SchM_Enter_Rm_RM_EXCLUSIVE_AREA_00/27
+   scanning: _1 = Sys_GetCoreID ();
+  scanning: u32CoreId_10 = (uint32) _1;
+  scanning: _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_00[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: if (_2 == 0)
+  scanning: __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+    volatile is not const/pure
+  scanning: msr_RM_EXCLUSIVE_AREA_00[u32CoreId_10] ={v} reg_tmp_14;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _3 ={v} msr_RM_EXCLUSIVE_AREA_00[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _4 = _3 & 1;
+  scanning: if (_4 == 0)
+  scanning: __asm__ __volatile__(" cpsid i");
+    memory asm clobber is not const/pure
+    volatile is not const/pure
+  scanning: _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_00[u32CoreId_10];
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: _6 = _5 + 1;
+  scanning: reentry_guard_RM_EXCLUSIVE_AREA_00[u32CoreId_10] ={v} _6;
+    Volatile stmt is not const/pure
+    Volatile operand is not const/pure
+  scanning: return;
+Function is locally looping.
+Function can locally free.
+
+
+ local analysis of Rm_schm_read_msr/26
+   scanning: __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_1);
+    volatile is not const/pure
+  scanning: return reg_tmp_1;
+Function is locally looping.
+Function can locally free.
+callgraph:
+
+Sys_GetCoreID/53 (Sys_GetCoreID) @05ff8c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: SchM_Exit_Rm_RM_EXCLUSIVE_AREA_12/52 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_12/51 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_11/50 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_11/49 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_10/48 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_10/47 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_09/46 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_09/45 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_08/44 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_08/43 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_07/42 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_07/41 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/40 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/39 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05/38 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/37 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04/36 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/35 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_03/34 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_03/33 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_02/32 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_02/31 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_01/30 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_01/29 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_00/28 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_00/27 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_12/52 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_12) @05ff8700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f198
+  References: reentry_guard_RM_EXCLUSIVE_AREA_12/25 (read) reentry_guard_RM_EXCLUSIVE_AREA_12/25 (write) msr_RM_EXCLUSIVE_AREA_12/24 (read) reentry_guard_RM_EXCLUSIVE_AREA_12/25 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_12/51 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_12) @05ff8460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f238
+  References: reentry_guard_RM_EXCLUSIVE_AREA_12/25 (read) msr_RM_EXCLUSIVE_AREA_12/24 (write) msr_RM_EXCLUSIVE_AREA_12/24 (read) reentry_guard_RM_EXCLUSIVE_AREA_12/25 (read) reentry_guard_RM_EXCLUSIVE_AREA_12/25 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_11/50 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_11) @05ff81c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f178
+  References: reentry_guard_RM_EXCLUSIVE_AREA_11/23 (read) reentry_guard_RM_EXCLUSIVE_AREA_11/23 (write) msr_RM_EXCLUSIVE_AREA_11/22 (read) reentry_guard_RM_EXCLUSIVE_AREA_11/23 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_11/49 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_11) @05fc9d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f458
+  References: reentry_guard_RM_EXCLUSIVE_AREA_11/23 (read) msr_RM_EXCLUSIVE_AREA_11/22 (write) msr_RM_EXCLUSIVE_AREA_11/22 (read) reentry_guard_RM_EXCLUSIVE_AREA_11/23 (read) reentry_guard_RM_EXCLUSIVE_AREA_11/23 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_10/48 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_10) @05fc97e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f258
+  References: reentry_guard_RM_EXCLUSIVE_AREA_10/21 (read) reentry_guard_RM_EXCLUSIVE_AREA_10/21 (write) msr_RM_EXCLUSIVE_AREA_10/20 (read) reentry_guard_RM_EXCLUSIVE_AREA_10/21 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_10/47 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_10) @05fc92a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f2b8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_10/21 (read) msr_RM_EXCLUSIVE_AREA_10/20 (write) msr_RM_EXCLUSIVE_AREA_10/20 (read) reentry_guard_RM_EXCLUSIVE_AREA_10/21 (read) reentry_guard_RM_EXCLUSIVE_AREA_10/21 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_09/46 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_09) @05fc9ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f118
+  References: reentry_guard_RM_EXCLUSIVE_AREA_09/19 (read) reentry_guard_RM_EXCLUSIVE_AREA_09/19 (write) msr_RM_EXCLUSIVE_AREA_09/18 (read) reentry_guard_RM_EXCLUSIVE_AREA_09/19 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_09/45 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_09) @05fc9c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f2d8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_09/19 (read) msr_RM_EXCLUSIVE_AREA_09/18 (write) msr_RM_EXCLUSIVE_AREA_09/18 (read) reentry_guard_RM_EXCLUSIVE_AREA_09/19 (read) reentry_guard_RM_EXCLUSIVE_AREA_09/19 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_08/44 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_08) @05fc99a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f3f8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_08/17 (read) reentry_guard_RM_EXCLUSIVE_AREA_08/17 (write) msr_RM_EXCLUSIVE_AREA_08/16 (read) reentry_guard_RM_EXCLUSIVE_AREA_08/17 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_08/43 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_08) @05fc9700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f338
+  References: reentry_guard_RM_EXCLUSIVE_AREA_08/17 (read) msr_RM_EXCLUSIVE_AREA_08/16 (write) msr_RM_EXCLUSIVE_AREA_08/16 (read) reentry_guard_RM_EXCLUSIVE_AREA_08/17 (read) reentry_guard_RM_EXCLUSIVE_AREA_08/17 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_07/42 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_07) @05fc9460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f4b8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_07/15 (read) reentry_guard_RM_EXCLUSIVE_AREA_07/15 (write) msr_RM_EXCLUSIVE_AREA_07/14 (read) reentry_guard_RM_EXCLUSIVE_AREA_07/15 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_07/41 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_07) @05fc91c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f158
+  References: reentry_guard_RM_EXCLUSIVE_AREA_07/15 (read) msr_RM_EXCLUSIVE_AREA_07/14 (write) msr_RM_EXCLUSIVE_AREA_07/14 (read) reentry_guard_RM_EXCLUSIVE_AREA_07/15 (read) reentry_guard_RM_EXCLUSIVE_AREA_07/15 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/40 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06) @05fc1d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f398
+  References: reentry_guard_RM_EXCLUSIVE_AREA_06/13 (read) reentry_guard_RM_EXCLUSIVE_AREA_06/13 (write) msr_RM_EXCLUSIVE_AREA_06/12 (read) reentry_guard_RM_EXCLUSIVE_AREA_06/13 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/39 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06) @05fc17e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f3d8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_06/13 (read) msr_RM_EXCLUSIVE_AREA_06/12 (write) msr_RM_EXCLUSIVE_AREA_06/12 (read) reentry_guard_RM_EXCLUSIVE_AREA_06/13 (read) reentry_guard_RM_EXCLUSIVE_AREA_06/13 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05/38 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05) @05fc12a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f498
+  References: reentry_guard_RM_EXCLUSIVE_AREA_05/11 (read) reentry_guard_RM_EXCLUSIVE_AREA_05/11 (write) msr_RM_EXCLUSIVE_AREA_05/10 (read) reentry_guard_RM_EXCLUSIVE_AREA_05/11 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/37 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05) @05fc1ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f1b8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_05/11 (read) msr_RM_EXCLUSIVE_AREA_05/10 (write) msr_RM_EXCLUSIVE_AREA_05/10 (read) reentry_guard_RM_EXCLUSIVE_AREA_05/11 (read) reentry_guard_RM_EXCLUSIVE_AREA_05/11 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04/36 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04) @05fc1c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f418
+  References: reentry_guard_RM_EXCLUSIVE_AREA_04/9 (read) reentry_guard_RM_EXCLUSIVE_AREA_04/9 (write) msr_RM_EXCLUSIVE_AREA_04/8 (read) reentry_guard_RM_EXCLUSIVE_AREA_04/9 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/35 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04) @05fc19a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f1f8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_04/9 (read) msr_RM_EXCLUSIVE_AREA_04/8 (write) msr_RM_EXCLUSIVE_AREA_04/8 (read) reentry_guard_RM_EXCLUSIVE_AREA_04/9 (read) reentry_guard_RM_EXCLUSIVE_AREA_04/9 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_03/34 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_03) @05fc1700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f438
+  References: reentry_guard_RM_EXCLUSIVE_AREA_03/7 (read) reentry_guard_RM_EXCLUSIVE_AREA_03/7 (write) msr_RM_EXCLUSIVE_AREA_03/6 (read) reentry_guard_RM_EXCLUSIVE_AREA_03/7 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_03/33 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_03) @05fc1460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f0d8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_03/7 (read) msr_RM_EXCLUSIVE_AREA_03/6 (write) msr_RM_EXCLUSIVE_AREA_03/6 (read) reentry_guard_RM_EXCLUSIVE_AREA_03/7 (read) reentry_guard_RM_EXCLUSIVE_AREA_03/7 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_02/32 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_02) @05fc11c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f298
+  References: reentry_guard_RM_EXCLUSIVE_AREA_02/5 (read) reentry_guard_RM_EXCLUSIVE_AREA_02/5 (write) msr_RM_EXCLUSIVE_AREA_02/4 (read) reentry_guard_RM_EXCLUSIVE_AREA_02/5 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_02/31 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_02) @05f64d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f478
+  References: reentry_guard_RM_EXCLUSIVE_AREA_02/5 (read) msr_RM_EXCLUSIVE_AREA_02/4 (write) msr_RM_EXCLUSIVE_AREA_02/4 (read) reentry_guard_RM_EXCLUSIVE_AREA_02/5 (read) reentry_guard_RM_EXCLUSIVE_AREA_02/5 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_01/30 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_01) @05f647e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f358
+  References: reentry_guard_RM_EXCLUSIVE_AREA_01/3 (read) reentry_guard_RM_EXCLUSIVE_AREA_01/3 (write) msr_RM_EXCLUSIVE_AREA_01/2 (read) reentry_guard_RM_EXCLUSIVE_AREA_01/3 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_01/29 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_01) @05f64ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f278
+  References: reentry_guard_RM_EXCLUSIVE_AREA_01/3 (read) msr_RM_EXCLUSIVE_AREA_01/2 (write) msr_RM_EXCLUSIVE_AREA_01/2 (read) reentry_guard_RM_EXCLUSIVE_AREA_01/3 (read) reentry_guard_RM_EXCLUSIVE_AREA_01/3 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_00/28 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_00) @05f64c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f378
+  References: reentry_guard_RM_EXCLUSIVE_AREA_00/1 (read) reentry_guard_RM_EXCLUSIVE_AREA_00/1 (write) msr_RM_EXCLUSIVE_AREA_00/0 (read) reentry_guard_RM_EXCLUSIVE_AREA_00/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_00/27 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_00) @05f649a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f3b8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_00/1 (read) msr_RM_EXCLUSIVE_AREA_00/0 (write) msr_RM_EXCLUSIVE_AREA_00/0 (read) reentry_guard_RM_EXCLUSIVE_AREA_00/1 (read) reentry_guard_RM_EXCLUSIVE_AREA_00/1 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+Rm_schm_read_msr/26 (Rm_schm_read_msr) @05f64700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f1d8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+
+ ordered call graph: reduced for nothrow
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_12/52 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_12) @05ff8700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f198
+  References: reentry_guard_RM_EXCLUSIVE_AREA_12/25 (read) reentry_guard_RM_EXCLUSIVE_AREA_12/25 (write) msr_RM_EXCLUSIVE_AREA_12/24 (read) reentry_guard_RM_EXCLUSIVE_AREA_12/25 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_12/51 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_12) @05ff8460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f238
+  References: reentry_guard_RM_EXCLUSIVE_AREA_12/25 (read) msr_RM_EXCLUSIVE_AREA_12/24 (write) msr_RM_EXCLUSIVE_AREA_12/24 (read) reentry_guard_RM_EXCLUSIVE_AREA_12/25 (read) reentry_guard_RM_EXCLUSIVE_AREA_12/25 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_11/50 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_11) @05ff81c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f178
+  References: reentry_guard_RM_EXCLUSIVE_AREA_11/23 (read) reentry_guard_RM_EXCLUSIVE_AREA_11/23 (write) msr_RM_EXCLUSIVE_AREA_11/22 (read) reentry_guard_RM_EXCLUSIVE_AREA_11/23 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_11/49 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_11) @05fc9d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f458
+  References: reentry_guard_RM_EXCLUSIVE_AREA_11/23 (read) msr_RM_EXCLUSIVE_AREA_11/22 (write) msr_RM_EXCLUSIVE_AREA_11/22 (read) reentry_guard_RM_EXCLUSIVE_AREA_11/23 (read) reentry_guard_RM_EXCLUSIVE_AREA_11/23 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_10/48 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_10) @05fc97e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f258
+  References: reentry_guard_RM_EXCLUSIVE_AREA_10/21 (read) reentry_guard_RM_EXCLUSIVE_AREA_10/21 (write) msr_RM_EXCLUSIVE_AREA_10/20 (read) reentry_guard_RM_EXCLUSIVE_AREA_10/21 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_10/47 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_10) @05fc92a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f2b8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_10/21 (read) msr_RM_EXCLUSIVE_AREA_10/20 (write) msr_RM_EXCLUSIVE_AREA_10/20 (read) reentry_guard_RM_EXCLUSIVE_AREA_10/21 (read) reentry_guard_RM_EXCLUSIVE_AREA_10/21 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_09/46 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_09) @05fc9ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f118
+  References: reentry_guard_RM_EXCLUSIVE_AREA_09/19 (read) reentry_guard_RM_EXCLUSIVE_AREA_09/19 (write) msr_RM_EXCLUSIVE_AREA_09/18 (read) reentry_guard_RM_EXCLUSIVE_AREA_09/19 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_09/45 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_09) @05fc9c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f2d8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_09/19 (read) msr_RM_EXCLUSIVE_AREA_09/18 (write) msr_RM_EXCLUSIVE_AREA_09/18 (read) reentry_guard_RM_EXCLUSIVE_AREA_09/19 (read) reentry_guard_RM_EXCLUSIVE_AREA_09/19 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_08/44 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_08) @05fc99a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f3f8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_08/17 (read) reentry_guard_RM_EXCLUSIVE_AREA_08/17 (write) msr_RM_EXCLUSIVE_AREA_08/16 (read) reentry_guard_RM_EXCLUSIVE_AREA_08/17 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_08/43 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_08) @05fc9700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f338
+  References: reentry_guard_RM_EXCLUSIVE_AREA_08/17 (read) msr_RM_EXCLUSIVE_AREA_08/16 (write) msr_RM_EXCLUSIVE_AREA_08/16 (read) reentry_guard_RM_EXCLUSIVE_AREA_08/17 (read) reentry_guard_RM_EXCLUSIVE_AREA_08/17 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_07/42 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_07) @05fc9460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f4b8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_07/15 (read) reentry_guard_RM_EXCLUSIVE_AREA_07/15 (write) msr_RM_EXCLUSIVE_AREA_07/14 (read) reentry_guard_RM_EXCLUSIVE_AREA_07/15 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_07/41 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_07) @05fc91c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f158
+  References: reentry_guard_RM_EXCLUSIVE_AREA_07/15 (read) msr_RM_EXCLUSIVE_AREA_07/14 (write) msr_RM_EXCLUSIVE_AREA_07/14 (read) reentry_guard_RM_EXCLUSIVE_AREA_07/15 (read) reentry_guard_RM_EXCLUSIVE_AREA_07/15 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/40 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06) @05fc1d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f398
+  References: reentry_guard_RM_EXCLUSIVE_AREA_06/13 (read) reentry_guard_RM_EXCLUSIVE_AREA_06/13 (write) msr_RM_EXCLUSIVE_AREA_06/12 (read) reentry_guard_RM_EXCLUSIVE_AREA_06/13 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/39 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06) @05fc17e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f3d8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_06/13 (read) msr_RM_EXCLUSIVE_AREA_06/12 (write) msr_RM_EXCLUSIVE_AREA_06/12 (read) reentry_guard_RM_EXCLUSIVE_AREA_06/13 (read) reentry_guard_RM_EXCLUSIVE_AREA_06/13 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05/38 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05) @05fc12a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f498
+  References: reentry_guard_RM_EXCLUSIVE_AREA_05/11 (read) reentry_guard_RM_EXCLUSIVE_AREA_05/11 (write) msr_RM_EXCLUSIVE_AREA_05/10 (read) reentry_guard_RM_EXCLUSIVE_AREA_05/11 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/37 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05) @05fc1ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f1b8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_05/11 (read) msr_RM_EXCLUSIVE_AREA_05/10 (write) msr_RM_EXCLUSIVE_AREA_05/10 (read) reentry_guard_RM_EXCLUSIVE_AREA_05/11 (read) reentry_guard_RM_EXCLUSIVE_AREA_05/11 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04/36 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04) @05fc1c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f418
+  References: reentry_guard_RM_EXCLUSIVE_AREA_04/9 (read) reentry_guard_RM_EXCLUSIVE_AREA_04/9 (write) msr_RM_EXCLUSIVE_AREA_04/8 (read) reentry_guard_RM_EXCLUSIVE_AREA_04/9 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/35 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04) @05fc19a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f1f8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_04/9 (read) msr_RM_EXCLUSIVE_AREA_04/8 (write) msr_RM_EXCLUSIVE_AREA_04/8 (read) reentry_guard_RM_EXCLUSIVE_AREA_04/9 (read) reentry_guard_RM_EXCLUSIVE_AREA_04/9 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_03/34 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_03) @05fc1700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f438
+  References: reentry_guard_RM_EXCLUSIVE_AREA_03/7 (read) reentry_guard_RM_EXCLUSIVE_AREA_03/7 (write) msr_RM_EXCLUSIVE_AREA_03/6 (read) reentry_guard_RM_EXCLUSIVE_AREA_03/7 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_03/33 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_03) @05fc1460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f0d8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_03/7 (read) msr_RM_EXCLUSIVE_AREA_03/6 (write) msr_RM_EXCLUSIVE_AREA_03/6 (read) reentry_guard_RM_EXCLUSIVE_AREA_03/7 (read) reentry_guard_RM_EXCLUSIVE_AREA_03/7 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_02/32 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_02) @05fc11c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f298
+  References: reentry_guard_RM_EXCLUSIVE_AREA_02/5 (read) reentry_guard_RM_EXCLUSIVE_AREA_02/5 (write) msr_RM_EXCLUSIVE_AREA_02/4 (read) reentry_guard_RM_EXCLUSIVE_AREA_02/5 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_02/31 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_02) @05f64d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f478
+  References: reentry_guard_RM_EXCLUSIVE_AREA_02/5 (read) msr_RM_EXCLUSIVE_AREA_02/4 (write) msr_RM_EXCLUSIVE_AREA_02/4 (read) reentry_guard_RM_EXCLUSIVE_AREA_02/5 (read) reentry_guard_RM_EXCLUSIVE_AREA_02/5 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_01/30 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_01) @05f647e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f358
+  References: reentry_guard_RM_EXCLUSIVE_AREA_01/3 (read) reentry_guard_RM_EXCLUSIVE_AREA_01/3 (write) msr_RM_EXCLUSIVE_AREA_01/2 (read) reentry_guard_RM_EXCLUSIVE_AREA_01/3 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_01/29 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_01) @05f64ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f278
+  References: reentry_guard_RM_EXCLUSIVE_AREA_01/3 (read) msr_RM_EXCLUSIVE_AREA_01/2 (write) msr_RM_EXCLUSIVE_AREA_01/2 (read) reentry_guard_RM_EXCLUSIVE_AREA_01/3 (read) reentry_guard_RM_EXCLUSIVE_AREA_01/3 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_00/28 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_00) @05f64c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f378
+  References: reentry_guard_RM_EXCLUSIVE_AREA_00/1 (read) reentry_guard_RM_EXCLUSIVE_AREA_00/1 (write) msr_RM_EXCLUSIVE_AREA_00/0 (read) reentry_guard_RM_EXCLUSIVE_AREA_00/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_00/27 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_00) @05f649a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f3b8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_00/1 (read) msr_RM_EXCLUSIVE_AREA_00/0 (write) msr_RM_EXCLUSIVE_AREA_00/0 (read) reentry_guard_RM_EXCLUSIVE_AREA_00/1 (read) reentry_guard_RM_EXCLUSIVE_AREA_00/1 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+Rm_schm_read_msr/26 (Rm_schm_read_msr) @05f64700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f1d8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+
+
+MALLOC LATTICE Initial:
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_12/52: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_12/51: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_11/50: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_11/49: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_10/48: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_10/47: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_09/46: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_09/45: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_08/44: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_08/43: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_07/42: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_07/41: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/40: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/39: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05/38: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/37: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04/36: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/35: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_03/34: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_03/33: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_02/32: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_02/31: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_01/30: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_01/29: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_00/28: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_00/27: malloc_bottom
+Rm_schm_read_msr/26: malloc_bottom
+
+
+MALLOC LATTICE after propagation:
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_12/52: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_12/51: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_11/50: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_11/49: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_10/48: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_10/47: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_09/46: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_09/45: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_08/44: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_08/43: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_07/42: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_07/41: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/40: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/39: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05/38: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/37: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04/36: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/35: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_03/34: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_03/33: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_02/32: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_02/31: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_01/30: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_01/29: malloc_bottom
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_00/28: malloc_bottom
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_00/27: malloc_bottom
+Rm_schm_read_msr/26: malloc_bottom
+callgraph:
+
+Sys_GetCoreID/53 (Sys_GetCoreID) @05ff8c40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: SchM_Exit_Rm_RM_EXCLUSIVE_AREA_12/52 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_12/51 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_11/50 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_11/49 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_10/48 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_10/47 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_09/46 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_09/45 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_08/44 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_08/43 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_07/42 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_07/41 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/40 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/39 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05/38 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/37 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04/36 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/35 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_03/34 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_03/33 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_02/32 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_02/31 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_01/30 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_01/29 (1073741824 (estimated locally),1.00 per call) SchM_Exit_Rm_RM_EXCLUSIVE_AREA_00/28 (1073741824 (estimated locally),1.00 per call) SchM_Enter_Rm_RM_EXCLUSIVE_AREA_00/27 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_12/52 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_12) @05ff8700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f2d8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_12/25 (read) reentry_guard_RM_EXCLUSIVE_AREA_12/25 (write) msr_RM_EXCLUSIVE_AREA_12/24 (read) reentry_guard_RM_EXCLUSIVE_AREA_12/25 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_12/51 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_12) @05ff8460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f198
+  References: reentry_guard_RM_EXCLUSIVE_AREA_12/25 (read) msr_RM_EXCLUSIVE_AREA_12/24 (write) msr_RM_EXCLUSIVE_AREA_12/24 (read) reentry_guard_RM_EXCLUSIVE_AREA_12/25 (read) reentry_guard_RM_EXCLUSIVE_AREA_12/25 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_11/50 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_11) @05ff81c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f118
+  References: reentry_guard_RM_EXCLUSIVE_AREA_11/23 (read) reentry_guard_RM_EXCLUSIVE_AREA_11/23 (write) msr_RM_EXCLUSIVE_AREA_11/22 (read) reentry_guard_RM_EXCLUSIVE_AREA_11/23 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_11/49 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_11) @05fc9d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f138
+  References: reentry_guard_RM_EXCLUSIVE_AREA_11/23 (read) msr_RM_EXCLUSIVE_AREA_11/22 (write) msr_RM_EXCLUSIVE_AREA_11/22 (read) reentry_guard_RM_EXCLUSIVE_AREA_11/23 (read) reentry_guard_RM_EXCLUSIVE_AREA_11/23 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_10/48 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_10) @05fc97e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f3b8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_10/21 (read) reentry_guard_RM_EXCLUSIVE_AREA_10/21 (write) msr_RM_EXCLUSIVE_AREA_10/20 (read) reentry_guard_RM_EXCLUSIVE_AREA_10/21 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_10/47 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_10) @05fc92a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f178
+  References: reentry_guard_RM_EXCLUSIVE_AREA_10/21 (read) msr_RM_EXCLUSIVE_AREA_10/20 (write) msr_RM_EXCLUSIVE_AREA_10/20 (read) reentry_guard_RM_EXCLUSIVE_AREA_10/21 (read) reentry_guard_RM_EXCLUSIVE_AREA_10/21 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_09/46 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_09) @05fc9ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f4b8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_09/19 (read) reentry_guard_RM_EXCLUSIVE_AREA_09/19 (write) msr_RM_EXCLUSIVE_AREA_09/18 (read) reentry_guard_RM_EXCLUSIVE_AREA_09/19 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_09/45 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_09) @05fc9c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f418
+  References: reentry_guard_RM_EXCLUSIVE_AREA_09/19 (read) msr_RM_EXCLUSIVE_AREA_09/18 (write) msr_RM_EXCLUSIVE_AREA_09/18 (read) reentry_guard_RM_EXCLUSIVE_AREA_09/19 (read) reentry_guard_RM_EXCLUSIVE_AREA_09/19 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_08/44 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_08) @05fc99a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f2f8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_08/17 (read) reentry_guard_RM_EXCLUSIVE_AREA_08/17 (write) msr_RM_EXCLUSIVE_AREA_08/16 (read) reentry_guard_RM_EXCLUSIVE_AREA_08/17 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_08/43 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_08) @05fc9700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f478
+  References: reentry_guard_RM_EXCLUSIVE_AREA_08/17 (read) msr_RM_EXCLUSIVE_AREA_08/16 (write) msr_RM_EXCLUSIVE_AREA_08/16 (read) reentry_guard_RM_EXCLUSIVE_AREA_08/17 (read) reentry_guard_RM_EXCLUSIVE_AREA_08/17 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_07/42 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_07) @05fc9460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f0f8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_07/15 (read) reentry_guard_RM_EXCLUSIVE_AREA_07/15 (write) msr_RM_EXCLUSIVE_AREA_07/14 (read) reentry_guard_RM_EXCLUSIVE_AREA_07/15 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_07/41 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_07) @05fc91c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f338
+  References: reentry_guard_RM_EXCLUSIVE_AREA_07/15 (read) msr_RM_EXCLUSIVE_AREA_07/14 (write) msr_RM_EXCLUSIVE_AREA_07/14 (read) reentry_guard_RM_EXCLUSIVE_AREA_07/15 (read) reentry_guard_RM_EXCLUSIVE_AREA_07/15 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/40 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06) @05fc1d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f0d8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_06/13 (read) reentry_guard_RM_EXCLUSIVE_AREA_06/13 (write) msr_RM_EXCLUSIVE_AREA_06/12 (read) reentry_guard_RM_EXCLUSIVE_AREA_06/13 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/39 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06) @05fc17e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f438
+  References: reentry_guard_RM_EXCLUSIVE_AREA_06/13 (read) msr_RM_EXCLUSIVE_AREA_06/12 (write) msr_RM_EXCLUSIVE_AREA_06/12 (read) reentry_guard_RM_EXCLUSIVE_AREA_06/13 (read) reentry_guard_RM_EXCLUSIVE_AREA_06/13 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05/38 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05) @05fc12a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f1b8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_05/11 (read) reentry_guard_RM_EXCLUSIVE_AREA_05/11 (write) msr_RM_EXCLUSIVE_AREA_05/10 (read) reentry_guard_RM_EXCLUSIVE_AREA_05/11 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/37 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05) @05fc1ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f498
+  References: reentry_guard_RM_EXCLUSIVE_AREA_05/11 (read) msr_RM_EXCLUSIVE_AREA_05/10 (write) msr_RM_EXCLUSIVE_AREA_05/10 (read) reentry_guard_RM_EXCLUSIVE_AREA_05/11 (read) reentry_guard_RM_EXCLUSIVE_AREA_05/11 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04/36 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04) @05fc1c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f398
+  References: reentry_guard_RM_EXCLUSIVE_AREA_04/9 (read) reentry_guard_RM_EXCLUSIVE_AREA_04/9 (write) msr_RM_EXCLUSIVE_AREA_04/8 (read) reentry_guard_RM_EXCLUSIVE_AREA_04/9 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/35 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04) @05fc19a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f298
+  References: reentry_guard_RM_EXCLUSIVE_AREA_04/9 (read) msr_RM_EXCLUSIVE_AREA_04/8 (write) msr_RM_EXCLUSIVE_AREA_04/8 (read) reentry_guard_RM_EXCLUSIVE_AREA_04/9 (read) reentry_guard_RM_EXCLUSIVE_AREA_04/9 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_03/34 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_03) @05fc1700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f238
+  References: reentry_guard_RM_EXCLUSIVE_AREA_03/7 (read) reentry_guard_RM_EXCLUSIVE_AREA_03/7 (write) msr_RM_EXCLUSIVE_AREA_03/6 (read) reentry_guard_RM_EXCLUSIVE_AREA_03/7 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_03/33 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_03) @05fc1460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f3d8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_03/7 (read) msr_RM_EXCLUSIVE_AREA_03/6 (write) msr_RM_EXCLUSIVE_AREA_03/6 (read) reentry_guard_RM_EXCLUSIVE_AREA_03/7 (read) reentry_guard_RM_EXCLUSIVE_AREA_03/7 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_02/32 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_02) @05fc11c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f158
+  References: reentry_guard_RM_EXCLUSIVE_AREA_02/5 (read) reentry_guard_RM_EXCLUSIVE_AREA_02/5 (write) msr_RM_EXCLUSIVE_AREA_02/4 (read) reentry_guard_RM_EXCLUSIVE_AREA_02/5 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_02/31 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_02) @05f64d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f458
+  References: reentry_guard_RM_EXCLUSIVE_AREA_02/5 (read) msr_RM_EXCLUSIVE_AREA_02/4 (write) msr_RM_EXCLUSIVE_AREA_02/4 (read) reentry_guard_RM_EXCLUSIVE_AREA_02/5 (read) reentry_guard_RM_EXCLUSIVE_AREA_02/5 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_01/30 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_01) @05f647e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f1d8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_01/3 (read) reentry_guard_RM_EXCLUSIVE_AREA_01/3 (write) msr_RM_EXCLUSIVE_AREA_01/2 (read) reentry_guard_RM_EXCLUSIVE_AREA_01/3 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_01/29 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_01) @05f64ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f2b8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_01/3 (read) msr_RM_EXCLUSIVE_AREA_01/2 (write) msr_RM_EXCLUSIVE_AREA_01/2 (read) reentry_guard_RM_EXCLUSIVE_AREA_01/3 (read) reentry_guard_RM_EXCLUSIVE_AREA_01/3 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_00/28 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_00) @05f64c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f358
+  References: reentry_guard_RM_EXCLUSIVE_AREA_00/1 (read) reentry_guard_RM_EXCLUSIVE_AREA_00/1 (write) msr_RM_EXCLUSIVE_AREA_00/0 (read) reentry_guard_RM_EXCLUSIVE_AREA_00/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_00/27 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_00) @05f649a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f318
+  References: reentry_guard_RM_EXCLUSIVE_AREA_00/1 (read) msr_RM_EXCLUSIVE_AREA_00/0 (write) msr_RM_EXCLUSIVE_AREA_00/0 (read) reentry_guard_RM_EXCLUSIVE_AREA_00/1 (read) reentry_guard_RM_EXCLUSIVE_AREA_00/1 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+Rm_schm_read_msr/26 (Rm_schm_read_msr) @05f64700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f1f8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+
+ ordered call graph: reduced
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_12/52 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_12) @05ff8700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f2d8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_12/25 (read) reentry_guard_RM_EXCLUSIVE_AREA_12/25 (write) msr_RM_EXCLUSIVE_AREA_12/24 (read) reentry_guard_RM_EXCLUSIVE_AREA_12/25 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_12/51 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_12) @05ff8460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f198
+  References: reentry_guard_RM_EXCLUSIVE_AREA_12/25 (read) msr_RM_EXCLUSIVE_AREA_12/24 (write) msr_RM_EXCLUSIVE_AREA_12/24 (read) reentry_guard_RM_EXCLUSIVE_AREA_12/25 (read) reentry_guard_RM_EXCLUSIVE_AREA_12/25 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_11/50 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_11) @05ff81c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f118
+  References: reentry_guard_RM_EXCLUSIVE_AREA_11/23 (read) reentry_guard_RM_EXCLUSIVE_AREA_11/23 (write) msr_RM_EXCLUSIVE_AREA_11/22 (read) reentry_guard_RM_EXCLUSIVE_AREA_11/23 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_11/49 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_11) @05fc9d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f138
+  References: reentry_guard_RM_EXCLUSIVE_AREA_11/23 (read) msr_RM_EXCLUSIVE_AREA_11/22 (write) msr_RM_EXCLUSIVE_AREA_11/22 (read) reentry_guard_RM_EXCLUSIVE_AREA_11/23 (read) reentry_guard_RM_EXCLUSIVE_AREA_11/23 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_10/48 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_10) @05fc97e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f3b8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_10/21 (read) reentry_guard_RM_EXCLUSIVE_AREA_10/21 (write) msr_RM_EXCLUSIVE_AREA_10/20 (read) reentry_guard_RM_EXCLUSIVE_AREA_10/21 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_10/47 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_10) @05fc92a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f178
+  References: reentry_guard_RM_EXCLUSIVE_AREA_10/21 (read) msr_RM_EXCLUSIVE_AREA_10/20 (write) msr_RM_EXCLUSIVE_AREA_10/20 (read) reentry_guard_RM_EXCLUSIVE_AREA_10/21 (read) reentry_guard_RM_EXCLUSIVE_AREA_10/21 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_09/46 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_09) @05fc9ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f4b8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_09/19 (read) reentry_guard_RM_EXCLUSIVE_AREA_09/19 (write) msr_RM_EXCLUSIVE_AREA_09/18 (read) reentry_guard_RM_EXCLUSIVE_AREA_09/19 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_09/45 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_09) @05fc9c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f418
+  References: reentry_guard_RM_EXCLUSIVE_AREA_09/19 (read) msr_RM_EXCLUSIVE_AREA_09/18 (write) msr_RM_EXCLUSIVE_AREA_09/18 (read) reentry_guard_RM_EXCLUSIVE_AREA_09/19 (read) reentry_guard_RM_EXCLUSIVE_AREA_09/19 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_08/44 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_08) @05fc99a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f2f8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_08/17 (read) reentry_guard_RM_EXCLUSIVE_AREA_08/17 (write) msr_RM_EXCLUSIVE_AREA_08/16 (read) reentry_guard_RM_EXCLUSIVE_AREA_08/17 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_08/43 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_08) @05fc9700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f478
+  References: reentry_guard_RM_EXCLUSIVE_AREA_08/17 (read) msr_RM_EXCLUSIVE_AREA_08/16 (write) msr_RM_EXCLUSIVE_AREA_08/16 (read) reentry_guard_RM_EXCLUSIVE_AREA_08/17 (read) reentry_guard_RM_EXCLUSIVE_AREA_08/17 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_07/42 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_07) @05fc9460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f0f8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_07/15 (read) reentry_guard_RM_EXCLUSIVE_AREA_07/15 (write) msr_RM_EXCLUSIVE_AREA_07/14 (read) reentry_guard_RM_EXCLUSIVE_AREA_07/15 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_07/41 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_07) @05fc91c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f338
+  References: reentry_guard_RM_EXCLUSIVE_AREA_07/15 (read) msr_RM_EXCLUSIVE_AREA_07/14 (write) msr_RM_EXCLUSIVE_AREA_07/14 (read) reentry_guard_RM_EXCLUSIVE_AREA_07/15 (read) reentry_guard_RM_EXCLUSIVE_AREA_07/15 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06/40 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06) @05fc1d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f0d8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_06/13 (read) reentry_guard_RM_EXCLUSIVE_AREA_06/13 (write) msr_RM_EXCLUSIVE_AREA_06/12 (read) reentry_guard_RM_EXCLUSIVE_AREA_06/13 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06/39 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06) @05fc17e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f438
+  References: reentry_guard_RM_EXCLUSIVE_AREA_06/13 (read) msr_RM_EXCLUSIVE_AREA_06/12 (write) msr_RM_EXCLUSIVE_AREA_06/12 (read) reentry_guard_RM_EXCLUSIVE_AREA_06/13 (read) reentry_guard_RM_EXCLUSIVE_AREA_06/13 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05/38 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05) @05fc12a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f1b8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_05/11 (read) reentry_guard_RM_EXCLUSIVE_AREA_05/11 (write) msr_RM_EXCLUSIVE_AREA_05/10 (read) reentry_guard_RM_EXCLUSIVE_AREA_05/11 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05/37 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05) @05fc1ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f498
+  References: reentry_guard_RM_EXCLUSIVE_AREA_05/11 (read) msr_RM_EXCLUSIVE_AREA_05/10 (write) msr_RM_EXCLUSIVE_AREA_05/10 (read) reentry_guard_RM_EXCLUSIVE_AREA_05/11 (read) reentry_guard_RM_EXCLUSIVE_AREA_05/11 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04/36 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04) @05fc1c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f398
+  References: reentry_guard_RM_EXCLUSIVE_AREA_04/9 (read) reentry_guard_RM_EXCLUSIVE_AREA_04/9 (write) msr_RM_EXCLUSIVE_AREA_04/8 (read) reentry_guard_RM_EXCLUSIVE_AREA_04/9 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04/35 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04) @05fc19a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f298
+  References: reentry_guard_RM_EXCLUSIVE_AREA_04/9 (read) msr_RM_EXCLUSIVE_AREA_04/8 (write) msr_RM_EXCLUSIVE_AREA_04/8 (read) reentry_guard_RM_EXCLUSIVE_AREA_04/9 (read) reentry_guard_RM_EXCLUSIVE_AREA_04/9 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_03/34 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_03) @05fc1700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f238
+  References: reentry_guard_RM_EXCLUSIVE_AREA_03/7 (read) reentry_guard_RM_EXCLUSIVE_AREA_03/7 (write) msr_RM_EXCLUSIVE_AREA_03/6 (read) reentry_guard_RM_EXCLUSIVE_AREA_03/7 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_03/33 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_03) @05fc1460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f3d8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_03/7 (read) msr_RM_EXCLUSIVE_AREA_03/6 (write) msr_RM_EXCLUSIVE_AREA_03/6 (read) reentry_guard_RM_EXCLUSIVE_AREA_03/7 (read) reentry_guard_RM_EXCLUSIVE_AREA_03/7 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_02/32 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_02) @05fc11c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f158
+  References: reentry_guard_RM_EXCLUSIVE_AREA_02/5 (read) reentry_guard_RM_EXCLUSIVE_AREA_02/5 (write) msr_RM_EXCLUSIVE_AREA_02/4 (read) reentry_guard_RM_EXCLUSIVE_AREA_02/5 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_02/31 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_02) @05f64d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f458
+  References: reentry_guard_RM_EXCLUSIVE_AREA_02/5 (read) msr_RM_EXCLUSIVE_AREA_02/4 (write) msr_RM_EXCLUSIVE_AREA_02/4 (read) reentry_guard_RM_EXCLUSIVE_AREA_02/5 (read) reentry_guard_RM_EXCLUSIVE_AREA_02/5 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_01/30 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_01) @05f647e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f1d8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_01/3 (read) reentry_guard_RM_EXCLUSIVE_AREA_01/3 (write) msr_RM_EXCLUSIVE_AREA_01/2 (read) reentry_guard_RM_EXCLUSIVE_AREA_01/3 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_01/29 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_01) @05f64ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f2b8
+  References: reentry_guard_RM_EXCLUSIVE_AREA_01/3 (read) msr_RM_EXCLUSIVE_AREA_01/2 (write) msr_RM_EXCLUSIVE_AREA_01/2 (read) reentry_guard_RM_EXCLUSIVE_AREA_01/3 (read) reentry_guard_RM_EXCLUSIVE_AREA_01/3 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_00/28 (SchM_Exit_Rm_RM_EXCLUSIVE_AREA_00) @05f64c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f358
+  References: reentry_guard_RM_EXCLUSIVE_AREA_00/1 (read) reentry_guard_RM_EXCLUSIVE_AREA_00/1 (write) msr_RM_EXCLUSIVE_AREA_00/0 (read) reentry_guard_RM_EXCLUSIVE_AREA_00/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_00/27 (SchM_Enter_Rm_RM_EXCLUSIVE_AREA_00) @05f649a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f318
+  References: reentry_guard_RM_EXCLUSIVE_AREA_00/1 (read) msr_RM_EXCLUSIVE_AREA_00/0 (write) msr_RM_EXCLUSIVE_AREA_00/0 (read) reentry_guard_RM_EXCLUSIVE_AREA_00/1 (read) reentry_guard_RM_EXCLUSIVE_AREA_00/1 (write) 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Sys_GetCoreID/53 (1073741824 (estimated locally),1.00 per call) 
+Rm_schm_read_msr/26 (Rm_schm_read_msr) @05f64700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @0622f1f8
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_12 ()
+{
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_12[u32CoreId_10];
+  _3 = _2 + 4294967295;
+  reentry_guard_RM_EXCLUSIVE_AREA_12[u32CoreId_10] ={v} _3;
+  # DEBUG BEGIN_STMT
+  _4 ={v} msr_RM_EXCLUSIVE_AREA_12[u32CoreId_10];
+  _5 = _4 & 1;
+  if (_5 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_12[u32CoreId_10];
+  if (_6 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsie i");
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_12 ()
+{
+  register uint32 reg_tmp;
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_12[u32CoreId_10];
+  if (_2 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY Rm_schm_read_msr
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+  # DEBUG reg_tmp => reg_tmp_14
+  # DEBUG BEGIN_STMT
+  # DEBUG reg_tmp => NULL
+  msr_RM_EXCLUSIVE_AREA_12[u32CoreId_10] ={v} reg_tmp_14;
+  # DEBUG BEGIN_STMT
+  _3 ={v} msr_RM_EXCLUSIVE_AREA_12[u32CoreId_10];
+  _4 = _3 & 1;
+  if (_4 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsid i");
+
+  <bb 5> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_12[u32CoreId_10];
+  _6 = _5 + 1;
+  reentry_guard_RM_EXCLUSIVE_AREA_12[u32CoreId_10] ={v} _6;
+  return;
+
+}
+
+
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_11 ()
+{
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_11[u32CoreId_10];
+  _3 = _2 + 4294967295;
+  reentry_guard_RM_EXCLUSIVE_AREA_11[u32CoreId_10] ={v} _3;
+  # DEBUG BEGIN_STMT
+  _4 ={v} msr_RM_EXCLUSIVE_AREA_11[u32CoreId_10];
+  _5 = _4 & 1;
+  if (_5 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_11[u32CoreId_10];
+  if (_6 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsie i");
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_11 ()
+{
+  register uint32 reg_tmp;
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_11[u32CoreId_10];
+  if (_2 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY Rm_schm_read_msr
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+  # DEBUG reg_tmp => reg_tmp_14
+  # DEBUG BEGIN_STMT
+  # DEBUG reg_tmp => NULL
+  msr_RM_EXCLUSIVE_AREA_11[u32CoreId_10] ={v} reg_tmp_14;
+  # DEBUG BEGIN_STMT
+  _3 ={v} msr_RM_EXCLUSIVE_AREA_11[u32CoreId_10];
+  _4 = _3 & 1;
+  if (_4 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsid i");
+
+  <bb 5> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_11[u32CoreId_10];
+  _6 = _5 + 1;
+  reentry_guard_RM_EXCLUSIVE_AREA_11[u32CoreId_10] ={v} _6;
+  return;
+
+}
+
+
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_10 ()
+{
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_10[u32CoreId_10];
+  _3 = _2 + 4294967295;
+  reentry_guard_RM_EXCLUSIVE_AREA_10[u32CoreId_10] ={v} _3;
+  # DEBUG BEGIN_STMT
+  _4 ={v} msr_RM_EXCLUSIVE_AREA_10[u32CoreId_10];
+  _5 = _4 & 1;
+  if (_5 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_10[u32CoreId_10];
+  if (_6 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsie i");
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_10 ()
+{
+  register uint32 reg_tmp;
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_10[u32CoreId_10];
+  if (_2 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY Rm_schm_read_msr
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+  # DEBUG reg_tmp => reg_tmp_14
+  # DEBUG BEGIN_STMT
+  # DEBUG reg_tmp => NULL
+  msr_RM_EXCLUSIVE_AREA_10[u32CoreId_10] ={v} reg_tmp_14;
+  # DEBUG BEGIN_STMT
+  _3 ={v} msr_RM_EXCLUSIVE_AREA_10[u32CoreId_10];
+  _4 = _3 & 1;
+  if (_4 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsid i");
+
+  <bb 5> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_10[u32CoreId_10];
+  _6 = _5 + 1;
+  reentry_guard_RM_EXCLUSIVE_AREA_10[u32CoreId_10] ={v} _6;
+  return;
+
+}
+
+
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_09 ()
+{
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_09[u32CoreId_10];
+  _3 = _2 + 4294967295;
+  reentry_guard_RM_EXCLUSIVE_AREA_09[u32CoreId_10] ={v} _3;
+  # DEBUG BEGIN_STMT
+  _4 ={v} msr_RM_EXCLUSIVE_AREA_09[u32CoreId_10];
+  _5 = _4 & 1;
+  if (_5 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_09[u32CoreId_10];
+  if (_6 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsie i");
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_09 ()
+{
+  register uint32 reg_tmp;
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_09[u32CoreId_10];
+  if (_2 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY Rm_schm_read_msr
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+  # DEBUG reg_tmp => reg_tmp_14
+  # DEBUG BEGIN_STMT
+  # DEBUG reg_tmp => NULL
+  msr_RM_EXCLUSIVE_AREA_09[u32CoreId_10] ={v} reg_tmp_14;
+  # DEBUG BEGIN_STMT
+  _3 ={v} msr_RM_EXCLUSIVE_AREA_09[u32CoreId_10];
+  _4 = _3 & 1;
+  if (_4 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsid i");
+
+  <bb 5> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_09[u32CoreId_10];
+  _6 = _5 + 1;
+  reentry_guard_RM_EXCLUSIVE_AREA_09[u32CoreId_10] ={v} _6;
+  return;
+
+}
+
+
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_08 ()
+{
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_08[u32CoreId_10];
+  _3 = _2 + 4294967295;
+  reentry_guard_RM_EXCLUSIVE_AREA_08[u32CoreId_10] ={v} _3;
+  # DEBUG BEGIN_STMT
+  _4 ={v} msr_RM_EXCLUSIVE_AREA_08[u32CoreId_10];
+  _5 = _4 & 1;
+  if (_5 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_08[u32CoreId_10];
+  if (_6 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsie i");
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_08 ()
+{
+  register uint32 reg_tmp;
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_08[u32CoreId_10];
+  if (_2 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY Rm_schm_read_msr
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+  # DEBUG reg_tmp => reg_tmp_14
+  # DEBUG BEGIN_STMT
+  # DEBUG reg_tmp => NULL
+  msr_RM_EXCLUSIVE_AREA_08[u32CoreId_10] ={v} reg_tmp_14;
+  # DEBUG BEGIN_STMT
+  _3 ={v} msr_RM_EXCLUSIVE_AREA_08[u32CoreId_10];
+  _4 = _3 & 1;
+  if (_4 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsid i");
+
+  <bb 5> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_08[u32CoreId_10];
+  _6 = _5 + 1;
+  reentry_guard_RM_EXCLUSIVE_AREA_08[u32CoreId_10] ={v} _6;
+  return;
+
+}
+
+
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_07 ()
+{
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_07[u32CoreId_10];
+  _3 = _2 + 4294967295;
+  reentry_guard_RM_EXCLUSIVE_AREA_07[u32CoreId_10] ={v} _3;
+  # DEBUG BEGIN_STMT
+  _4 ={v} msr_RM_EXCLUSIVE_AREA_07[u32CoreId_10];
+  _5 = _4 & 1;
+  if (_5 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_07[u32CoreId_10];
+  if (_6 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsie i");
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_07 ()
+{
+  register uint32 reg_tmp;
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_07[u32CoreId_10];
+  if (_2 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY Rm_schm_read_msr
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+  # DEBUG reg_tmp => reg_tmp_14
+  # DEBUG BEGIN_STMT
+  # DEBUG reg_tmp => NULL
+  msr_RM_EXCLUSIVE_AREA_07[u32CoreId_10] ={v} reg_tmp_14;
+  # DEBUG BEGIN_STMT
+  _3 ={v} msr_RM_EXCLUSIVE_AREA_07[u32CoreId_10];
+  _4 = _3 & 1;
+  if (_4 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsid i");
+
+  <bb 5> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_07[u32CoreId_10];
+  _6 = _5 + 1;
+  reentry_guard_RM_EXCLUSIVE_AREA_07[u32CoreId_10] ={v} _6;
+  return;
+
+}
+
+
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_06 ()
+{
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_06[u32CoreId_10];
+  _3 = _2 + 4294967295;
+  reentry_guard_RM_EXCLUSIVE_AREA_06[u32CoreId_10] ={v} _3;
+  # DEBUG BEGIN_STMT
+  _4 ={v} msr_RM_EXCLUSIVE_AREA_06[u32CoreId_10];
+  _5 = _4 & 1;
+  if (_5 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_06[u32CoreId_10];
+  if (_6 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsie i");
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_06 ()
+{
+  register uint32 reg_tmp;
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_06[u32CoreId_10];
+  if (_2 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY Rm_schm_read_msr
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+  # DEBUG reg_tmp => reg_tmp_14
+  # DEBUG BEGIN_STMT
+  # DEBUG reg_tmp => NULL
+  msr_RM_EXCLUSIVE_AREA_06[u32CoreId_10] ={v} reg_tmp_14;
+  # DEBUG BEGIN_STMT
+  _3 ={v} msr_RM_EXCLUSIVE_AREA_06[u32CoreId_10];
+  _4 = _3 & 1;
+  if (_4 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsid i");
+
+  <bb 5> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_06[u32CoreId_10];
+  _6 = _5 + 1;
+  reentry_guard_RM_EXCLUSIVE_AREA_06[u32CoreId_10] ={v} _6;
+  return;
+
+}
+
+
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_05 ()
+{
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_05[u32CoreId_10];
+  _3 = _2 + 4294967295;
+  reentry_guard_RM_EXCLUSIVE_AREA_05[u32CoreId_10] ={v} _3;
+  # DEBUG BEGIN_STMT
+  _4 ={v} msr_RM_EXCLUSIVE_AREA_05[u32CoreId_10];
+  _5 = _4 & 1;
+  if (_5 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_05[u32CoreId_10];
+  if (_6 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsie i");
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_05 ()
+{
+  register uint32 reg_tmp;
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_05[u32CoreId_10];
+  if (_2 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY Rm_schm_read_msr
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+  # DEBUG reg_tmp => reg_tmp_14
+  # DEBUG BEGIN_STMT
+  # DEBUG reg_tmp => NULL
+  msr_RM_EXCLUSIVE_AREA_05[u32CoreId_10] ={v} reg_tmp_14;
+  # DEBUG BEGIN_STMT
+  _3 ={v} msr_RM_EXCLUSIVE_AREA_05[u32CoreId_10];
+  _4 = _3 & 1;
+  if (_4 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsid i");
+
+  <bb 5> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_05[u32CoreId_10];
+  _6 = _5 + 1;
+  reentry_guard_RM_EXCLUSIVE_AREA_05[u32CoreId_10] ={v} _6;
+  return;
+
+}
+
+
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_04 ()
+{
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_04[u32CoreId_10];
+  _3 = _2 + 4294967295;
+  reentry_guard_RM_EXCLUSIVE_AREA_04[u32CoreId_10] ={v} _3;
+  # DEBUG BEGIN_STMT
+  _4 ={v} msr_RM_EXCLUSIVE_AREA_04[u32CoreId_10];
+  _5 = _4 & 1;
+  if (_5 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_04[u32CoreId_10];
+  if (_6 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsie i");
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_04 ()
+{
+  register uint32 reg_tmp;
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_04[u32CoreId_10];
+  if (_2 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY Rm_schm_read_msr
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+  # DEBUG reg_tmp => reg_tmp_14
+  # DEBUG BEGIN_STMT
+  # DEBUG reg_tmp => NULL
+  msr_RM_EXCLUSIVE_AREA_04[u32CoreId_10] ={v} reg_tmp_14;
+  # DEBUG BEGIN_STMT
+  _3 ={v} msr_RM_EXCLUSIVE_AREA_04[u32CoreId_10];
+  _4 = _3 & 1;
+  if (_4 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsid i");
+
+  <bb 5> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_04[u32CoreId_10];
+  _6 = _5 + 1;
+  reentry_guard_RM_EXCLUSIVE_AREA_04[u32CoreId_10] ={v} _6;
+  return;
+
+}
+
+
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_03 ()
+{
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_03[u32CoreId_10];
+  _3 = _2 + 4294967295;
+  reentry_guard_RM_EXCLUSIVE_AREA_03[u32CoreId_10] ={v} _3;
+  # DEBUG BEGIN_STMT
+  _4 ={v} msr_RM_EXCLUSIVE_AREA_03[u32CoreId_10];
+  _5 = _4 & 1;
+  if (_5 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_03[u32CoreId_10];
+  if (_6 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsie i");
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_03 ()
+{
+  register uint32 reg_tmp;
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_03[u32CoreId_10];
+  if (_2 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY Rm_schm_read_msr
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+  # DEBUG reg_tmp => reg_tmp_14
+  # DEBUG BEGIN_STMT
+  # DEBUG reg_tmp => NULL
+  msr_RM_EXCLUSIVE_AREA_03[u32CoreId_10] ={v} reg_tmp_14;
+  # DEBUG BEGIN_STMT
+  _3 ={v} msr_RM_EXCLUSIVE_AREA_03[u32CoreId_10];
+  _4 = _3 & 1;
+  if (_4 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsid i");
+
+  <bb 5> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_03[u32CoreId_10];
+  _6 = _5 + 1;
+  reentry_guard_RM_EXCLUSIVE_AREA_03[u32CoreId_10] ={v} _6;
+  return;
+
+}
+
+
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_02 ()
+{
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_02[u32CoreId_10];
+  _3 = _2 + 4294967295;
+  reentry_guard_RM_EXCLUSIVE_AREA_02[u32CoreId_10] ={v} _3;
+  # DEBUG BEGIN_STMT
+  _4 ={v} msr_RM_EXCLUSIVE_AREA_02[u32CoreId_10];
+  _5 = _4 & 1;
+  if (_5 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_02[u32CoreId_10];
+  if (_6 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsie i");
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_02 ()
+{
+  register uint32 reg_tmp;
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_02[u32CoreId_10];
+  if (_2 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY Rm_schm_read_msr
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+  # DEBUG reg_tmp => reg_tmp_14
+  # DEBUG BEGIN_STMT
+  # DEBUG reg_tmp => NULL
+  msr_RM_EXCLUSIVE_AREA_02[u32CoreId_10] ={v} reg_tmp_14;
+  # DEBUG BEGIN_STMT
+  _3 ={v} msr_RM_EXCLUSIVE_AREA_02[u32CoreId_10];
+  _4 = _3 & 1;
+  if (_4 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsid i");
+
+  <bb 5> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_02[u32CoreId_10];
+  _6 = _5 + 1;
+  reentry_guard_RM_EXCLUSIVE_AREA_02[u32CoreId_10] ={v} _6;
+  return;
+
+}
+
+
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_01 ()
+{
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_01[u32CoreId_10];
+  _3 = _2 + 4294967295;
+  reentry_guard_RM_EXCLUSIVE_AREA_01[u32CoreId_10] ={v} _3;
+  # DEBUG BEGIN_STMT
+  _4 ={v} msr_RM_EXCLUSIVE_AREA_01[u32CoreId_10];
+  _5 = _4 & 1;
+  if (_5 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_01[u32CoreId_10];
+  if (_6 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsie i");
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_01 ()
+{
+  register uint32 reg_tmp;
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_01[u32CoreId_10];
+  if (_2 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY Rm_schm_read_msr
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+  # DEBUG reg_tmp => reg_tmp_14
+  # DEBUG BEGIN_STMT
+  # DEBUG reg_tmp => NULL
+  msr_RM_EXCLUSIVE_AREA_01[u32CoreId_10] ={v} reg_tmp_14;
+  # DEBUG BEGIN_STMT
+  _3 ={v} msr_RM_EXCLUSIVE_AREA_01[u32CoreId_10];
+  _4 = _3 & 1;
+  if (_4 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsid i");
+
+  <bb 5> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_01[u32CoreId_10];
+  _6 = _5 + 1;
+  reentry_guard_RM_EXCLUSIVE_AREA_01[u32CoreId_10] ={v} _6;
+  return;
+
+}
+
+
+SchM_Exit_Rm_RM_EXCLUSIVE_AREA_00 ()
+{
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_00[u32CoreId_10];
+  _3 = _2 + 4294967295;
+  reentry_guard_RM_EXCLUSIVE_AREA_00[u32CoreId_10] ={v} _3;
+  # DEBUG BEGIN_STMT
+  _4 ={v} msr_RM_EXCLUSIVE_AREA_00[u32CoreId_10];
+  _5 = _4 & 1;
+  if (_5 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  _6 ={v} reentry_guard_RM_EXCLUSIVE_AREA_00[u32CoreId_10];
+  if (_6 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsie i");
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+SchM_Enter_Rm_RM_EXCLUSIVE_AREA_00 ()
+{
+  register uint32 reg_tmp;
+  uint32 u32CoreId;
+  unsigned char _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  u32CoreId_10 = (uint32) _1;
+  # DEBUG u32CoreId => u32CoreId_10
+  # DEBUG BEGIN_STMT
+  _2 ={v} reentry_guard_RM_EXCLUSIVE_AREA_00[u32CoreId_10];
+  if (_2 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY Rm_schm_read_msr
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_14);
+  # DEBUG reg_tmp => reg_tmp_14
+  # DEBUG BEGIN_STMT
+  # DEBUG reg_tmp => NULL
+  msr_RM_EXCLUSIVE_AREA_00[u32CoreId_10] ={v} reg_tmp_14;
+  # DEBUG BEGIN_STMT
+  _3 ={v} msr_RM_EXCLUSIVE_AREA_00[u32CoreId_10];
+  _4 = _3 & 1;
+  if (_4 == 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 5>; [50.00%]
+
+  <bb 4> [local count: 268435456]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" cpsid i");
+
+  <bb 5> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _5 ={v} reentry_guard_RM_EXCLUSIVE_AREA_00[u32CoreId_10];
+  _6 = _5 + 1;
+  reentry_guard_RM_EXCLUSIVE_AREA_00[u32CoreId_10] ={v} _6;
+  return;
+
+}
+
+
+Rm_schm_read_msr ()
+{
+  register uint32 reg_tmp;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__(" mrs %0, primask " : "=r" reg_tmp_1);
+  # DEBUG reg_tmp => reg_tmp_1
+  # DEBUG BEGIN_STMT
+  return reg_tmp_1;
+
+}
+
+

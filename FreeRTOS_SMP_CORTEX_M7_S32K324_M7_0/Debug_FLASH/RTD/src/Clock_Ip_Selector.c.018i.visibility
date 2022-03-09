@@ -1,0 +1,891 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: Clock_Ip_SetRtcRtccClksel_TrustedCall/8
+
+
+Marking externally visible variables: Clock_Ip_axSelectorCallbacks/9
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Clock_Ip_ReportClockErrors/17 (Clock_Ip_ReportClockErrors) @061f77e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssCsGrip/6 Clock_Ip_SetCgmXCscCssCsGrip/6 
+  Calls: 
+Clock_Ip_TimeoutExpired/16 (Clock_Ip_TimeoutExpired) @061f7700
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssCsGrip/6 Clock_Ip_SetCgmXCscCssCsGrip/6 
+  Calls: 
+Clock_Ip_StartTimeout/15 (Clock_Ip_StartTimeout) @061f7620
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswSwip/2 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 Clock_Ip_SetCgmXCscCssCsGrip/6 Clock_Ip_SetCgmXCscCssCsGrip/6 
+  Calls: 
+Clock_Ip_apxCgm/14 (Clock_Ip_apxCgm) @061f96c0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_axFeatureExtensions/13 (Clock_Ip_axFeatureExtensions) @061f9678
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au16SelectorEntryHardwareValue/12 (Clock_Ip_au16SelectorEntryHardwareValue) @061f9630
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8ClockFeatures/11 (Clock_Ip_au8ClockFeatures) @061f95e8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssCsGrip/6 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_SetCgmXCscCssClkswSwip/2 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+HardwareValue.0/10 (HardwareValue) @061f2f30
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: Clock_Ip_SetRtcRtccClksel_TrustedCall/8 (read) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_axSelectorCallbacks/9 (Clock_Ip_axSelectorCallbacks) @061f2c60
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_ResetCgmXCscCssClkswSwip/1 (addr) Clock_Ip_SetCgmXCscCssClkswSwip/2 (addr) Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (addr) Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (addr) Clock_Ip_ResetCgmXCscCssCsGrip/5 (addr) Clock_Ip_SetCgmXCscCssCsGrip/6 (addr) Clock_Ip_CallbackSelectorEmpty/0 (addr) Clock_Ip_SetRtcRtccClksel/7 (addr) 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Clock_Ip_SetRtcRtccClksel_TrustedCall/8 (Clock_Ip_SetRtcRtccClksel_TrustedCall) @061d38c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: HardwareValue.0/10 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: Clock_Ip_SetRtcRtccClksel/7 
+  Calls: 
+Clock_Ip_SetRtcRtccClksel/7 (Clock_Ip_SetRtcRtccClksel) @061d30e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_SetRtcRtccClksel_TrustedCall/8 
+Clock_Ip_SetCgmXCscCssCsGrip/6 (Clock_Ip_SetCgmXCscCssCsGrip) @061d3d20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au16SelectorEntryHardwareValue/12 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 
+Clock_Ip_ResetCgmXCscCssCsGrip/5 (Clock_Ip_ResetCgmXCscCssCsGrip) @061d3a80
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip/4 (Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip) @061d37e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au16SelectorEntryHardwareValue/12 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 
+Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip/3 (Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip) @061d3540
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetCgmXCscCssClkswSwip/2 (Clock_Ip_SetCgmXCscCssClkswSwip) @061d32a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au16SelectorEntryHardwareValue/12 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_ReportClockErrors/17 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 Clock_Ip_TimeoutExpired/16 Clock_Ip_StartTimeout/15 
+Clock_Ip_ResetCgmXCscCssClkswSwip/1 (Clock_Ip_ResetCgmXCscCssClkswSwip) @061d3000
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_au8ClockFeatures/11 (read) Clock_Ip_axFeatureExtensions/13 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) Clock_Ip_apxCgm/14 (read) 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_CallbackSelectorEmpty/0 (Clock_Ip_CallbackSelectorEmpty) @061cbee0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: 
+  Referring: Clock_Ip_axSelectorCallbacks/9 (addr) Clock_Ip_axSelectorCallbacks/9 (addr) Clock_Ip_axSelectorCallbacks/9 (addr) 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_SetRtcRtccClksel_TrustedCall (const struct Clock_Ip_SelectorConfigType * Config)
+{
+  uint32 SelectorValue;
+  static const uint16 HardwareValue[6] = {2, 0, 1, 0, 3, 0};
+  uint32 RegValue;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Config->Value;
+  _2 = HardwareValue[_1];
+  SelectorValue = (uint32) _2;
+  # DEBUG BEGIN_STMT
+  _3 = 1076396032B;
+  RegValue = _3->RTCC;
+  # DEBUG BEGIN_STMT
+  RegValue = RegValue & 4294955007;
+  # DEBUG BEGIN_STMT
+  _4 = SelectorValue << 12;
+  _5 = _4 & 12288;
+  RegValue = RegValue | _5;
+  # DEBUG BEGIN_STMT
+  _6 = 1076396032B;
+  _6->RTCC = RegValue;
+  return;
+
+}
+
+
+Clock_Ip_SetRtcRtccClksel (const struct Clock_Ip_SelectorConfigType * Config)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Clock_Ip_SetRtcRtccClksel_TrustedCall (Config);
+  return;
+
+}
+
+
+Clock_Ip_SetCgmXCscCssCsGrip (const struct Clock_Ip_SelectorConfigType * Config)
+{
+  uint32 TimeoutTicks;
+  uint32 ElapsedTime;
+  uint32 StartTime;
+  boolean TimeoutOccurred;
+  uint32 RegValue;
+  uint32 SelectorShift;
+  uint32 SelectorMask;
+  uint32 SelectorValue;
+  uint32 SelectorIndex;
+  uint32 Instance;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = Config->Name;
+  _2 = Clock_Ip_au8ClockFeatures[_1][0];
+  Instance = (uint32) _2;
+  # DEBUG BEGIN_STMT
+  _3 = Config->Name;
+  _4 = Clock_Ip_au8ClockFeatures[_3][4];
+  SelectorIndex = (uint32) _4;
+  # DEBUG BEGIN_STMT
+  _5 = Config->Value;
+  _6 = Clock_Ip_au16SelectorEntryHardwareValue[_5];
+  SelectorValue = (uint32) _6;
+  # DEBUG BEGIN_STMT
+  _7 = Config->Name;
+  _8 = Clock_Ip_au8ClockFeatures[_7][2];
+  _9 = (int) _8;
+  SelectorMask = Clock_Ip_axFeatureExtensions[_9].SelectorValueMask;
+  # DEBUG BEGIN_STMT
+  _10 = Config->Name;
+  _11 = Clock_Ip_au8ClockFeatures[_10][2];
+  _12 = (int) _11;
+  SelectorShift = Clock_Ip_axFeatureExtensions[_12].SelectorValueShift;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutOccurred = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _13 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _14 = _13->CSS;
+  _15 = SelectorMask & _14;
+  _16 = _15 >> SelectorShift;
+  if (SelectorValue != _16)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _17 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _18 = _17->CSC;
+  _19 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _20 = _18 | 12;
+  _19->CSC = _20;
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.0_21 = TimeoutTicks;
+  TimeoutOccurred = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.0_21);
+  # DEBUG BEGIN_STMT
+  _22 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _23 = _22->CSS;
+  _24 = _23 & 131072;
+  if (_24 == 131072)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _25 = ~TimeoutOccurred;
+  if (_25 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _26 = ~TimeoutOccurred;
+  if (_26 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  _27 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  RegValue = _27->CSC;
+  # DEBUG BEGIN_STMT
+  _28 = ~SelectorMask;
+  RegValue = RegValue & _28;
+  # DEBUG BEGIN_STMT
+  _29 = SelectorValue << SelectorShift;
+  _30 = SelectorMask & _29;
+  RegValue = RegValue | _30;
+  # DEBUG BEGIN_STMT
+  _31 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _31->CSC = RegValue;
+  # DEBUG BEGIN_STMT
+  _32 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _33 = _32->CSC;
+  _34 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _35 = _33 & 4294967283;
+  _34->CSC = _35;
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.1_36 = TimeoutTicks;
+  TimeoutOccurred = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.1_36);
+  # DEBUG BEGIN_STMT
+  _37 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _38 = _37->CSS;
+  _39 = _38 & 131072;
+  if (_39 != 131072)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  _40 = ~TimeoutOccurred;
+  if (_40 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  _41 = Config->Name;
+  Clock_Ip_ReportClockErrors (3, _41);
+  goto <bb 13>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  _42 = Config->Name;
+  Clock_Ip_ReportClockErrors (1, _42);
+
+  <bb 13> :
+  StartTime = {CLOBBER};
+  ElapsedTime = {CLOBBER};
+  TimeoutTicks = {CLOBBER};
+  return;
+
+}
+
+
+Clock_Ip_ResetCgmXCscCssCsGrip (const struct Clock_Ip_SelectorConfigType * Config)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_SetCgmXCscCssClkswRampupRampdownSwip (const struct Clock_Ip_SelectorConfigType * Config)
+{
+  uint32 TimeoutTicks;
+  uint32 ElapsedTime;
+  uint32 StartTime;
+  boolean TimeoutOccurred;
+  uint32 RegValue;
+  uint32 SelectorShift;
+  uint32 SelectorMask;
+  uint32 SelectorValue;
+  uint32 SelectorIndex;
+  uint32 Instance;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = Config->Name;
+  _2 = Clock_Ip_au8ClockFeatures[_1][0];
+  Instance = (uint32) _2;
+  # DEBUG BEGIN_STMT
+  _3 = Config->Name;
+  _4 = Clock_Ip_au8ClockFeatures[_3][4];
+  SelectorIndex = (uint32) _4;
+  # DEBUG BEGIN_STMT
+  _5 = Config->Value;
+  _6 = Clock_Ip_au16SelectorEntryHardwareValue[_5];
+  SelectorValue = (uint32) _6;
+  # DEBUG BEGIN_STMT
+  _7 = Config->Name;
+  _8 = Clock_Ip_au8ClockFeatures[_7][2];
+  _9 = (int) _8;
+  SelectorMask = Clock_Ip_axFeatureExtensions[_9].SelectorValueMask;
+  # DEBUG BEGIN_STMT
+  _10 = Config->Name;
+  _11 = Clock_Ip_au8ClockFeatures[_10][2];
+  _12 = (int) _11;
+  SelectorShift = Clock_Ip_axFeatureExtensions[_12].SelectorValueShift;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutOccurred = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _13 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _14 = _13->CSS;
+  _15 = SelectorMask & _14;
+  _16 = _15 >> SelectorShift;
+  if (SelectorValue != _16)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.2_17 = TimeoutTicks;
+  TimeoutOccurred = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.2_17);
+  # DEBUG BEGIN_STMT
+  _18 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _19 = _18->CSS;
+  _20 = _19 & 65536;
+  if (_20 == 65536)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _21 = ~TimeoutOccurred;
+  if (_21 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _22 = ~TimeoutOccurred;
+  if (_22 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  _23 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  RegValue = _23->CSC;
+  # DEBUG BEGIN_STMT
+  _24 = ~SelectorMask;
+  RegValue = RegValue & _24;
+  # DEBUG BEGIN_STMT
+  _25 = SelectorValue << SelectorShift;
+  _26 = SelectorMask & _25;
+  RegValue = RegValue | _26;
+  # DEBUG BEGIN_STMT
+  RegValue = RegValue | 7;
+  # DEBUG BEGIN_STMT
+  _27 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _27->CSC = RegValue;
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.3_28 = TimeoutTicks;
+  TimeoutOccurred = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.3_28);
+  # DEBUG BEGIN_STMT
+  _29 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _30 = _29->CSS;
+  _31 = _30 & 4;
+  if (_31 == 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  _32 = ~TimeoutOccurred;
+  if (_32 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  _33 = ~TimeoutOccurred;
+  if (_33 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.4_34 = TimeoutTicks;
+  TimeoutOccurred = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.4_34);
+  # DEBUG BEGIN_STMT
+  _35 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _36 = _35->CSS;
+  _37 = _36 & 65536;
+  if (_37 == 65536)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  _38 = ~TimeoutOccurred;
+  if (_38 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 14> :
+  # DEBUG BEGIN_STMT
+  _39 = ~TimeoutOccurred;
+  if (_39 != 0)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 15> :
+  # DEBUG BEGIN_STMT
+  _40 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _41 = _40->CSS;
+  _42 = _41 >> 17;
+  _43 = _42 & 7;
+  if (_43 != 1)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 16> :
+  # DEBUG BEGIN_STMT
+  _44 = Config->Name;
+  Clock_Ip_ReportClockErrors (3, _44);
+  goto <bb 20>; [INV]
+
+  <bb 17> :
+  # DEBUG BEGIN_STMT
+  _45 = Config->Name;
+  Clock_Ip_ReportClockErrors (1, _45);
+  goto <bb 20>; [INV]
+
+  <bb 18> :
+  # DEBUG BEGIN_STMT
+  _46 = Config->Name;
+  Clock_Ip_ReportClockErrors (1, _46);
+  goto <bb 20>; [INV]
+
+  <bb 19> :
+  # DEBUG BEGIN_STMT
+  _47 = Config->Name;
+  Clock_Ip_ReportClockErrors (1, _47);
+
+  <bb 20> :
+  StartTime = {CLOBBER};
+  ElapsedTime = {CLOBBER};
+  TimeoutTicks = {CLOBBER};
+  return;
+
+}
+
+
+Clock_Ip_ResetCgmXCscCssClkswRampupRampdownSwip (const struct Clock_Ip_SelectorConfigType * Config)
+{
+  uint32 SelectorMask;
+  uint32 SelectorIndex;
+  uint32 Instance;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = Config->Name;
+  _2 = Clock_Ip_au8ClockFeatures[_1][0];
+  Instance = (uint32) _2;
+  # DEBUG BEGIN_STMT
+  _3 = Config->Name;
+  _4 = Clock_Ip_au8ClockFeatures[_3][4];
+  SelectorIndex = (uint32) _4;
+  # DEBUG BEGIN_STMT
+  _5 = Config->Name;
+  _6 = Clock_Ip_au8ClockFeatures[_5][2];
+  _7 = (int) _6;
+  SelectorMask = Clock_Ip_axFeatureExtensions[_7].SelectorValueMask;
+  # DEBUG BEGIN_STMT
+  _8 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _9 = _8->CSC;
+  _10 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _11 = _9 | 8;
+  _10->CSC = _11;
+  # DEBUG BEGIN_STMT
+  _12 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _13 = _12->CSC;
+  _14 = ~SelectorMask;
+  _15 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _16 = _13 & _14;
+  _15->CSC = _16;
+  return;
+
+}
+
+
+Clock_Ip_SetCgmXCscCssClkswSwip (const struct Clock_Ip_SelectorConfigType * Config)
+{
+  uint32 TimeoutTicks;
+  uint32 ElapsedTime;
+  uint32 StartTime;
+  boolean TimeoutOccurred;
+  uint32 RegValue;
+  uint32 SelectorShift;
+  uint32 SelectorMask;
+  uint32 SelectorValue;
+  uint32 SelectorIndex;
+  uint32 Instance;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = Config->Name;
+  _2 = Clock_Ip_au8ClockFeatures[_1][0];
+  Instance = (uint32) _2;
+  # DEBUG BEGIN_STMT
+  _3 = Config->Name;
+  _4 = Clock_Ip_au8ClockFeatures[_3][4];
+  SelectorIndex = (uint32) _4;
+  # DEBUG BEGIN_STMT
+  _5 = Config->Value;
+  _6 = Clock_Ip_au16SelectorEntryHardwareValue[_5];
+  SelectorValue = (uint32) _6;
+  # DEBUG BEGIN_STMT
+  _7 = Config->Name;
+  _8 = Clock_Ip_au8ClockFeatures[_7][2];
+  _9 = (int) _8;
+  SelectorMask = Clock_Ip_axFeatureExtensions[_9].SelectorValueMask;
+  # DEBUG BEGIN_STMT
+  _10 = Config->Name;
+  _11 = Clock_Ip_au8ClockFeatures[_10][2];
+  _12 = (int) _11;
+  SelectorShift = Clock_Ip_axFeatureExtensions[_12].SelectorValueShift;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutOccurred = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _13 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _14 = _13->CSS;
+  _15 = SelectorMask & _14;
+  _16 = _15 >> SelectorShift;
+  if (SelectorValue != _16)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.5_17 = TimeoutTicks;
+  TimeoutOccurred = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.5_17);
+  # DEBUG BEGIN_STMT
+  _18 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _19 = _18->CSS;
+  _20 = _19 & 65536;
+  if (_20 == 65536)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _21 = ~TimeoutOccurred;
+  if (_21 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  _22 = ~TimeoutOccurred;
+  if (_22 != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 19>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  _23 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  RegValue = _23->CSC;
+  # DEBUG BEGIN_STMT
+  _24 = ~SelectorMask;
+  RegValue = RegValue & _24;
+  # DEBUG BEGIN_STMT
+  _25 = SelectorValue << SelectorShift;
+  _26 = SelectorMask & _25;
+  RegValue = RegValue | _26;
+  # DEBUG BEGIN_STMT
+  RegValue = RegValue | 4;
+  # DEBUG BEGIN_STMT
+  _27 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _27->CSC = RegValue;
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.6_28 = TimeoutTicks;
+  TimeoutOccurred = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.6_28);
+  # DEBUG BEGIN_STMT
+  _29 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _30 = _29->CSS;
+  _31 = _30 & 4;
+  if (_31 == 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 9> :
+  _32 = ~TimeoutOccurred;
+  if (_32 != 0)
+    goto <bb 8>; [INV]
+  else
+    goto <bb 10>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  _33 = ~TimeoutOccurred;
+  if (_33 != 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.7_34 = TimeoutTicks;
+  TimeoutOccurred = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.7_34);
+  # DEBUG BEGIN_STMT
+  _35 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _36 = _35->CSS;
+  _37 = _36 & 65536;
+  if (_37 == 65536)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  _38 = ~TimeoutOccurred;
+  if (_38 != 0)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 14> :
+  # DEBUG BEGIN_STMT
+  _39 = ~TimeoutOccurred;
+  if (_39 != 0)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 17>; [INV]
+
+  <bb 15> :
+  # DEBUG BEGIN_STMT
+  _40 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _41 = _40->CSS;
+  _42 = _41 >> 17;
+  _43 = _42 & 7;
+  if (_43 != 1)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 16> :
+  # DEBUG BEGIN_STMT
+  _44 = Config->Name;
+  Clock_Ip_ReportClockErrors (3, _44);
+  goto <bb 20>; [INV]
+
+  <bb 17> :
+  # DEBUG BEGIN_STMT
+  _45 = Config->Name;
+  Clock_Ip_ReportClockErrors (1, _45);
+  goto <bb 20>; [INV]
+
+  <bb 18> :
+  # DEBUG BEGIN_STMT
+  _46 = Config->Name;
+  Clock_Ip_ReportClockErrors (1, _46);
+  goto <bb 20>; [INV]
+
+  <bb 19> :
+  # DEBUG BEGIN_STMT
+  _47 = Config->Name;
+  Clock_Ip_ReportClockErrors (1, _47);
+
+  <bb 20> :
+  StartTime = {CLOBBER};
+  ElapsedTime = {CLOBBER};
+  TimeoutTicks = {CLOBBER};
+  return;
+
+}
+
+
+Clock_Ip_ResetCgmXCscCssClkswSwip (const struct Clock_Ip_SelectorConfigType * Config)
+{
+  uint32 SelectorMask;
+  uint32 SelectorIndex;
+  uint32 Instance;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = Config->Name;
+  _2 = Clock_Ip_au8ClockFeatures[_1][0];
+  Instance = (uint32) _2;
+  # DEBUG BEGIN_STMT
+  _3 = Config->Name;
+  _4 = Clock_Ip_au8ClockFeatures[_3][4];
+  SelectorIndex = (uint32) _4;
+  # DEBUG BEGIN_STMT
+  _5 = Config->Name;
+  _6 = Clock_Ip_au8ClockFeatures[_5][2];
+  _7 = (int) _6;
+  SelectorMask = Clock_Ip_axFeatureExtensions[_7].SelectorValueMask;
+  # DEBUG BEGIN_STMT
+  _8 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _9 = _8->CSC;
+  _10 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _11 = _9 | 8;
+  _10->CSC = _11;
+  # DEBUG BEGIN_STMT
+  _12 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _13 = _12->CSC;
+  _14 = ~SelectorMask;
+  _15 = Clock_Ip_apxCgm[Instance][SelectorIndex];
+  _16 = _13 & _14;
+  _15->CSC = _16;
+  return;
+
+}
+
+
+Clock_Ip_CallbackSelectorEmpty (const struct Clock_Ip_SelectorConfigType * Config)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

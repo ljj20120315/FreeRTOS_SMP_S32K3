@@ -1,0 +1,3 @@
+../src/main_c0.c:52:6:MultiCore_Enable.part.0	0	static
+../src/main_c0.c:52:6:MultiCore_Enable	0	static
+../src/main_c0.c:100:5:main_c0	8	static

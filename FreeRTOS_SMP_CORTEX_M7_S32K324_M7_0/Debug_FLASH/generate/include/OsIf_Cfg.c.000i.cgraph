@@ -1,0 +1,132 @@
+Trivially needed symbols: OsIf_apxPredefinedConfig/2
+
+
+Initial Symbol table:
+
+OsIf_apxPredefinedConfig/2 (OsIf_apxPredefinedConfig) @06c0fd80
+  Type: variable definition analyzed
+  Visibility: public
+  Aux: @01981040
+  References: OsIf_xPredefinedConfig/1 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+OsIf_xPredefinedConfig/1 (OsIf_xPredefinedConfig) @06c0fcf0
+  Type: variable definition analyzed
+  Visibility:
+  Aux: @01981040
+  References: 
+  Referring: OsIf_apxPredefinedConfig/2 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+DevAssert/0 (DevAssert) @06c091c0
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols: DevAssert/0
+
+Reclaimed Symbol table:
+
+OsIf_apxPredefinedConfig/2 (OsIf_apxPredefinedConfig) @06c0fd80
+  Type: variable definition analyzed
+  Visibility: public
+  References: OsIf_xPredefinedConfig/1 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+OsIf_xPredefinedConfig/1 (OsIf_xPredefinedConfig) @06c0fcf0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: OsIf_apxPredefinedConfig/2 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+
+Initial Symbol table:
+
+OsIf_apxPredefinedConfig/2 (OsIf_apxPredefinedConfig) @06c0fd80
+  Type: variable definition analyzed
+  Visibility: public
+  References: OsIf_xPredefinedConfig/1 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+OsIf_xPredefinedConfig/1 (OsIf_xPredefinedConfig) @06c0fcf0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: OsIf_apxPredefinedConfig/2 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+OsIf_apxPredefinedConfig/2 (OsIf_apxPredefinedConfig) @06c0fd80
+  Type: variable definition analyzed
+  Visibility: public
+  References: OsIf_xPredefinedConfig/1 (addr) 
+  Referring: 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+OsIf_xPredefinedConfig/1 (OsIf_xPredefinedConfig) @06c0fcf0
+  Type: variable definition analyzed
+  Visibility:
+  References: 
+  Referring: OsIf_apxPredefinedConfig/2 (addr) 
+  Availability: not-ready
+  Varpool flags: initialized read-only const-value-known
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+OsIf_apxPredefinedConfig/2 (OsIf_apxPredefinedConfig) @06c0fd80
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: OsIf_xPredefinedConfig/1 (addr) 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+OsIf_xPredefinedConfig/1 (OsIf_xPredefinedConfig) @06c0fcf0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: OsIf_apxPredefinedConfig/2 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: OsIf_apxPredefinedConfig/2
+Removing variables:
+
+Final Symbol table:
+
+OsIf_apxPredefinedConfig/2 (OsIf_apxPredefinedConfig) @06c0fd80
+  Type: variable definition analyzed
+  Visibility: externally_visible asm_written public
+  Aux: @00000001
+  References: OsIf_xPredefinedConfig/1 (addr) 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known
+OsIf_xPredefinedConfig/1 (OsIf_xPredefinedConfig) @06c0fcf0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly asm_written
+  Aux: @00000001
+  References: 
+  Referring: OsIf_apxPredefinedConfig/2 (addr) 
+  Availability: available
+  Varpool flags: initialized read-only const-value-known

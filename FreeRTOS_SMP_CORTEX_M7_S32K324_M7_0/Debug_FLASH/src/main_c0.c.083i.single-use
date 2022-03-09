@@ -1,0 +1,107 @@
+MultiCore_Enable.part.0 ()
+{
+  uint8_t core;
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 6> [local count: 118111600]:
+  # DEBUG D#2 s=> core
+  # DEBUG core => D#2
+
+  <bb 2> [local count: 118111600]:
+<L0>:
+  # DEBUG BEGIN_STMT
+  MEM[(struct MC_ME_Type *)1076740096B].PRTN0_CORE1_ADDR ={v} 4198400;
+  # DEBUG BEGIN_STMT
+  MEM[(struct MC_ME_Type *)1076740096B].PRTN0_CORE1_PCONF ={v} 1;
+  # DEBUG BEGIN_STMT
+  MEM[(struct MC_ME_Type *)1076740096B].PRTN0_CORE1_PUPD ={v} 1;
+  # DEBUG BEGIN_STMT
+  MEM[(struct MC_ME_Type *)1076740096B].CTL_KEY ={v} 23280;
+  # DEBUG BEGIN_STMT
+  MEM[(struct MC_ME_Type *)1076740096B].CTL_KEY ={v} 42255;
+  # DEBUG BEGIN_STMT
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MC_ME_Type *)1076740096B].PRTN0_CORE1_STAT;
+  _2 = _1 & 1;
+  if (_2 == 0)
+    goto <bb 4>; [89.00%]
+  else
+    goto <bb 5>; [11.00%]
+
+  <bb 4> [local count: 955630225]:
+  goto <bb 3>; [100.00%]
+
+  <bb 5> [local count: 118111600]:
+  return;
+
+}
+
+
+main_c0 ()
+{
+  int exit_code0.0_1;
+  int _8;
+
+  <bb 2> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  # DEBUG core => 1
+  # DEBUG INLINE_ENTRY MultiCore_Enable
+  # DEBUG BEGIN_STMT
+  # DEBUG D#1 => 1
+  MultiCore_Enable.part.0 ();
+  # DEBUG core => NULL
+  # DEBUG BEGIN_STMT
+  Xrdc_Ip_Init (&Xrdc_Config_BOARD_INITPERIPHERALS);
+  # DEBUG BEGIN_STMT
+  OsIf_Init (0B);
+  # DEBUG BEGIN_STMT
+  Clock_Ip_Init (&Mcu_aClockConfigPB[0]);
+  # DEBUG BEGIN_STMT
+  Siul2_Port_Ip_Init (6, &g_pin_mux_InitConfigArr0);
+  # DEBUG BEGIN_STMT
+  Sema42_Ip_Init (0);
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  exit_code0.0_1 ={v} exit_code0;
+  if (exit_code0.0_1 != 0)
+    goto <bb 4>; [11.00%]
+  else
+    goto <bb 5>; [89.00%]
+
+  <bb 5> [local count: 955630225]:
+  goto <bb 3>; [100.00%]
+
+  <bb 4> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  _8 ={v} exit_code0;
+  return _8;
+
+}
+
+
+MultiCore_Enable (uint8_t core)
+{
+  <bb 2> [local count: 347387056]:
+  # DEBUG BEGIN_STMT
+  if (core_3(D) == 1)
+    goto <bb 3>; [34.00%]
+  else
+    goto <bb 4>; [66.00%]
+
+  <bb 3> [local count: 118111600]:
+<L0>:
+  # DEBUG D#1 => core_3(D)
+  MultiCore_Enable.part.0 ();
+
+  <bb 4> [local count: 347387056]:
+  return;
+
+}
+
+

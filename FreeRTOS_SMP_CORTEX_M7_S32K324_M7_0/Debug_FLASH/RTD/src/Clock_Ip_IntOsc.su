@@ -1,0 +1,8 @@
+../RTD/src/Clock_Ip_IntOsc.c:190:13:Clock_Ip_InternalOscillatorEmpty	0	static
+../RTD/src/Clock_Ip_IntOsc.c:195:13:Clock_Ip_InternalOscillatorEmpty_Disable	0	static
+../RTD/src/Clock_Ip_IntOsc.c:216:13:Clock_Ip_EnableFircStdby	0	static
+../RTD/src/Clock_Ip_IntOsc.c:222:13:Clock_Ip_DisableFircStdby	0	static
+../RTD/src/Clock_Ip_IntOsc.c:242:13:Clock_Ip_EnableSircStdby	0	static
+../RTD/src/Clock_Ip_IntOsc.c:248:13:Clock_Ip_DisableSircStdby	0	static
+../RTD/src/Clock_Ip_IntOsc.c:204:13:Clock_Ip_SetFircStdby	0	static
+../RTD/src/Clock_Ip_IntOsc.c:230:13:Clock_Ip_SetSircStdby	0	static

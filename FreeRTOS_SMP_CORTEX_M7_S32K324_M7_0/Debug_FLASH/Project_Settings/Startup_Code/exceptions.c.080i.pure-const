@@ -1,0 +1,807 @@
+
+
+ local analysis of undefined_handler/9
+ ;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4
+;;
+;; Loop 1
+;;  header 3, latch 4
+;;  depth 1, outer 0
+;;  nodes: 3 4
+;; 2 succs { 3 }
+;; 3 succs { 4 }
+;; 4 succs { 3 }
+    cannot prove finiteness of loop 1
+Function is locally looping.
+Function is locally const.
+
+
+ local analysis of SysTick_Handler/8
+ ;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4
+;;
+;; Loop 1
+;;  header 3, latch 4
+;;  depth 1, outer 0
+;;  nodes: 3 4
+;; 2 succs { 3 }
+;; 3 succs { 4 }
+;; 4 succs { 3 }
+    cannot prove finiteness of loop 1
+Function is locally looping.
+Function is locally const.
+
+
+ local analysis of PendSV_Handler/7
+ ;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4
+;;
+;; Loop 1
+;;  header 3, latch 4
+;;  depth 1, outer 0
+;;  nodes: 3 4
+;; 2 succs { 3 }
+;; 3 succs { 4 }
+;; 4 succs { 3 }
+    cannot prove finiteness of loop 1
+Function is locally looping.
+Function is locally const.
+
+
+ local analysis of DebugMon_Handler/6
+ ;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4
+;;
+;; Loop 1
+;;  header 3, latch 4
+;;  depth 1, outer 0
+;;  nodes: 3 4
+;; 2 succs { 3 }
+;; 3 succs { 4 }
+;; 4 succs { 3 }
+    cannot prove finiteness of loop 1
+Function is locally looping.
+Function is locally const.
+
+
+ local analysis of SVC_Handler/5
+ ;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4
+;;
+;; Loop 1
+;;  header 3, latch 4
+;;  depth 1, outer 0
+;;  nodes: 3 4
+;; 2 succs { 3 }
+;; 3 succs { 4 }
+;; 4 succs { 3 }
+    cannot prove finiteness of loop 1
+Function is locally looping.
+Function is locally const.
+
+
+ local analysis of UsageFault_Handler/4
+ ;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4
+;;
+;; Loop 1
+;;  header 3, latch 4
+;;  depth 1, outer 0
+;;  nodes: 3 4
+;; 2 succs { 3 }
+;; 3 succs { 4 }
+;; 4 succs { 3 }
+    cannot prove finiteness of loop 1
+Function is locally looping.
+Function is locally const.
+
+
+ local analysis of BusFault_Handler/3
+ ;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4
+;;
+;; Loop 1
+;;  header 3, latch 4
+;;  depth 1, outer 0
+;;  nodes: 3 4
+;; 2 succs { 3 }
+;; 3 succs { 4 }
+;; 4 succs { 3 }
+    cannot prove finiteness of loop 1
+Function is locally looping.
+Function is locally const.
+
+
+ local analysis of MemManage_Handler/2
+ ;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4
+;;
+;; Loop 1
+;;  header 3, latch 4
+;;  depth 1, outer 0
+;;  nodes: 3 4
+;; 2 succs { 3 }
+;; 3 succs { 4 }
+;; 4 succs { 3 }
+    cannot prove finiteness of loop 1
+Function is locally looping.
+Function is locally const.
+
+
+ local analysis of HardFault_Handler/1
+ ;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4
+;;
+;; Loop 1
+;;  header 3, latch 4
+;;  depth 1, outer 0
+;;  nodes: 3 4
+;; 2 succs { 3 }
+;; 3 succs { 4 }
+;; 4 succs { 3 }
+    cannot prove finiteness of loop 1
+Function is locally looping.
+Function is locally const.
+
+
+ local analysis of NMI_Handler/0
+ ;; 2 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4
+;;
+;; Loop 1
+;;  header 3, latch 4
+;;  depth 1, outer 0
+;;  nodes: 3 4
+;; 2 succs { 3 }
+;; 3 succs { 4 }
+;; 4 succs { 3 }
+    cannot prove finiteness of loop 1
+Function is locally looping.
+Function is locally const.
+callgraph:
+
+undefined_handler/9 (undefined_handler) @06c6f540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04d53fd0
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:10631108 (estimated locally) body executed_once optimize_size
+  Called by: 
+  Calls: 
+SysTick_Handler/8 (SysTick_Handler) @06c6f2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d54130
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+PendSV_Handler/7 (PendSV_Handler) @06c6f000
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53ef0
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+DebugMon_Handler/6 (DebugMon_Handler) @06c6c9a0
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53fb0
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+SVC_Handler/5 (SVC_Handler) @06c6c460
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53f10
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+UsageFault_Handler/4 (UsageFault_Handler) @06c6ce00
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d54150
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+BusFault_Handler/3 (BusFault_Handler) @06c6cb60
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53f30
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+MemManage_Handler/2 (MemManage_Handler) @06c6c8c0
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d541b0
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+HardFault_Handler/1 (HardFault_Handler) @06c6c620
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d540d0
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+NMI_Handler/0 (NMI_Handler) @06c6c380
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d541d0
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+
+ ordered call graph: reduced for nothrow
+undefined_handler/9 (undefined_handler) @06c6f540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04d53fd0
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:10631108 (estimated locally) body executed_once optimize_size
+  Called by: 
+  Calls: 
+SysTick_Handler/8 (SysTick_Handler) @06c6f2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d54130
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+PendSV_Handler/7 (PendSV_Handler) @06c6f000
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53ef0
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+DebugMon_Handler/6 (DebugMon_Handler) @06c6c9a0
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53fb0
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+SVC_Handler/5 (SVC_Handler) @06c6c460
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53f10
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+UsageFault_Handler/4 (UsageFault_Handler) @06c6ce00
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d54150
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+BusFault_Handler/3 (BusFault_Handler) @06c6cb60
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53f30
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+MemManage_Handler/2 (MemManage_Handler) @06c6c8c0
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d541b0
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+HardFault_Handler/1 (HardFault_Handler) @06c6c620
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d540d0
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+NMI_Handler/0 (NMI_Handler) @06c6c380
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d541d0
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+
+
+MALLOC LATTICE Initial:
+undefined_handler/9: malloc_bottom
+SysTick_Handler/8: malloc_bottom
+PendSV_Handler/7: malloc_bottom
+DebugMon_Handler/6: malloc_bottom
+SVC_Handler/5: malloc_bottom
+UsageFault_Handler/4: malloc_bottom
+BusFault_Handler/3: malloc_bottom
+MemManage_Handler/2: malloc_bottom
+HardFault_Handler/1: malloc_bottom
+NMI_Handler/0: malloc_bottom
+
+
+MALLOC LATTICE after propagation:
+undefined_handler/9: malloc_bottom
+SysTick_Handler/8: malloc_bottom
+PendSV_Handler/7: malloc_bottom
+DebugMon_Handler/6: malloc_bottom
+SVC_Handler/5: malloc_bottom
+UsageFault_Handler/4: malloc_bottom
+BusFault_Handler/3: malloc_bottom
+MemManage_Handler/2: malloc_bottom
+HardFault_Handler/1: malloc_bottom
+NMI_Handler/0: malloc_bottom
+callgraph:
+
+undefined_handler/9 (undefined_handler) @06c6f540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04d54010
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:10631108 (estimated locally) body executed_once optimize_size
+  Called by: 
+  Calls: 
+SysTick_Handler/8 (SysTick_Handler) @06c6f2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53ef0
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+PendSV_Handler/7 (PendSV_Handler) @06c6f000
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53f10
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+DebugMon_Handler/6 (DebugMon_Handler) @06c6c9a0
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53f30
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+SVC_Handler/5 (SVC_Handler) @06c6c460
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53e50
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+UsageFault_Handler/4 (UsageFault_Handler) @06c6ce00
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d54070
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+BusFault_Handler/3 (BusFault_Handler) @06c6cb60
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53fd0
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+MemManage_Handler/2 (MemManage_Handler) @06c6c8c0
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53f50
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+HardFault_Handler/1 (HardFault_Handler) @06c6c620
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d540d0
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+NMI_Handler/0 (NMI_Handler) @06c6c380
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53f70
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+
+ ordered call graph: reduced
+undefined_handler/9 (undefined_handler) @06c6f540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04d54010
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:10631108 (estimated locally) body executed_once optimize_size
+  Called by: 
+  Calls: 
+SysTick_Handler/8 (SysTick_Handler) @06c6f2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53ef0
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+PendSV_Handler/7 (PendSV_Handler) @06c6f000
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53f10
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+DebugMon_Handler/6 (DebugMon_Handler) @06c6c9a0
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53f30
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+SVC_Handler/5 (SVC_Handler) @06c6c460
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53e50
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+UsageFault_Handler/4 (UsageFault_Handler) @06c6ce00
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d54070
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+BusFault_Handler/3 (BusFault_Handler) @06c6cb60
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53fd0
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+MemManage_Handler/2 (MemManage_Handler) @06c6c8c0
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53f50
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+HardFault_Handler/1 (HardFault_Handler) @06c6c620
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d540d0
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+NMI_Handler/0 (NMI_Handler) @06c6c380
+  Type: function definition analyzed
+  Visibility: externally_visible public weak
+  Aux: @04d53f70
+  References: 
+  Referring: 
+  Availability: overwritable
+  Function flags: count:10631108 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+
+Function found to be looping const: NMI_Handler/0
+Function found to be looping const: HardFault_Handler/1
+Function found to be looping const: MemManage_Handler/2
+Function found to be looping const: BusFault_Handler/3
+Function found to be looping const: UsageFault_Handler/4
+Function found to be looping const: SVC_Handler/5
+Function found to be looping const: DebugMon_Handler/6
+Function found to be looping const: PendSV_Handler/7
+Function found to be looping const: SysTick_Handler/8
+Function found not to call free: undefined_handler/9
+undefined_handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+SysTick_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+PendSV_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+DebugMon_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+SVC_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+UsageFault_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+BusFault_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+MemManage_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+HardFault_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+__attribute__((weak))
+NMI_Handler ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+

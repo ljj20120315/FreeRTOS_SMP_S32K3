@@ -1,0 +1,77 @@
+Dump after hash based groups
+Congruence classes: 1 with total: 1 items (in a non-singular class: 0)
+Class size histogram [number of members]: number of classes
+     1:      1
+Dump after WPA based types groups
+Congruence classes: 1 with total: 1 items (in a non-singular class: 0)
+Class size histogram [number of members]: number of classes
+     1:      1
+Worklist has been filled with: 0
+Address reference subdivision created: 0 new classes.
+Dump after callgraph-based congruence reduction
+Congruence classes: 1 with total: 1 items (in a non-singular class: 0)
+Class size histogram [number of members]: number of classes
+     1:      1
+Init called for 0 items (0.00%).
+Dump after full equality comparison of groups
+Congruence classes: 1 with total: 1 items (in a non-singular class: 0)
+Class size histogram [number of members]: number of classes
+     1:      1
+Worklist has been filled with: 0
+Address reference subdivision created: 0 new classes.
+Congruence classes: 1 with total: 1 items (in a non-singular class: 0)
+Class size histogram [number of members]: number of classes
+     1:      1
+
+Item count: 1
+Congruent classes before: 1, after: 1
+Average class size before: 1.00, after: 1.00
+Average non-singular class size: 0.00, count: 0
+Equal symbols: 0
+Totally needed symbols: 0, fraction of loaded symbols: 0.00%
+
+main ()
+{
+  unsigned char _1;
+  int exit_code.0_2;
+  int _8;
+
+  <bb 2> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  _1 = Sys_GetCoreID ();
+  if (_1 == 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 59055800]:
+  # DEBUG BEGIN_STMT
+  main_c0 ();
+  goto <bb 6>; [100.00%]
+
+  <bb 4> [local count: 59055800]:
+  # DEBUG BEGIN_STMT
+  main_c1 ();
+
+  <bb 6> [local count: 118111600]:
+
+  <bb 8> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  exit_code.0_2 ={v} exit_code;
+  if (exit_code.0_2 != 0)
+    goto <bb 7>; [11.00%]
+  else
+    goto <bb 9>; [89.00%]
+
+  <bb 9> [local count: 955630225]:
+  goto <bb 8>; [100.00%]
+
+  <bb 7> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  _8 ={v} exit_code;
+  return _8;
+
+}
+
+

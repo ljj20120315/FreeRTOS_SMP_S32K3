@@ -1,0 +1,10 @@
+../RTD/src/Siul2_Dio_Ip.c:159:22:Siul2_Dio_Ip_Rev_Bit_16	12	static
+../RTD/src/Siul2_Dio_Ip.c:183:6:Siul2_Dio_Ip_WritePin	16	static
+../RTD/src/Siul2_Dio_Ip.c:212:6:Siul2_Dio_Ip_WritePins	8	static
+../RTD/src/Siul2_Dio_Ip.c:229:30:Siul2_Dio_Ip_GetPinsOutput	0	static
+../RTD/src/Siul2_Dio_Ip.c:248:6:Siul2_Dio_Ip_SetPins	8	static
+../RTD/src/Siul2_Dio_Ip.c:266:6:Siul2_Dio_Ip_ClearPins	8	static
+../RTD/src/Siul2_Dio_Ip.c:283:6:Siul2_Dio_Ip_TogglePins	8	static
+../RTD/src/Siul2_Dio_Ip.c:299:30:Siul2_Dio_Ip_ReadPins	0	static
+../RTD/src/Siul2_Dio_Ip.c:317:28:Siul2_Dio_Ip_ReadPin	8	static
+../RTD/src/Siul2_Dio_Ip.c:337:6:Siul2_Dio_Ip_MaskedWritePins	24	static

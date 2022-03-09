@@ -1,0 +1,970 @@
+IPA function summary for sys_m7_cache_clean/9 inlinable
+  global time:     801.256203
+  self size:       27
+  global size:     27
+  min size:       24
+  self stack:      0
+  global stack:    0
+    size:24.000000, time:799.256203
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for sys_m7_cache_disable/8 inlinable
+  global time:     22.000000
+  self size:       14
+  global size:     14
+  min size:       11
+  self stack:      0
+  global stack:    0
+    size:10.000000, time:10.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    sys_m7_cache_clean/9 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 1 time: 10 callee size:13 stack: 0
+
+IPA function summary for sys_m7_cache_init/7 inlinable
+  global time:     822.256203
+  self size:       39
+  global size:     39
+  min size:       36
+  self stack:      0
+  global stack:    0
+    size:35.000000, time:810.256203
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    sys_m7_cache_clean/9 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 1 time: 10 callee size:13 stack: 0
+
+IPA function summary for SystemInit/6 inlinable
+  global time:     1051.980169
+  self size:       86
+  global size:     86
+  min size:       83
+  self stack:      0
+  global stack:    0
+    size:80.000000, time:1026.680168
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    sys_m7_cache_init/7 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 1 time: 10 callee size:19 stack: 0
+    sys_m7_cache_disable/8 function not considered for inlining
+      freq:0.67 loop depth: 0 size: 1 time: 10 callee size: 7 stack: 0
+    sys_m7_cache_clean/9 function not considered for inlining
+      freq:0.67 loop depth: 0 size: 1 time: 10 callee size:13 stack: 0
+
+IPA function summary for Sys_GetCoreID/5 inlinable
+  global time:     4.000000
+  self size:       5
+  global size:     5
+  min size:       2
+  self stack:      0
+  global stack:    0
+    size:2.000000, time:2.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for default_interrupt_routine/4 inlinable
+  global time:     0.000000
+  self size:       2
+  global size:     2
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:2.000000, time:0.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for startup_go_to_user_mode/3 inlinable
+  global time:     2.000000
+  self size:       3
+  global size:     3
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+
+Flattening functions:
+Overall time estimate: 2703.492577 weighted by profile: 0.000000
+
+Deciding on inlining of small functions.  Starting with size 0.
+Enqueueing calls in sys_m7_cache_clean/9.
+Enqueueing calls in sys_m7_cache_disable/8.
+Enqueueing calls in sys_m7_cache_init/7.
+Enqueueing calls in SystemInit/6.
+Enqueueing calls in Sys_GetCoreID/5.
+Enqueueing calls in default_interrupt_routine/4.
+Enqueueing calls in startup_go_to_user_mode/3.
+
+Considering sys_m7_cache_disable/8 with 14 size
+ to be inlined into SystemInit/6 in ../Project_Settings/Startup_Code/system.c:529
+ Estimated badness is -0.033250, frequency 0.67.
+node context cache: 3 hits, 0 misses, 2 initializations
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+
+Deciding on functions to be inlined into all callers and removing useless speculations:
+
+Inlining sys_m7_cache_init/7 size 39.
+ Called once from SystemInit/6 96 insns.
+ Inlined into SystemInit/6 which now has 131 size
+Overall time estimate: 2676.142574 weighted by profile: 0.000000
+
+Why inlining failed?
+--param max-inline-insns-auto limit reached       :        3 calls, 2.330000 freq, 0 count
+IPA function summary for sys_m7_cache_clean/9 inlinable
+  global time:     801.256203
+  self size:       27
+  global size:     27
+  min size:       24
+  self stack:      0
+  global stack:    0
+  estimated growth:42
+    size:24.000000, time:799.256203
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for SystemInit/6 inlinable
+  global time:     1868.886372
+  self size:       86
+  global size:     131
+  min size:       128
+  self stack:      0
+  global stack:    0
+    size:125.000000, time:1843.586370
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    sys_m7_cache_init/7 inlined
+      freq:1.00
+      Stack frame offset 0, callee self size 0
+      sys_m7_cache_clean/9 --param max-inline-insns-auto limit reached
+        freq:1.00 loop depth: 0 size: 1 time: 10 callee size:13 stack: 0
+    sys_m7_cache_disable/8 inlined
+      freq:0.67
+      Stack frame offset 0, callee self size 0
+      sys_m7_cache_clean/9 --param max-inline-insns-auto limit reached
+        freq:0.67 loop depth: 0 size: 1 time: 10 callee size:13 stack: 0
+    sys_m7_cache_clean/9 --param max-inline-insns-auto limit reached
+      freq:0.67 loop depth: 0 size: 1 time: 10 callee size:13 stack: 0
+
+IPA function summary for Sys_GetCoreID/5 inlinable
+  global time:     4.000000
+  self size:       5
+  global size:     5
+  min size:       2
+  self stack:      0
+  global stack:    0
+    size:2.000000, time:2.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for default_interrupt_routine/4 inlinable
+  global time:     0.000000
+  self size:       2
+  global size:     2
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:2.000000, time:0.000000,  executed if:(not inlined)
+  calls:
+
+IPA function summary for startup_go_to_user_mode/3 inlinable
+  global time:     2.000000
+  self size:       3
+  global size:     3
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+__RAM_SHAREABLE_SIZE/19 (__RAM_SHAREABLE_SIZE) @06e72cf0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not_available
+  Varpool flags:
+__RAM_SHAREABLE_START/18 (__RAM_SHAREABLE_START) @06e72ca8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not_available
+  Varpool flags:
+__RAM_NO_CACHEABLE_SIZE/17 (__RAM_NO_CACHEABLE_SIZE) @06e72c60
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not_available
+  Varpool flags:
+__RAM_NO_CACHEABLE_START/16 (__RAM_NO_CACHEABLE_START) @06e72c18
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not_available
+  Varpool flags:
+__RAM_CACHEABLE_SIZE/15 (__RAM_CACHEABLE_SIZE) @06e72bd0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not_available
+  Varpool flags:
+__INT_SRAM_START/14 (__INT_SRAM_START) @06e72b88
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not_available
+  Varpool flags:
+__INT_DTCM_START/13 (__INT_DTCM_START) @06e72b40
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not_available
+  Varpool flags:
+__ROM_DATA_START/12 (__ROM_DATA_START) @06e72af8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not_available
+  Varpool flags:
+__ROM_CODE_START/11 (__ROM_CODE_START) @06e72ab0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not_available
+  Varpool flags:
+__INT_ITCM_START/10 (__INT_ITCM_START) @06e72a68
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: SystemInit/6 (addr) 
+  Availability: not_available
+  Varpool flags:
+sys_m7_cache_clean/9 (sys_m7_cache_clean) @06d1d620
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: count:12992276 (estimated locally) body local optimize_size
+  Called by: SystemInit/6 (7140382 (estimated locally),0.67 per call) sys_m7_cache_init/7 (10737416 (estimated locally),1.00 per call) sys_m7_cache_disable/8 (7140382 (estimated locally),0.67 per call) 
+  Calls: 
+sys_m7_cache_disable/8 (sys_m7_cache_disable) @06d1d0e0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Function sys_m7_cache_disable/8 is inline copy in SystemInit/6
+  Availability: local
+  Function flags: count:7140382 (estimated locally) body local optimize_size
+  Called by: SystemInit/6 (inlined) (7140382 (estimated locally),0.67 per call) 
+  Calls: sys_m7_cache_clean/9 (7140382 (estimated locally),0.67 per call) 
+sys_m7_cache_init/7 (sys_m7_cache_init) @06d1dd20
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Function sys_m7_cache_init/7 is inline copy in SystemInit/6
+  Availability: local
+  Function flags: count:10737416 (estimated locally) body local optimize_size
+  Called by: SystemInit/6 (inlined) (10737416 (estimated locally),1.00 per call) 
+  Calls: sys_m7_cache_clean/9 (10737416 (estimated locally),1.00 per call) 
+SystemInit/6 (SystemInit) @06d1da80
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: rbar/0 (write) rasr/1 (write) __INT_ITCM_START/10 (addr) rbar/0 (write) rasr/1 (write) __ROM_CODE_START/11 (addr) rbar/0 (write) rasr/1 (write) __ROM_DATA_START/12 (addr) rbar/0 (write) rasr/1 (write) __INT_DTCM_START/13 (addr) rbar/0 (write) rasr/1 (write) __INT_SRAM_START/14 (addr) rbar/0 (write) __RAM_CACHEABLE_SIZE/15 (addr) rasr/1 (write) __RAM_NO_CACHEABLE_START/16 (addr) rbar/0 (write) __RAM_NO_CACHEABLE_SIZE/17 (addr) rasr/1 (write) __RAM_SHAREABLE_START/18 (addr) rbar/0 (write) __RAM_SHAREABLE_SIZE/19 (addr) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rbar/0 (write) rasr/1 (write) rasr/1 (read) rbar/0 (read) rasr/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:10737416 (estimated locally) body optimize_size
+  Called by: 
+  Calls: sys_m7_cache_init/7 (inlined) (10737416 (estimated locally),1.00 per call) sys_m7_cache_disable/8 (inlined) (7140382 (estimated locally),0.67 per call) sys_m7_cache_clean/9 (7140382 (estimated locally),0.67 per call) 
+Sys_GetCoreID/5 (Sys_GetCoreID) @06d1d7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+default_interrupt_routine/4 (default_interrupt_routine) @06d1d540
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:10631108 (estimated locally) body executed_once optimize_size
+  Called by: 
+  Calls: 
+startup_go_to_user_mode/3 (startup_go_to_user_mode) @06d1d2a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: 
+RESET_CATCH_CORE/2 (RESET_CATCH_CORE) @06d1a438
+  Type: variable definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags:
+rasr/1 (rasr) @06d1a318
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible public
+  References: 
+  Referring: SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (read) SystemInit/6 (read) 
+  Availability: available
+  Varpool flags: initialized
+rbar/0 (rbar) @06d1a288
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible public
+  References: 
+  Referring: SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (write) SystemInit/6 (read) 
+  Availability: available
+  Varpool flags: initialized
+
+;; Function sys_m7_cache_clean (sys_m7_cache_clean, funcdef_no=6, decl_uid=5860, cgraph_uid=7, symbol_order=9)
+
+sys_m7_cache_clean ()
+{
+  uint32 ways;
+  uint32 sets;
+  uint32 ccsidr;
+  long unsigned int _1;
+  long unsigned int _2;
+  long unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  long unsigned int _8;
+
+  <bb 2> [local count: 12992276]:
+  # DEBUG BEGIN_STMT
+  # DEBUG ccsidr => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG sets => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG ways => 0
+  # DEBUG BEGIN_STMT
+  MEM[(struct S32_SCB_Type *)3758153728B].CSSELR ={v} 0;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  ccsidr_16 ={v} MEM[(struct S32_SCB_Type *)3758153728B].CCSIDR;
+  # DEBUG ccsidr => ccsidr_16
+  # DEBUG BEGIN_STMT
+  _1 = ccsidr_16 >> 13;
+  sets_17 = _1 & 32767;
+  # DEBUG sets => sets_17
+
+  <bb 3> [local count: 118111600]:
+  # sets_9 = PHI <sets_17(2), sets_22(7)>
+  # DEBUG sets => sets_9
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _2 = ccsidr_16 >> 3;
+  ways_18 = _2 & 1023;
+  # DEBUG ways => ways_18
+
+  <bb 4> [local count: 1073741824]:
+  # ways_10 = PHI <ways_18(3), ways_21(8)>
+  # DEBUG ways => ways_10
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _3 = sets_9 << 5;
+  _4 = _3 & 16352;
+  _5 = ways_10 << 30;
+  _6 = _4 | _5;
+  MEM[(struct S32_SCB_Type *)3758153728B].DCCISW ={v} _6;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  ways_21 = ways_10 + 4294967295;
+  # DEBUG ways => ways_21
+  if (ways_10 != 0)
+    goto <bb 8>; [89.00%]
+  else
+    goto <bb 5>; [11.00%]
+
+  <bb 8> [local count: 955630225]:
+  goto <bb 4>; [100.00%]
+
+  <bb 5> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  sets_22 = sets_9 + 4294967295;
+  # DEBUG sets => sets_22
+  if (sets_9 != 0)
+    goto <bb 7>; [89.00%]
+  else
+    goto <bb 6>; [11.00%]
+
+  <bb 7> [local count: 105119324]:
+  goto <bb 3>; [100.00%]
+
+  <bb 6> [local count: 12992276]:
+  # DEBUG BEGIN_STMT
+  _7 ={v} MEM[(struct S32_SCB_Type *)3758153728B].CSSELR;
+  _8 = _7 | 1;
+  MEM[(struct S32_SCB_Type *)3758153728B].CSSELR ={v} _8;
+  # DEBUG BEGIN_STMT
+  MEM[(struct S32_SCB_Type *)3758153728B].ICIALLU ={v} 0;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  return;
+
+}
+
+
+
+;; Function startup_go_to_user_mode (startup_go_to_user_mode, funcdef_no=0, decl_uid=5862, cgraph_uid=1, symbol_order=3)
+
+startup_go_to_user_mode ()
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+
+;; Function default_interrupt_routine (default_interrupt_routine, funcdef_no=1, decl_uid=5707, cgraph_uid=2, symbol_order=4) (executed once)
+
+default_interrupt_routine ()
+{
+  <bb 2> [local count: 10631108]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+
+  <bb 4> [local count: 1073741824]:
+  goto <bb 3>; [100.00%]
+
+}
+
+
+
+;; Function Sys_GetCoreID (Sys_GetCoreID, funcdef_no=2, decl_uid=5699, cgraph_uid=3, symbol_order=5)
+
+Sys_GetCoreID ()
+{
+  long unsigned int _1;
+  unsigned char _2;
+  uint8 _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MSCM_Type *)1076232192B].CPXNUM;
+  _2 = (unsigned char) _1;
+  _4 = _2 & 3;
+  return _4;
+
+}
+
+
+
+;; Function SystemInit (SystemInit, funcdef_no=3, decl_uid=5705, cgraph_uid=4, symbol_order=6)
+
+
+Symbols to be put in SSA form
+{ D.5931 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 27
+Number of blocks to update: 26 ( 96%)
+
+
+Merging blocks 10 and 18
+Merging blocks 16 and 20
+Removing basic block 17
+Removing basic block 23
+Removing basic block 25
+Merging blocks 26 and 19
+;; 5 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+;;
+;; Loop 3
+;;  header 17, latch 19
+;;  depth 1, outer 0
+;;  nodes: 17 19 18
+;;
+;; Loop 4
+;;  header 18, latch 18
+;;  depth 2, outer 3
+;;  nodes: 18
+;;
+;; Loop 2
+;;  header 15, latch 14
+;;  depth 1, outer 0
+;;  nodes: 15 14 12 13
+;;
+;; Loop 1
+;;  header 7, latch 6
+;;  depth 1, outer 0
+;;  nodes: 7 6
+;; 2 succs { 4 5 3 }
+;; 3 succs { 5 }
+;; 4 succs { 5 }
+;; 5 succs { 7 }
+;; 6 succs { 7 }
+;; 7 succs { 6 8 }
+;; 8 succs { 10 9 }
+;; 9 succs { 10 11 }
+;; 10 succs { 11 }
+;; 11 succs { 15 }
+;; 12 succs { 13 14 }
+;; 13 succs { 14 }
+;; 14 succs { 15 }
+;; 15 succs { 12 16 }
+;; 16 succs { 17 }
+;; 17 succs { 18 }
+;; 18 succs { 18 19 }
+;; 19 succs { 17 20 }
+;; 20 succs { 1 }
+cyclic probability of bb 18 is 0.890000; turning freq 1.000000 to 9.090909
+cyclic probability of bb 7 is 0.990000; turning freq 1.000000 to 100.000022
+cyclic probability of bb 15 is 0.937500; turning freq 1.000000 to 16.000000
+cyclic probability of bb 17 is 0.890000; turning freq 1.000000 to 9.090909
+cyclic probability of bb 18 is 0.890000; turning freq 9.090909 to 82.644630
+SystemInit ()
+{
+  uint32 ccsidr;
+  uint32 sets;
+  uint32 ways;
+  uint8 index;
+  uint8 regionNum;
+  uint32 coreMask;
+  uint32 i;
+  short unsigned int _1;
+  short unsigned int _2;
+  short unsigned int _3;
+  long unsigned int _4;
+  long unsigned int _5;
+  long unsigned int __INT_ITCM_START.0_6;
+  long unsigned int __ROM_CODE_START.1_7;
+  long unsigned int __ROM_DATA_START.2_8;
+  long unsigned int __INT_DTCM_START.3_9;
+  long unsigned int __INT_SRAM_START.4_10;
+  long unsigned int __RAM_CACHEABLE_SIZE.5_11;
+  long unsigned int _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  long unsigned int __RAM_NO_CACHEABLE_START.6_15;
+  long unsigned int __RAM_NO_CACHEABLE_SIZE.7_16;
+  long unsigned int _17;
+  long unsigned int _18;
+  long unsigned int _19;
+  long unsigned int __RAM_SHAREABLE_START.8_20;
+  long unsigned int __RAM_SHAREABLE_SIZE.9_21;
+  long unsigned int _22;
+  long unsigned int _23;
+  long unsigned int _24;
+  long unsigned int _25;
+  long unsigned int _26;
+  long unsigned int _27;
+  long unsigned int _28;
+  int _29;
+  long unsigned int _30;
+  long unsigned int _31;
+  long unsigned int _32;
+  long unsigned int _34;
+  long unsigned int _36;
+  long unsigned int _37;
+  long unsigned int _38;
+  long unsigned int _95;
+  unsigned char _96;
+  unsigned char _97;
+  long unsigned int _98;
+  long unsigned int _99;
+  long unsigned int _100;
+  long unsigned int _101;
+  long unsigned int _103;
+  long unsigned int _105;
+  long unsigned int _108;
+  long unsigned int _109;
+  long unsigned int _111;
+  long unsigned int _112;
+  long unsigned int _115;
+  long unsigned int _116;
+  long unsigned int _117;
+  long unsigned int _118;
+
+  <bb 2> [local count: 10737416]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG coreMask => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG regionNum => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG index => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY Sys_GetCoreID
+  # DEBUG BEGIN_STMT
+  _95 ={v} MEM[(struct MSCM_Type *)1076232192B].CPXNUM;
+  _96 = (unsigned char) _95;
+  _97 = _96 & 3;
+  # DEBUG coreId => _97
+  # DEBUG BEGIN_STMT
+  switch (_97) <default: <L2> [33.33%], case 0: <L15> [33.33%], case 1: <L1> [33.33%]>
+
+  <bb 3> [local count: 3579139]:
+<L1>:
+  # DEBUG BEGIN_STMT
+  # DEBUG coreMask => 2
+  # DEBUG BEGIN_STMT
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 3579139]:
+<L2>:
+  # DEBUG BEGIN_STMT
+  # DEBUG coreMask => 0
+  # DEBUG BEGIN_STMT
+
+  <bb 5> [local count: 10737416]:
+  # coreMask_40 = PHI <1(2), 2(3), 0(4)>
+<L15>:
+  # DEBUG coreMask => coreMask_40
+  # DEBUG BEGIN_STMT
+  # DEBUG i => 0
+  goto <bb 7>; [100.00%]
+
+  <bb 6> [local count: 1063004409]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct MSCM_Type *)1076232192B].IRSPRC[i_39];
+  _2 = (short unsigned int) coreMask_40;
+  _3 = _1 | _2;
+  MEM[(struct MSCM_Type *)1076232192B].IRSPRC[i_39] ={v} _3;
+  # DEBUG BEGIN_STMT
+  i_94 = i_39 + 1;
+  # DEBUG i => i_94
+
+  <bb 7> [local count: 1073741824]:
+  # i_39 = PHI <0(5), i_94(6)>
+  # DEBUG i => i_39
+  # DEBUG BEGIN_STMT
+  if (i_39 != 240)
+    goto <bb 6>; [99.00%]
+  else
+    goto <bb 8>; [1.00%]
+
+  <bb 8> [local count: 10737416]:
+  # DEBUG BEGIN_STMT
+  _4 ={v} MEM[(struct S32_SCB_Type *)3758153728B].CPACR;
+  _5 = _4 | 15728640;
+  MEM[(struct S32_SCB_Type *)3758153728B].CPACR ={v} _5;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("isb");
+  # DEBUG BEGIN_STMT
+  rbar[0] ={v} 0;
+  # DEBUG BEGIN_STMT
+  rasr[0] ={v} 268697663;
+  # DEBUG BEGIN_STMT
+  __INT_ITCM_START.0_6 = (long unsigned int) &__INT_ITCM_START;
+  rbar[1] ={v} __INT_ITCM_START.0_6;
+  # DEBUG BEGIN_STMT
+  rasr[1] ={v} 17039391;
+  # DEBUG BEGIN_STMT
+  __ROM_CODE_START.1_7 = (long unsigned int) &__ROM_CODE_START;
+  rbar[2] ={v} __ROM_CODE_START.1_7;
+  # DEBUG BEGIN_STMT
+  rasr[2] ={v} 101384235;
+  # DEBUG BEGIN_STMT
+  __ROM_DATA_START.2_8 = (long unsigned int) &__ROM_DATA_START;
+  rbar[3] ={v} __ROM_DATA_START.2_8;
+  # DEBUG BEGIN_STMT
+  rasr[3] ={v} 369426467;
+  # DEBUG BEGIN_STMT
+  __INT_DTCM_START.3_9 = (long unsigned int) &__INT_DTCM_START;
+  rbar[4] ={v} __INT_DTCM_START.3_9;
+  # DEBUG BEGIN_STMT
+  rasr[4] ={v} 17039393;
+  # DEBUG BEGIN_STMT
+  __INT_SRAM_START.4_10 = (long unsigned int) &__INT_SRAM_START;
+  rbar[5] ={v} __INT_SRAM_START.4_10;
+  # DEBUG BEGIN_STMT
+  __RAM_CACHEABLE_SIZE.5_11 = (long unsigned int) &__RAM_CACHEABLE_SIZE;
+  _12 = __RAM_CACHEABLE_SIZE.5_11 + 4294967295;
+  _13 = _12 << 1;
+  _14 = _13 | 51052545;
+  rasr[5] ={v} _14;
+  # DEBUG BEGIN_STMT
+  __RAM_NO_CACHEABLE_START.6_15 = (long unsigned int) &__RAM_NO_CACHEABLE_START;
+  rbar[6] ={v} __RAM_NO_CACHEABLE_START.6_15;
+  # DEBUG BEGIN_STMT
+  __RAM_NO_CACHEABLE_SIZE.7_16 = (long unsigned int) &__RAM_NO_CACHEABLE_SIZE;
+  _17 = __RAM_NO_CACHEABLE_SIZE.7_16 + 4294967295;
+  _18 = _17 << 1;
+  _19 = _18 | 319553537;
+  rasr[6] ={v} _19;
+  # DEBUG BEGIN_STMT
+  __RAM_SHAREABLE_START.8_20 = (long unsigned int) &__RAM_SHAREABLE_START;
+  rbar[7] ={v} __RAM_SHAREABLE_START.8_20;
+  # DEBUG BEGIN_STMT
+  __RAM_SHAREABLE_SIZE.9_21 = (long unsigned int) &__RAM_SHAREABLE_SIZE;
+  _22 = __RAM_SHAREABLE_SIZE.9_21 + 4294967295;
+  _23 = _22 << 1;
+  _24 = _23 | 319553537;
+  rasr[7] ={v} _24;
+  # DEBUG BEGIN_STMT
+  rbar[8] ={v} 1073741824;
+  # DEBUG BEGIN_STMT
+  rasr[8] ={v} 319094825;
+  # DEBUG BEGIN_STMT
+  rbar[9] ={v} 1075838976;
+  # DEBUG BEGIN_STMT
+  rasr[9] ={v} 319094825;
+  # DEBUG BEGIN_STMT
+  rbar[10] ={v} 1077936128;
+  # DEBUG BEGIN_STMT
+  rasr[10] ={v} 319094825;
+  # DEBUG BEGIN_STMT
+  rbar[11] ={v} 1728053248;
+  # DEBUG BEGIN_STMT
+  rasr[11] ={v} 319094803;
+  # DEBUG BEGIN_STMT
+  rbar[12] ={v} 1744830464;
+  # DEBUG BEGIN_STMT
+  rasr[12] ={v} 51052597;
+  # DEBUG BEGIN_STMT
+  rbar[13] ={v} 3758096384;
+  # DEBUG BEGIN_STMT
+  rasr[13] ={v} 319029287;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("isb");
+  # DEBUG BEGIN_STMT
+  _25 ={v} MEM[(struct S32_SCB_Type *)3758153728B].CCR;
+  _26 = _25 & 131072;
+  if (_26 != 0)
+    goto <bb 10>; [33.00%]
+  else
+    goto <bb 9>; [67.00%]
+
+  <bb 9> [local count: 7194069]:
+  _27 ={v} MEM[(struct S32_SCB_Type *)3758153728B].CCR;
+  _28 = _27 & 65536;
+  if (_28 != 0)
+    goto <bb 10>; [50.00%]
+  else
+    goto <bb 11>; [50.00%]
+
+  <bb 10> [local count: 7140382]:
+  # DEBUG BEGIN_STMT
+  sys_m7_cache_clean ();
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY sys_m7_cache_disable
+  # DEBUG BEGIN_STMT
+  sys_m7_cache_clean ();
+  # DEBUG BEGIN_STMT
+  _98 ={v} MEM[(struct S32_SCB_Type *)3758153728B].CCR;
+  _99 = _98 & 4294836223;
+  MEM[(struct S32_SCB_Type *)3758153728B].CCR ={v} _99;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("isb");
+  # DEBUG BEGIN_STMT
+  _100 ={v} MEM[(struct S32_SCB_Type *)3758153728B].CCR;
+  _101 = _100 & 4294901759;
+  MEM[(struct S32_SCB_Type *)3758153728B].CCR ={v} _101;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("isb");
+
+  <bb 11> [local count: 10737416]:
+  # regionNum_45 = PHI <0(10), 0(9)>
+  # index_33 = PHI <0(10), 0(9)>
+  goto <bb 15>; [100.00%]
+
+  <bb 12> [local count: 161061240]:
+  # DEBUG BEGIN_STMT
+  _29 = (int) index_43;
+  _30 ={v} rasr[_29];
+  _31 = _30 & 1;
+  if (_31 != 0)
+    goto <bb 13>; [50.00%]
+  else
+    goto <bb 14>; [50.00%]
+
+  <bb 13> [local count: 80530620]:
+  # DEBUG BEGIN_STMT
+  _32 = (long unsigned int) regionNum_42;
+  MEM[(struct S32_MPU_Type *)3758153728B].RNR ={v} _32;
+  # DEBUG BEGIN_STMT
+  _34 ={v} rbar[_29];
+  MEM[(struct S32_MPU_Type *)3758153728B].RBAR ={v} _34;
+  # DEBUG BEGIN_STMT
+  _36 ={v} rasr[_29];
+  MEM[(struct S32_MPU_Type *)3758153728B].RASR ={v} _36;
+  # DEBUG BEGIN_STMT
+  regionNum_91 = regionNum_42 + 1;
+  # DEBUG regionNum => regionNum_91
+
+  <bb 14> [local count: 161061240]:
+  # regionNum_41 = PHI <regionNum_42(12), regionNum_91(13)>
+  # DEBUG regionNum => regionNum_41
+  # DEBUG BEGIN_STMT
+  index_92 = index_43 + 1;
+  # DEBUG index => index_92
+
+  <bb 15> [local count: 171798656]:
+  # regionNum_42 = PHI <regionNum_45(11), regionNum_41(14)>
+  # index_43 = PHI <index_33(11), index_92(14)>
+  # DEBUG index => index_43
+  # DEBUG regionNum => regionNum_42
+  # DEBUG BEGIN_STMT
+  if (index_43 != 15)
+    goto <bb 12>; [93.75%]
+  else
+    goto <bb 16>; [6.25%]
+
+  <bb 16> [local count: 10737416]:
+  # DEBUG BEGIN_STMT
+  _37 ={v} MEM[(struct S32_MPU_Type *)3758153728B].CTRL;
+  _38 = _37 | 1;
+  MEM[(struct S32_MPU_Type *)3758153728B].CTRL ={v} _38;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("isb");
+  # DEBUG BEGIN_STMT
+  # DEBUG INLINE_ENTRY sys_m7_cache_init
+  # DEBUG BEGIN_STMT
+  # DEBUG ccsidr => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG sets => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG ways => 0
+  # DEBUG BEGIN_STMT
+  MEM[(struct S32_SCB_Type *)3758153728B].CSSELR ={v} 0;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  ccsidr_102 ={v} MEM[(struct S32_SCB_Type *)3758153728B].CCSIDR;
+  # DEBUG ccsidr => ccsidr_102
+  # DEBUG BEGIN_STMT
+  _103 = ccsidr_102 >> 13;
+  sets_104 = _103 & 32767;
+  # DEBUG sets => sets_104
+
+  <bb 17> [local count: 97612873]:
+  # sets_107 = PHI <sets_104(16), sets_114(19)>
+  # DEBUG sets => sets_107
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _105 = ccsidr_102 >> 3;
+  ways_106 = _105 & 1023;
+  # DEBUG ways => ways_106
+
+  <bb 18> [local count: 887389763]:
+  # ways_110 = PHI <ways_106(17), ways_113(18)>
+  # DEBUG ways => ways_110
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _108 = sets_107 << 5;
+  _109 = _108 & 16352;
+  _111 = ways_110 << 30;
+  _112 = _109 | _111;
+  MEM[(struct S32_SCB_Type *)3758153728B].DCISW ={v} _112;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  ways_113 = ways_110 + 4294967295;
+  # DEBUG ways => ways_113
+  if (ways_110 != 0)
+    goto <bb 18>; [89.00%]
+  else
+    goto <bb 19>; [11.00%]
+
+  <bb 19> [local count: 97612873]:
+  # DEBUG BEGIN_STMT
+  sets_114 = sets_107 + 4294967295;
+  # DEBUG sets => sets_114
+  if (sets_107 != 0)
+    goto <bb 17>; [89.00%]
+  else
+    goto <bb 20>; [11.00%]
+
+  <bb 20> [local count: 10737416]:
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  _115 ={v} MEM[(struct S32_SCB_Type *)3758153728B].CCR;
+  _116 = _115 | 65536;
+  MEM[(struct S32_SCB_Type *)3758153728B].CCR ={v} _116;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("isb");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("isb");
+  # DEBUG BEGIN_STMT
+  MEM[(struct S32_SCB_Type *)3758153728B].ICIALLU ={v} 0;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("isb");
+  # DEBUG BEGIN_STMT
+  _117 ={v} MEM[(struct S32_SCB_Type *)3758153728B].CCR;
+  _118 = _117 | 131072;
+  MEM[(struct S32_SCB_Type *)3758153728B].CCR ={v} _118;
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("dsb");
+  # DEBUG BEGIN_STMT
+  __asm__ __volatile__("isb");
+  # DEBUG BEGIN_STMT
+  sys_m7_cache_clean ();
+  # DEBUG ways => NULL
+  # DEBUG sets => NULL
+  # DEBUG ccsidr => NULL
+  return;
+
+}
+
+

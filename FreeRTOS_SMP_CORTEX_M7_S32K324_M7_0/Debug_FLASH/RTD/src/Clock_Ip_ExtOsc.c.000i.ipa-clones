@@ -1,0 +1,2 @@
+Callgraph clone;Clock_Ip_ExternalOscillatorEmpty;0;../RTD/src/Clock_Ip_ExtOsc.c;169;13;Clock_Ip_EnableSxoscOsconEocv;11;../RTD/src/Clock_Ip_ExtOsc.c;352;13;inlining to
+Callgraph clone;Clock_Ip_DisableClockIpExternalOscillatorEmpty;1;../RTD/src/Clock_Ip_ExtOsc.c;174;13;Clock_Ip_DisableSxoscOsconEocv;10;../RTD/src/Clock_Ip_ExtOsc.c;346;13;inlining to

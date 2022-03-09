@@ -1,0 +1,95 @@
+
+
+ local analysis of Mcu_Cmu_ClockFail_IRQHandler/0
+   scanning: Clock_Ip_CMU_ClockFailInt ();
+  scanning: return;
+Function is locally const.
+callgraph:
+
+Clock_Ip_CMU_ClockFailInt/1 (Clock_Ip_CMU_ClockFailInt) @06d4dc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Mcu_Cmu_ClockFail_IRQHandler/0 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Mcu_Cmu_ClockFail_IRQHandler/0 (Mcu_Cmu_ClockFail_IRQHandler) @06d4d7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04c94730
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_CMU_ClockFailInt/1 (1073741824 (estimated locally),1.00 per call) 
+
+
+ ordered call graph: reduced for nothrow
+Mcu_Cmu_ClockFail_IRQHandler/0 (Mcu_Cmu_ClockFail_IRQHandler) @06d4d7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04c94730
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_CMU_ClockFailInt/1 (1073741824 (estimated locally),1.00 per call) 
+
+
+
+MALLOC LATTICE Initial:
+Mcu_Cmu_ClockFail_IRQHandler/0: malloc_bottom
+
+
+MALLOC LATTICE after propagation:
+Mcu_Cmu_ClockFail_IRQHandler/0: malloc_bottom
+callgraph:
+
+Clock_Ip_CMU_ClockFailInt/1 (Clock_Ip_CMU_ClockFailInt) @06d4dc40
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Mcu_Cmu_ClockFail_IRQHandler/0 (1073741824 (estimated locally),1.00 per call) 
+  Calls: 
+Mcu_Cmu_ClockFail_IRQHandler/0 (Mcu_Cmu_ClockFail_IRQHandler) @06d4d7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04c94650
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_CMU_ClockFailInt/1 (1073741824 (estimated locally),1.00 per call) 
+
+
+ ordered call graph: reduced
+Mcu_Cmu_ClockFail_IRQHandler/0 (Mcu_Cmu_ClockFail_IRQHandler) @06d4d7e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  Aux: @04c94650
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:1073741824 (estimated locally) body optimize_size
+  Called by: 
+  Calls: Clock_Ip_CMU_ClockFailInt/1 (1073741824 (estimated locally),1.00 per call) 
+
+Mcu_Cmu_ClockFail_IRQHandler ()
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_CMU_ClockFailInt ();
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

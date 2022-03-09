@@ -1,0 +1,139 @@
+Trivially needed symbols: main_c1/2 exit_code1/1
+
+
+Initial Symbol table:
+
+main_c1/2 (main_c1) @06cd0460
+  Type: function definition analyzed
+  Visibility: public
+  Aux: @01981040
+  References: exit_code1/1 (read) exit_code1/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+exit_code1/1 (exit_code1) @06ccc510
+  Type: variable definition analyzed
+  Visibility: force_output public
+  Aux: @06cd0460
+  References: 
+  Referring: main_c1/2 (read) main_c1/2 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+DevAssert/0 (DevAssert) @06c79d20
+  Type: function definition
+  Visibility:
+  References: 
+  Referring: 
+  Function flags: optimize_size
+  Called by: 
+  Calls: 
+
+Removing unused symbols: DevAssert/0
+
+Reclaimed Symbol table:
+
+main_c1/2 (main_c1) @06cd0460
+  Type: function definition analyzed
+  Visibility: public
+  References: exit_code1/1 (read) exit_code1/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+exit_code1/1 (exit_code1) @06ccc510
+  Type: variable definition analyzed
+  Visibility: force_output public
+  References: 
+  Referring: main_c1/2 (read) main_c1/2 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+
+Initial Symbol table:
+
+main_c1/2 (main_c1) @06cd0460
+  Type: function definition analyzed
+  Visibility: public
+  References: exit_code1/1 (read) exit_code1/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+exit_code1/1 (exit_code1) @06ccc510
+  Type: variable definition analyzed
+  Visibility: force_output public
+  References: 
+  Referring: main_c1/2 (read) main_c1/2 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Removing unused symbols:
+
+Reclaimed Symbol table:
+
+main_c1/2 (main_c1) @06cd0460
+  Type: function definition analyzed
+  Visibility: public
+  References: exit_code1/1 (read) exit_code1/1 (read) 
+  Referring: 
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+exit_code1/1 (exit_code1) @06ccc510
+  Type: variable definition analyzed
+  Visibility: force_output public
+  References: 
+  Referring: main_c1/2 (read) main_c1/2 (read) 
+  Availability: not-ready
+  Varpool flags: initialized
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Optimized Symbol table:
+
+main_c1/2 (main_c1) @06cd0460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: exit_code1/1 (read) exit_code1/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: count:118111600 (estimated locally) body nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+exit_code1/1 (exit_code1) @06ccc510
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible public
+  References: 
+  Referring: main_c1/2 (read) main_c1/2 (read) 
+  Availability: available
+  Varpool flags: initialized
+Materializing clones
+Materialization Call site updates done.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Trivially needed variables: exit_code1/1
+Removing variables:
+
+Final Symbol table:
+
+main_c1/2 (main_c1) @06cd0460
+  Type: function definition analyzed
+  Visibility: externally_visible asm_written public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: count:118111600 (estimated locally) nonfreeing_fn optimize_size
+  Called by: 
+  Calls: 
+exit_code1/1 (exit_code1) @06ccc510
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible asm_written public
+  Aux: @00000001
+  References: 
+  Referring: 
+  Availability: available
+  Varpool flags: initialized

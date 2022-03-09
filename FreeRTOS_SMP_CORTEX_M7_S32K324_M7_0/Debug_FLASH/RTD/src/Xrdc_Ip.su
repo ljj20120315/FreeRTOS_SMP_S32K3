@@ -1,0 +1,11 @@
+../RTD/src/Xrdc_Ip.c:645:13:Xrdc_Ip_GetDetailError.constprop	24	static
+../RTD/src/Xrdc_Ip.c:478:8:Xrdc_Ip_GetDomainID_Privileged	0	static
+../RTD/src/Xrdc_Ip.c:506:6:Xrdc_Ip_Init_Privileged	28	static
+../RTD/src/Xrdc_Ip.c:571:6:Xrdc_Ip_SetProcessID_Privileged	16	static
+../RTD/src/Xrdc_Ip.c:616:6:Xrdc_Ip_LockProcessID_Privileged	0	static
+../RTD/src/Xrdc_Ip.c:729:6:Xrdc_Ip_GetDomainIDErrorStatus_Privileged	24	static
+../RTD/src/Xrdc_Ip.c:780:6:Xrdc_Ip_Init	0	static
+../RTD/src/Xrdc_Ip.c:802:8:Xrdc_Ip_GetDomainID	0	static
+../RTD/src/Xrdc_Ip.c:823:6:Xrdc_Ip_SetProcessID	0	static
+../RTD/src/Xrdc_Ip.c:844:6:Xrdc_Ip_LockProcessID	0	static
+../RTD/src/Xrdc_Ip.c:868:6:Xrdc_Ip_GetDomainIDErrorStatus	0	static

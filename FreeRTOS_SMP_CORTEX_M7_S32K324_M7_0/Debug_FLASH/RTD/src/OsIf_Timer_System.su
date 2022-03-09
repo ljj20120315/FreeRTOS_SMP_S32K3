@@ -1,0 +1,5 @@
+../RTD/src/OsIf_Timer_System.c:259:6:OsIf_Timer_System_Init	0	static
+../RTD/src/OsIf_Timer_System.c:296:8:OsIf_Timer_System_GetCounter	0	static
+../RTD/src/OsIf_Timer_System.c:346:8:OsIf_Timer_System_GetElapsed	0	static
+../RTD/src/OsIf_Timer_System.c:396:6:OsIf_Timer_System_SetTimerFrequency	0	static
+../RTD/src/OsIf_Timer_System.c:439:8:OsIf_Timer_System_MicrosToTicks	8	static

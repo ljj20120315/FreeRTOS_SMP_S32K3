@@ -1,0 +1,664 @@
+Dump after hash based groups
+Congruence classes: 8 with total: 13 items (in a non-singular class: 8)
+Class size histogram [number of members]: number of classes
+     1:      5
+     2:      2
+     4:      1
+Dump after WPA based types groups
+Congruence classes: 8 with total: 13 items (in a non-singular class: 8)
+Class size histogram [number of members]: number of classes
+     1:      5
+     2:      4
+Worklist has been filled with: 8
+Address reference subdivision created: 0 new classes.
+Dump after callgraph-based congruence reduction
+Congruence classes: 8 with total: 13 items (in a non-singular class: 8)
+Class size histogram [number of members]: number of classes
+     1:      5
+     2:      4
+Init called for 8 items (61.54%).
+Dump after full equality comparison of groups
+Congruence classes: 8 with total: 13 items (in a non-singular class: 8)
+Class size histogram [number of members]: number of classes
+     1:      5
+     2:      4
+Worklist has been filled with: 8
+Address reference subdivision created: 0 new classes.
+Congruence classes: 8 with total: 13 items (in a non-singular class: 8)
+Class size histogram [number of members]: number of classes
+     1:      5
+     2:      4
+
+Item count: 13
+Congruent classes before: 9, after: 9
+Average class size before: 1.44, after: 1.44
+Average non-singular class size: 2.00, count: 4
+Equal symbols: 4
+Totally needed symbols: 8, fraction of loaded symbols: 100.00%
+
+
+Symbols to be put in SSA form
+{ D.6628 D.6686 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 3
+Number of blocks to update: 2 ( 67%)
+
+
+
+Analyzing function: Clock_Ip_EnableSxoscOsconEocv/11
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Clock_Ip_EnableSxoscOsconEocv/11
+
+IPA function summary for Clock_Ip_EnableSxoscOsconEocv/11 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_ExternalOscillatorEmpty/0 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size: 1 stack: 0
+
+
+Analyzing function: Clock_Ip_EnableSxoscOsconEocv/11
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Clock_Ip_EnableSxoscOsconEocv/11
+
+IPA function summary for Clock_Ip_EnableSxoscOsconEocv/11 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     5
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_ExternalOscillatorEmpty/0 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size: 1 stack: 0
+
+
+
+ local analysis of Clock_Ip_EnableSxoscOsconEocv/11
+   scanning: Clock_Ip_ExternalOscillatorEmpty (Config_1(D)); [tail call]
+  scanning: return;
+Function is locally const.
+
+Symbols to be put in SSA form
+{ D.6625 D.6687 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 3
+Number of blocks to update: 2 ( 67%)
+
+
+
+Analyzing function: Clock_Ip_DisableSxoscOsconEocv/10
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Clock_Ip_DisableSxoscOsconEocv/10
+
+IPA function summary for Clock_Ip_DisableSxoscOsconEocv/10 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_DisableClockIpExternalOscillatorEmpty/1 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size: 1 stack: 0
+
+
+Analyzing function: Clock_Ip_DisableSxoscOsconEocv/10
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Clock_Ip_DisableSxoscOsconEocv/10
+
+IPA function summary for Clock_Ip_DisableSxoscOsconEocv/10 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     5
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_DisableClockIpExternalOscillatorEmpty/1 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size: 1 stack: 0
+
+
+
+ local analysis of Clock_Ip_DisableSxoscOsconEocv/10
+   scanning: Clock_Ip_DisableClockIpExternalOscillatorEmpty (XoscName_1(D)); [tail call]
+  scanning: return;
+Function is locally const.
+
+Symbols to be put in SSA form
+{ D.6606 D.6688 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 3
+Number of blocks to update: 2 ( 67%)
+
+
+
+Analyzing function: Clock_Ip_ResetSxoscOsconEocv/7
+Determining dynamic type for call: Clock_Ip_ResetFxoscOsconBypEocvGmSel (Config_2(D)); [tail call]
+  Starting walk at: Clock_Ip_ResetFxoscOsconBypEocvGmSel (Config_2(D)); [tail call]
+  instance pointer: Config_2(D)  Outer instance pointer: Config_2(D) offset: 0 (bits) vtbl reference: 
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Clock_Ip_ResetSxoscOsconEocv/7
+
+IPA function summary for Clock_Ip_ResetSxoscOsconEocv/7 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size: 5 stack: 0
+
+
+Analyzing function: Clock_Ip_ResetSxoscOsconEocv/7
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Clock_Ip_ResetSxoscOsconEocv/7
+
+IPA function summary for Clock_Ip_ResetSxoscOsconEocv/7 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     5
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_ResetFxoscOsconBypEocvGmSel/2 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size: 5 stack: 0
+
+
+
+ local analysis of Clock_Ip_ResetSxoscOsconEocv/7
+   scanning: Clock_Ip_ResetFxoscOsconBypEocvGmSel (Config_2(D)); [tail call]
+  scanning: return;
+Function is locally const.
+
+Symbols to be put in SSA form
+{ D.6614 D.6689 }
+Incremental SSA update started at block: 0
+Number of blocks in CFG: 3
+Number of blocks to update: 2 ( 67%)
+
+
+
+Analyzing function: Clock_Ip_CompleteSxoscOsconEocv/9
+Determining dynamic type for call: Clock_Ip_CompleteFxoscOsconBypEocvGmSel (Config_2(D)); [tail call]
+  Starting walk at: Clock_Ip_CompleteFxoscOsconBypEocvGmSel (Config_2(D)); [tail call]
+  instance pointer: Config_2(D)  Outer instance pointer: Config_2(D) offset: 0 (bits) vtbl reference: 
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Clock_Ip_CompleteSxoscOsconEocv/9
+
+IPA function summary for Clock_Ip_CompleteSxoscOsconEocv/9 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     0
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size:21 stack:12
+
+
+Analyzing function: Clock_Ip_CompleteSxoscOsconEocv/9
+;; 1 loops found
+;;
+;; Loop 0
+;;  header 0, latch 1
+;;  depth 0, outer -1
+;;  nodes: 0 1 2
+;; 2 succs { 1 }
+
+Analyzing function body size: Clock_Ip_CompleteSxoscOsconEocv/9
+
+IPA function summary for Clock_Ip_CompleteSxoscOsconEocv/9 inlinable
+  global time:     13.000000
+  self size:       5
+  global size:     5
+  min size:       0
+  self stack:      0
+  global stack:    0
+    size:0.000000, time:0.000000
+    size:3.000000, time:2.000000,  executed if:(not inlined)
+  calls:
+    Clock_Ip_CompleteFxoscOsconBypEocvGmSel/4 function not considered for inlining
+      freq:1.00 loop depth: 0 size: 2 time: 11 callee size:21 stack:12
+
+
+
+ local analysis of Clock_Ip_CompleteSxoscOsconEocv/9
+   scanning: Clock_Ip_CompleteFxoscOsconBypEocvGmSel (Config_2(D)); [tail call]
+  scanning: return;
+Function is locally const.
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Clock_Ip_EnableSxoscOsconEocv (const struct Clock_Ip_XoscConfigType * Config)
+{
+  <bb 2> [local count: 1073741824]:
+  Clock_Ip_ExternalOscillatorEmpty (Config_1(D)); [tail call]
+  return;
+
+}
+
+
+Clock_Ip_DisableSxoscOsconEocv (Clock_Ip_NameType XoscName)
+{
+  <bb 2> [local count: 1073741824]:
+  Clock_Ip_DisableClockIpExternalOscillatorEmpty (XoscName_1(D)); [tail call]
+  return;
+
+}
+
+
+Clock_Ip_CompleteSxoscOsconEocv (const struct Clock_Ip_XoscConfigType * Config)
+{
+  <bb 2> [local count: 918908241]:
+  Clock_Ip_CompleteFxoscOsconBypEocvGmSel (Config_2(D)); [tail call]
+  return;
+
+}
+
+
+Clock_Ip_SetSxoscOsconEocv (const struct Clock_Ip_XoscConfigType * Config)
+{
+  uint32 Instance;
+  <unnamed type> _1;
+  unsigned char _2;
+  short unsigned int _3;
+  short unsigned int _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  long unsigned int _7;
+  volatile struct Clock_Ip_ExtOSCType * _8;
+  long unsigned int _9;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_12(D)->Name;
+  _2 = Clock_Ip_au8ClockFeatures[_1][0];
+  Instance_13 = (uint32) _2;
+  # DEBUG Instance => Instance_13
+  # DEBUG BEGIN_STMT
+  _3 = Config_12(D)->Enable;
+  if (_3 != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  _4 = Config_12(D)->StartupDelay;
+  _5 = (long unsigned int) _4;
+  _6 = _5 << 16;
+  _7 = _6 & 16711680;
+  _8 = Clock_Ip_apxXosc[Instance_13];
+  _9 = _7 | 1;
+  _8->CTRL ={v} _9;
+
+  <bb 4> [local count: 1073741824]:
+  return;
+
+}
+
+
+Clock_Ip_ResetSxoscOsconEocv (const struct Clock_Ip_XoscConfigType * Config)
+{
+  <bb 2> [local count: 1073741824]:
+  Clock_Ip_ResetFxoscOsconBypEocvGmSel (Config_2(D)); [tail call]
+  return;
+
+}
+
+
+Clock_Ip_EnableFxoscOsconBypEocvGmSel (const struct Clock_Ip_XoscConfigType * Config)
+{
+  uint32 Instance;
+  <unnamed type> _1;
+  unsigned char _2;
+  short unsigned int _3;
+  volatile struct Clock_Ip_ExtOSCType * _4;
+  long unsigned int _5;
+  long unsigned int _6;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_9(D)->Name;
+  _2 = Clock_Ip_au8ClockFeatures[_1][0];
+  Instance_10 = (uint32) _2;
+  # DEBUG Instance => Instance_10
+  # DEBUG BEGIN_STMT
+  _3 = Config_9(D)->Enable;
+  if (_3 == 1)
+    goto <bb 3>; [34.00%]
+  else
+    goto <bb 4>; [66.00%]
+
+  <bb 3> [local count: 365072224]:
+  # DEBUG BEGIN_STMT
+  _4 = Clock_Ip_apxXosc[Instance_10];
+  _5 ={v} _4->CTRL;
+  _6 = _5 | 1;
+  _4->CTRL ={v} _6;
+
+  <bb 4> [local count: 1073741824]:
+  return;
+
+}
+
+
+Clock_Ip_DisableFxoscOsconBypEocvGmSel (Clock_Ip_NameType XoscName)
+{
+  uint32 Instance;
+  unsigned char _1;
+  volatile struct Clock_Ip_ExtOSCType * _2;
+  long unsigned int _3;
+  long unsigned int _4;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Clock_Ip_au8ClockFeatures[XoscName_6(D)][0];
+  Instance_7 = (uint32) _1;
+  # DEBUG Instance => Instance_7
+  # DEBUG BEGIN_STMT
+  _2 = Clock_Ip_apxXosc[Instance_7];
+  _3 ={v} _2->CTRL;
+  _4 = _3 & 4294967294;
+  _2->CTRL ={v} _4;
+  return;
+
+}
+
+
+Clock_Ip_CompleteFxoscOsconBypEocvGmSel (const struct Clock_Ip_XoscConfigType * Config)
+{
+  uint32 Instance;
+  uint32 TimeoutTicks;
+  uint32 ElapsedTime;
+  uint32 StartTime;
+  boolean TimeoutOccurred;
+  <unnamed type> _1;
+  unsigned char _2;
+  short unsigned int _3;
+  unsigned char _4;
+  unsigned char _5;
+  volatile struct Clock_Ip_ExtOSCType * _6;
+  long unsigned int _7;
+  long unsigned int _8;
+  long unsigned int TimeoutTicks.1_9;
+  <unnamed type> _10;
+
+  <bb 2> [local count: 918908241]:
+  # DEBUG BEGIN_STMT
+  # DEBUG TimeoutOccurred => 0
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 = Config_15(D)->Name;
+  _2 = Clock_Ip_au8ClockFeatures[_1][0];
+  Instance_16 = (uint32) _2;
+  # DEBUG Instance => Instance_16
+  # DEBUG BEGIN_STMT
+  _3 = Config_15(D)->Enable;
+  if (_3 != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 11>; [50.00%]
+
+  <bb 3> [local count: 459454120]:
+  # DEBUG BEGIN_STMT
+  _4 = Config_15(D)->CompEn;
+  if (_4 != 0)
+    goto <bb 4>; [50.00%]
+  else
+    goto <bb 11>; [50.00%]
+
+  <bb 4> [local count: 229727060]:
+  # DEBUG BEGIN_STMT
+  _5 = Config_15(D)->BypassOption;
+  if (_5 == 0)
+    goto <bb 5>; [50.00%]
+  else
+    goto <bb 10>; [50.00%]
+
+  <bb 5> [local count: 114863530]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 6> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _6 = Clock_Ip_apxXosc[Instance_16];
+  _7 ={v} _6->STAT;
+  _8 = _7 >> 31;
+  # DEBUG FxoscStatus => _8
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.1_9 = TimeoutTicks;
+  TimeoutOccurred_20 = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.1_9);
+  # DEBUG TimeoutOccurred => TimeoutOccurred_20
+  # DEBUG BEGIN_STMT
+  if (_8 == 0)
+    goto <bb 7>; [94.50%]
+  else
+    goto <bb 8>; [5.50%]
+
+  <bb 7> [local count: 1014686026]:
+  if (TimeoutOccurred_20 != 0)
+    goto <bb 8>; [5.50%]
+  else
+    goto <bb 12>; [94.50%]
+
+  <bb 12> [local count: 958878296]:
+  goto <bb 6>; [100.00%]
+
+  <bb 8> [local count: 114863531]:
+  # TimeoutOccurred_11 = PHI <TimeoutOccurred_20(6), TimeoutOccurred_20(7)>
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred_11 != 0)
+    goto <bb 9>; [33.00%]
+  else
+    goto <bb 11>; [67.00%]
+
+  <bb 9> [local count: 37904965]:
+  # DEBUG BEGIN_STMT
+  _10 = Config_15(D)->Name;
+  Clock_Ip_ReportClockErrors (1, _10);
+  goto <bb 11>; [100.00%]
+
+  <bb 10> [local count: 114863530]:
+  # DEBUG BEGIN_STMT
+  Clock_Ip_ReportClockErrors (2, _1);
+
+  <bb 11> [local count: 918908243]:
+  StartTime ={v} {CLOBBER};
+  ElapsedTime ={v} {CLOBBER};
+  TimeoutTicks ={v} {CLOBBER};
+  return;
+
+}
+
+
+Clock_Ip_SetFxoscOsconBypEocvGmSel (const struct Clock_Ip_XoscConfigType * Config)
+{
+  uint32 Instance;
+  <unnamed type> _1;
+  unsigned char _2;
+  short unsigned int _3;
+  unsigned char _4;
+  long unsigned int _5;
+  long unsigned int _6;
+  short unsigned int _7;
+  long unsigned int _8;
+  long unsigned int _9;
+  long unsigned int _10;
+  long unsigned int _11;
+  unsigned char _12;
+  long unsigned int _13;
+  long unsigned int _14;
+  long unsigned int _15;
+  long unsigned int _16;
+  unsigned char _17;
+  long unsigned int _18;
+  long unsigned int _19;
+  long unsigned int _20;
+  long unsigned int _21;
+  volatile struct Clock_Ip_ExtOSCType * _22;
+  long unsigned int _23;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_26(D)->Name;
+  _2 = Clock_Ip_au8ClockFeatures[_1][0];
+  Instance_27 = (uint32) _2;
+  # DEBUG Instance => Instance_27
+  # DEBUG BEGIN_STMT
+  _3 = Config_26(D)->Enable;
+  if (_3 != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  _4 = Config_26(D)->BypassOption;
+  _5 = (long unsigned int) _4;
+  _6 = _5 << 31;
+  _7 = Config_26(D)->StartupDelay;
+  _8 = (long unsigned int) _7;
+  _9 = _8 << 16;
+  _10 = _9 & 16711680;
+  _11 = _6 | _10;
+  _12 = Config_26(D)->TransConductance;
+  _13 = (long unsigned int) _12;
+  _14 = _13 << 4;
+  _15 = _14 & 255;
+  _16 = _11 | _15;
+  _17 = Config_26(D)->CompEn;
+  _18 = (long unsigned int) _17;
+  _19 = _18 << 24;
+  _20 = _19 & 16777216;
+  _21 = _16 | _20;
+  _22 = Clock_Ip_apxXosc[Instance_27];
+  _23 = _21 | 1;
+  _22->CTRL ={v} _23;
+
+  <bb 4> [local count: 1073741824]:
+  return;
+
+}
+
+
+Clock_Ip_ResetFxoscOsconBypEocvGmSel (const struct Clock_Ip_XoscConfigType * Config)
+{
+  uint32 Instance;
+  <unnamed type> _1;
+  unsigned char _2;
+  volatile struct Clock_Ip_ExtOSCType * _3;
+  long unsigned int _4;
+  long unsigned int _5;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_7(D)->Name;
+  _2 = Clock_Ip_au8ClockFeatures[_1][0];
+  Instance_8 = (uint32) _2;
+  # DEBUG Instance => Instance_8
+  # DEBUG BEGIN_STMT
+  _3 = Clock_Ip_apxXosc[Instance_8];
+  _4 ={v} _3->CTRL;
+  _5 = _4 & 4294967294;
+  _3->CTRL ={v} _5;
+  return;
+
+}
+
+
+Clock_Ip_DisableClockIpExternalOscillatorEmpty (Clock_Ip_NameType XoscName)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_ExternalOscillatorEmpty (const struct Clock_Ip_XoscConfigType * Config)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

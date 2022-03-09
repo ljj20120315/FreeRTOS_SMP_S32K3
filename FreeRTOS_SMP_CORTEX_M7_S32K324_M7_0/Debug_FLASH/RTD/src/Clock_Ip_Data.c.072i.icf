@@ -1,0 +1,37 @@
+Dump after hash based groups
+Congruence classes: 24 with total: 26 items (in a non-singular class: 4)
+Class size histogram [number of members]: number of classes
+     1:     22
+     2:      2
+Dump after WPA based types groups
+Congruence classes: 24 with total: 26 items (in a non-singular class: 4)
+Class size histogram [number of members]: number of classes
+     1:     22
+     2:      2
+Worklist has been filled with: 0
+Address reference subdivision created: 0 new classes.
+Dump after callgraph-based congruence reduction
+Congruence classes: 24 with total: 26 items (in a non-singular class: 4)
+Class size histogram [number of members]: number of classes
+     1:     22
+     2:      2
+Init called for 4 items (15.38%).
+Dump after full equality comparison of groups
+Congruence classes: 24 with total: 26 items (in a non-singular class: 4)
+Class size histogram [number of members]: number of classes
+     1:     22
+     2:      2
+Worklist has been filled with: 0
+Address reference subdivision created: 0 new classes.
+Congruence classes: 24 with total: 26 items (in a non-singular class: 4)
+Class size histogram [number of members]: number of classes
+     1:     22
+     2:      2
+
+Item count: 26
+Congruent classes before: 24, after: 24
+Average class size before: 1.08, after: 1.08
+Average non-singular class size: 2.00, count: 2
+Equal symbols: 2
+Totally needed symbols: 4, fraction of loaded symbols: 100.00%
+

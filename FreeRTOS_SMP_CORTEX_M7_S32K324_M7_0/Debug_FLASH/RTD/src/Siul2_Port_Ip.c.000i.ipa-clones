@@ -1,0 +1,22 @@
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Siul2_Port_Ip_PinInit;4;../RTD/src/Siul2_Port_Ip.c;252;13;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Siul2_Port_Ip_PinInit;4;../RTD/src/Siul2_Port_Ip.c;252;13;inlining to
+Callgraph clone;Siul2_Port_Ip_PinInit;4;../RTD/src/Siul2_Port_Ip.c;252;13;Siul2_Port_Ip_PinInit.part.0;24;../RTD/src/Siul2_Port_Ip.c;252;13;part
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Siul2_Port_Ip_SetPullSel;8;../RTD/src/Siul2_Port_Ip.c;543;6;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Siul2_Port_Ip_SetPullSel;8;../RTD/src/Siul2_Port_Ip.c;543;6;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Siul2_Port_Ip_SetPullSel;8;../RTD/src/Siul2_Port_Ip.c;543;6;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Siul2_Port_Ip_SetOutputBuffer;9;../RTD/src/Siul2_Port_Ip.c;617;6;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Siul2_Port_Ip_SetOutputBuffer;9;../RTD/src/Siul2_Port_Ip.c;617;6;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Siul2_Port_Ip_SetInputBuffer;10;../RTD/src/Siul2_Port_Ip.c;649;6;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Siul2_Port_Ip_SetPinDirection;11;../RTD/src/Siul2_Port_Ip.c;710;6;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Siul2_Port_Ip_SetPinDirection;11;../RTD/src/Siul2_Port_Ip.c;710;6;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Siul2_Port_Ip_RevertPinConfiguration;12;../RTD/src/Siul2_Port_Ip.c;756;8;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Siul2_Port_Ip_RevertPinConfiguration;12;../RTD/src/Siul2_Port_Ip.c;756;8;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Siul2_Port_Ip_GetPinConfiguration;13;../RTD/src/Siul2_Port_Ip.c;810;6;inlining to
+Callgraph clone;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20;Siul2_Port_Ip_GetPinConfiguration;13;../RTD/src/Siul2_Port_Ip.c;810;6;inlining to
+Callgraph removal;DevAssert;0;C:/NXP/S32DS.3.4/S32DS/software/PlatformSDK_S32K3_2021_10/SW32K3_RTD_4_4_1_0_0_D2110/Base_TS_T40D34M10I0R0/include/Devassert.h;65;20
+Callgraph clone;Siul2_Port_Ip_WriteIMCRConfiguration;5;../RTD/src/Siul2_Port_Ip.c;344;20;Siul2_Port_Ip_PinInit.part.0;24;../RTD/src/Siul2_Port_Ip.c;252;13;inlining to
+Callgraph clone;Siul2_Port_Ip_GetMSCRConfiguration;6;../RTD/src/Siul2_Port_Ip.c;410;20;Siul2_Port_Ip_GetPinConfiguration;13;../RTD/src/Siul2_Port_Ip.c;810;6;inlining to
+Callgraph clone;Siul2_Port_Ip_PinInit.part.0;24;../RTD/src/Siul2_Port_Ip.c;252;13;Siul2_Port_Ip_PinInit;4;../RTD/src/Siul2_Port_Ip.c;252;13;inlining to
+Callgraph removal;Siul2_Port_Ip_PinInit.part.0;24;../RTD/src/Siul2_Port_Ip.c;252;13
+Callgraph removal;Siul2_Port_Ip_WriteIMCRConfiguration;5;../RTD/src/Siul2_Port_Ip.c;344;20
+Callgraph removal;Siul2_Port_Ip_GetMSCRConfiguration;6;../RTD/src/Siul2_Port_Ip.c;410;20

@@ -1,0 +1,5 @@
+Callgraph clone;Clock_Ip_PRAMCSetRamIWS;17;../RTD/src/Clock_Ip_Specific.c;598;6;Clock_Ip_PRAMCSetRamIWS.part.0;25;../RTD/src/Clock_Ip_Specific.c;598;6;part
+Callgraph clone;Clock_Ip_PRAMCSetRamIWS.part.0;25;../RTD/src/Clock_Ip_Specific.c;598;6;Clock_Ip_PRAMCSetRamIWS;17;../RTD/src/Clock_Ip_Specific.c;598;6;inlining to
+Callgraph clone;Clock_Ip_PowerClockIpModules;3;../RTD/src/Clock_Ip_Specific.c;194;13;Clock_Ip_SpecificPlatformInitClock;9;../RTD/src/Clock_Ip_Specific.c;418;6;inlining to
+Callgraph removal;Clock_Ip_PowerClockIpModules;3;../RTD/src/Clock_Ip_Specific.c;194;13
+Callgraph removal;Clock_Ip_PRAMCSetRamIWS.part.0;25;../RTD/src/Clock_Ip_Specific.c;598;6

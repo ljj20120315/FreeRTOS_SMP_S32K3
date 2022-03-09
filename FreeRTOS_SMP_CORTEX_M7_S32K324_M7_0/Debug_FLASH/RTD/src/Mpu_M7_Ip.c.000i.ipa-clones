@@ -1,0 +1,12 @@
+Callgraph clone;Mpu_M7_Ip_GetDRegion;2;../RTD/src/Mpu_M7_Ip.c;167;14;Mpu_M7_Ip_Deinit_Privileged;10;../RTD/src/Mpu_M7_Ip.c;479;6;inlining to
+Callgraph removal;Mpu_M7_Ip_GetDRegion;2;../RTD/src/Mpu_M7_Ip.c;167;14
+Callgraph clone;Mpu_M7_Ip_EnableRegion_Privileged;11;../RTD/src/Mpu_M7_Ip.c;515;6;Mpu_M7_Ip_EnableRegion_Privileged.part.0;19;../RTD/src/Mpu_M7_Ip.c;515;6;part
+Callgraph clone;Mpu_M7_Ip_Deinit;15;../RTD/src/Mpu_M7_Ip.c;647;6;Mpu_M7_Ip_Init_Privileged;8;../RTD/src/Mpu_M7_Ip.c;293;6;inlining to
+Callgraph clone;Mpu_M7_Ip_CalculateRegionSize;3;../RTD/src/Mpu_M7_Ip.c;180;15;Mpu_M7_Ip_SetRegionConfig_Privileged;9;../RTD/src/Mpu_M7_Ip.c;395;6;inlining to
+Callgraph clone;Mpu_M7_Ip_SetMemoryType;4;../RTD/src/Mpu_M7_Ip.c;203;13;Mpu_M7_Ip_SetRegionConfig_Privileged;9;../RTD/src/Mpu_M7_Ip.c;395;6;inlining to
+Callgraph clone;Mpu_M7_Ip_EnableRegion_Privileged.part.0;19;../RTD/src/Mpu_M7_Ip.c;515;6;Mpu_M7_Ip_EnableRegion_Privileged;11;../RTD/src/Mpu_M7_Ip.c;515;6;inlining to
+Callgraph clone;Mpu_M7_Ip_SetCachePolicies;5;../RTD/src/Mpu_M7_Ip.c;217;13;Mpu_M7_Ip_SetRegionConfig_Privileged;9;../RTD/src/Mpu_M7_Ip.c;395;6;inlining to
+Callgraph removal;Mpu_M7_Ip_CalculateRegionSize;3;../RTD/src/Mpu_M7_Ip.c;180;15
+Callgraph removal;Mpu_M7_Ip_SetMemoryType;4;../RTD/src/Mpu_M7_Ip.c;203;13
+Callgraph removal;Mpu_M7_Ip_SetCachePolicies;5;../RTD/src/Mpu_M7_Ip.c;217;13
+Callgraph removal;Mpu_M7_Ip_EnableRegion_Privileged.part.0;19;../RTD/src/Mpu_M7_Ip.c;515;6

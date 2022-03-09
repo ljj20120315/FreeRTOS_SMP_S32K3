@@ -1,0 +1,27 @@
+main_c1 ()
+{
+  int exit_code1.0_1;
+  int _3;
+
+  <bb 2> [local count: 118111600]:
+
+  <bb 3> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  exit_code1.0_1 ={v} exit_code1;
+  if (exit_code1.0_1 != 0)
+    goto <bb 4>; [11.00%]
+  else
+    goto <bb 5>; [89.00%]
+
+  <bb 5> [local count: 955630225]:
+  goto <bb 3>; [100.00%]
+
+  <bb 4> [local count: 118111600]:
+  # DEBUG BEGIN_STMT
+  _3 ={v} exit_code1;
+  return _3;
+
+}
+
+

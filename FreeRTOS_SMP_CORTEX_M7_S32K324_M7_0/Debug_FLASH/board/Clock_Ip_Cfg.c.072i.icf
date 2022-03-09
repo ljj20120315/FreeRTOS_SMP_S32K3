@@ -1,0 +1,27 @@
+Dump after hash based groups
+Congruence classes: 0 with total: 0 items (in a non-singular class: 0)
+Class size histogram [number of members]: number of classes
+Dump after WPA based types groups
+Congruence classes: 0 with total: 0 items (in a non-singular class: 0)
+Class size histogram [number of members]: number of classes
+Worklist has been filled with: 0
+Address reference subdivision created: 0 new classes.
+Dump after callgraph-based congruence reduction
+Congruence classes: 0 with total: 0 items (in a non-singular class: 0)
+Class size histogram [number of members]: number of classes
+Init called for 0 items (0.00%).
+Dump after full equality comparison of groups
+Congruence classes: 0 with total: 0 items (in a non-singular class: 0)
+Class size histogram [number of members]: number of classes
+Worklist has been filled with: 0
+Address reference subdivision created: 0 new classes.
+Congruence classes: 0 with total: 0 items (in a non-singular class: 0)
+Class size histogram [number of members]: number of classes
+
+Item count: 0
+Congruent classes before: 0, after: 0
+Average class size before: 0.00, after: 0.00
+Average non-singular class size: 0.00, count: 0
+Equal symbols: 0
+Totally needed symbols: 0, fraction of loaded symbols: 0.00%
+

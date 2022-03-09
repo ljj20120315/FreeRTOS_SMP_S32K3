@@ -1,0 +1,190 @@
+
+Marking local functions:
+
+
+Marking externally visible functions: main_c0/3 MultiCore_Enable/2
+
+
+Marking externally visible variables: exit_code0/1
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Sema42_Ip_Init/11 (Sema42_Ip_Init) @072d9540
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main_c0/3 
+  Calls: 
+g_pin_mux_InitConfigArr0/10 (g_pin_mux_InitConfigArr0) @072d2af8
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: main_c0/3 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+Siul2_Port_Ip_Init/9 (Siul2_Port_Ip_Init) @072d9460
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main_c0/3 
+  Calls: 
+Mcu_aClockConfigPB/8 (Mcu_aClockConfigPB) @072d2a68
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: main_c0/3 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_Init/7 (Clock_Ip_Init) @072d9380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main_c0/3 
+  Calls: 
+OsIf_Init/6 (OsIf_Init) @072d92a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main_c0/3 
+  Calls: 
+Xrdc_Config_BOARD_INITPERIPHERALS/5 (Xrdc_Config_BOARD_INITPERIPHERALS) @072d2990
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: main_c0/3 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+Xrdc_Ip_Init/4 (Xrdc_Ip_Init) @072d91c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: main_c0/3 
+  Calls: 
+main_c0/3 (main_c0) @072d0d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Xrdc_Config_BOARD_INITPERIPHERALS/5 (addr) Mcu_aClockConfigPB/8 (addr) g_pin_mux_InitConfigArr0/10 (addr) exit_code0/1 (read) exit_code0/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Sema42_Ip_Init/11 Siul2_Port_Ip_Init/9 Clock_Ip_Init/7 OsIf_Init/6 Xrdc_Ip_Init/4 MultiCore_Enable/2 
+MultiCore_Enable/2 (MultiCore_Enable) @072d0a80
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: main_c0/3 
+  Calls: 
+exit_code0/1 (exit_code0) @072d2120
+  Type: variable definition analyzed
+  Visibility: force_output externally_visible public
+  References: 
+  Referring: main_c0/3 (read) main_c0/3 (read) 
+  Availability: available
+  Varpool flags: initialized
+main_c0 ()
+{
+  int D.7335;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  MultiCore_Enable (1);
+  # DEBUG BEGIN_STMT
+  Xrdc_Ip_Init (&Xrdc_Config_BOARD_INITPERIPHERALS);
+  # DEBUG BEGIN_STMT
+  OsIf_Init (0B);
+  # DEBUG BEGIN_STMT
+  Clock_Ip_Init (&Mcu_aClockConfigPB[0]);
+  # DEBUG BEGIN_STMT
+  Siul2_Port_Ip_Init (6, &g_pin_mux_InitConfigArr0);
+  # DEBUG BEGIN_STMT
+  Sema42_Ip_Init (0);
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  exit_code0.0_1 = exit_code0;
+  if (exit_code0.0_1 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  D.7335 = exit_code0;
+  return D.7335;
+
+}
+
+
+MultiCore_Enable (uint8_t core)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = (int) core;
+  if (_1 == 1)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 3> :
+<L0>:
+  # DEBUG BEGIN_STMT
+  _2 = 1076740096B;
+  _2->PRTN0_CORE1_ADDR = 4198400;
+  # DEBUG BEGIN_STMT
+  _3 = 1076740096B;
+  _3->PRTN0_CORE1_PCONF = 1;
+  # DEBUG BEGIN_STMT
+  _4 = 1076740096B;
+  _4->PRTN0_CORE1_PUPD = 1;
+  # DEBUG BEGIN_STMT
+  _5 = 1076740096B;
+  _5->CTL_KEY = 23280;
+  # DEBUG BEGIN_STMT
+  _6 = 1076740096B;
+  _6->CTL_KEY = 42255;
+  # DEBUG BEGIN_STMT
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _7 = 1076740096B;
+  _8 = _7->PRTN0_CORE1_STAT;
+  _9 = _8 & 1;
+  if (_9 == 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 5> :
+  return;
+
+}
+
+

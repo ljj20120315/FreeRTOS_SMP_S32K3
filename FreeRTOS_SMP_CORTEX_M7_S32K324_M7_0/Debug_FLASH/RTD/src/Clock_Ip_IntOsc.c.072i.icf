@@ -1,0 +1,221 @@
+Dump after hash based groups
+Congruence classes: 10 with total: 11 items (in a non-singular class: 2)
+Class size histogram [number of members]: number of classes
+     1:      9
+     2:      1
+Dump after WPA based types groups
+Congruence classes: 10 with total: 11 items (in a non-singular class: 0)
+Class size histogram [number of members]: number of classes
+     1:     11
+Worklist has been filled with: 10
+Address reference subdivision created: 0 new classes.
+Dump after callgraph-based congruence reduction
+Congruence classes: 10 with total: 11 items (in a non-singular class: 0)
+Class size histogram [number of members]: number of classes
+     1:     11
+Init called for 0 items (0.00%).
+Dump after full equality comparison of groups
+Congruence classes: 10 with total: 11 items (in a non-singular class: 0)
+Class size histogram [number of members]: number of classes
+     1:     11
+Worklist has been filled with: 10
+Address reference subdivision created: 0 new classes.
+Congruence classes: 10 with total: 11 items (in a non-singular class: 0)
+Class size histogram [number of members]: number of classes
+     1:     11
+
+Item count: 11
+Congruent classes before: 11, after: 11
+Average class size before: 1.00, after: 1.00
+Average non-singular class size: 0.00, count: 0
+Equal symbols: 0
+Totally needed symbols: 0, fraction of loaded symbols: 0.00%
+
+Clock_Ip_SetSircStdby.part.0 ()
+{
+  const struct Clock_Ip_IrcoscConfigType * Config;
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG D#4 s=> Config
+  # DEBUG Config => D#4
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN;
+  _2 = _1 | 256;
+  MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN ={v} _2;
+
+  <bb 3> [local count: 1073741824]:
+  return;
+
+}
+
+
+Clock_Ip_SetFircStdby.part.0 ()
+{
+  const struct Clock_Ip_IrcoscConfigType * Config;
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 4> [local count: 1073741824]:
+  # DEBUG D#2 s=> Config
+  # DEBUG Config => D#2
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE;
+  _2 = _1 | 1;
+  MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE ={v} _2;
+
+  <bb 3> [local count: 1073741824]:
+  return;
+
+}
+
+
+Clock_Ip_DisableSircStdby (Clock_Ip_NameType Name)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN;
+  _2 = _1 & 4294967039;
+  MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN ={v} _2;
+  return;
+
+}
+
+
+Clock_Ip_EnableSircStdby (const struct Clock_Ip_IrcoscConfigType * Config)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN;
+  _2 = _1 | 256;
+  MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN ={v} _2;
+  return;
+
+}
+
+
+Clock_Ip_SetSircStdby (const struct Clock_Ip_IrcoscConfigType * Config)
+{
+  short unsigned int _1;
+  long unsigned int _3;
+  long unsigned int _5;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_7(D)->Enable;
+  if (_1 != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870912]:
+  # DEBUG D#3 => Config_7(D)
+  Clock_Ip_SetSircStdby.part.0 ();
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN;
+  _5 = _3 & 4294967039;
+  MEM[(struct SIRC_Type *)1076658176B].MISCELLANEOUS_IN ={v} _5;
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+Clock_Ip_DisableFircStdby (Clock_Ip_NameType Name)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE;
+  _2 = _1 & 4294967294;
+  MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE ={v} _2;
+  return;
+
+}
+
+
+Clock_Ip_EnableFircStdby (const struct Clock_Ip_IrcoscConfigType * Config)
+{
+  long unsigned int _1;
+  long unsigned int _2;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  _1 ={v} MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE;
+  _2 = _1 | 1;
+  MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE ={v} _2;
+  return;
+
+}
+
+
+Clock_Ip_SetFircStdby (const struct Clock_Ip_IrcoscConfigType * Config)
+{
+  short unsigned int _1;
+  long unsigned int _3;
+  long unsigned int _5;
+
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  _1 = Config_7(D)->Enable;
+  if (_1 != 0)
+    goto <bb 3>; [50.00%]
+  else
+    goto <bb 4>; [50.00%]
+
+  <bb 3> [local count: 536870912]:
+  # DEBUG D#1 => Config_7(D)
+  Clock_Ip_SetFircStdby.part.0 ();
+  goto <bb 5>; [100.00%]
+
+  <bb 4> [local count: 536870913]:
+  # DEBUG BEGIN_STMT
+  _3 ={v} MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE;
+  _5 = _3 & 4294967294;
+  MEM[(struct FIRC_Type *)1076690944B].STDBY_ENABLE ={v} _5;
+
+  <bb 5> [local count: 1073741824]:
+  return;
+
+}
+
+
+Clock_Ip_InternalOscillatorEmpty_Disable (Clock_Ip_NameType Name)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_InternalOscillatorEmpty (const struct Clock_Ip_IrcoscConfigType * Config)
+{
+  <bb 2> [local count: 1073741824]:
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+

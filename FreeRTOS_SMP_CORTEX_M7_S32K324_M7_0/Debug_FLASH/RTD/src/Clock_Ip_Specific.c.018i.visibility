@@ -1,0 +1,906 @@
+
+Marking local functions: Clock_Ip_PowerClockIpModules/3
+
+
+Marking externally visible functions: Clock_Ip_PRAMCSetRamIWS/17 Clock_Ip_FLASH_SetFlashIWS/16 Clock_Ip_ClockPowerModeChangeNotification/15 Clock_Ip_ClockInitializeObjects/14 EnableSircInStandbyMode/13 DisableSircInStandbyMode/12 EnableFircInStandbyMode/11 DisableFircInStandbyMode/10 Clock_Ip_SpecificPlatformInitClock/9 Clock_Ip_SpecificPeripheralClockInitialization/8 Clock_Ip_McMeEnterKey/7 Clock_Ip_SetFlashWaitStates/6 Clock_Ip_SetRamWaitStates/5
+
+
+Marking externally visible variables:
+
+
+Reclaiming functions:
+Reclaiming variables:
+Clearing address taken flags:
+Symbol table:
+
+Clock_Ip_GetConfiguredFrequencyValue/24 (Clock_Ip_GetConfiguredFrequencyValue) @063b3380
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_PRAMCSetRamIWS/17 Clock_Ip_PRAMCSetRamIWS/17 
+  Calls: 
+Clock_Ip_pxConfig/23 (Clock_Ip_pxConfig) @063b0d38
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_CodeInRamSetFlashWaitStates/4 (read) Clock_Ip_CodeInRamSetFlashWaitStates/4 (read) Clock_Ip_CodeInRamSetFlashWaitStates/4 (read) Clock_Ip_CodeInRamSetFlashWaitStates/4 (read) 
+  Availability: not_available
+  Varpool flags:
+Clock_Ip_axIntOscCallbacks/22 (Clock_Ip_axIntOscCallbacks) @063b01b0
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/14 (addr) Clock_Ip_ClockInitializeObjects/14 (addr) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_au8IrcoscCallbackIndex/21 (Clock_Ip_au8IrcoscCallbackIndex) @063b0168
+  Type: variable
+  Body removed by symtab_remove_unreachable_nodes
+  Visibility: external public
+  References: 
+  Referring: Clock_Ip_ClockInitializeObjects/14 (read) Clock_Ip_ClockInitializeObjects/14 (read) 
+  Availability: not_available
+  Varpool flags: read-only
+Clock_Ip_ReportClockErrors/20 (Clock_Ip_ReportClockErrors) @0632c9a0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 
+  Calls: 
+Clock_Ip_TimeoutExpired/19 (Clock_Ip_TimeoutExpired) @0632c8c0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 
+  Calls: 
+Clock_Ip_StartTimeout/18 (Clock_Ip_StartTimeout) @0632c7e0
+  Type: function
+  Visibility: external public
+  References: 
+  Referring: 
+  Availability: not_available
+  Function flags: optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 
+  Calls: 
+Clock_Ip_PRAMCSetRamIWS/17 (Clock_Ip_PRAMCSetRamIWS) @063287e0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: Clock_Ip_SetRamWaitStates/5 
+  Calls: Clock_Ip_GetConfiguredFrequencyValue/24 Clock_Ip_GetConfiguredFrequencyValue/24 
+Clock_Ip_FLASH_SetFlashIWS/16 (Clock_Ip_FLASH_SetFlashIWS) @063282a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_SetFlashWaitStatesCallback/2 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: Clock_Ip_SetFlashWaitStates/6 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+Clock_Ip_ClockPowerModeChangeNotification/15 (Clock_Ip_ClockPowerModeChangeNotification) @06328ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_ClockInitializeObjects/14 (Clock_Ip_ClockInitializeObjects) @06328c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_au8IrcoscCallbackIndex/21 (read) Clock_Ip_axIntOscCallbacks/22 (addr) Clock_Ip_pxSircStdbyClock/0 (write) Clock_Ip_au8IrcoscCallbackIndex/21 (read) Clock_Ip_axIntOscCallbacks/22 (addr) Clock_Ip_pxFircStdbyClock/1 (write) 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+EnableSircInStandbyMode/13 (EnableSircInStandbyMode) @063289a0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_pxSircStdbyClock/0 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+DisableSircInStandbyMode/12 (DisableSircInStandbyMode) @06328700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_pxSircStdbyClock/0 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+EnableFircInStandbyMode/11 (EnableFircInStandbyMode) @06328460
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_pxFircStdbyClock/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+DisableFircInStandbyMode/10 (DisableFircInStandbyMode) @063281c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: Clock_Ip_pxFircStdbyClock/1 (read) 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+   Indirect call Num speculative call targets: 0
+Clock_Ip_SpecificPlatformInitClock/9 (Clock_Ip_SpecificPlatformInitClock) @062c9d20
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_PowerClockIpModules/3 
+Clock_Ip_SpecificPeripheralClockInitialization/8 (Clock_Ip_SpecificPeripheralClockInitialization) @062c9700
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_McMeEnterKey/7 (Clock_Ip_McMeEnterKey) @062c9ee0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 Clock_Ip_PowerClockIpModules/3 
+  Calls: 
+Clock_Ip_SetFlashWaitStates/6 (Clock_Ip_SetFlashWaitStates) @062c9c40
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_FLASH_SetFlashIWS/16 
+Clock_Ip_SetRamWaitStates/5 (Clock_Ip_SetRamWaitStates) @062c98c0
+  Type: function definition analyzed
+  Visibility: externally_visible public
+  References: 
+  Referring: 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: Clock_Ip_PRAMCSetRamIWS/17 
+Clock_Ip_CodeInRamSetFlashWaitStates/4 (Clock_Ip_CodeInRamSetFlashWaitStates) @062c9620
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  Address is taken.
+  References: Clock_Ip_pxConfig/23 (read) Clock_Ip_pxConfig/23 (read) Clock_Ip_pxConfig/23 (read) Clock_Ip_pxConfig/23 (read) 
+  Referring: Clock_Ip_SetFlashWaitStatesCallback/2 (addr) 
+  Availability: available
+  Function flags: body optimize_size
+  Called by: 
+  Calls: 
+Clock_Ip_PowerClockIpModules/3 (Clock_Ip_PowerClockIpModules) @062c92a0
+  Type: function definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: 
+  Availability: local
+  Function flags: body local optimize_size
+  Called by: Clock_Ip_SpecificPlatformInitClock/9 
+  Calls: Clock_Ip_ReportClockErrors/20 Clock_Ip_TimeoutExpired/19 Clock_Ip_StartTimeout/18 Clock_Ip_McMeEnterKey/7 Clock_Ip_ReportClockErrors/20 Clock_Ip_TimeoutExpired/19 Clock_Ip_StartTimeout/18 Clock_Ip_McMeEnterKey/7 Clock_Ip_ReportClockErrors/20 Clock_Ip_TimeoutExpired/19 Clock_Ip_StartTimeout/18 Clock_Ip_McMeEnterKey/7 Clock_Ip_ReportClockErrors/20 Clock_Ip_TimeoutExpired/19 Clock_Ip_StartTimeout/18 Clock_Ip_McMeEnterKey/7 
+Clock_Ip_SetFlashWaitStatesCallback/2 (Clock_Ip_SetFlashWaitStatesCallback) @06279bd0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: Clock_Ip_CodeInRamSetFlashWaitStates/4 (addr) 
+  Referring: Clock_Ip_FLASH_SetFlashIWS/16 (read) 
+  Availability: available
+  Varpool flags: initialized
+Clock_Ip_pxFircStdbyClock/1 (Clock_Ip_pxFircStdbyClock) @06279b40
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: DisableFircInStandbyMode/10 (read) EnableFircInStandbyMode/11 (read) Clock_Ip_ClockInitializeObjects/14 (write) 
+  Availability: available
+  Varpool flags:
+Clock_Ip_pxSircStdbyClock/0 (Clock_Ip_pxSircStdbyClock) @06279ab0
+  Type: variable definition analyzed
+  Visibility: prevailing_def_ironly
+  References: 
+  Referring: DisableSircInStandbyMode/12 (read) EnableSircInStandbyMode/13 (read) Clock_Ip_ClockInitializeObjects/14 (write) 
+  Availability: available
+  Varpool flags:
+Clock_Ip_PRAMCSetRamIWS ()
+{
+  uint32 ConfiguredAipsPlatClock;
+  uint32 ConfiguredCoreClock;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  ConfiguredCoreClock = 0;
+  # DEBUG BEGIN_STMT
+  ConfiguredAipsPlatClock = 0;
+  # DEBUG BEGIN_STMT
+  ConfiguredCoreClock = Clock_Ip_GetConfiguredFrequencyValue (13);
+  # DEBUG BEGIN_STMT
+  ConfiguredAipsPlatClock = Clock_Ip_GetConfiguredFrequencyValue (14);
+  # DEBUG BEGIN_STMT
+  if (ConfiguredCoreClock > 80000000)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 3>; [INV]
+
+  <bb 3> :
+  if (ConfiguredCoreClock == ConfiguredAipsPlatClock)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 5>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076248576B;
+  _2 = _1->PRCR1;
+  _3 = 1076248576B;
+  _4 = _2 | 1;
+  _3->PRCR1 = _4;
+  # DEBUG BEGIN_STMT
+  _5 = 1078345728B;
+  _6 = _5->PRCR1;
+  _7 = 1078345728B;
+  _8 = _6 | 1;
+  _7->PRCR1 = _8;
+  goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  _9 = 1076248576B;
+  _10 = _9->PRCR1;
+  _11 = 1076248576B;
+  _12 = _10 & 4294967294;
+  _11->PRCR1 = _12;
+  # DEBUG BEGIN_STMT
+  _13 = 1078345728B;
+  _14 = _13->PRCR1;
+  _15 = 1078345728B;
+  _16 = _14 & 4294967294;
+  _15->PRCR1 = _16;
+
+  <bb 6> :
+  return;
+
+}
+
+
+Clock_Ip_FLASH_SetFlashIWS ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Clock_Ip_SetFlashWaitStatesCallback.8_1 = Clock_Ip_SetFlashWaitStatesCallback;
+  Clock_Ip_SetFlashWaitStatesCallback.8_1 ();
+  return;
+
+}
+
+
+Clock_Ip_ClockPowerModeChangeNotification (Clock_Ip_PowerModesType PowerMode, Clock_Ip_PowerNotificationType Notification)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_ClockInitializeObjects ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = Clock_Ip_au8IrcoscCallbackIndex[2];
+  _2 = (int) _1;
+  _3 = &Clock_Ip_axIntOscCallbacks[_2];
+  Clock_Ip_pxSircStdbyClock = _3;
+  # DEBUG BEGIN_STMT
+  _4 = Clock_Ip_au8IrcoscCallbackIndex[1];
+  _5 = (int) _4;
+  _6 = &Clock_Ip_axIntOscCallbacks[_5];
+  Clock_Ip_pxFircStdbyClock = _6;
+  return;
+
+}
+
+
+EnableSircInStandbyMode ()
+{
+  struct Clock_Ip_IrcoscConfigType SircConfig;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  SircConfig.Enable = 1;
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pxSircStdbyClock.7_1 = Clock_Ip_pxSircStdbyClock;
+  _2 = Clock_Ip_pxSircStdbyClock.7_1->Enable;
+  _2 (&SircConfig);
+  SircConfig = {CLOBBER};
+  return;
+
+}
+
+
+DisableSircInStandbyMode ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pxSircStdbyClock.6_1 = Clock_Ip_pxSircStdbyClock;
+  _2 = Clock_Ip_pxSircStdbyClock.6_1->Disable;
+  _2 (2);
+  return;
+
+}
+
+
+EnableFircInStandbyMode ()
+{
+  struct Clock_Ip_IrcoscConfigType FircConfig;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  FircConfig.Enable = 1;
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pxFircStdbyClock.5_1 = Clock_Ip_pxFircStdbyClock;
+  _2 = Clock_Ip_pxFircStdbyClock.5_1->Enable;
+  _2 (&FircConfig);
+  FircConfig = {CLOBBER};
+  return;
+
+}
+
+
+DisableFircInStandbyMode ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pxFircStdbyClock.4_1 = Clock_Ip_pxFircStdbyClock;
+  _2 = Clock_Ip_pxFircStdbyClock.4_1->Disable;
+  _2 (0);
+  return;
+
+}
+
+
+Clock_Ip_SpecificPlatformInitClock (const struct Clock_Ip_ClockConfigType * Config)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Clock_Ip_PowerClockIpModules ();
+  return;
+
+}
+
+
+Clock_Ip_SpecificPeripheralClockInitialization (const struct Clock_IP_SpecificPeriphConfigType * Config)
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  return;
+
+}
+
+
+Clock_Ip_McMeEnterKey ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _1->CTL_KEY = 23280;
+  # DEBUG BEGIN_STMT
+  _2 = 1076740096B;
+  _2->CTL_KEY = 42255;
+  return;
+
+}
+
+
+Clock_Ip_SetFlashWaitStates ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Clock_Ip_FLASH_SetFlashIWS ();
+  return;
+
+}
+
+
+Clock_Ip_SetRamWaitStates ()
+{
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  Clock_Ip_PRAMCSetRamIWS ();
+  return;
+
+}
+
+
+Clock_Ip_CodeInRamSetFlashWaitStates ()
+{
+  uint8 Index;
+  uint32 ConfiguredCoreClock;
+  uint32 RwscSetting;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  RwscSetting = 0;
+  # DEBUG BEGIN_STMT
+  ConfiguredCoreClock = 0;
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pxConfig.9_1 = Clock_Ip_pxConfig;
+  if (Clock_Ip_pxConfig.9_1 != 0B)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  Index = 0;
+  goto <bb 7>; [INV]
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pxConfig.10_2 = Clock_Ip_pxConfig;
+  _3 = (int) Index;
+  _4 = Clock_Ip_pxConfig.10_2->ConfiguredFrequencies[_3].Name;
+  if (_4 == 13)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pxConfig.11_5 = Clock_Ip_pxConfig;
+  _6 = (int) Index;
+  ConfiguredCoreClock = Clock_Ip_pxConfig.11_5->ConfiguredFrequencies[_6].ConfiguredFrequencyValue;
+  # DEBUG BEGIN_STMT
+  goto <bb 8>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  Index.12_7 = Index;
+  Index = Index.12_7 + 1;
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  Clock_Ip_pxConfig.13_8 = Clock_Ip_pxConfig;
+  _9 = Clock_Ip_pxConfig.13_8->ConfigureFrequenciesCount;
+  if (Index < _9)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  if (ConfiguredCoreClock <= 167000000)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 16>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  if (ConfiguredCoreClock <= 66000000)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 11>; [INV]
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  RwscSetting = 1;
+  goto <bb 23>; [INV]
+
+  <bb 11> :
+  # DEBUG BEGIN_STMT
+  if (ConfiguredCoreClock <= 100000000)
+    goto <bb 12>; [INV]
+  else
+    goto <bb 13>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  RwscSetting = 2;
+  goto <bb 23>; [INV]
+
+  <bb 13> :
+  # DEBUG BEGIN_STMT
+  if (ConfiguredCoreClock <= 133000000)
+    goto <bb 14>; [INV]
+  else
+    goto <bb 15>; [INV]
+
+  <bb 14> :
+  # DEBUG BEGIN_STMT
+  RwscSetting = 3;
+  goto <bb 23>; [INV]
+
+  <bb 15> :
+  # DEBUG BEGIN_STMT
+  RwscSetting = 4;
+  goto <bb 23>; [INV]
+
+  <bb 16> :
+  # DEBUG BEGIN_STMT
+  if (ConfiguredCoreClock <= 200000000)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 17> :
+  # DEBUG BEGIN_STMT
+  RwscSetting = 5;
+  goto <bb 23>; [INV]
+
+  <bb 18> :
+  # DEBUG BEGIN_STMT
+  if (ConfiguredCoreClock <= 233000000)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 19> :
+  # DEBUG BEGIN_STMT
+  RwscSetting = 6;
+  goto <bb 23>; [INV]
+
+  <bb 20> :
+  # DEBUG BEGIN_STMT
+  if (ConfiguredCoreClock <= 250000000)
+    goto <bb 21>; [INV]
+  else
+    goto <bb 22>; [INV]
+
+  <bb 21> :
+  # DEBUG BEGIN_STMT
+  RwscSetting = 7;
+  goto <bb 23>; [INV]
+
+  <bb 22> :
+  # DEBUG BEGIN_STMT
+  RwscSetting = 7;
+
+  <bb 23> :
+  # DEBUG BEGIN_STMT
+  _10 = 1076805632B;
+  _11 = _10->CTL;
+  _12 = 1076805632B;
+  _13 = _11 & 4294934527;
+  _12->CTL = _13;
+  # DEBUG BEGIN_STMT
+  _14 = 1076805632B;
+  _15 = _14->CTL;
+  _16 = 1076805632B;
+  _17 = _15 & 4294959359;
+  _16->CTL = _17;
+  # DEBUG BEGIN_STMT
+  _18 = 1076805632B;
+  _19 = _18->CTL;
+  _20 = RwscSetting << 8;
+  _21 = _20 & 7936;
+  _22 = 1076805632B;
+  _23 = _19 | _21;
+  _22->CTL = _23;
+  return;
+
+}
+
+
+Clock_Ip_PowerClockIpModules ()
+{
+  boolean TimeoutOccurred;
+  uint32 TimeoutTicks;
+  uint32 ElapsedTime;
+  uint32 StartTime;
+
+  <bb 2> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutOccurred = 0;
+  # DEBUG BEGIN_STMT
+  _1 = 1076740096B;
+  _2 = _1->PRTN1_COFB1_STAT;
+  _3 = _2 & 16777216;
+  if (_3 == 0)
+    goto <bb 3>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 3> :
+  # DEBUG BEGIN_STMT
+  _4 = 1076740096B;
+  _5 = _4->PRTN1_COFB1_CLKEN;
+  _6 = 1076740096B;
+  _7 = _5 | 16777216;
+  _6->PRTN1_COFB1_CLKEN = _7;
+  # DEBUG BEGIN_STMT
+  _8 = 1076740096B;
+  _9 = _8->PRTN1_PCONF;
+  _10 = 1076740096B;
+  _11 = _9 | 1;
+  _10->PRTN1_PCONF = _11;
+  # DEBUG BEGIN_STMT
+  _12 = 1076740096B;
+  _13 = _12->PRTN1_PUPD;
+  _14 = 1076740096B;
+  _15 = _13 | 1;
+  _14->PRTN1_PUPD = _15;
+  # DEBUG BEGIN_STMT
+  Clock_Ip_McMeEnterKey ();
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 4> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.0_16 = TimeoutTicks;
+  TimeoutOccurred = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.0_16);
+  # DEBUG BEGIN_STMT
+  _17 = 1076740096B;
+  _18 = _17->PRTN1_COFB1_STAT;
+  _19 = _18 & 16777216;
+  if (_19 == 0)
+    goto <bb 5>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 5> :
+  _20 = ~TimeoutOccurred;
+  if (_20 != 0)
+    goto <bb 4>; [INV]
+  else
+    goto <bb 6>; [INV]
+
+  <bb 6> :
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred != 0)
+    goto <bb 7>; [INV]
+  else
+    goto <bb 8>; [INV]
+
+  <bb 7> :
+  # DEBUG BEGIN_STMT
+  Clock_Ip_ReportClockErrors (1, 6);
+
+  <bb 8> :
+  # DEBUG BEGIN_STMT
+  _21 = 1076740096B;
+  _22 = _21->PRTN1_COFB1_STAT;
+  _23 = _22 & 2097152;
+  if (_23 == 0)
+    goto <bb 9>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 9> :
+  # DEBUG BEGIN_STMT
+  _24 = 1076740096B;
+  _25 = _24->PRTN1_COFB1_CLKEN;
+  _26 = 1076740096B;
+  _27 = _25 | 2097152;
+  _26->PRTN1_COFB1_CLKEN = _27;
+  # DEBUG BEGIN_STMT
+  _28 = 1076740096B;
+  _29 = _28->PRTN1_PCONF;
+  _30 = 1076740096B;
+  _31 = _29 | 1;
+  _30->PRTN1_PCONF = _31;
+  # DEBUG BEGIN_STMT
+  _32 = 1076740096B;
+  _33 = _32->PRTN1_PUPD;
+  _34 = 1076740096B;
+  _35 = _33 | 1;
+  _34->PRTN1_PUPD = _35;
+  # DEBUG BEGIN_STMT
+  Clock_Ip_McMeEnterKey ();
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 10> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.1_36 = TimeoutTicks;
+  TimeoutOccurred = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.1_36);
+  # DEBUG BEGIN_STMT
+  _37 = 1076740096B;
+  _38 = _37->PRTN1_COFB1_STAT;
+  _39 = _38 & 2097152;
+  if (_39 == 0)
+    goto <bb 11>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 11> :
+  _40 = ~TimeoutOccurred;
+  if (_40 != 0)
+    goto <bb 10>; [INV]
+  else
+    goto <bb 12>; [INV]
+
+  <bb 12> :
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred != 0)
+    goto <bb 13>; [INV]
+  else
+    goto <bb 14>; [INV]
+
+  <bb 13> :
+  # DEBUG BEGIN_STMT
+  Clock_Ip_ReportClockErrors (1, 4);
+
+  <bb 14> :
+  # DEBUG BEGIN_STMT
+  _41 = 1076740096B;
+  _42 = _41->PRTN1_COFB1_STAT;
+  _43 = _42 & 524288;
+  if (_43 == 0)
+    goto <bb 15>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 15> :
+  # DEBUG BEGIN_STMT
+  _44 = 1076740096B;
+  _45 = _44->PRTN1_COFB1_CLKEN;
+  _46 = 1076740096B;
+  _47 = _45 | 524288;
+  _46->PRTN1_COFB1_CLKEN = _47;
+  # DEBUG BEGIN_STMT
+  _48 = 1076740096B;
+  _49 = _48->PRTN1_PCONF;
+  _50 = 1076740096B;
+  _51 = _49 | 1;
+  _50->PRTN1_PCONF = _51;
+  # DEBUG BEGIN_STMT
+  _52 = 1076740096B;
+  _53 = _52->PRTN1_PUPD;
+  _54 = 1076740096B;
+  _55 = _53 | 1;
+  _54->PRTN1_PUPD = _55;
+  # DEBUG BEGIN_STMT
+  Clock_Ip_McMeEnterKey ();
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 16> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.2_56 = TimeoutTicks;
+  TimeoutOccurred = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.2_56);
+  # DEBUG BEGIN_STMT
+  _57 = 1076740096B;
+  _58 = _57->PRTN1_COFB1_STAT;
+  _59 = _58 & 524288;
+  if (_59 == 0)
+    goto <bb 17>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 17> :
+  _60 = ~TimeoutOccurred;
+  if (_60 != 0)
+    goto <bb 16>; [INV]
+  else
+    goto <bb 18>; [INV]
+
+  <bb 18> :
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred != 0)
+    goto <bb 19>; [INV]
+  else
+    goto <bb 20>; [INV]
+
+  <bb 19> :
+  # DEBUG BEGIN_STMT
+  Clock_Ip_ReportClockErrors (1, 5);
+
+  <bb 20> :
+  # DEBUG BEGIN_STMT
+  _61 = 1076740096B;
+  _62 = _61->PRTN1_COFB1_STAT;
+  _63 = _62 & 32768;
+  if (_63 == 0)
+    goto <bb 21>; [INV]
+  else
+    goto <bb 26>; [INV]
+
+  <bb 21> :
+  # DEBUG BEGIN_STMT
+  _64 = 1076740096B;
+  _65 = _64->PRTN1_COFB1_CLKEN;
+  _66 = 1076740096B;
+  _67 = _65 | 32768;
+  _66->PRTN1_COFB1_CLKEN = _67;
+  # DEBUG BEGIN_STMT
+  _68 = 1076740096B;
+  _69 = _68->PRTN1_PCONF;
+  _70 = 1076740096B;
+  _71 = _69 | 1;
+  _70->PRTN1_PCONF = _71;
+  # DEBUG BEGIN_STMT
+  _72 = 1076740096B;
+  _73 = _72->PRTN1_PUPD;
+  _74 = 1076740096B;
+  _75 = _73 | 1;
+  _74->PRTN1_PUPD = _75;
+  # DEBUG BEGIN_STMT
+  Clock_Ip_McMeEnterKey ();
+  # DEBUG BEGIN_STMT
+  Clock_Ip_StartTimeout (&StartTime, &ElapsedTime, &TimeoutTicks, 50000);
+
+  <bb 22> :
+  # DEBUG BEGIN_STMT
+  # DEBUG BEGIN_STMT
+  TimeoutTicks.3_76 = TimeoutTicks;
+  TimeoutOccurred = Clock_Ip_TimeoutExpired (&StartTime, &ElapsedTime, TimeoutTicks.3_76);
+  # DEBUG BEGIN_STMT
+  _77 = 1076740096B;
+  _78 = _77->PRTN1_COFB1_STAT;
+  _79 = _78 & 32768;
+  if (_79 == 0)
+    goto <bb 23>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 23> :
+  _80 = ~TimeoutOccurred;
+  if (_80 != 0)
+    goto <bb 22>; [INV]
+  else
+    goto <bb 24>; [INV]
+
+  <bb 24> :
+  # DEBUG BEGIN_STMT
+  if (TimeoutOccurred != 0)
+    goto <bb 25>; [INV]
+  else
+    goto <bb 26>; [INV]
+
+  <bb 25> :
+  # DEBUG BEGIN_STMT
+  Clock_Ip_ReportClockErrors (1, 145);
+
+  <bb 26> :
+  StartTime = {CLOBBER};
+  ElapsedTime = {CLOBBER};
+  TimeoutTicks = {CLOBBER};
+  return;
+
+}
+
+

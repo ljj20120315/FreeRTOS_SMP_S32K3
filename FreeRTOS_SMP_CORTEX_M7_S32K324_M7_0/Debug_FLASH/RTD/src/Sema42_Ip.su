@@ -1,0 +1,16 @@
+../RTD/src/Sema42_Ip.c:166:6:Sema42_Ip_Init_Privileged	0	static
+../RTD/src/Sema42_Ip.c:196:7:Sema42_Ip_LockGate_Privileged	0	static
+../RTD/src/Sema42_Ip.c:237:7:Sema42_Ip_UnlockGate_Privileged	0	static
+../RTD/src/Sema42_Ip.c:273:6:Sema42_Ip_ResetGate_Privileged	0	static
+../RTD/src/Sema42_Ip.c:306:7:Sema42_Ip_GetGateLocker_Privileged	0	static
+../RTD/src/Sema42_Ip.c:354:7:Sema42_Ip_IsResetGateStateIdle_Privileged	0	static
+../RTD/src/Sema42_Ip.c:387:7:Sema42_Ip_GetResetGateBusMaster_Privileged	0	static
+../RTD/src/Sema42_Ip.c:428:7:Sema42_Ip_GetResetGateIndex_Privileged	0	static
+../RTD/src/Sema42_Ip.c:475:6:Sema42_Ip_Init	0	static
+../RTD/src/Sema42_Ip.c:502:22:Sema42_Ip_LockGate	8	static
+../RTD/src/Sema42_Ip.c:539:22:Sema42_Ip_UnlockGate	8	static
+../RTD/src/Sema42_Ip.c:574:6:Sema42_Ip_ResetGate	0	static
+../RTD/src/Sema42_Ip.c:600:7:Sema42_Ip_GetGateLocker	0	static
+../RTD/src/Sema42_Ip.c:625:9:Sema42_Ip_IsResetGateStateIdle	0	static
+../RTD/src/Sema42_Ip.c:658:7:Sema42_Ip_GetResetGateBusMaster	0	static
+../RTD/src/Sema42_Ip.c:679:7:Sema42_Ip_GetResetGateIndex	0	static
